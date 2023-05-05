@@ -1,0 +1,818 @@
+@charset "UTF-8";
+/* ===================================================================
+CSS information
+
+file name	: common.css
+author		 : munika-works
+style info : 基本・共通設定
+=================================================================== */
+/* ===================================================================
+CSS information
+
+file name  : _settings.scss
+author     : munika-works
+style info : 汎用設定
+=================================================================== */
+.lower #contents .wrp_lay_right .con_lay, .lower #contents .wrp_intro, #footer .footer__wrap {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+@media only screen and (max-width: 1199px) {
+  .lower #contents .wrp_lay_right .con_lay, .lower #contents .wrp_intro, #footer .footer__wrap {
+    width: 91.6666666667%;
+  }
+}
+
+html {
+  font-size: small;
+  line-height: 2;
+  letter-spacing: 0.18em;
+  text-align: justify;
+}
+
+body {
+  color: #333333;
+  background: #fff;
+  -webkit-text-size-adjust: none;
+  padding: 0 !important;
+  font-size: 124%;
+}
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 93%;
+  }
+}
+body a {
+  color: #333333;
+  text-decoration: none;
+}
+body img {
+  max-width: 100%;
+  -webkit-touch-callout: none;
+  line-height: 1;
+}
+
+body,
+pre,
+input,
+textarea,
+select {
+  font-family: "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 400;
+}
+
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  body .view_tab-sp,
+  body .view_tab {
+    display: none !important;
+  }
+}
+@media print {
+  body .view_tab-sp,
+  body .view_tab {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body .view_sp {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  body .view_pc {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body .view_pc-tab,
+  body .view_tab {
+    display: none !important;
+  }
+}
+
+#munika_page {
+  overflow: hidden;
+}
+@media only screen and (min-width: 1200px) {
+  #munika_page {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media print {
+  #munika_page {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #munika_page {
+    font-size: 100% !important;
+  }
+}
+
+#header {
+  position: fixed;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+  padding: 0.8em 2em 0 2.5em;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #header {
+    padding: 1.5em 2em 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #header {
+    padding: 1em 1.5em 0;
+  }
+}
+#header .h_logo img {
+  width: 14em;
+  height: auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #header .h_logo img {
+    width: 18em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #header .h_logo img {
+    width: 15em;
+  }
+}
+#header .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#header .header__nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#header .header__nav .nav li {
+  padding-right: 1.3em;
+  letter-spacing: 0.05em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #header .header__nav .nav li {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #header .header__nav .nav li {
+    padding-right: 0;
+  }
+}
+#header .header__nav .nav li a:hover {
+  color: #EE8A8A;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*タブレット、スマホのみ表示*/
+.gnav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 40vw;
+  height: 100vh;
+  background-color: #0E6BB0;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  font-size: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .gnav {
+    font-size: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gnav {
+    font-size: 113%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gnav {
+    width: 85vw;
+  }
+}
+.gnav.panelactive {
+  right: 0;
+}
+.gnav.panelactive .gnav_list {
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  width: 40vw;
+  z-index: 999;
+  height: 100vh;
+  overflow: auto;
+}
+@media only screen and (max-width: 767px) {
+  .gnav.panelactive .gnav_list {
+    width: 85vw;
+  }
+}
+.gnav ul {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
+}
+.gnav li {
+  text-align: left;
+}
+.gnav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.openbtn {
+  position: fixed;
+  z-index: 9999; /*ボタンを最前面に*/
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  width: 5rem !important;
+  height: 5rem !important;
+  border-radius: 200px !important;
+  background: #fff !important;
+  border: 2px solid #0E6BB0;
+}
+.openbtn .gnav_solid {
+  /*×に変化*/
+  display: inline-block;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  position: absolute;
+  left: 25%;
+  height: 3px;
+  border-radius: 5px !important;
+  width: 50% !important;
+  background: #0E6BB0 !important;
+  height: 2px;
+}
+.openbtn .gnav_solid:nth-of-type(1) {
+  top: 20px;
+}
+.openbtn .gnav_solid:nth-of-type(2) {
+  top: 30px;
+}
+.openbtn .gnav_solid:nth-of-type(3) {
+  top: 40px;
+}
+.openbtn.btn_active div {
+  width: 40% !important;
+}
+.openbtn.btn_active div:nth-of-type(1) {
+  top: 25px;
+  left: 30%;
+  -webkit-transform: translateY(6px) rotate(-45deg);
+          transform: translateY(6px) rotate(-45deg);
+}
+.openbtn.btn_active div:nth-of-type(2) {
+  opacity: 0;
+}
+.openbtn.btn_active div:nth-of-type(3) {
+  top: 37px;
+  left: 30%;
+  -webkit-transform: translateY(-6px) rotate(45deg);
+          transform: translateY(-6px) rotate(45deg);
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #D0E3F1;
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 113%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #footer {
+    font-size: 100%;
+  }
+}
+#footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#footer .footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3em 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #footer .footer__wrap {
+    padding: 3em 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer .footer__wrap {
+    padding: 2em 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer .footer__wrap {
+    width: 85%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+#footer .footer__wrap .contact {
+  padding-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #footer .footer__wrap .contact {
+    padding-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer .footer__wrap .contact {
+    padding-bottom: 1em;
+  }
+}
+#footer .footer__wrap .contact .f_logo {
+  padding-bottom: 1em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #footer .footer__wrap .contact .f_logo {
+    padding-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer .footer__wrap .contact .f_logo {
+    padding-bottom: 0.8em;
+  }
+}
+#footer .footer__wrap .contact .f_logo span {
+  color: #0E6BB0;
+  line-height: 2.5;
+  font-size: 69%;
+}
+#footer .footer__wrap .contact .f_logo img {
+  width: 14em;
+  height: auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #footer .footer__wrap .contact .f_logo img {
+    width: 12em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer .footer__wrap .contact .f_logo img {
+    width: 14em;
+  }
+}
+#footer .footer__wrap .contact .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 2em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #footer .footer__wrap .contact .sns {
+    padding-top: 2em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer .footer__wrap .contact .sns {
+    padding-top: 1em;
+  }
+}
+#footer .footer__wrap .contact .sns__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#footer .footer__wrap .contact .sns__icon li:not(:last-of-type) {
+  padding-right: 0.8em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #footer .footer__wrap .contact .sns__icon li:not(:last-of-type) {
+    padding-right: 0.8em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer .footer__wrap .contact .sns__icon li:not(:last-of-type) {
+    padding-right: 0.8em;
+  }
+}
+#footer .footer__wrap .contact .sns i {
+  font-size: 1.5em;
+  color: #0E6BB0;
+  padding-top: 0.5em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #footer .footer__wrap .contact .sns i {
+    padding-top: 0.5em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer .footer__wrap .contact .sns i {
+    padding-top: 0;
+  }
+}
+#footer .footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 1199px) {
+  #footer .footer__nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer .footer__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+#footer .footer__nav .nav:not(:last-of-type) {
+  padding-right: 3em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #footer .footer__nav .nav:not(:last-of-type) {
+    padding-right: 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer .footer__nav .nav:not(:last-of-type) {
+    padding-right: 0;
+  }
+}
+#footer .footer__nav .nav li {
+  padding-bottom: 1em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #footer .footer__nav .nav li {
+    padding-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer .footer__nav .nav li {
+    padding-bottom: 1em;
+  }
+}
+#footer .footer__nav .nav li::before {
+  content: "";
+  border-top: 2px solid #fff;
+  content: "";
+  width: 1em;
+  margin-right: 0.5em;
+}
+#footer .footer__nav .nav li a:hover {
+  color: #0E6BB0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#footer #copyright {
+  text-align: center;
+  padding: 1em 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #footer #copyright {
+    padding: 1em 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer #copyright {
+    padding: 0 0 1.5em 0;
+  }
+}
+
+.ttl__jp {
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+  font-size: 188%;
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .ttl__jp {
+    margin-bottom: 0.5em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .ttl__jp {
+    margin-bottom: 0.5em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .ttl__jp {
+    font-size: 188%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .ttl__jp {
+    font-size: 175%;
+  }
+}
+
+.wrp_title {
+  background: #FDFBEF;
+  padding: 8em 0 6em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_title {
+    padding: 8em 0 6em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_title {
+    padding: 5em 0 3em;
+  }
+}
+.wrp_title .con_title {
+  text-align: center;
+}
+.wrp_title .con_title .ttl__en {
+  display: inline-block;
+  line-height: 1.5;
+  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, serif;
+  font-weight: 400;
+  font-size: 157%;
+  color: #0E6BB0;
+  padding: 0.2em 0.5em 0.02em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_title .con_title .ttl__en {
+    padding: 0.2em 0.5em 0.02em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_title .con_title .ttl__en {
+    padding: 0.2em 0.5em 0.02em;
+  }
+}
+.wrp_title .con_title .ttl__jp {
+  line-height: 1.5;
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 188%;
+  color: #EE8A8A;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_title .con_title .ttl__jp {
+    font-size: 188%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_title .con_title .ttl__jp {
+    font-size: 175%;
+  }
+}
+
+.tmp_txt {
+  font-size: 100%;
+  text-align: justify;
+}
+
+.center {
+  text-align: center;
+}
+
+.pink {
+  color: #EE8A8A;
+}
+
+@media only screen and (max-width: 767px) {
+  .pink_btn {
+    text-align: center;
+  }
+}
+.pink_btn a {
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 125%;
+  letter-spacing: 0;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5em;
+  color: #EE8A8A;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.6em 2em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px #EE8A8A solid;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .pink_btn a {
+    padding: 0.6em 2em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .pink_btn a {
+    padding: 0.6em 2em;
+  }
+}
+.pink_btn a:hover {
+  background-color: #EE8A8A;
+  color: #fff;
+}
+
+.contact_btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0E6BB0;
+  border-radius: 5em;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.4em 1.5em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px #0E6BB0 solid;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact_btn a {
+    padding: 0.4em 1.5em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact_btn a {
+    padding: 0;
+  }
+}
+.contact_btn a::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f0e0";
+  font-weight: 400;
+  font-size: 1.5em;
+  padding-right: 0.5em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact_btn a::before {
+    padding-right: 0.5em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact_btn a::before {
+    padding-right: 0;
+  }
+}
+.contact_btn a:hover {
+  background-color: #fff;
+  color: #0E6BB0;
+}
+
+.corner {
+  border-radius: 1em;
+}
+
+.lower #contents .wrp_intro .con_intro .box_intro {
+  padding: 5em 0;
+  margin: auto;
+  width: 79.1666666667%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .lower #contents .wrp_intro .con_intro .box_intro {
+    padding: 5em 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lower #contents .wrp_intro .con_intro .box_intro {
+    padding: 3em 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lower #contents .wrp_intro .con_intro .box_intro {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lower #contents .wrp_intro .con_intro .box_intro .tmp_txt {
+    text-align: justify;
+  }
+}
+.lower #contents .wrp_lay_right {
+  padding: 8em 0;
+  background: #F9F9F9;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .lower #contents .wrp_lay_right {
+    padding: 5em 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lower #contents .wrp_lay_right {
+    padding: 5em 0;
+  }
+}
+.lower #contents .wrp_lay_right .con_lay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  .lower #contents .wrp_lay_right .con_lay {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lower #contents .wrp_lay_right .con_lay .box_lay__img img {
+    width: 100%;
+  }
+}
+.lower #contents .wrp_lay_right .con_lay .box_lay__txt {
+  width: 50%;
+  margin: 0 0 0 10em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .lower #contents .wrp_lay_right .con_lay .box_lay__txt {
+    margin: 0 0 0 8em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lower #contents .wrp_lay_right .con_lay .box_lay__txt {
+    margin: 3em 0 0 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lower #contents .wrp_lay_right .con_lay .box_lay__txt {
+    width: 100%;
+    text-align: center;
+  }
+}
+.lower #contents .wrp_lay_right .con_lay .box_lay__txt .tmp_txt {
+  text-align: justify;
+}/*# sourceMappingURL=common.css.map */

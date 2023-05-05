@@ -1,0 +1,573 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+file name	: common.css
+author		 : munika-works
+style info : 基本・共通設定
+=================================================================== */
+@import "settings";
+
+//----------------------------------------------//
+// 基本設定、リンクカラーなど
+//----------------------------------------------//
+html {
+  font-size: small;
+  line-height: 2;
+  letter-spacing: 0.18em;
+  text-align: justify;
+}
+
+body {
+  color: $baseColor;
+  background: #fff;
+  -webkit-text-size-adjust: none;
+  padding: 0 !important;
+  @include fsz($baseSize, 13);
+  @include mq(sp) {
+    @include fsz($baseSizeSp, 13);
+  }
+
+  a {
+    color: $baseColor;
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    -webkit-touch-callout: none;
+    line-height: 1;
+  }
+
+  // iphonex以上用設定
+  // // 右側の空白
+  // padding: constant(safe-area-inset-right);
+  // // 下側の空白
+  // padding: constant(safe-area-inset-bottom);
+  // //　左側の空白
+  // padding: constant(safe-area-inset-left);
+  // // 上側の空白
+  // padding: constant(safe-area-inset-top);
+}
+
+body,
+pre,
+input,
+textarea,
+select {
+  @include sans-serif("jp");
+}
+
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+
+select {
+  @include mq(sp) {
+    // iphoneのセレクト選択拡大を防ぐ 16px以上
+    // font-size: 16px;
+  }
+}
+
+//----------------------------------------------//
+// .view_xxx
+//----------------------------------------------//
+body {
+  @include mq(pc) {
+    .view_tab-sp,
+    .view_tab {
+      display: none !important;
+    }
+  }
+
+  @include mq(pc_tab) {
+    .view_sp {
+      display: none !important;
+    }
+  }
+
+  @include mq(tab_sp) {
+    .view_pc {
+      display: none !important;
+    }
+  }
+
+  @include mq(sp) {
+    .view_pc-tab,
+    .view_tab {
+      display: none !important;
+    }
+  }
+}
+
+//----------------------------------------------//
+// .mouseOver
+//----------------------------------------------//
+.over {
+}
+
+//----------------------------------------------//
+// #munika_page
+//----------------------------------------------//
+#munika_page {
+  overflow: hidden;
+
+  @include mq(pc) {
+    width: 100%;
+    margin: auto;
+  }
+
+  @include mq(pc_tab) {
+    font-size: 100% !important;
+  }
+
+  // @include mq(pc) {
+  // 	@include mq(pc_l) {}	//1920 ~ 1560			(1920-1200)/2+1
+  // 	@include mq(pc_s) {} //1559 ~ $columnWidth
+  // }
+  // @include mq(pc_tab) {}
+  // @include mq(tab) {}
+  // @include mq(tab_sp) {}
+  // @include mq(sp) {}
+  // @include mq(min_w, 1px) {}
+  // @include mq(max_w, 1700px) {}
+  // @include mq(min_max_w, 768px, 1023px) {}
+}
+
+
+
+//----------------------------------------------//
+// #header
+//----------------------------------------------//
+#header {
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  @include sans-serif("title_jp");
+  @include cV(padding, 0.8em 2em 0 2.5em, 1.5em 2em 0, 1em 1.5em 0);
+  width: 100%;
+  .h_logo {
+    img {
+      @include cV(width, 14em, 18em, 15em);
+      height: auto;
+    }
+  }
+
+  .header__nav {
+    display: flex;
+    .nav {
+      display: flex;
+      align-items: center;
+      li {
+        @include cV(padding-right, 1.3em, 0, 0);
+        letter-spacing: 0.05em;
+        a {
+          @include hover-color("pink");
+        }
+      }
+    }
+  }
+}
+
+/*タブレット、スマホのみ表示*/
+.gnav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 40vw;
+  height: 100vh;
+  background-color: $blue;
+  transition: all 0.6s;
+  @include fsz-cha(16,16,18);
+  @include mq(sp) {
+    width: 85vw;
+  }
+  &.panelactive {
+    right: 0;
+    .gnav_list {
+      /*ナビの数が増えた場合縦スクロール*/
+      position: fixed;
+      width: 40vw;
+      z-index: 999;
+      height: 100vh;
+      overflow: auto;
+      @include mq(sp) {
+        width: 85vw;
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: calc(50% - 20%);
+    transform: translate(-20%, -50%);
+  }
+  li {
+    text-align: left;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    transition: all 0.5s;
+  }
+}
+
+.openbtn {
+  position: fixed;
+  z-index: 9999; /*ボタンを最前面に*/
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  width: 5rem !important;
+  height: 5rem !important;
+  border-radius: 200px !important;
+  background: $white !important;
+  border: 2px solid $blue;
+  .gnav_solid {
+    /*×に変化*/
+    display: inline-block;
+    transition: all 0.4s;
+    position: absolute;
+    left: 25%;
+    height: 3px;
+    border-radius: 5px !important;
+    width: 50% !important;
+    background: $blue !important;
+    height: 2px;
+    &:nth-of-type(1) {
+      top: 20px;
+    }
+    &:nth-of-type(2) {
+      top: 30px;
+    }
+    &:nth-of-type(3) {
+      top: 40px;
+    }
+  }
+  &.btn_active {
+    div {
+      width: 40% !important;
+      &:nth-of-type(1) {
+        top: 25px;
+        left: 30%;
+        transform: translateY(6px) rotate(-45deg);
+      }
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
+      &:nth-of-type(3) {
+        top: 37px;
+        left: 30%;
+        transform: translateY(-6px) rotate(45deg);
+      }
+    }
+  }
+}
+
+//----------------------------------------------//
+// #contents
+//----------------------------------------------//
+#contents {
+}
+
+//----------------------------------------------//
+// #footer
+//----------------------------------------------//
+#footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $light-blue;
+  @include sans-serif("title_jp");
+  @include fsz(18);
+  @include mq(tab) {
+    @include fsz(16);
+  }
+
+  .footer {
+    display: flex;
+    &__wrap {
+      @extend %bw;
+      display: flex;
+      justify-content: space-between;
+      @include cV(padding, 3em 0, 3em 0, 2em 0);
+      @include mq(sp) {
+        width: 85%;
+        flex-direction: column;
+      }
+      .contact {
+        @include cV(padding-bottom, 1em, 1em, 1em);
+        display: flex;
+        flex-direction: column;
+
+        .f_logo {
+          @include cV(padding-bottom, 1em, 1em, 0.8em);
+          span {
+            color: $blue;
+            line-height: 2.5;
+            @include fsz(11);
+          }
+          img {
+            @include cV(width, 14em, 12em, 14em);
+            height: auto;
+          }
+        }
+
+        .sns {
+          display: flex;
+          flex-direction: column;
+          @include cV(padding-top, 2em, 2em, 1em);
+          &__icon {
+            display: flex;
+            li:not(:last-of-type) {
+              @include cV(padding-right, 0.8em, 0.8em, 0.8em);
+            }
+          }
+          i {
+            font-size: 1.5em;
+            color: $blue;
+            @include cV(padding-top, 0.5em, 0.5em, 0);
+          }
+        }
+      }
+    }
+
+    &__nav {
+      display: flex;
+      @include mq(tab_sp) {
+        justify-content: center;
+      }
+      @include mq(sp) {
+        flex-direction: column;
+      }
+      .nav:not(:last-of-type) {
+        @include cV(padding-right, 3em, 1em, 0);
+      }
+
+      .nav {
+        li {
+          @include cV(padding-bottom, 1em, 1em, 1em);
+          position: relative;
+          display: flex;
+          align-items: center;
+
+          &::before {
+            content: "";
+            border-top: 2px solid $white;
+            content: "";
+            width: 1em;
+            margin-right: 0.5em;
+          }
+
+          a {
+            @include hover-color("blue");
+          }
+        }
+      }
+    }
+  }
+
+  #copyright {
+    text-align: center;
+    @include cV(padding, 1em 0, 1em 0, 0 0 1.5em 0);
+  }
+}
+
+//----------------------------------------------//
+// 共通スタイル
+//----------------------------------------------//
+.ttl__jp {
+  line-height: 1.5;
+  @include cV(margin-bottom, 0.5em, 0.5em, 0.5em);
+  @include fsz-cha(30,30,28);
+  @include sans-serif("title_jp");
+}
+
+//----------------------------------------------//
+// 見出し
+//----------------------------------------------//
+
+.wrp_title {
+  background: $light-yellow;
+  @include cV(padding, 8em 0 6em, 8em 0 6em, 5em 0 3em);
+  .con_title {
+    text-align: center;
+    .ttl__en {
+      display: inline-block;
+      line-height: 1.5;
+      @include sans-serif("en");
+      @include fsz(25);
+      color: $blue;
+      @include cV(
+        padding,
+        0.2em 0.5em 0.02em,
+        0.2em 0.5em 0.02em,
+        0.2em 0.5em 0.02em
+      );
+    }
+    .ttl__jp {
+      line-height: 1.5;
+      @include sans-serif("title_jp");
+      @include fsz-cha(30, 30, 28);
+      color: $pink;
+    }
+  }
+}
+
+//----------------------------------------------//
+// 通常テキスト
+//----------------------------------------------//
+.tmp_txt {
+  @include fsz(16);
+  text-align: justify;
+}
+
+.center {
+  text-align: center;
+}
+
+.pink {
+  color: $pink;
+}
+
+//----------------------------------------------//
+// ピンクボタン
+//----------------------------------------------//
+.pink_btn {
+  @include mq(sp) {
+    text-align: center;
+  }
+  a {
+    @include sans-serif("title_jp");
+    @include fsz(20);
+    letter-spacing: 0;
+    display: inline-block;
+    background-color: $white;
+    border-radius: 5em;
+    color: $pink;
+    font-weight: 500;
+    text-align: center;
+    @include cV(padding, 0.6em 2em, 0.6em 2em, 0.6em 2em);
+    transition: 0.3s;
+    border: 2px $pink solid;
+    &:hover {
+      background-color: $pink;
+      color: $white;
+    }
+  }
+}
+
+//----------------------------------------------//
+// お問い合わせボタン
+//----------------------------------------------//
+.contact_btn {
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue;
+    border-radius: 5em;
+    color: $white;
+    font-weight: 500;
+    text-align: center;
+    @include cV(padding, 0.4em 1.5em, 0.4em 1.5em, 0);
+    transition: 0.3s;
+    border: 2px $blue solid;
+    &::before {
+      font-family: "Font Awesome 6 Free";
+      content: "\f0e0";
+      font-weight: 400;
+      font-size: 1.5em;
+      @include cV(padding-right, 0.5em, 0.5em, 0);
+    }
+    &:hover {
+      background-color: $white;
+      color: $blue;
+    }
+  }
+}
+
+//----------------------------------------------//
+// 画像角丸
+//----------------------------------------------//
+.corner {
+  border-radius: 1em;
+}
+
+//----------------------------------------------//
+// 下層共通スタイル
+//----------------------------------------------//
+  // -----------------------------------------------------------
+// .wrp_intro
+// -----------------------------------------------------------
+.lower #contents {
+.wrp_intro {
+  @extend %bw;
+  .con_intro {
+    .box_intro {
+        @include cV(padding, 5em 0, 5em 0, 3em 0);
+        margin: auto;
+        width: wCon(950, 1200);
+        @include mq(sp) {
+          width:100%;
+        }
+      .tmp_txt {
+        @include mq(sp) {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------
+// .wrp_lay_right
+// -----------------------------------------------------------
+.wrp_lay_right {
+  @include cV(padding, 8em 0, 5em 0, 5em 0);
+  background: $gray;
+  .con_lay {
+    @extend %bw;
+    display: flex;
+    align-items: center;
+    @include mq(sp) {
+      flex-direction: column;
+    }
+    .box_lay {
+      &__img {
+        img {
+          @include mq(sp) {
+            width: 100%;
+          }
+        }
+      }
+      &__txt {
+        width: wCon(600, 1200);
+        @include cV(margin, 0 0 0 10em, 0 0 0 8em, 3em 0 0 0);
+        @include mq(sp) {
+          width: 100%;
+          text-align: center;
+        }
+        .tmp_txt {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+}
+
+
+//----------------------------------------------//
+// テーブル
+//----------------------------------------------//
+table.tbl_basic {
+}

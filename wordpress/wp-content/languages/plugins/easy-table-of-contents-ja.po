@@ -1,0 +1,527 @@
+# Translation of Plugins - Easy Table of Contents - Development (trunk) in Japanese
+# This file is distributed under the same license as the Plugins - Easy Table of Contents - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-05-07 13:28:06+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Easy Table of Contents - Development (trunk)\n"
+
+#: includes/class.options.php:527
+msgid "This provides the same function as the Smooth Scroll Offset option above but applied when the user is visiting your site on a mobile device."
+msgstr "上のスムーズスクロールオフセットと同じ働きをしますが、ユーザーがモバイル端末を利用しているときのみ適用されます。"
+
+#: includes/class.options.php:526
+msgid "Mobile Smooth Scroll Offset"
+msgstr "モバイルのスムーズスクロールのオフセット"
+
+#: includes/class.options.php:367
+msgid "Heavy"
+msgstr "Heavy"
+
+#: includes/class.options.php:366
+msgid "Extra Bold"
+msgstr "Extra Bold"
+
+#: includes/class.options.php:365
+msgid "Bold"
+msgstr "Bold"
+
+#: includes/class.options.php:364
+msgid "Semi Bold"
+msgstr "Semi Bold"
+
+#: includes/class.options.php:363
+msgid "Medium"
+msgstr "Medium"
+
+#: includes/class.options.php:362
+msgid "Normal"
+msgstr "Normal"
+
+#: includes/class.options.php:361
+msgid "Light"
+msgstr "Light"
+
+#: includes/class.options.php:360
+msgid "Extra Light"
+msgstr "Extra Light"
+
+#: includes/class.options.php:359
+msgid "Thin"
+msgstr "Thin"
+
+#: includes/class.options.php:355
+msgid "Title Font Weight"
+msgstr "タイトル文字の太さ"
+
+#: includes/class.options.php:348
+msgid "Title Font Size"
+msgstr "タイトル文字サイズ"
+
+#. Description of the plugin
+msgid "Adds a user friendly and fully automatic way to create and display a table of contents generated from the page content."
+msgstr "使いやすい目次を、ページの内容に基づき完全自動で生成し表示します。"
+
+#. Plugin Name of the plugin
+msgid "Easy Table of Contents"
+msgstr "Easy Table of Contents"
+
+#: includes/inc.admin-options-page.php:66
+msgid "Save Changes"
+msgstr "変更を保存"
+
+#: includes/inc.admin-options-page.php:50
+msgid "Advanced"
+msgstr "高度"
+
+#: includes/inc.admin-options-page.php:32
+msgid "Appearance"
+msgstr "外観"
+
+#: includes/inc.admin-options-page.php:14
+msgid "General"
+msgstr "一般"
+
+#: includes/class.widget-toc.php:362
+msgid "If you choose to affix the widget, do not add any other widgets on the sidebar. Also, make sure you have only one instance Table of Contents widget on the page."
+msgstr "ウィジェットを固定する場合、サイドバーに他のウィジェットを追加しないでください。1つのページ内で利用できる目次ウィジェットは1つのみです。"
+
+#: includes/class.widget-toc.php:358
+msgid "Affix or pin the widget."
+msgstr "ウィジェットを上部固定する。"
+
+#: includes/class.widget-toc.php:350
+msgid "Active Section Highlight Color:"
+msgstr "閲覧中セクションのハイライト色:"
+
+#: includes/class.widget-toc.php:343
+msgid "Title"
+msgstr "タイトル"
+
+#: includes/class.widget-toc.php:22
+msgid "Display the table of contents."
+msgstr "目次を表示します。"
+
+#: includes/class.options.php:806
+msgid "The callback function used for the <strong>%s</strong> setting is missing."
+msgstr "<strong>%s</strong>設定に適用されるコールバック関数が見つかりません。"
+
+#: includes/class.options.php:553
+msgid "Eg: .widget-area or #sidebar"
+msgstr "例: .widget-area or #sidebar"
+
+#: includes/class.options.php:552
+msgid "Since every theme is different, this can not be determined automatically. If you are unsure how to find the sidebar's class or id, please ask the theme's support persons."
+msgstr "テーマはそれぞれ異なるため、自動的に検知することができません。サイドバーのクラスや ID が不明な場合、テーマのサポートに問い合わせてください。"
+
+#: includes/class.options.php:551
+msgid "To enable the option to affix or pin the Table of Contents widget enter the theme's sidebar class or id."
+msgstr "目次ウィジェットの固定オプションを選択可能にするには、テーマが定義したサイドバーのクラスまたは ID を入力してください。"
+
+#: includes/class.options.php:550
+msgid "Widget Affix Selector"
+msgstr "ウィジェットの固定セレクタ"
+
+#: includes/class.options.php:544
+msgid "Eg: i, toc_index, index, _"
+msgstr "例: i, toc_index, index, _"
+
+#: includes/class.options.php:543
+msgid "This option normally applies to content written in character sets other than ASCII."
+msgstr "この設定は通常、ASCII 以外の文字セットで書かれたコンテンツに適用されます。"
+
+#: includes/class.options.php:542
+msgid "Anchor targets are restricted to alphanumeric characters as per HTML specification (see readme for more detail). The default anchor prefix will be used when no characters qualify. When left blank, a number will be used instead."
+msgstr "HTML の仕様上、アンカーターゲットには英数字のみ利用できます (詳しくは readme を参照)。利用できる文字がない場合、デフォルトのアンカー接頭辞を利用します。空欄にすると数字を指定します。"
+
+#: includes/class.options.php:541
+msgid "Default Anchor Prefix"
+msgstr "デフォルトのアンカー接頭辞"
+
+#: includes/class.options.php:536
+msgid "Eg: /wiki/, /corporate/annual-reports/"
+msgstr "例: /wiki/, /corporate/annual-reports/"
+
+#: includes/class.options.php:535
+msgid "Restrict generation of the table of contents to pages that match the required path. This path is from the root of your site and always begins with a forward slash."
+msgstr "パスに一致するページ内で、目次の生成を制限します。このパスはサイトルートから指定し、スラッシュで開始してください。"
+
+#: includes/class.options.php:534
+msgid "Limit Path"
+msgstr "パス制限"
+
+#: includes/class.options.php:519
+msgid "If you have a consistent menu across the top of your site, you can adjust the top offset to stop the headings from appearing underneath the top menu. A setting of 30 accommodates the WordPress admin bar. This setting only has an effect after you have enabled Smooth Scroll option."
+msgstr "サイト上部に常にメニューがある場合、上部オフセットを調整して見出しがトップメニューの下に表示されないようにすることができます。 WordPressの管理バーは30に設定されています。 この設定は、スムーズスクロールを上から有効にした後に表示されます。"
+
+#: includes/class.options.php:518
+msgid "Smooth Scroll Offset"
+msgstr "スムーズスクロールのオフセット"
+
+#: includes/class.options.php:470
+msgid "Prevent the loading the core CSS styles. When selected, the appearance options from above will be ignored."
+msgstr "プラグインの CSS スタイルの読み込みを禁止します。チェックすると、上記の外観のオプションは無視されます。"
+
+#: includes/class.options.php:469
+msgid "CSS"
+msgstr "CSS"
+
+#: includes/class.options.php:463
+msgid "Show the table of contents for qualifying items on the homepage."
+msgstr "ホームページに掲載されている項目で目次を表示します。"
+
+#: includes/class.options.php:462
+msgid "Homepage"
+msgstr "ホームページ"
+
+#: includes/class.options.php:456
+msgid "Use - rather than _ in anchors."
+msgstr "英単語の改行時のアンカーに _ ではなく - を使用します。"
+
+#: includes/class.options.php:455
+msgid "Hyphenate"
+msgstr "ハイフネーション"
+
+#: includes/class.options.php:449
+msgid "Ensure anchors are in lowercase."
+msgstr "アンカーには必ず小文字を使用します。"
+
+#: includes/class.options.php:448
+msgid "Lowercase"
+msgstr "小文字"
+
+#: includes/class.options.php:436
+msgid "Link Visited Color"
+msgstr "訪問済みリンク色"
+
+#: includes/class.options.php:429
+msgid "Link Hover Color"
+msgstr "ホバー時のリンク色"
+
+#: includes/class.options.php:422
+msgid "Link Color"
+msgstr "リンク色"
+
+#: includes/class.options.php:415
+msgid "Title Color"
+msgstr "タイトル色"
+
+#: includes/class.options.php:408
+msgid "Border Color"
+msgstr "枠線色"
+
+#: includes/class.options.php:401
+msgid "Background Color"
+msgstr "背景色"
+
+#: includes/class.options.php:396
+msgid "For the following settings to apply, select the Custom Theme option."
+msgstr "以下の設定を適用するには、テーマ設定でカスタムを選択してください。"
+
+#: includes/class.options.php:395
+msgid "Custom Theme"
+msgstr "カスタムテーマ"
+
+#: includes/class.options.php:388
+msgid "Transparent"
+msgstr "透過"
+
+#: includes/class.options.php:387
+msgid "Black"
+msgstr "黒"
+
+#: includes/class.options.php:386
+msgid "White"
+msgstr "白"
+
+#: includes/class.options.php:385
+msgid "Light Blue"
+msgstr "ライトブルー"
+
+#: includes/class.options.php:384
+msgid "Grey"
+msgstr "グレー"
+
+#: includes/class.options.php:381
+msgid "The theme is only applied to the table of contents which is auto inserted into the post. The Table of Contents widget will inherit the theme widget styles."
+msgstr "テーマは投稿内で自動挿入された目次にのみ適用されます。ウィジェットの目次はテーマのウィジェットスタイルを継承します。"
+
+#: includes/class.options.php:380
+msgid "Theme"
+msgstr "テーマ"
+
+#: includes/class.options.php:373
+msgid "Font Size"
+msgstr "文字サイズ"
+
+#: includes/class.options.php:342
+msgid "Right"
+msgstr "右"
+
+#: includes/class.options.php:341
+msgid "Left"
+msgstr "左"
+
+#: includes/class.options.php:340
+msgid "None (Default)"
+msgstr "なし (デフォルト)"
+
+#: includes/class.options.php:336
+msgid "Float"
+msgstr "回り込み"
+
+#: includes/class.options.php:330
+msgid "Select the User Defined option from the Width option to utilitze the custom width."
+msgstr "カスタム幅を適用するには、幅設定で「ユーザー定義」を選択します。"
+
+#: includes/class.options.php:329
+msgid "Custom Width"
+msgstr "カスタム幅"
+
+#: includes/class.options.php:321
+msgid "User Defined"
+msgstr "ユーザー定義"
+
+#: includes/class.options.php:319 includes/class.options.php:389
+msgid "Custom"
+msgstr "カスタム"
+
+#: includes/class.options.php:307
+msgid "Relative"
+msgstr "相対"
+
+#: includes/class.options.php:293
+msgid "Fixed"
+msgstr "固定"
+
+#: includes/class.options.php:288
+msgid "Width"
+msgstr "幅"
+
+#: includes/class.options.php:264
+msgid "Smooth Scroll"
+msgstr "スクロールを滑らかにする"
+
+#: includes/class.options.php:258
+msgid "None"
+msgstr "なし"
+
+#: includes/class.options.php:257
+msgid "Roman"
+msgstr "ローマ数字"
+
+#: includes/class.options.php:256
+msgid "Numeric"
+msgstr "数字"
+
+#: includes/class.options.php:255
+msgid "Decimal (default)"
+msgstr "小数点表示 (デフォルト)"
+
+#: includes/class.options.php:251
+msgid "Counter"
+msgstr "カウンター"
+
+#: includes/class.options.php:244
+msgid "Show as Hierarchy"
+msgstr "ツリー表示"
+
+#: includes/class.options.php:238
+msgid "Initially hide the table of contents."
+msgstr "初期状態で目次を非表示にします。"
+
+#: includes/class.options.php:237
+msgid "Initial View"
+msgstr "初期状態"
+
+#: includes/class.options.php:217
+msgid "Allow the user to toggle the visibility of the table of contents."
+msgstr "目次表示の折りたたみを許可します。"
+
+#: includes/class.options.php:216
+msgid "Toggle View"
+msgstr "折りたたみ表示"
+
+#: includes/class.options.php:212
+msgid "Contents"
+msgstr "コンテンツ"
+
+#: includes/class.options.php:210
+msgid "Eg: Contents, Table of Contents, Page Contents"
+msgstr "例: コンテンツ、目次、もくじ"
+
+#: includes/class.options.php:209
+msgid "Header Label"
+msgstr "見出しラベル"
+
+#: includes/class.options.php:203
+msgid "Show header text above the table of contents."
+msgstr "目次の上に見出しテキストを表示します。"
+
+#: includes/class.options.php:202
+msgid "Display Header Label"
+msgstr "見出しラベルを表示"
+
+#: includes/class.options.php:195
+msgid "or more headings are present"
+msgstr "件以上の見出しがある場合"
+
+#: includes/class.options.php:194
+msgid "Show when"
+msgstr "表示条件"
+
+#: includes/class.options.php:187
+msgid "Bottom"
+msgstr "下部"
+
+#: includes/class.options.php:186
+msgid "Top"
+msgstr "上部"
+
+#: includes/class.options.php:185
+msgid "After first heading"
+msgstr "最初の見出しの後"
+
+#: includes/class.options.php:184
+msgid "Before first heading (default)"
+msgstr "最初の見出しの前 (デフォルト)"
+
+#: includes/class.options.php:181
+msgid "Choose where where you want to display the table of contents."
+msgstr "目次の表示位置を選択してください。"
+
+#: includes/class.options.php:180
+msgid "Position"
+msgstr "位置"
+
+#: includes/class.options.php:173
+msgid "NOTE: The table of contents will only be automatically inserted on post types for which it has been enabled."
+msgstr "注: 有効化済みの投稿タイプにのみ自動挿入します。"
+
+#: includes/class.options.php:172
+msgid "Select the post types which will have the table of contents automatically inserted."
+msgstr "目次を自動挿入する投稿タイプを選択してください。"
+
+#: includes/class.options.php:171
+msgid "Auto Insert"
+msgstr "自動挿入"
+
+#: includes/class.options.php:164
+msgid "Select the post types to enable the support for table of contents."
+msgstr "目次の対応をする投稿タイプを選択してください。"
+
+#: includes/class.options.php:163
+msgid "Enable Support"
+msgstr "サポートを有効化"
+
+#: includes/class.admin.php:317 includes/class.options.php:513
+msgid "<strong>Note:</strong> This is not case sensitive."
+msgstr "<strong>注:</strong> 大文字・小文字は区別しません。"
+
+#: includes/class.admin.php:315 includes/class.options.php:511
+msgid "<code>Apple Tree|Oranges|Yellow Bananas</code> Ignore headings that are exactly \"Apple Tree\", \"Oranges\" or \"Yellow Bananas\"."
+msgstr "<code>りんごの木|オレンジ|黄色いバナナ</code> と入力すると「りんごの木」「オレンジ」「黄色いバナナ」のいずれかに一致する見出しを除外します。"
+
+#: includes/class.admin.php:314 includes/class.options.php:510
+msgid "<code>*Fruit Diet*</code> Ignore headings with \"Fruit Diet\" somewhere in the heading."
+msgstr "<code>*果物ダイエット*</code> と入力すると、見出し中に「果物ダイエット」が含まれるものを除外します。"
+
+#: includes/class.admin.php:313 includes/class.options.php:509
+msgid "<code>Fruit*</code> Ignore headings starting with \"Fruit\"."
+msgstr "<code>果物*</code> と入力すると、「果物」で始まる見出しを除外します。"
+
+#: includes/class.admin.php:294 includes/class.options.php:499
+msgid "Specify headings to be excluded from appearing in the table of contents. Separate multiple headings with a pipe <code>|</code>. Use an asterisk <code>*</code> as a wildcard to match other text."
+msgstr "目次での表示を除外する見出しを指定します。見出しが複数ある場合は <code>|</code> で区切ってください。ワイルドカード指定はアスタリスク <code>*</code> を使用してください。"
+
+#: includes/class.admin.php:288 includes/class.options.php:498
+msgid "Exclude Headings"
+msgstr "除外する見出し"
+
+#: includes/class.admin.php:281
+msgid "<strong>Note:</strong> This is case sensitive."
+msgstr "<strong>注:</strong> 大文字・小文字は区別されます。"
+
+#: includes/class.admin.php:279
+msgid "<code>Level [1.1]|Alternate TOC Header</code> Replaces Level [1.1] in the table of contents with Alternate TOC Header."
+msgstr "<code>レベル [1.1]|代わりの目次ヘッダー</code> 目次内にあるレベル [1.1] を、代わりの目次ヘッダーと置き換えます。"
+
+#: includes/class.admin.php:277 includes/class.admin.php:311
+#: includes/class.options.php:507
+msgid "Examples:"
+msgstr "例:"
+
+#: includes/class.admin.php:260
+msgid "Specify alternate table of contents header string. Add the header to be replaced and the alternate header on a single line separated with a pipe <code>|</code>. Put each additional original and alternate header on its own line."
+msgstr "差し替える目次ヘッダー文字列を指定します。差し替えるヘッダーと代わりのヘッダーを <code>|</code> 区切りで1行ごとに追加します。元のヘッダーと差し替え後のヘッダーをそれぞれの行に配置します。"
+
+#: includes/class.admin.php:254
+msgid "Alternate Headings"
+msgstr "見出しの差し替え"
+
+#: includes/class.admin.php:244 includes/class.options.php:492
+msgid "Heading 6 (h6)"
+msgstr "見出し6 (h6)"
+
+#: includes/class.admin.php:243 includes/class.options.php:491
+msgid "Heading 5 (h5)"
+msgstr "見出し5 (h5)"
+
+#: includes/class.admin.php:242 includes/class.options.php:490
+msgid "Heading 4 (h4)"
+msgstr "見出し4 (h4)"
+
+#: includes/class.admin.php:241 includes/class.options.php:489
+msgid "Heading 3 (h3)"
+msgstr "見出し3 (h3)"
+
+#: includes/class.admin.php:240 includes/class.options.php:488
+msgid "Heading 2 (h2)"
+msgstr "見出し2 (h2)"
+
+#: includes/class.admin.php:239 includes/class.options.php:487
+msgid "Heading 1 (h1)"
+msgstr "見出し1 (h1)"
+
+#: includes/class.admin.php:237 includes/class.options.php:484
+msgid "Select the heading to consider when generating the table of contents. Deselecting a heading will exclude it."
+msgstr "目次の生成時に含める見出しを選択します。見出しの選択を解除すると除外します。"
+
+#: includes/class.admin.php:231 includes/class.options.php:483
+msgid "Headings:"
+msgstr "見出し:"
+
+#: includes/class.admin.php:222
+msgid "Using the advanced options below will override the global advanced settings."
+msgstr "以下の設定は、一般設定の高度な設定を上書きします。"
+
+#: includes/class.admin.php:220
+msgid "NOTE:"
+msgstr "注:"
+
+#: includes/class.admin.php:213
+msgid "Advanced:"
+msgstr "高度な設定:"
+
+#: includes/class.admin.php:201
+msgid "Insert table of contents."
+msgstr "目次を挿入します。"
+
+#: includes/class.admin.php:190
+msgid "Disable the automatic insertion of the table of contents."
+msgstr "目次の自動挿入を無効にします。"
+
+#: includes/class.admin.php:94 includes/class.admin.php:95
+#: includes/class.admin.php:147 includes/class.widget-toc.php:27
+#: includes/inc.admin-options-page.php:2
+msgid "Table of Contents"
+msgstr "目次"
+
+#: includes/class.admin.php:62
+msgid "Settings"
+msgstr "設定"

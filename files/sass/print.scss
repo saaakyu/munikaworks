@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+file name  : print.css
+author     : munika-works
+style info : 印刷用
+=================================================================== */
+@import "settings";
+
+// print
+.view_tab,
+.view_sp,
+.view_tab-sp {
+	display: none !important;
+}

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* ===================================================================
+CSS information
+
+file name  : print.css
+author     : munika-works
+style info : 印刷用
+=================================================================== */
+/* ===================================================================
+CSS information
+
+file name  : _settings.scss
+author     : munika-works
+style info : 汎用設定
+=================================================================== */
+.view_tab,
+.view_sp,
+.view_tab-sp {
+  display: none !important;
+}/*# sourceMappingURL=print.css.map */

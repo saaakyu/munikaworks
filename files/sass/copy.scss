@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+file name  : copy.css
+author     : munika-works
+style info : コピー
+=================================================================== */
+@import "settings";
+
+.wrp_compo{
+    .con_compo{
+        @extend %bw;
+        @include cV(margin-bottom, 2em, 2em, 1em);
+        .ttl__jp{
+            @include fsz-cha(24, 24, 22);
+            color: $blue;
+        }
+        .box_list{
+            @include cV(margin, 2em auto, 2em auto, 1em auto);
+        }
+    }
+}

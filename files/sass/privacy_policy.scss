@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+file name  : copy.css
+author     : munika-works
+style info : コピー
+=================================================================== */
+@import "settings";
+
+// -----------------------------------------------------------
+// .wrp_policy
+// -----------------------------------------------------------
+.wrp_policy{
+  background:$gray ;
+  @include cV(padding, 5em 0, 5em 0, 3.5em 0);
+    .con_policy{
+        @extend %bw;
+        @include cV(padding-bottom, 5em, 5em, 3em);
+        .ttl__jp{
+            @include fsz-cha(24, 24, 22);
+            color: $blue;
+        }
+        .box_list{
+          @include cV(margin, 2em auto, 2em auto, 1em auto);
+      }
+    }
+    .box_policy{
+      @include cV(margin, 2em auto, 2em auto, 1em auto);
+    }
+}

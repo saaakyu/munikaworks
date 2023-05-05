@@ -1,0 +1,609 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+file name  : homepage.css
+author     : munika-works
+style info : トップページ
+=================================================================== */
+@import "settings";
+
+// -----------------------------------------------------------
+// TOP共通デザイン
+// -----------------------------------------------------------
+.ttl__en {
+  display: inline-block;
+  @include sans-serif("en");
+  @include fsz(25);
+  color: $blue;
+  border-top: $blue 1px solid;
+  border-bottom: $blue 1px solid;
+  @include cV(
+    padding,
+    0.2em 0.5em 0.02em,
+    0.2em 0.5em 0.02em,
+    0.2em 0.5em 0.02em
+  );
+  @include cV(margin-bottom, 1em, 1em, 1em);
+  line-height: 1.5;
+  @include mq(sp) {
+    text-align: center;
+  }
+}
+
+// -----------------------------------------------------------
+//  wrp__fv
+// -----------------------------------------------------------
+.wrp_fv {
+  background-color: $light-yellow;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  height: 100svh;
+  .con_fv {
+    max-width: 1100px;
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-image: url("../images/home/img_kv_back-pc.svg") ;
+    background-size: contain;
+    background-position: top right;
+    @include mq(tab_sp) {
+      background-repeat: no-repeat;
+      background-image: url("../images/home/img_kv_back-tab.svg");
+      width: 90%;
+    }
+    .box_fv {
+      position: relative;
+      height: 100vh;
+      .item1 {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-image: url("../images/home/img_pc.png");
+        background-size: contain;
+        top: -4%;
+        right: 0;
+        width: 499px;
+        max-width: 60%;
+        height: 383px;
+        @include mq(tab) {
+          max-width: 43%;
+          top: -0%;
+        }
+        @include mq(sp) {
+          max-width: 60%;
+          top: -2%;
+        }
+      }
+      .item2 {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../images/home/img_headphone.png");
+        top: 8%;
+        left: 10%;
+        width: 343px;
+        max-width: 50%;
+        height: 361px;
+        @include mq(tab) {
+          max-width: 35%;
+          left: 25%;
+        }
+        @include mq(sp) {
+          max-width: 45%;
+          top: 16%;
+          left: 2%;
+        }
+      }
+      .item3 {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../images/home/img_manga.png");
+        top: 30%;
+        right: 25%;
+        width: 343px;
+        max-width: 50%;
+        height: 361px;
+        @include mq(tab) {
+          max-width: 35%;
+          top: 28%;
+          right: 10%;
+        }
+        @include mq(sp) {
+          max-width: 40%;
+          top: 21%;
+          right: 10%;
+        }
+      }
+      .item4 {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../images/home/img_controller.png");
+        top: 60%;
+        right: 3%;
+        width: 343px;
+        max-width: 50%;
+        height: 361px;
+        @include mq(tab) {
+          max-width: 35%;
+          top: 65%;
+          right: 5%;
+        }
+        @include mq(sp) {
+          max-width: 40%;
+          top: 48%;
+          right: 5%;
+        }
+      }
+      .item5 {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../images/home/img_book.png");
+        top: 50%;
+        left: 3%;
+        width: 343px;
+        max-width: 50%;
+        height: 361px;
+        @include mq(tab) {
+          max-width: 40%;
+          top: 50%;
+          left: 20%;
+        }
+        @include mq(sp) {
+          max-width: 45%;
+          top: 42%;
+          left: -8%;
+        }
+      }
+      .item6 {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../images/home/img_cheki.png");
+        top: 70%;
+        left: 33%;
+        width: 158px;
+        max-width: 50%;
+        height: 166px;
+        @include mq(tab) {
+          max-width: 15%;
+          top: 77%;
+          left: 40%;
+        }
+        @include mq(sp) {
+          max-width: 15%;
+          top: 59%;
+          left: 35%;
+        }
+      }
+      .item7 {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../images/home/img_ink.png");
+        top: 41%;
+        right: 15%;
+        width: 150px;
+        max-width: 50%;
+        height: 119px;
+        @include mq(tab) {
+          max-width: 15%;
+          top: 50%;
+          right: 2%;
+        }
+        @include mq(sp) {
+          max-width: 20%;
+          top: 40%;
+          right: 1%;
+        }
+      }
+
+      /* 回転するアニメーション */
+      @keyframes item_fast {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+      @keyframes item_slow {
+        0%,
+        100% {
+          transform: translateY(-8px);
+        }
+        50% {
+          transform: translateY(0);
+        }
+      }
+      @keyframes item_more_slow {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+
+      /* 無限に繰り返す */
+      .item1,
+      .item4 {
+        animation: 4s item_fast infinite;
+      }
+
+      .item5,
+      .item3 {
+        animation: 5s item_slow infinite;
+      }
+
+      .item2,
+      .item6,
+      .item7 {
+        animation: 6s item_more_slow infinite;
+      }
+    }
+  }
+
+  .fv_txt {
+    max-width: 1600px;
+    width: 90%;
+    margin: auto;
+    .main_ttl {
+      position: absolute;
+      top: calc(38% - 70px);
+      line-height: 1.5;
+      @include mq(sp) {
+        top: auto;
+        left: 8%;
+        bottom: 15%;
+      }
+      &__jp {
+        @include fsz-cha(50, 40, 35);
+        @include sans-serif("title_jp");
+        color: $pink;
+        font-weight: 500;
+      }
+      &__en {
+        @include fsz-cha(25, 20, 15);
+        @include sans-serif("en");
+        color: $blue;
+        letter-spacing: 0;
+        @include cV(padding-top, 0.5em, 0.5em, 0.5em);
+      }
+    }
+  }
+
+  .scroll {
+    @include sans-serif("en");
+    @include fsz-cha(20, 20, 20);
+    color: $baseColor;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 50%;
+      bottom: -90px;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 80px;
+      background-color: $baseColor;
+      animation: scroll 3s cubic-bezier(1, 0, 0.3, 1) infinite;
+    }
+  }
+  //アニメーション
+  @keyframes scroll {
+    0% {
+      transform: scale(1, 0);
+      transform-origin: 0 0;
+    }
+    50% {
+      transform: scale(1, 1);
+      transform-origin: 0 0;
+    }
+    50.1% {
+      transform: scale(1, 1);
+      transform-origin: 0 100%;
+    }
+    100% {
+      transform: scale(1, 0);
+      transform-origin: 0 100%;
+    }
+  }
+  //アニメーションここまで
+}
+
+// -----------------------------------------------------------
+// .wrp_intro
+// -----------------------------------------------------------
+.wrp_intro {
+  @extend %bw;
+  @include cV(margin, 8em auto 12em, 5em auto, 5em auto);
+  .con_intro {
+    display: flex;
+    align-items: center;
+    @include mq(sp) {
+      flex-direction: column;
+    }
+    .box_intro {
+      &__img {
+        position: relative;
+        z-index: -1;
+        @include mq(sp) {
+          width: 100%;
+        }
+        img {
+          @include mq(sp) {
+            width: 100%;
+          }
+        }
+        .img_intro2 {
+          position: absolute;
+          right: -20%;
+          bottom: -20%;
+          width: 157px;
+          height: 273px;
+          @include mq(sp) {
+            display: none;
+          }
+        }
+      }
+      &__txt {
+        width: wCon(600, 1200);
+        @include cV(margin, 0 0 0 10em, 0 0 0 8em, 3em 0 0 0);
+        @include mq(sp) {
+          width: 100%;
+          text-align: center;
+        }
+        .tmp_txt {
+          text-align: justify;
+        }
+        .pink_btn {
+          @include cV(margin-top, 2em, 2em, 2em);
+        }
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------
+//  .wrp_service
+// -----------------------------------------------------------
+.wrp_service {
+  @include cV(padding, 8em 0 12em 0, 5em 0 10em 0, 5em 0 10em);
+  background-color: $gray;
+  .con_service {
+    @extend %bw;
+    .box_service {
+      &__txt {
+        .tmp_txt {
+          text-align: center;
+          @include mq(sp) {
+            text-align: justify;
+          }
+        }
+      }
+      &__explain {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        @include cV(margin-top, 4em, 4em, 0);
+        @include mq(sp) {
+          flex-wrap: wrap;
+          justify-content: flex-start;
+        }
+        .service_inner {
+          display: flex;
+          flex-direction: column;
+          &:not(:last-child) {
+            @include cV(margin-right, 3em, 3em, 0);
+          }
+          @include mq(sp) {
+            width: 48%;
+            margin-top: 1.5em;
+            &:nth-child(2n + 1) {
+              margin-right: 4%;
+            }
+          }
+          .service {
+            &__name {
+              line-height: 1.5;
+              @include sans-serif("title_jp");
+              @include fsz(20);
+              @include cV(padding-top, 0.5em, 0.5em, 0.5em);
+              flex-grow: 1;
+            }
+          }
+        }
+      }
+
+      &__txt {
+        width: wCon(650, 1200);
+        text-align: center;
+        margin: auto;
+        @include mq(sp) {
+          width: 100%;
+        }
+      }
+    }
+    .pink_btn {
+      @include cV(margin-top, 4.5em, 4.5em, 3em);
+      text-align: center;
+    }
+  }
+}
+
+// -----------------------------------------------------------
+//  .wrp_works
+// -----------------------------------------------------------
+.wrp_works {
+  @include cV(padding, 1em 0 8em, 1em 0 5em, 1em 0 5em);
+  position: relative;
+  background-color: $white;
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../images/home/bg_circle.svg");
+    width: 505px;
+    height: 338px;
+    top: -13%;
+    right: calc(50% - 252px);
+    z-index: 0;
+  }
+  .con_works {
+    position: relative;
+    z-index: 1;
+    .box_works {
+      &__txt {
+        width: wCon(650, 1200);
+        text-align: center;
+        margin: auto;
+        @include mq(sp) {
+          width: 90%;
+        }
+      }
+      &__img {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100vw;
+        overflow: hidden;
+        z-index: -1;
+        @include cV(margin-top, 5em, 5em, 4em);
+        ul + ul {
+          animation: loop2 100s linear infinite;
+        }
+        ul {
+          display: flex;
+          flex-flow: row nowrap;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          @include mq(sp) {
+            width: auto;
+          }
+          &:first-child {
+            animation: loop 100s -50s linear infinite;
+            backface-visibility: hidden;
+            will-change: transform;
+          }
+          li {
+            display: inline-block;
+            width: calc(100vw / 2);
+            min-width: 150px;
+            margin: 0 30px 0 0;
+            list-style: none;
+            text-align: center;
+            &:nth-child(2n) {
+              margin-top: 3em;
+            }
+            img {
+              display: block;
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+        //ループアニメーション
+        @keyframes loop {
+          0% {
+            transform: translateX(100%);
+          }
+          to {
+            transform: translateX(-100%);
+          }
+        }
+
+        @keyframes loop2 {
+          0% {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-200%);
+          }
+        }
+        //ループアニメーションここまで
+      }
+    }
+    .pink_btn {
+      @include cV(margin-top, 4.5em, 4.5em, 3em);
+      text-align: center;
+    }
+  }
+}
+
+// -----------------------------------------------------------
+//  .wrp_contact
+// -----------------------------------------------------------
+.wrp_contact {
+  @include cV(padding, 8em 0, 5em 0, 5em 0);
+  .con_contact {
+    .box_contact {
+      &__txt {
+        width: wCon(650, 1200);
+        text-align: center;
+        margin: auto;
+        @include mq(sp) {
+          width: 90%;
+        }
+      }
+      &__img {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100vw;
+        overflow: hidden;
+        z-index: -1;
+        @include cV(margin-top, 4em, 4em, 3em);
+        ul + ul {
+          animation: loop2 100s linear infinite;
+        }
+        ul {
+          display: flex;
+          flex-flow: row nowrap;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          @include mq(sp) {
+            width: auto;
+          }
+          &:first-child {
+            animation: loop 100s -50s linear infinite;
+            backface-visibility: hidden;
+            will-change: transform;
+          }
+          li {
+            display: inline-block;
+            width: calc(100vw / 2);
+            min-width: 150px;
+            margin: 0 30px 0 0;
+            list-style: none;
+            text-align: center;
+            &:nth-child(2n) {
+              margin-top: 3em;
+            }
+            img {
+              display: block;
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    .pink_btn {
+      @include cV(margin-top, 3em, 3em, 3em);
+      text-align: center;
+    }
+  }
+}
