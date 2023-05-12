@@ -37,7 +37,7 @@ style info : トップページ
 .wrp_fv {
   background-color: $light-yellow;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   height: 100vh;
   height: 100svh;
   .con_fv {
@@ -46,7 +46,7 @@ style info : トップページ
     height: 90%;
     margin-left: auto;
     background-repeat: no-repeat;
-    background-image: url("../images/home/img_kv_back-pc.svg") ;
+    background-image: url("../images/home/img_kv_back-pc.svg");
     background-size: contain;
     background-position: top right;
     @include mq(tab_sp) {
@@ -292,10 +292,10 @@ style info : トップページ
       display: block;
       position: absolute;
       right: 50%;
-      bottom: -90px;
+      bottom: -80px;
       transform: translateX(-50%);
       width: 1px;
-      height: 80px;
+      height: 70px;
       background-color: $baseColor;
       animation: scroll 3s cubic-bezier(1, 0, 0.3, 1) infinite;
     }
@@ -326,11 +326,40 @@ style info : トップページ
 // .wrp_intro
 // -----------------------------------------------------------
 .wrp_intro {
-  @extend %bw;
-  @include cV(margin, 8em auto 12em, 5em auto, 5em auto);
+  @include cV(padding, 8em 0 12em, 5em 0, 5em 0);
+  position: relative;
+  z-index: 0;
+  &::before {
+    content: "";
+    background-image: url(../images/common/pink_left_upper.png);
+    background-repeat:no-repeat;
+    width: 830px;
+    height: 480px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -2;
+    @include cV(background-size, 80%, 70%, 40%);
+  }
+  &::after {
+    content: "";
+    background-image: url(../images/common/yellow_right_under.png);
+    background-repeat:no-repeat;
+    width: 605px;
+    height: 390px;
+    position: absolute;
+    right:0;
+    background-position: right bottom;
+    bottom: 0;
+    @include cV(background-size, 100%, 80%, 50%);
+    z-index: -3;
+  }
   .con_intro {
+    @extend %bw;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: -2;
     @include mq(sp) {
       flex-direction: column;
     }
@@ -379,41 +408,36 @@ style info : トップページ
 //  .wrp_service
 // -----------------------------------------------------------
 .wrp_service {
-  @include cV(padding, 8em 0 12em 0, 5em 0 10em 0, 5em 0 10em);
+  @include cV(padding, 8em 0 12em, 5em 0 10em, 5em 0 10em);
   background-color: $gray;
+  position: relative;
   .con_service {
     @extend %bw;
     .box_service {
       &__txt {
         .tmp_txt {
           text-align: center;
+          @include cV(margin-bottom, 4em, 4em, 3em);
           @include mq(sp) {
             text-align: justify;
           }
         }
       }
       &__explain {
-        display: flex;
+        width: wCon(950, 1200);
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1%;
+        margin: auto;
         justify-content: center;
         text-align: center;
         @include cV(margin-top, 4em, 4em, 0);
         @include mq(sp) {
-          flex-wrap: wrap;
-          justify-content: flex-start;
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
         }
         .service_inner {
-          display: flex;
-          flex-direction: column;
-          &:not(:last-child) {
-            @include cV(margin-right, 3em, 3em, 0);
-          }
-          @include mq(sp) {
-            width: 48%;
-            margin-top: 1.5em;
-            &:nth-child(2n + 1) {
-              margin-right: 4%;
-            }
-          }
           .service {
             &__name {
               line-height: 1.5;
@@ -452,13 +476,19 @@ style info : トップページ
   &::before {
     content: "";
     position: absolute;
+    background-image: url(../images/home/bg_circle.png);
     background-repeat: no-repeat;
-    background-image: url("../images/home/bg_circle.svg");
     width: 505px;
     height: 338px;
     top: -13%;
     right: calc(50% - 252px);
     z-index: 0;
+    @include mq(sp) {
+      background-size: 60%;
+      /*505px × 60% ÷ 2（÷ 2の分中央に寄せる）*/
+      right: calc(50% - 349px);
+      top: -10%;
+    }
   }
   .con_works {
     position: relative;
@@ -501,9 +531,10 @@ style info : トップページ
             display: inline-block;
             width: calc(100vw / 2);
             min-width: 150px;
-            margin: 0 30px 0 0;
+            @include cV(margin-right, 2em, 1em, 1em);
             list-style: none;
             text-align: center;
+
             &:nth-child(2n) {
               margin-top: 3em;
             }
@@ -533,6 +564,66 @@ style info : トップページ
           }
         }
         //ループアニメーションここまで
+      }
+    }
+    .pink_btn {
+      @include cV(margin-top, 4.5em, 4.5em, 3em);
+      text-align: center;
+    }
+  }
+}
+
+// -----------------------------------------------------------
+//  .wrp_case
+// -----------------------------------------------------------
+.wrp_case {
+  @include cV(padding, 8em 0, 5em 0, 5em 0);
+  background-color: $gray;
+  .con_case {
+    @extend %bw;
+    .box_case {
+      &__txt {
+        .tmp_txt {
+          text-align: center;
+          @include cV(margin-bottom, 4em, 4em, 3em);
+          @include mq(sp) {
+            text-align: justify;
+          }
+        }
+      }
+      &__explain {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3%;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        @include cV(margin-top, 4em, 4em, 0);
+        @include mq(sp) {
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
+        }
+        .case_inner {
+          .case {
+            &__name {
+              line-height: 1.5;
+              @include sans-serif("title_jp");
+              @include fsz(20);
+              @include cV(padding-top, 0.5em, 0.5em, 0.5em);
+              flex-grow: 1;
+            }
+          }
+        }
+      }
+
+      &__txt {
+        width: wCon(650, 1200);
+        text-align: center;
+        margin: auto;
+        @include mq(sp) {
+          width: 100%;
+        }
       }
     }
     .pink_btn {

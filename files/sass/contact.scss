@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+file name  : copy.css
+author     : munika-works
+style info : コピー
+=================================================================== */
+@import "settings";
+
+.wrp_intro {
+  text-align: center;
+  .con_intro {
+    .box_intro {
+      a {
+        color: $pink;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .txt {
+        em {
+          @include fsz(22);
+          @include sans-serif("title_jp");
+        }
+      }
+    }
+  }
+}
+
+.wrp_contact {
+  @include cV(padding, 6em 0 8em, 6em 0 8em, 4em 0 5em);
+  background: $gray;
+  .con_contact {
+    .box_contact {
+      @extend %bw;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5em;
+      @include mq(sp) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .request_btn {
+        @include sans-serif("title_jp");
+        background-color: $white;
+        border-radius: 1em;
+        border: 2px solid $blue;
+        a {
+          display: block;
+          @include cV(padding, 1.5em 2em, 1.5em 2em, 1.5em 2em);
+        }
+        .category {
+          @include fsz(22);
+        }
+        .en {
+          display: inline;
+          border-bottom: 1px solid $baseColor;
+        }
+      }
+    }
+  }
+}

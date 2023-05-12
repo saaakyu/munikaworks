@@ -8,7 +8,7 @@
             <li><a href="<?php echo LOCATION; ?>service/">サービス内容</a></li>
             <li><a href="<?php echo LOCATION; ?>works/">制作実績</a></li>
             <li><a href="<?php echo LOCATION; ?>status/">現在の受付状況</a></li>
-            <li><a href="<?php echo LOCATION; ?>faq/">よくあるご質問</a></li>
+            <!-- <li><a href="<?php echo LOCATION; ?>faq/">よくあるご質問</a></li> -->
         </ul>
 
         <div class="contact_btn"><a href="<?php echo LOCATION_CONTACT; ?>">お問い合わせ</a></div>
@@ -21,7 +21,7 @@
                 <li><a href="<?php echo LOCATION; ?>service/">サービス内容</a></li>
                 <li><a href="<?php echo LOCATION; ?>works/">制作実績</a></li>
                 <li><a href="<?php echo LOCATION; ?>status/">現在の受付状況</a></li>
-                <li><a href="<?php echo LOCATION; ?>faq/">よくあるご質問</a></li>
+                <!-- <li><a href="<?php echo LOCATION; ?>faq/">よくあるご質問</a></li> -->
                 <li><a href="<?php echo LOCATION; ?>blog/">ブログ</a></li>
                 <li><a href="<?php echo LOCATION_CONTACT; ?>">お問い合わせ</a></li>
             </ul>

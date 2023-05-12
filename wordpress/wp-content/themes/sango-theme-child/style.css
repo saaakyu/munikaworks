@@ -8,12 +8,18 @@
  Version: 3.0
 */
 /*こちらはSANGOの子テーマ用CSSです。以下にCSSを記入していきましょう。*/
+
 * {
   box-shadow: none !important;
   transform: none !important;
-  font-style: normal !important;
   margin: 0;
-  padding:0;
+  padding: 0;
+}
+
+html,body {
+  font-size: 100% !important;
+  line-height: 2;
+  letter-spacing: 0.18em;
 }
 
 h1,
@@ -30,23 +36,36 @@ ul {
     "YuGothic", "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode",
     "Lucida Grande", Verdana, Arial, sans-serif !important;
   font-weight: 500;
-  font-feature-settings: "palt";
 }
 
-a:hover {
+/*ヘッダーフッターフォントサイズ調整*/
+.gnav,#footer{
+  font-size: 100% !important; 
+}
+
+#content{
+  margin-top: 0 !important;
+  padding-bottom:0;
+}
+
+/*ブログ等タイトルの余白調整*/
+.wrp_title {
+  padding: 6em 0 4em !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .wrp_title {
+    padding: 6em 0 2em !important;
+  }
+}
+
+#inner-content a:hover {
   opacity: 0.7;
   transition: 0.3s;
 }
 
 img {
   border-radius: 1em;
-}
-
-#content {
-  margin-top: 0 !important;
-  padding-top: 10em !important;
-  padding-bottom: 10em !important;
-  background: #f9f9f9 !important;
 }
 
 /*パンくず非表示*/
@@ -67,6 +86,15 @@ img {
 
 #entry footer {
   margin: 5em 0 0;
+}
+
+/*記事タイトル*/
+.page-title{
+  margin: 0;
+}
+
+.ttl__en{
+  text-transform:capitalize;
 }
 
 /*カードを4列に*/
@@ -91,8 +119,18 @@ img {
   }
 }
 
-/*記事一覧shadow、hover削除*/
-.cardtype__article {
+/*制作実績のみカードを768px（tab）まで2列、それ以下は1列*/
+  .wrp_works .catpost-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+  }
+
+  /*制作実績のみカードを768px（tab）まで2列、それ以下は1列*/
+@media only screen and (max-width: 767px) {
+  .wrp_works .catpost-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
 }
 
 /*カテゴリーページ横幅100%*/
@@ -156,10 +194,15 @@ img {
   margin-bottom: 1.5em;
 }
 
-
 .longc_img {
   padding-bottom: 15%;
   width: 15%;
+}
+
+@media only screen and (max-width: 767px) {
+  .longc_img {
+    display: none;
+  }
 }
 /*お知らせ一覧用調整ここまで*/
 
@@ -191,10 +234,6 @@ img {
     width: 95%;
     margin: auto;
   }
-}
-
-/*記事内、フッター部分のカテゴリ表示を削除*/
-.footer-meta {
 }
 
 /*関連記事内のフォント変更*/
@@ -271,368 +310,23 @@ body img {
   }
 }
 
-#munika_page {
-  overflow: hidden;
-}
-@media only screen and (min-width: 1200px) {
-  #munika_page {
-    width: 100%;
-    margin: auto;
-  }
-}
-@media print {
-  #munika_page {
-    width: 100%;
-    margin: auto;
-  }
-}
-@media only screen and (min-width: 768px) {
-  #munika_page {
-    font-size: 100% !important;
-  }
-}
-
-#header {
-  position: fixed;
-  display: flex;
-  top: 0;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo",
-    "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic",
-    "YuGothic", "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode",
-    "Lucida Grande", Verdana, Arial, sans-serif;
-  font-weight: 500;
-  padding: 0.8em 2em 0 2.5em;
-  width: 100%;
-  z-index: 999;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  #header {
-    padding: 1.5em 2em 0 !important;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #header {
-    padding: 1em 1.5em 0 !important;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .h_logo {
-    font-size: 100% !important;
-  }
-}
-
-#header .h_logo img {
-  width: 14em;
-  height: auto;
-  border-radius: 0;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  #header .h_logo img {
-    width: 18em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #header .h_logo img {
-    width: 11em;
-  }
-}
-#header .header__nav {
-  display: flex;
-}
-#header .header__nav .nav {
-  display: flex;
-  align-items: center;
-}
-#header .header__nav .nav li {
-  padding-right: 1.3em;
-  letter-spacing: 0.05em;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  #header .header__nav .nav li {
-    padding-right: 0;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #header .header__nav .nav li {
-    padding-right: 0;
-  }
-}
-#header .header__nav .nav li a:hover {
-  color: #ee8a8a;
-  transition: 0.3s;
-}
-
-/*タブレット、スマホのみ表示*/
-.gnav {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 40vw;
-  height: 100vh;
-  background-color: #0e6bb0;
-  transition: all 0.6s;
-}
-@media only screen and (max-width: 767px) {
-  .gnav {
-    width: 85vw;
-    font-size: 113%;
-  }
-}
-.gnav.panelactive {
-  right: 0!important;
-}
-.gnav.panelactive .gnav_list {
-  /*ナビの数が増えた場合縦スクロール*/
-  position: fixed!important;
-  z-index: 999!important;
-  width: 40vw!important;
-  height: 100vh!important; /*表示する高さ*/
-  overflow: auto!important;
-}
-@media only screen and (max-width: 767px) {
-  .gnav.panelactive .gnav_list {
-    width: 85vw!important;
-  }
-}
-
-/*ナビゲーション*/
-.gnav ul {
-  position: absolute;
-  z-index: 999;
-  top: 50%;
-  left: 30%;
-  transform: translate(-20%, -50%);
-}
-.gnav li {
-  text-align: center;
-  text-align: left;
-}
-.gnav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 0;
-  display: block;
-  text-transform: uppercase;
-  transition: all 0.5s;
-}
-.gnav a:hover {
-  color: #ccc;
-}
-
+/*ハンバーガーメニューサイズ調整*/
 .openbtn {
-  position: fixed;
-  z-index: 9999; /*ボタンを最前面に*/
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  width: 5rem !important;
-  height: 5rem !important;
-  border-radius: 200px !important;
-  background: #fff !important;
-  border: 2px solid #0e6bb0;
-}
-.openbtn .gnav_solid {
-  /*×に変化*/
-  display: inline-block;
-  transition: all 0.4s;
-  position: absolute;
-  left: 25%;
-  height: 3px;
-  border-radius: 5px !important;
-  width: 50% !important;
-  background: #0e6bb0 !important;
-  height: 2px;
-}
-.openbtn .gnav_solid:nth-of-type(1) {
-  top: 20px;
-}
-.openbtn .gnav_solid:nth-of-type(2) {
-  top: 30px;
-}
-.openbtn .gnav_solid:nth-of-type(3) {
-  top: 40px;
-}
-.openbtn.btn_active div {
-  width: 40% !important;
-}
-.openbtn.btn_active div:nth-of-type(1) {
-  top: 25px!important;
-  left: 30%!important;
-  transform: translateY(6px) rotate(-45deg)!important;
-}
-.openbtn.btn_active div:nth-of-type(2) {
-  opacity: 0!important;
-}
-.openbtn.btn_active div:nth-of-type(3) {
-  top: 37px!important;
-  left: 30%!important;
-  transform: translateY(-6px) rotate(45deg)!important;
+  width: 3.5rem !important;
+  height: 3.5rem !important;
 }
 
-#footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #d0e3f1;
-  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo",
-    "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic",
-    "YuGothic", "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode",
-    "Lucida Grande", Verdana, Arial, sans-serif;
-  font-weight: 500;
-  font-feature-settings: "palt";
-}
-
+/*透明にしない*/
 #header a:hover,
 #footer a:hover {
   opacity: 1;
 }
 
-#footer .footer {
-  display: flex;
+/*ロゴ位置を下に*/
+@media only screen and (max-width: 767px){
+#header {
+    padding: 0.5em 1.3em 0!important;
 }
-#footer .footer__wrap {
-  display: flex;
-  justify-content: space-between;
-  padding: 3em 0;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  #footer .footer__wrap {
-    padding: 3em 0;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #footer .footer__wrap {
-    padding: 2em 0;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #footer .footer__wrap {
-    width: 85%;
-    flex-direction: column;
-  }
-}
-#footer .footer__wrap .contact {
-  padding-bottom: 1em;
-  display: flex;
-  flex-direction: column;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  #footer .footer__wrap .contact {
-    padding-bottom: 1em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #footer .footer__wrap .contact {
-    padding-bottom: 1em;
-  }
-}
-#footer .footer__wrap .contact .f_logo {
-  padding-bottom: 1em;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  #footer .footer__wrap .contact .f_logo {
-    padding-bottom: 1em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #footer .footer__wrap .contact .f_logo {
-    padding-bottom: 0.8em;
-  }
-}
-#footer .footer__wrap .contact .f_logo span {
-  color: #0e6bb0;
-  line-height: 2.5;
-  font-size: 69%;
-}
-#footer .footer__wrap .contact .f_logo img {
-  width: 14em;
-  height: auto;
-  border-radius: 0;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  #footer .footer__wrap .contact .f_logo img {
-    width: 12em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #footer .footer__wrap .contact .f_logo img {
-    width: 14em;
-  }
-}
-#footer .footer__wrap .contact .sns {
-  display: flex;
-  flex-direction: column;
-  padding-top: 2em;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  #footer .footer__wrap .contact .sns {
-    padding-top: 2em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #footer .footer__wrap .contact .sns {
-    padding-top: 1em;
-  }
-}
-#footer .footer__wrap .contact .sns__icon {
-  display: flex;
-}
-#footer .footer__wrap .contact .sns__icon li:not(:last-of-type) {
-  padding-right: 0.8em;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  #footer .footer__wrap .contact .sns__icon li:not(:last-of-type) {
-    padding-right: 0.8em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #footer .footer__wrap .contact .sns__icon li:not(:last-of-type) {
-    padding-right: 0.8em;
-  }
-}
-#footer .footer__wrap .contact .sns i {
-  font-size: 1.5em;
-  color: #0e6bb0;
-  padding-top: 0.5em;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  #footer .footer__wrap .contact .sns i {
-    padding-top: 0.5em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #footer .footer__wrap .contact .sns i {
-    padding-top: 0;
-  }
-}
-#footer .footer__nav {
-  display: flex;
-}
-@media only screen and (max-width: 1199px) {
-  #footer .footer__nav {
-    justify-content: center;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #footer .footer__nav {
-    flex-direction: column;
-  }
-}
-#footer .footer__nav .nav:not(:last-of-type) {
-  padding-right: 3em;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  #footer .footer__nav .nav:not(:last-of-type) {
-    padding-right: 1em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #footer .footer__nav .nav:not(:last-of-type) {
-    padding-right: 0;
-  }
 }
 
 #footer .footer__nav .nav {
@@ -640,79 +334,6 @@ body img {
   margin: 0;
 }
 
-#footer .footer__nav .nav li {
-  padding-bottom: 1em;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  #footer .footer__nav .nav li {
-    padding-bottom: 1em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #footer .footer__nav .nav li {
-    padding-bottom: 1em;
-  }
-}
-#footer .footer__nav .nav li::before {
-  content: "";
-  border-top: 2px solid #fff;
-  content: "";
-  width: 1em;
-  margin-right: 0.5em;
-}
-#footer .footer__nav .nav li a:hover {
-  color: #0e6bb0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-#footer #copyright {
-  text-align: center;
-  padding: 1em 0;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  #footer #copyright {
-    padding: 1em 0;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #footer #copyright {
-    padding: 0 0 1.5em 0;
-  }
-}
-
-.ttl__en {
-  display: inline-block;
-  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia,
-    serif;
-  font-weight: 400;
-  font-size: 157%;
-  color: #0e6bb0;
-  border-top: #0e6bb0 1px solid;
-  border-bottom: #0e6bb0 1px solid;
-  padding: 0.2em 0.5em 0.02em;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .ttl__en {
-    padding: 0.2em 0.5em 0.02em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .ttl__en {
-    padding: 0.2em 0.5em 0.02em;
-  }
-}
-
-.ttl__jp {
-  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo",
-    "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic",
-    "YuGothic", "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode",
-    "Lucida Grande", Verdana, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 219%;
-}
 
 .tmp_txt {
 }

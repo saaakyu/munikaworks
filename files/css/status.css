@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/* ===================================================================
+CSS information
+
+file name  : copy.css
+author     : munika-works
+style info : コピー
+=================================================================== */
+/* ===================================================================
+CSS information
+
+file name  : _settings.scss
+author     : munika-works
+style info : 汎用設定
+=================================================================== */
+.wrp_status .con_status {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+@media only screen and (max-width: 1199px) {
+  .wrp_status .con_status {
+    width: 91.6666666667%;
+  }
+}
+
+.wrp_status {
+  padding: 6em 0 8em;
+  background: #F9F9F9;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_status {
+    padding: 6em 0 8em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_status {
+    padding: 4em 0 5em;
+  }
+}
+.wrp_status .con_status .update {
+  padding-bottom: 0.5em;
+  text-align: right;
+  margin: auto;
+  width: 79.1666666667%;
+  margin: auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_status .con_status .update {
+    padding-bottom: 0.5em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_status .con_status .update {
+    padding-bottom: 0.5em;
+  }
+}
+.wrp_status .con_status .txt {
+  margin-top: 2em;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_status .con_status .txt {
+    margin-top: 2em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_status .con_status .txt {
+    margin-top: 2em;
+  }
+}
+.wrp_status .con_status .txt em {
+  font-size: 113%;
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+}
+.wrp_status .con_status .small_txt {
+  font-size: 73%;
+}
+.wrp_status .con_status a {
+  color: #EE8A8A;
+}
+.wrp_status .con_status a:hover {
+  text-decoration: underline;
+}
+.wrp_status .con_status .box_status {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 79.1666666667%;
+  margin: auto;
+}
+.wrp_status .con_status .box_status table {
+  display: grid;
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+  grid-template-columns: 0.6fr 0.5fr 0.5fr 1.5fr;
+  gap: 2px;
+  margin: auto;
+  border-spacing: 0;
+  border-collapse: separate;
+  overflow: hidden;
+  border-radius: 1em;
+}
+@media only screen and (max-width: 767px) {
+  .wrp_status .con_status .box_status table {
+    width: 950px;
+    overflow-x: scroll;
+  }
+}
+.wrp_status .con_status .box_status table .ic_status {
+  font-weight: 700;
+  font-size: 188%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrp_status .con_status .box_status table thead,
+.wrp_status .con_status .box_status table tbody,
+.wrp_status .con_status .box_status table tfoot,
+.wrp_status .con_status .box_status table tr {
+  display: contents;
+}
+.wrp_status .con_status .box_status table th,
+.wrp_status .con_status .box_status table td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+.wrp_status .con_status .box_status table td {
+  padding: 0em 1em;
+}
+.wrp_status .con_status .box_status table th {
+  font-size: 113%;
+  font-weight: 500;
+  padding: 0.5em 1em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrp_status .con_status .box_status table th.type {
+  background-color: #0E6BB0;
+  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}/*# sourceMappingURL=status.css.map */

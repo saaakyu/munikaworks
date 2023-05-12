@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* ===================================================================
+CSS information
+
+file name  : copy.css
+author     : munika-works
+style info : コピー
+=================================================================== */
+/* ===================================================================
+CSS information
+
+file name  : _settings.scss
+author     : munika-works
+style info : 汎用設定
+=================================================================== */
+.wrp_contact .con_contact .box_contact {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+@media only screen and (max-width: 1199px) {
+  .wrp_contact .con_contact .box_contact {
+    width: 91.6666666667%;
+  }
+}
+
+.wrp_intro {
+  text-align: center;
+}
+.wrp_intro .con_intro .box_intro a {
+  color: #EE8A8A;
+}
+.wrp_intro .con_intro .box_intro a:hover {
+  text-decoration: underline;
+}
+.wrp_intro .con_intro .box_intro .txt em {
+  font-size: 138%;
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.wrp_contact {
+  padding: 6em 0 8em;
+  background: #F9F9F9;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_contact {
+    padding: 6em 0 8em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact {
+    padding: 4em 0 5em;
+  }
+}
+.wrp_contact .con_contact .box_contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5em;
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact .con_contact .box_contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.wrp_contact .con_contact .box_contact .request_btn {
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 1em;
+  border: 2px solid #0E6BB0;
+}
+.wrp_contact .con_contact .box_contact .request_btn a {
+  display: block;
+  padding: 1.5em 2em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_contact .con_contact .box_contact .request_btn a {
+    padding: 1.5em 2em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact .con_contact .box_contact .request_btn a {
+    padding: 1.5em 2em;
+  }
+}
+.wrp_contact .con_contact .box_contact .request_btn .category {
+  font-size: 138%;
+}
+.wrp_contact .con_contact .box_contact .request_btn .en {
+  display: inline;
+  border-bottom: 1px solid #333333;
+}/*# sourceMappingURL=contact.css.map */

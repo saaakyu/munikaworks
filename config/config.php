@@ -32,7 +32,6 @@ $PageList = array(
 definitionLink($PageList,false);
 
 /* Reservations */
-define('LOCATION_CONTACT', './contact/');
 define('LOCATION_PLAN', '');
 define('LOCATION_CHANGE', '');
 define('LOCATION_CANCEL', '');
@@ -52,4 +51,7 @@ define('FB_APPID', '');
 define('LOCATION_TEL', 'tel:00000000000');
 define('PLACEHOLDER_IMAGE', 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==');
 
+/* 外部リンク */
+define('LOCATION_TWITTER', 'https://twitter.com/munika_works/');
+define('LOCATION_INSTAGRAM', 'https://www.instagram.com/munika_works/');
 ?>

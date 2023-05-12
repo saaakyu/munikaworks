@@ -13,20 +13,20 @@ file name  : _settings.scss
 author     : munika-works
 style info : 汎用設定
 =================================================================== */
-.wrp_service .con_service, .wrp_intro {
+.wrp_case .con_case, .wrp_service .con_service, .wrp_intro .con_intro {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
 @media only screen and (max-width: 1199px) {
-  .wrp_service .con_service, .wrp_intro {
+  .wrp_case .con_case, .wrp_service .con_service, .wrp_intro .con_intro {
     width: 91.6666666667%;
   }
 }
 
 .ttl__en {
   display: inline-block;
-  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, serif;
+  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, sans-serif;
   font-weight: 400;
   font-size: 157%;
   color: #0E6BB0;
@@ -65,7 +65,7 @@ style info : 汎用設定
 .wrp_fv {
   background-color: #FDFBEF;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   height: 100vh;
   height: 100svh;
 }
@@ -376,7 +376,7 @@ style info : 汎用設定
 }
 .wrp_fv .fv_txt .main_ttl__en {
   font-size: 157%;
-  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, serif;
+  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, sans-serif;
   font-weight: 400;
   color: #0E6BB0;
   letter-spacing: 0;
@@ -403,7 +403,7 @@ style info : 汎用設定
   }
 }
 .wrp_fv .scroll {
-  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, serif;
+  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, sans-serif;
   font-weight: 400;
   font-size: 125%;
   color: #333333;
@@ -428,11 +428,11 @@ style info : 汎用設定
   display: block;
   position: absolute;
   right: 50%;
-  bottom: -90px;
+  bottom: -80px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 1px;
-  height: 80px;
+  height: 70px;
   background-color: #333333;
   -webkit-animation: scroll 3s cubic-bezier(1, 0, 0.3, 1) infinite;
           animation: scroll 3s cubic-bezier(1, 0, 0.3, 1) infinite;
@@ -491,16 +491,63 @@ style info : 汎用設定
 }
 
 .wrp_intro {
-  margin: 8em auto 12em;
+  padding: 8em 0 12em;
+  position: relative;
+  z-index: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_intro {
-    margin: 5em auto;
+    padding: 5em 0;
   }
 }
 @media only screen and (max-width: 767px) {
   .wrp_intro {
-    margin: 5em auto;
+    padding: 5em 0;
+  }
+}
+.wrp_intro::before {
+  content: "";
+  background-image: url(../images/common/pink_left_upper.png);
+  background-repeat: no-repeat;
+  width: 830px;
+  height: 480px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-size: 80%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_intro::before {
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_intro::before {
+    background-size: 40%;
+  }
+}
+.wrp_intro::after {
+  content: "";
+  background-image: url(../images/common/yellow_right_under.png);
+  background-repeat: no-repeat;
+  width: 605px;
+  height: 390px;
+  position: absolute;
+  right: 0;
+  background-position: right bottom;
+  bottom: 0;
+  background-size: 100%;
+  z-index: -3;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_intro::after {
+    background-size: 80%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_intro::after {
+    background-size: 50%;
   }
 }
 .wrp_intro .con_intro {
@@ -510,6 +557,8 @@ style info : 汎用設定
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: -2;
 }
 @media only screen and (max-width: 767px) {
   .wrp_intro .con_intro {
@@ -583,12 +632,13 @@ style info : 汎用設定
 }
 
 .wrp_service {
-  padding: 8em 0 12em 0;
+  padding: 8em 0 12em;
   background-color: #F9F9F9;
+  position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_service {
-    padding: 5em 0 10em 0;
+    padding: 5em 0 10em;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -598,6 +648,17 @@ style info : 汎用設定
 }
 .wrp_service .con_service .box_service__txt .tmp_txt {
   text-align: center;
+  margin-bottom: 4em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_service .con_service .box_service__txt .tmp_txt {
+    margin-bottom: 4em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_service .con_service .box_service__txt .tmp_txt {
+    margin-bottom: 3em;
+  }
 }
 @media only screen and (max-width: 767px) {
   .wrp_service .con_service .box_service__txt .tmp_txt {
@@ -605,9 +666,15 @@ style info : 汎用設定
   }
 }
 .wrp_service .con_service .box_service__explain {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 79.1666666667%;
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1%;
+  margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -626,42 +693,8 @@ style info : 汎用設定
 }
 @media only screen and (max-width: 767px) {
   .wrp_service .con_service .box_service__explain {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-}
-.wrp_service .con_service .box_service__explain .service_inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.wrp_service .con_service .box_service__explain .service_inner:not(:last-child) {
-  margin-right: 3em;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .wrp_service .con_service .box_service__explain .service_inner:not(:last-child) {
-    margin-right: 3em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .wrp_service .con_service .box_service__explain .service_inner:not(:last-child) {
-    margin-right: 0;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .wrp_service .con_service .box_service__explain .service_inner {
-    width: 48%;
-    margin-top: 1.5em;
-  }
-  .wrp_service .con_service .box_service__explain .service_inner:nth-child(2n+1) {
-    margin-right: 4%;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
   }
 }
 .wrp_service .con_service .box_service__explain .service_inner .service__name {
@@ -727,13 +760,21 @@ style info : 汎用設定
 .wrp_works::before {
   content: "";
   position: absolute;
+  background-image: url(../images/home/bg_circle.png);
   background-repeat: no-repeat;
-  background-image: url("../images/home/bg_circle.svg");
   width: 505px;
   height: 338px;
   top: -13%;
   right: calc(50% - 252px);
   z-index: 0;
+}
+@media only screen and (max-width: 767px) {
+  .wrp_works::before {
+    background-size: 60%;
+    /*505px × 60% ÷ 2（÷ 2の分中央に寄せる）*/
+    right: calc(50% - 349px);
+    top: -10%;
+  }
 }
 .wrp_works .con_works {
   position: relative;
@@ -805,9 +846,19 @@ style info : 汎用設定
   display: inline-block;
   width: 50vw;
   min-width: 150px;
-  margin: 0 30px 0 0;
+  margin-right: 2em;
   list-style: none;
   text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_works .con_works .box_works__img ul li {
+    margin-right: 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_works .con_works .box_works__img ul li {
+    margin-right: 1em;
+  }
 }
 .wrp_works .con_works .box_works__img ul li:nth-child(2n) {
   margin-top: 3em;
@@ -868,6 +919,115 @@ style info : 汎用設定
 }
 @media only screen and (max-width: 767px) {
   .wrp_works .con_works .pink_btn {
+    margin-top: 3em;
+  }
+}
+
+.wrp_case {
+  padding: 8em 0;
+  background-color: #F9F9F9;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_case {
+    padding: 5em 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_case {
+    padding: 5em 0;
+  }
+}
+.wrp_case .con_case .box_case__txt .tmp_txt {
+  text-align: center;
+  margin-bottom: 4em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_case .con_case .box_case__txt .tmp_txt {
+    margin-bottom: 4em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_case .con_case .box_case__txt .tmp_txt {
+    margin-bottom: 3em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_case .con_case .box_case__txt .tmp_txt {
+    text-align: justify;
+  }
+}
+.wrp_case .con_case .box_case__explain {
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 4em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_case .con_case .box_case__explain {
+    margin-top: 4em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_case .con_case .box_case__explain {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_case .con_case .box_case__explain {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+}
+.wrp_case .con_case .box_case__explain .case_inner .case__name {
+  line-height: 1.5;
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 125%;
+  padding-top: 0.5em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_case .con_case .box_case__explain .case_inner .case__name {
+    padding-top: 0.5em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_case .con_case .box_case__explain .case_inner .case__name {
+    padding-top: 0.5em;
+  }
+}
+.wrp_case .con_case .box_case__txt {
+  width: 54.1666666667%;
+  text-align: center;
+  margin: auto;
+}
+@media only screen and (max-width: 767px) {
+  .wrp_case .con_case .box_case__txt {
+    width: 100%;
+  }
+}
+.wrp_case .con_case .pink_btn {
+  margin-top: 4.5em;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_case .con_case .pink_btn {
+    margin-top: 4.5em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_case .con_case .pink_btn {
     margin-top: 3em;
   }
 }

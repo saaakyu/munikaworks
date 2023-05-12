@@ -120,6 +120,7 @@ textarea {
 
 #header {
   position: fixed;
+  top: 0;
   z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,17 +149,18 @@ textarea {
   }
 }
 #header .h_logo img {
-  width: 14em;
+  width: 17rem;
+  border-radius: unset;
   height: auto;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   #header .h_logo img {
-    width: 18em;
+    width: 17rem;
   }
 }
 @media only screen and (max-width: 767px) {
   #header .h_logo img {
-    width: 15em;
+    width: 60%;
   }
 }
 #header .header__nav {
@@ -205,6 +207,7 @@ textarea {
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
   font-size: 100%;
+  letter-spacing: 0.08em;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .gnav {
@@ -242,8 +245,8 @@ textarea {
   z-index: 999;
   top: 50%;
   left: 30%;
-  -webkit-transform: translate(-20%, -50%);
-          transform: translate(-20%, -50%);
+  -webkit-transform: translate(-20%, -50%) !important;
+          transform: translate(-20%, -50%) !important;
 }
 .gnav li {
   text-align: left;
@@ -251,7 +254,7 @@ textarea {
 .gnav a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 0;
+  padding: 0.5em 0;
   display: block;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -260,11 +263,11 @@ textarea {
 .openbtn {
   position: fixed;
   z-index: 9999; /*ボタンを最前面に*/
-  top: 5px;
-  right: 5px;
+  top: 10px !important;
+  right: 10px !important;
   cursor: pointer;
-  width: 5rem !important;
-  height: 5rem !important;
+  width: 4rem;
+  height: 4rem;
   border-radius: 200px !important;
   background: #fff !important;
   border: 2px solid #0E6BB0;
@@ -272,8 +275,8 @@ textarea {
 .openbtn .gnav_solid {
   /*×に変化*/
   display: inline-block;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   position: absolute;
   left: 25%;
   height: 3px;
@@ -283,31 +286,31 @@ textarea {
   height: 2px;
 }
 .openbtn .gnav_solid:nth-of-type(1) {
-  top: 20px;
+  top: 15px;
 }
 .openbtn .gnav_solid:nth-of-type(2) {
-  top: 30px;
+  top: 25px;
 }
 .openbtn .gnav_solid:nth-of-type(3) {
-  top: 40px;
+  top: 35px;
 }
 .openbtn.btn_active div {
   width: 40% !important;
 }
 .openbtn.btn_active div:nth-of-type(1) {
-  top: 25px;
+  top: 19px;
   left: 30%;
-  -webkit-transform: translateY(6px) rotate(-45deg);
-          transform: translateY(6px) rotate(-45deg);
+  -webkit-transform: translateY(6px) rotate(-45deg) !important;
+          transform: translateY(6px) rotate(-45deg) !important;
 }
 .openbtn.btn_active div:nth-of-type(2) {
   opacity: 0;
 }
 .openbtn.btn_active div:nth-of-type(3) {
-  top: 37px;
+  top: 31px;
   left: 30%;
-  -webkit-transform: translateY(-6px) rotate(45deg);
-          transform: translateY(-6px) rotate(45deg);
+  -webkit-transform: translateY(-6px) rotate(45deg) !important;
+          transform: translateY(-6px) rotate(45deg) !important;
 }
 
 #footer {
@@ -321,11 +324,16 @@ textarea {
   background-color: #D0E3F1;
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
-  font-size: 113%;
+  font-size: 100%;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   #footer {
     font-size: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer {
+    font-size: 113%;
   }
 }
 #footer .footer {
@@ -397,11 +405,12 @@ textarea {
 #footer .footer__wrap .contact .f_logo span {
   color: #0E6BB0;
   line-height: 2.5;
-  font-size: 69%;
+  font-size: 89%;
 }
 #footer .footer__wrap .contact .f_logo img {
   width: 14em;
   height: auto;
+  border-radius: unset;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   #footer .footer__wrap .contact .f_logo img {
@@ -452,7 +461,7 @@ textarea {
   }
 }
 #footer .footer__wrap .contact .sns i {
-  font-size: 1.5em;
+  font-size: 1.5em !important;
   color: #0E6BB0;
   padding-top: 0.5em;
 }
@@ -516,13 +525,12 @@ textarea {
 }
 @media only screen and (max-width: 767px) {
   #footer .footer__nav .nav li {
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
   }
 }
 #footer .footer__nav .nav li::before {
   content: "";
   border-top: 2px solid #fff;
-  content: "";
   width: 1em;
   margin-right: 0.5em;
 }
@@ -530,6 +538,19 @@ textarea {
   color: #0E6BB0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+#footer .footer__nav .nav .contact_btn {
+  margin-top: 0.8em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #footer .footer__nav .nav .contact_btn {
+    margin-top: 0.8em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer .footer__nav .nav .contact_btn {
+    margin-top: 0.8em;
+  }
 }
 #footer #copyright {
   text-align: center;
@@ -575,17 +596,17 @@ textarea {
 }
 
 .wrp_title {
-  background: #FDFBEF;
-  padding: 8em 0 6em;
+  background: #F9F9F9;
+  padding: 8em 0 5em;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_title {
-    padding: 8em 0 6em;
+    padding: 8em 0 5em;
   }
 }
 @media only screen and (max-width: 767px) {
   .wrp_title {
-    padding: 5em 0 3em;
+    padding: 7em 0 3em;
   }
 }
 .wrp_title .con_title {
@@ -594,7 +615,7 @@ textarea {
 .wrp_title .con_title .ttl__en {
   display: inline-block;
   line-height: 1.5;
-  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, serif;
+  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, sans-serif;
   font-weight: 400;
   font-size: 157%;
   color: #0E6BB0;
@@ -641,6 +662,26 @@ textarea {
   color: #EE8A8A;
 }
 
+.green {
+  color: #A5DA92;
+}
+
+.blue {
+  color: #0E6BB0;
+}
+
+.sky_blue {
+  color: #7BB5DF;
+}
+
+.dark_gray {
+  color: #7c7c7c;
+}
+
+.bright_yellow {
+  color: #F0B967;
+}
+
 @media only screen and (max-width: 767px) {
   .pink_btn {
     text-align: center;
@@ -649,7 +690,7 @@ textarea {
 .pink_btn a {
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
-  font-size: 125%;
+  font-size: 113%;
   letter-spacing: 0;
   display: inline-block;
   background-color: #fff;

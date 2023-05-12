@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+file name  : copy.css
+author     : munika-works
+style info : コピー
+=================================================================== */
+@import "settings";
+
+.wrp_intro {
+  text-align: center;
+  .con_intro {
+    .box_intro {
+      a {
+        color: $pink;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .txt {
+        @include cV(margin-bottom,2em,2em, 2em);
+        em {
+          @include fsz(22);
+          @include sans-serif("title_jp");
+        }
+      }
+    }
+  }
+}
+
+.wrp_form {
+  @include cV(padding, 6em 0 8em, 6em 0 8em, 4em 0 5em);
+  background: $gray;
+  .con_form {
+    @extend %bw;
+    .box_form {
+      width: wCon(730, 1200);
+      margin: auto;
+      @include mq(sp) {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -20,7 +20,7 @@ html {
 
 body {
   color: $baseColor;
-  background: #fff;
+  background: $white;
   -webkit-text-size-adjust: none;
   padding: 0 !important;
   @include fsz($baseSize, 13);
@@ -136,13 +136,12 @@ body {
   // @include mq(min_max_w, 768px, 1023px) {}
 }
 
-
-
 //----------------------------------------------//
 // #header
 //----------------------------------------------//
 #header {
   position: fixed;
+  top: 0 /*ワードプレス用*/;
   z-index: 999;
   display: flex;
   justify-content: space-between;
@@ -153,7 +152,8 @@ body {
   width: 100%;
   .h_logo {
     img {
-      @include cV(width, 14em, 18em, 15em);
+      @include cV(width, 17rem, 17rem, 60%);
+      border-radius: unset /*ワードプレス用*/;
       height: auto;
     }
   }
@@ -183,7 +183,8 @@ body {
   height: 100vh;
   background-color: $blue;
   transition: all 0.6s;
-  @include fsz-cha(16,16,18);
+  @include fsz-cha(16, 16, 18);
+  letter-spacing: 0.08em;
   @include mq(sp) {
     width: 85vw;
   }
@@ -207,7 +208,7 @@ body {
     z-index: 999;
     top: 50%;
     left: calc(50% - 20%);
-    transform: translate(-20%, -50%);
+    transform: translate(-20%, -50%) !important/*ワードプレス用important*/;
   }
   li {
     text-align: left;
@@ -215,7 +216,7 @@ body {
   a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 0.5em 0;
     display: block;
     transition: all 0.5s;
   }
@@ -224,18 +225,18 @@ body {
 .openbtn {
   position: fixed;
   z-index: 9999; /*ボタンを最前面に*/
-  top: 5px;
-  right: 5px;
+  top: 10px!important;
+  right: 10px!important;
   cursor: pointer;
-  width: 5rem !important;
-  height: 5rem !important;
+  width: 4rem;
+  height: 4rem;
   border-radius: 200px !important;
   background: $white !important;
   border: 2px solid $blue;
   .gnav_solid {
     /*×に変化*/
     display: inline-block;
-    transition: all 0.4s;
+    transition: all 0.3s;
     position: absolute;
     left: 25%;
     height: 3px;
@@ -244,30 +245,30 @@ body {
     background: $blue !important;
     height: 2px;
     &:nth-of-type(1) {
-      top: 20px;
+      top: 15px;
     }
     &:nth-of-type(2) {
-      top: 30px;
+      top: 25px;
     }
     &:nth-of-type(3) {
-      top: 40px;
+      top: 35px;
     }
   }
   &.btn_active {
     div {
       width: 40% !important;
       &:nth-of-type(1) {
-        top: 25px;
+        top: 19px;
         left: 30%;
-        transform: translateY(6px) rotate(-45deg);
+        transform: translateY(6px) rotate(-45deg) !important;
       }
       &:nth-of-type(2) {
         opacity: 0;
       }
       &:nth-of-type(3) {
-        top: 37px;
+        top: 31px;
         left: 30%;
-        transform: translateY(-6px) rotate(45deg);
+        transform: translateY(-6px) rotate(45deg) !important;
       }
     }
   }
@@ -287,11 +288,7 @@ body {
   flex-direction: column;
   background-color: $light-blue;
   @include sans-serif("title_jp");
-  @include fsz(18);
-  @include mq(tab) {
-    @include fsz(16);
-  }
-
+  @include fsz-cha(16, 16, 18);
   .footer {
     display: flex;
     &__wrap {
@@ -313,11 +310,12 @@ body {
           span {
             color: $blue;
             line-height: 2.5;
-            @include fsz(11);
+            @include fsz(16, 18);
           }
           img {
             @include cV(width, 14em, 12em, 14em);
             height: auto;
+            border-radius: unset /*ワードプレス用*/;
           }
         }
 
@@ -332,7 +330,7 @@ body {
             }
           }
           i {
-            font-size: 1.5em;
+            font-size: 1.5em !important/*ワードプレス用important*/;
             color: $blue;
             @include cV(padding-top, 0.5em, 0.5em, 0);
           }
@@ -354,7 +352,7 @@ body {
 
       .nav {
         li {
-          @include cV(padding-bottom, 1em, 1em, 1em);
+          @include cV(padding-bottom, 1em, 1em, 0.5em);
           position: relative;
           display: flex;
           align-items: center;
@@ -362,7 +360,6 @@ body {
           &::before {
             content: "";
             border-top: 2px solid $white;
-            content: "";
             width: 1em;
             margin-right: 0.5em;
           }
@@ -370,6 +367,9 @@ body {
           a {
             @include hover-color("blue");
           }
+        }
+        .contact_btn {
+          @include cV(margin-top, 0.8em, 0.8em, 0.8em);
         }
       }
     }
@@ -387,7 +387,7 @@ body {
 .ttl__jp {
   line-height: 1.5;
   @include cV(margin-bottom, 0.5em, 0.5em, 0.5em);
-  @include fsz-cha(30,30,28);
+  @include fsz-cha(30, 30, 28);
   @include sans-serif("title_jp");
 }
 
@@ -396,8 +396,8 @@ body {
 //----------------------------------------------//
 
 .wrp_title {
-  background: $light-yellow;
-  @include cV(padding, 8em 0 6em, 8em 0 6em, 5em 0 3em);
+  background: $gray;
+  @include cV(padding, 8em 0 5em, 8em 0 5em, 7em 0 3em);
   .con_title {
     text-align: center;
     .ttl__en {
@@ -438,6 +438,25 @@ body {
   color: $pink;
 }
 
+.green {
+  color: $green;
+}
+
+.blue {
+  color:$blue;
+}
+
+.sky_blue {
+  color:$sky-blue;
+}
+
+.dark_gray {
+  color:$dark-gray;
+}
+
+.bright_yellow {
+  color:$bright-yellow;
+}
 //----------------------------------------------//
 // ピンクボタン
 //----------------------------------------------//
@@ -447,7 +466,7 @@ body {
   }
   a {
     @include sans-serif("title_jp");
-    @include fsz(20);
+    @include fsz(18);
     letter-spacing: 0;
     display: inline-block;
     background-color: $white;
@@ -505,66 +524,65 @@ body {
 //----------------------------------------------//
 // 下層共通スタイル
 //----------------------------------------------//
-  // -----------------------------------------------------------
+// -----------------------------------------------------------
 // .wrp_intro
 // -----------------------------------------------------------
 .lower #contents {
-.wrp_intro {
-  @extend %bw;
-  .con_intro {
-    .box_intro {
+  .wrp_intro {
+    @extend %bw;
+    .con_intro {
+      .box_intro {
         @include cV(padding, 5em 0, 5em 0, 3em 0);
         margin: auto;
         width: wCon(950, 1200);
         @include mq(sp) {
-          width:100%;
+          width: 100%;
         }
-      .tmp_txt {
-        @include mq(sp) {
-          text-align: justify;
-        }
-      }
-    }
-  }
-}
-
-// -----------------------------------------------------------
-// .wrp_lay_right
-// -----------------------------------------------------------
-.wrp_lay_right {
-  @include cV(padding, 8em 0, 5em 0, 5em 0);
-  background: $gray;
-  .con_lay {
-    @extend %bw;
-    display: flex;
-    align-items: center;
-    @include mq(sp) {
-      flex-direction: column;
-    }
-    .box_lay {
-      &__img {
-        img {
+        .tmp_txt {
           @include mq(sp) {
-            width: 100%;
+            text-align: justify;
           }
         }
       }
-      &__txt {
-        width: wCon(600, 1200);
-        @include cV(margin, 0 0 0 10em, 0 0 0 8em, 3em 0 0 0);
-        @include mq(sp) {
-          width: 100%;
-          text-align: center;
+    }
+  }
+
+  // -----------------------------------------------------------
+  // .wrp_lay_right
+  // -----------------------------------------------------------
+  .wrp_lay_right {
+    @include cV(padding, 8em 0, 5em 0, 5em 0);
+    background: $gray;
+    .con_lay {
+      @extend %bw;
+      display: flex;
+      align-items: center;
+      @include mq(sp) {
+        flex-direction: column;
+      }
+      .box_lay {
+        &__img {
+          img {
+            @include mq(sp) {
+              width: 100%;
+            }
+          }
         }
-        .tmp_txt {
-          text-align: justify;
+        &__txt {
+          width: wCon(600, 1200);
+          @include cV(margin, 0 0 0 10em, 0 0 0 8em, 3em 0 0 0);
+          @include mq(sp) {
+            width: 100%;
+            text-align: center;
+          }
+          .tmp_txt {
+            text-align: justify;
+          }
         }
       }
     }
   }
 }
-}
-
 
 //----------------------------------------------//
 // テーブル

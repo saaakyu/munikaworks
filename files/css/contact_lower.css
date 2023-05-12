@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* ===================================================================
+CSS information
+
+file name  : copy.css
+author     : munika-works
+style info : コピー
+=================================================================== */
+/* ===================================================================
+CSS information
+
+file name  : _settings.scss
+author     : munika-works
+style info : 汎用設定
+=================================================================== */
+.wrp_form .con_form {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+@media only screen and (max-width: 1199px) {
+  .wrp_form .con_form {
+    width: 91.6666666667%;
+  }
+}
+
+.wrp_intro {
+  text-align: center;
+}
+.wrp_intro .con_intro .box_intro a {
+  color: #EE8A8A;
+}
+.wrp_intro .con_intro .box_intro a:hover {
+  text-decoration: underline;
+}
+.wrp_intro .con_intro .box_intro .txt {
+  margin-bottom: 2em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_intro .con_intro .box_intro .txt {
+    margin-bottom: 2em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_intro .con_intro .box_intro .txt {
+    margin-bottom: 2em;
+  }
+}
+.wrp_intro .con_intro .box_intro .txt em {
+  font-size: 138%;
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.wrp_form {
+  padding: 6em 0 8em;
+  background: #F9F9F9;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_form {
+    padding: 6em 0 8em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_form {
+    padding: 4em 0 5em;
+  }
+}
+.wrp_form .con_form .box_form {
+  width: 60.8333333333%;
+  margin: auto;
+}
+@media only screen and (max-width: 767px) {
+  .wrp_form .con_form .box_form {
+    width: 100%;
+  }
+}/*# sourceMappingURL=contact_lower.css.map */

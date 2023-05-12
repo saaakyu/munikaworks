@@ -6,8 +6,8 @@
 			<div class="mail"><a href="mailto:contact@munika-works.com">contact&#64;munika-works.com</a></div>
 			<div class="sns">
 				<ul class="sns__icon">
-					<li><a href="https://twitter.com/munika_works/" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a></li>
-					<!-- <li><a href="https://www.instagram.com/munika_works/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li> -->
+					<li><a href="<?php echo LOCATION_TWITTER; ?>" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a></li>
+					<!-- <li><a href="<?php echo LOCATION_INSTAGRAM; ?>" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li> -->
 				</ul>
 			</div>
 		</div>
@@ -25,7 +25,7 @@
 				<li><a href="<?php echo LOCATION; ?>blog/">ブログ</a></li>
 			</ul>
 			<ul class="nav">
-				<li><a href="<?php echo LOCATION; ?>faq/">よくあるご質問</a></li>
+				<!-- <li><a href="<?php echo LOCATION; ?>faq/">よくあるご質問</a></li> -->
 				<li><a href="<?php echo LOCATION; ?>privacy_policy/">プライバシーポリシー</a></li>
 				<div class="contact_btn"><a href="<?php echo LOCATION_CONTACT; ?>">お問い合わせ</a></div>
 			</ul>
@@ -51,3 +51,6 @@ function get_copyright_date($then)
 <?php include LOCATION_ROOT_DIR . "/templates/common_js.php"; ?>
 <!-- *** slickのjs *** -->
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- *** スクロールヒントのjs *** -->
+<link rel="stylesheet" href="https://unpkg.com/scroll-hint@1.1.10/css/scroll-hint.css">
+<script src="https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js"></script>

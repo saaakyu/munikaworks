@@ -179,9 +179,11 @@ $baseColor: #333333;
 $light-baseColor: #494949;
 $white: #fff;
 $gray: #F9F9F9;
+$dark-gray: #7c7c7c;
 $pink: #EE8A8A;
 $light-pink: #FFDCDC;
 $blue: #0E6BB0;
+$sky-blue: #7BB5DF;
 $light-blue: #D0E3F1;
 $yellow: #FEFBE7;
 $light-yellow: #FDFBEF;
@@ -364,7 +366,7 @@ $green: #A5DA92;
 	}
 
 	@else if $type =="en" {
-		font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, serif;
+		font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, sans-serif;
 		font-weight: 400;
 	}
 }
