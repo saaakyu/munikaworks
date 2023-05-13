@@ -16,7 +16,8 @@
   padding: 0;
 }
 
-html,body {
+html,
+body {
   font-size: 100% !important;
   line-height: 2;
   letter-spacing: 0.18em;
@@ -39,13 +40,24 @@ ul {
 }
 
 /*ヘッダーフッターフォントサイズ調整*/
-.gnav,#footer{
-  font-size: 100% !important; 
+.gnav,
+#footer {
+  font-size: 100% !important;
 }
 
-#content{
+
+/*PCの時のヘッダーロゴサイズ*/
+@media only screen and (min-width: 481px) {
+  #header .h_logo img{
+    width: 14rem!important;
+  }
+}
+
+
+#content {
   margin-top: 0 !important;
-  padding-bottom:0;
+  padding-bottom: 0;
+  background-color: #fffefb !important;
 }
 
 /*ブログ等タイトルの余白調整*/
@@ -87,14 +99,18 @@ img {
 #entry footer {
   margin: 5em 0 0;
 }
+.post-tab {
+  border: 2px solid #eaeaea;
+}
+
 
 /*記事タイトル*/
-.page-title{
+.page-title {
   margin: 0;
 }
 
-.ttl__en{
-  text-transform:capitalize;
+.ttl__en {
+  text-transform: capitalize;
 }
 
 /*カードを4列に*/
@@ -120,12 +136,12 @@ img {
 }
 
 /*制作実績のみカードを768px（tab）まで2列、それ以下は1列*/
-  .wrp_works .catpost-cards {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2%;
-  }
+.wrp_works .catpost-cards {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2%;
+}
 
-  /*制作実績のみカードを768px（tab）まで2列、それ以下は1列*/
+/*制作実績のみカードを768px（tab）まで2列、それ以下は1列*/
 @media only screen and (max-width: 767px) {
   .wrp_works .catpost-cards {
     grid-template-columns: repeat(1, 1fr);
@@ -323,17 +339,16 @@ body img {
 }
 
 /*ロゴ位置を下に*/
-@media only screen and (max-width: 767px){
-#header {
-    padding: 0.5em 1.3em 0!important;
-}
+@media only screen and (max-width: 767px) {
+  #header {
+    padding: 0.5em 1.3em 0 !important;
+  }
 }
 
 #footer .footer__nav .nav {
   flex-direction: column;
   margin: 0;
 }
-
 
 .tmp_txt {
 }

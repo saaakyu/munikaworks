@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+file name  : copy.css
+author     : munika-works
+style info : コピー
+=================================================================== */
+@import "settings";
+
+// -----------------------------------------------------------
+// .wrp_about
+// -----------------------------------------------------------
+.wrp_about {
+  @include cV(padding, 8em 0, 5em 0, 5em 0);
+  background: $white;
+  .con_about_left {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $gray;
+      @include cV(height, 100%, 100%, 50%);
+      @include cV(width, 40%, 30%, 80%);
+      right: 0;
+      bottom: -7%;
+      z-index: -1;
+      border-radius: 2em 0 0 2em;
+    }
+    .box_about {
+      @extend %bw;
+      display: flex;
+      align-items: center;
+      @include cV(margin, 0 auto 8em, 0 auto 5em, 0 auto 7em);
+      @include mq(sp) {
+        flex-direction: column;
+      }
+      &__img {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          background-image: url(../../about/images/img_shape_dot01.png);
+          background-repeat: no-repeat;
+          background-position: bottom left;
+          @include cV(background-size,  100%,  80%, 70%);
+          width: 181px;
+          height: 191px;
+          @include cV(left,  -15%,  -10%, 0%);
+          @include cV(bottom, -10%, -10%, -13%);
+        }
+        img {
+          @include mq(sp) {
+            width: 100%;
+          }
+        }
+      }
+      &__txt {
+        .ttl__jp {
+          text-align: left;
+          letter-spacing: 1.2;
+        }
+        width: wCon(600, 1200);
+        @include cV(margin, 0 0 0 5em, 0 0 0 2em, 5em 0 0 0);
+        @include mq(sp) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .con_about_right {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $gray;
+      @include cV(height, 100%, 100%, 50%);
+      @include cV(width, 40%, 30%, 80%);
+      left: 0;
+      bottom: -7%;
+      z-index: -1;
+      border-radius: 0 2em 2em 0;
+    }
+    .box_about {
+      @extend %bw;
+      display: flex;
+      align-items: center;
+      @include cV(margin, 0 auto 8em, 0 auto 5em, 0 auto 7em);
+      @include mq(sp) {
+        flex-direction: column-reverse;
+      }
+      &__img {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          background-image: url(../../about/images/img_shape_dot02.png);
+          background-repeat: no-repeat;
+          background-position: bottom right;
+          width: 199px;
+          height: 172px;
+          @include cV(right,  -8%,  -8%, 0%);
+          @include cV(bottom, -10%, -10%, -5%);
+          @include cV(background-size,  100%,  80%, 70%);
+        }
+        img {
+          @include mq(sp) {
+            width: 100%;
+          }
+        }
+      }
+      &__txt {
+        .ttl__jp {
+          text-align: left;
+          letter-spacing: 1.2;
+        }
+        width: wCon(600, 1200);
+        @include cV(margin, 0 5em 0 0, 0 2em 0 0, 5em 0 0 0);
+        @include mq(sp) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------
+// .wrp_point
+// -----------------------------------------------------------
+.wrp_point {
+    @include cV(margin, 0 auto 8em, 0 auto 5em, 0 auto 5em);
+  @include cV(padding, 3em 0 5em, 3em 0 5em, 3em 0 5em);
+  background: $gray;
+  @extend %bw;
+  border-radius: 8em 2em 8em 2em;
+  @include mq(sp) {
+    width:100%;
+    border-radius: 4em;
+}
+  .ttl__jp {
+    text-align: center;
+    color: $light-baseColor;
+    @include cV(margin-bottom, 1.5em, 1.5em, 1.5em);
+    em {
+      @include fsz(30);
+    }
+  }
+  .con_point {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    @include mq(sp) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    width: wCon(1000, 1200);
+    margin: auto;
+    .box_point {
+      &__img {
+        text-align: center;
+        img {
+          border-radius: 7em;
+          @include mq(sp) {
+            width: 100%;
+          }
+        }
+      }
+      &__txt {
+        .point_txt{
+            text-align: center;
+            @include fsz(24);
+            @include sans-serif("title_jp");
+        }
+        @include mq(sp) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

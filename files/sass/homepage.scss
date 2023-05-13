@@ -332,26 +332,26 @@ style info : トップページ
   &::before {
     content: "";
     background-image: url(../images/common/pink_left_upper.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     width: 830px;
     height: 480px;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: -2;
-    @include cV(background-size, 80%, 70%, 40%);
+    @include cV(background-size, 80%, 50%, 40%);
   }
   &::after {
     content: "";
     background-image: url(../images/common/yellow_right_under.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     width: 605px;
     height: 390px;
     position: absolute;
-    right:0;
+    right: 0;
     background-position: right bottom;
     bottom: 0;
-    @include cV(background-size, 100%, 80%, 50%);
+    @include cV(background-size, 100%, 60%, 50%);
     z-index: -3;
   }
   .con_intro {
@@ -388,7 +388,7 @@ style info : トップページ
       }
       &__txt {
         width: wCon(600, 1200);
-        @include cV(margin, 0 0 0 10em, 0 0 0 8em, 3em 0 0 0);
+        @include cV(margin, 0 0 0 10em, 0 0 0 6em, 3em 0 0 0);
         @include mq(sp) {
           width: 100%;
           text-align: center;
@@ -424,18 +424,24 @@ style info : トップページ
         }
       }
       &__explain {
+        @include cV(
+          grid-template-columns,
+          repeat(4, 1fr),
+          repeat(4, 1fr),
+          repeat(2, 1fr)
+        );
         width: wCon(950, 1200);
         display: grid;
         flex-direction: column;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1%;
+        @include cV(gap, 0, 3%, 5%);
         margin: auto;
         justify-content: center;
         text-align: center;
         @include cV(margin-top, 4em, 4em, 0);
         @include mq(sp) {
-          grid-template-columns: repeat(2, 1fr);
-          width: 100%;
+          img {
+            width: 100%;
+          }
         }
         .service_inner {
           .service {
@@ -460,7 +466,7 @@ style info : トップページ
       }
     }
     .pink_btn {
-      @include cV(margin-top, 4.5em, 4.5em, 3em);
+      @include cV(margin-top, 4.5em, 4.5em, 5em);
       text-align: center;
     }
   }
@@ -574,18 +580,104 @@ style info : トップページ
 }
 
 // -----------------------------------------------------------
+//  .wrp_news
+// -----------------------------------------------------------
+.wrp_news {
+  @include cV(padding, 8em 0, 5em 0, 5em 0);
+  background-color: $light-yellow;
+  .con_news {
+    @extend %bw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    @include fsz(18);
+    @include mq(sp) {
+      flex-direction: column;
+    }
+    .box_news {
+      width: wCon(800, 1200);
+      @include sans-serif("title_jp");
+      @include mq(sp) {
+        width: 100%;
+      }
+      li {
+        @include cV(padding, 1em 0, 1em 0, 1em 0);
+        /*破線*/
+        background-image: linear-gradient(
+          to right,
+          $blue,
+          $blue 4px,
+          transparent 4px,
+          transparent 8px
+        ); /* 幅2の線を作る */
+        background-size: 8px 1px; /* グラデーションの幅・高さを指定 */
+        background-position: left bottom; /* 背景の開始位置を指定 */
+        background-repeat: repeat-x; /* 横向きにのみ繰り返す */
+
+        display: flex;
+        @include mq(sp) {
+          flex-direction: column;
+        }
+
+        .date {
+          @include sans-serif("en");
+          color: $blue;
+          @include cV(padding, 0.2em 2em 0 1em, 0 2em 0 1em, 0);
+          display: flex;
+          align-items: center;
+        }
+
+        a {
+          transition: 0.3s;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+      &__txt {
+        @include cV(margin-right, 6em, 3em, 0);
+      }
+    }
+  }
+  .more_btn {
+    @include sans-serif("title_jp");
+    @include fsz(18);
+    @include cV(margin, 2em 0 0, 2em 0 0, 1em 0 0 auto);
+    i {
+      @include fsz(12);
+      border-radius: 50%;
+      border: 2px solid $blue;
+      width: 2em;
+      height: 2em;
+      text-align: center;
+      line-height: 2em;
+      transition: 0.3s;
+      &:hover {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+    a {
+      color: $blue;
+    }
+  }
+}
+
+// -----------------------------------------------------------
 //  .wrp_case
 // -----------------------------------------------------------
 .wrp_case {
   @include cV(padding, 8em 0, 5em 0, 5em 0);
+  text-align: center;
   background-color: $gray;
   .con_case {
     @extend %bw;
     .box_case {
       &__txt {
-        .tmp_txt {
-          text-align: center;
+        .txt {
           @include cV(margin-bottom, 4em, 4em, 3em);
+          text-align: center;
           @include mq(sp) {
             text-align: justify;
           }
@@ -594,42 +686,46 @@ style info : トップページ
       &__explain {
         display: grid;
         flex-direction: column;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 3%;
+        grid-template-columns: repeat(3, 1fr);
+        @include cV( gap, 3%, 2%, 10%);
         margin: auto;
         justify-content: center;
-        text-align: center;
         @include cV(margin-top, 4em, 4em, 0);
         @include mq(sp) {
           grid-template-columns: repeat(2, 1fr);
           width: 100%;
         }
         .case_inner {
-          .case {
-            &__name {
-              line-height: 1.5;
-              @include sans-serif("title_jp");
-              @include fsz(20);
-              @include cV(padding-top, 0.5em, 0.5em, 0.5em);
-              flex-grow: 1;
+          .case__name {
+            line-height: 1.5;
+            @include sans-serif("title_jp");
+            @include fsz(18);
+            @include cV(padding-top, 1em, 1em, 1em);
+            flex-grow: 1;
+          }
+          a {
+            .case {
+              &__img {
+                img {
+                  object-fit: cover;
+                  border-radius: 1em;
+                }
+              }
+              &__txt {
+                width: wCon(650, 1200);
+                margin: auto;
+                @include mq(sp) {
+                  width: 100%;
+                }
+              }
             }
           }
         }
       }
-
-      &__txt {
-        width: wCon(650, 1200);
-        text-align: center;
-        margin: auto;
-        @include mq(sp) {
-          width: 100%;
-        }
-      }
     }
-    .pink_btn {
-      @include cV(margin-top, 4.5em, 4.5em, 3em);
-      text-align: center;
-    }
+  }
+  .pink_btn {
+    @include cV(margin-top, 4.5em, 4.5em, 3em);
   }
 }
 
@@ -638,6 +734,32 @@ style info : トップページ
 // -----------------------------------------------------------
 .wrp_contact {
   @include cV(padding, 8em 0, 5em 0, 5em 0);
+  position: relative;
+  &::before {
+    content: "";
+    background-image: url(../images/common/blue_left_upper.png);
+    background-repeat: no-repeat;
+    width: 830px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    @include cV(background-size, 80%, 50%, 40%);
+  }
+  &::after {
+    content: "";
+    background-image: url(../images/common/pink_right_under.png);
+    background-repeat: no-repeat;
+    width: 605px;
+    height: 390px;
+    position: absolute;
+    right: 0;
+    background-position: right bottom;
+    bottom: 0;
+    @include cV(background-size, 100%, 60%, 50%);
+    z-index: -3;
+  }
   .con_contact {
     .box_contact {
       &__txt {

@@ -187,6 +187,7 @@ $sky-blue: #7BB5DF;
 $light-blue: #D0E3F1;
 $yellow: #FEFBE7;
 $light-yellow: #FDFBEF;
+$cream:#FFFEFB;
 $bright-yellow: #F0B967;
 $green: #A5DA92;
 
@@ -293,6 +294,7 @@ $green: #A5DA92;
 // @include hover {
 //		style
 // }
+//@include hover-color("pink");で呼び出し
 @mixin hover-color($color: "white") {
 
 	.mouse &:hover,

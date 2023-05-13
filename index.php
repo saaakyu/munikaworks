@@ -20,12 +20,9 @@
 	<!-- *** stylesheet *** -->
 	<?php include LOCATION_ROOT_DIR . "/templates/common_css.php"; ?>
 	<link href="<?php echo echo_version(LOCATION_FILE . 'css/homepage.css', LOCATION_FILE_DIR); ?>" rel="stylesheet" media="all">
-
-	<!-- *** fancybox *** -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 	</head>
 
-	<body id="<?php echo $page; ?>">
+	<body id="<?php echo $page; ?>" ontouchstart="">
 		<?php include LOCATION_ROOT_DIR . "/templates/gtm.php"; ?>
 		<div id="munika_page">
 			<?php include LOCATION_ROOT_DIR . "/templates/header.php"; ?>
@@ -89,7 +86,7 @@
 							</div>
 							<div class="service_inner">
 								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service3.png" alt=""></p>
-								<p class="service__name">バナー等、<br>告知関連のデザイン</p>
+								<p class="service__name">バナー等の<br>告知デザイン</p>
 							</div>
 							<div class="service_inner">
 								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service3.png" alt=""></p>
@@ -126,34 +123,69 @@
 					</div>
 				</div><!-- /.wrp_works -->
 
-				<div class="wrp_case">
+
+				<article class="wrp_news">
+					<div class="con_news">
+						<div class="box_news__txt">
+							<span class="ttl__en">News</span>
+							<h3 class="ttl__jp"><span class="pink">お知らせ</span></h3>
+							<div class="more_btn view_pc-tab"><a href="<?php echo LOCATION; ?>news/">一覧へ <i class="fa-solid fa-chevron-right"></i></a></div>
+						</div>
+						<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/wordpress/wp-load.php"); ?>
+						<?php query_posts('cat=4&posts_per_page=3');  ?>
+						<ul class="box_news">
+							<?php
+							if (have_posts()) :
+								while (have_posts()) :
+									the_post();
+							?>
+									<li>
+										<p class="date"><?php echo get_the_date('Y/m/d'); ?></p>
+										<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+											<?php the_title(); ?>
+										</a>
+									</li>
+								<?php endwhile; ?>
+							<?php endif; ?>
+						</ul>
+						<div class="more_btn view_sp"><a href="<?php echo LOCATION; ?>news/">一覧へ <i class="fa-solid fa-chevron-right"></i></a></div>
+					</div><!-- /.con_news -->
+				</article><!-- /.wrp_news -->
+
+
+				<style>
+					/*
+				<article class="wrp_case">
 					<div class="con_case">
 						<div class="box_case__txt">
 							<span class="ttl__en">Case study</span>
 							<h3 class="ttl__jp"><span class="pink">実例のご紹介</span></h3>
-							<p class="tmp_txt">ご依頼を検討されている方へ向けて、<br class="view_pc-tab">デザインができるまでの流れをご紹介しています。</p>
+							<p class="txt">ご依頼を検討されている方へ向けて、<br class="view_pc-tab">デザインができるまでの流れをご紹介しています。</p>
 						</div>
+
+						<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/wordpress/wp-load.php"); ?>
+						<?php query_posts('cat=15&posts_per_page=3');  ?>
 						<div class="box_case__explain">
-							<div class="case_inner">
-								<p class="case__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_works01.jpg" alt=""></p>
-								<p class="case__name">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-							</div>
-							<div class="case_inner">
-								<p class="case__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_works02.jpg" alt=""></p>
-								<p class="case__name">テキストテキスト</p>
-							</div>
-							<div class="case_inner">
-								<p class="case__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_works03.jpg" alt=""></p>
-								<p class="case__name">テキストテキストテキストテキスト</p>
-							</div>
-							<div class="case_inner">
-								<p class="case__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_works04.jpg" alt=""></p>
-								<p class="case__name">テキストテキストテキストテキスト</p>
-							</div>
-						</div>
-						<div class="pink_btn"><a href="<?php echo LOCATION; ?>case-study/">詳しく見る</a></div>
+
+							<?php
+							if (have_posts()) :
+								while (have_posts()) :
+									the_post();
+							?>
+									<div class="case_inner">
+										<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+											<p class="case__img"><?php echo get_the_post_thumbnail();
+																	set_post_thumbnail_size(400); ?></p>
+											<p class="case__name"><?php the_title(); ?></p>
+										</a>
+									</div>
+								<?php endwhile; ?>
+							<?php endif; ?>
+						/div>
 					</div>
-				</div><!-- /.wrp_case -->
+					<div class="pink_btn"><a href="<?php echo LOCATION; ?>case-study/">詳しく見る</a></div>
+				</article><!-- /.wrp_case -->*/
+				</style>
 
 				<div class="wrp_contact">
 					<div class="con_contact">

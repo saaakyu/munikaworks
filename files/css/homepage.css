@@ -13,13 +13,13 @@ file name  : _settings.scss
 author     : munika-works
 style info : 汎用設定
 =================================================================== */
-.wrp_case .con_case, .wrp_service .con_service, .wrp_intro .con_intro {
+.wrp_case .con_case, .wrp_news .con_news, .wrp_service .con_service, .wrp_intro .con_intro {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
 @media only screen and (max-width: 1199px) {
-  .wrp_case .con_case, .wrp_service .con_service, .wrp_intro .con_intro {
+  .wrp_case .con_case, .wrp_news .con_news, .wrp_service .con_service, .wrp_intro .con_intro {
     width: 91.6666666667%;
   }
 }
@@ -519,7 +519,7 @@ style info : 汎用設定
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_intro::before {
-    background-size: 70%;
+    background-size: 50%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -542,7 +542,7 @@ style info : 汎用設定
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_intro::after {
-    background-size: 80%;
+    background-size: 60%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -600,7 +600,7 @@ style info : 汎用設定
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_intro .con_intro .box_intro__txt {
-    margin: 0 0 0 8em;
+    margin: 0 0 0 6em;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -666,20 +666,40 @@ style info : 汎用設定
   }
 }
 .wrp_service .con_service .box_service__explain {
+  grid-template-columns: repeat(4, 1fr);
   width: 79.1666666667%;
   display: grid;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1%;
+  gap: 0;
   margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   margin-top: 4em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_service .con_service .box_service__explain {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_service .con_service .box_service__explain {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_service .con_service .box_service__explain {
+    gap: 3%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_service .con_service .box_service__explain {
+    gap: 5%;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_service .con_service .box_service__explain {
@@ -692,8 +712,7 @@ style info : 汎用設定
   }
 }
 @media only screen and (max-width: 767px) {
-  .wrp_service .con_service .box_service__explain {
-    grid-template-columns: repeat(2, 1fr);
+  .wrp_service .con_service .box_service__explain img {
     width: 100%;
   }
 }
@@ -738,7 +757,7 @@ style info : 汎用設定
 }
 @media only screen and (max-width: 767px) {
   .wrp_service .con_service .pink_btn {
-    margin-top: 3em;
+    margin-top: 5em;
   }
 }
 
@@ -923,8 +942,160 @@ style info : 汎用設定
   }
 }
 
+.wrp_news {
+  padding: 8em 0;
+  background-color: #FDFBEF;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_news {
+    padding: 5em 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_news {
+    padding: 5em 0;
+  }
+}
+.wrp_news .con_news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  font-size: 113%;
+}
+@media only screen and (max-width: 767px) {
+  .wrp_news .con_news {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.wrp_news .con_news .box_news {
+  width: 66.6666666667%;
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  .wrp_news .con_news .box_news {
+    width: 100%;
+  }
+}
+.wrp_news .con_news .box_news li {
+  padding: 1em 0;
+  /*破線*/
+  background-image: linear-gradient(to right, #0E6BB0, #0E6BB0 4px, transparent 4px, transparent 8px); /* 幅2の線を作る */
+  background-size: 8px 1px; /* グラデーションの幅・高さを指定 */
+  background-position: left bottom; /* 背景の開始位置を指定 */
+  background-repeat: repeat-x; /* 横向きにのみ繰り返す */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_news .con_news .box_news li {
+    padding: 1em 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_news .con_news .box_news li {
+    padding: 1em 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_news .con_news .box_news li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.wrp_news .con_news .box_news li .date {
+  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, sans-serif;
+  font-weight: 400;
+  color: #0E6BB0;
+  padding: 0.2em 2em 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_news .con_news .box_news li .date {
+    padding: 0 2em 0 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_news .con_news .box_news li .date {
+    padding: 0;
+  }
+}
+.wrp_news .con_news .box_news li a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.wrp_news .con_news .box_news li a:hover {
+  opacity: 0.7;
+}
+.wrp_news .con_news .box_news__txt {
+  margin-right: 6em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_news .con_news .box_news__txt {
+    margin-right: 3em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_news .con_news .box_news__txt {
+    margin-right: 0;
+  }
+}
+.wrp_news .more_btn {
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 113%;
+  margin: 2em 0 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_news .more_btn {
+    margin: 2em 0 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_news .more_btn {
+    margin: 1em 0 0 auto;
+  }
+}
+.wrp_news .more_btn i {
+  font-size: 75%;
+  border-radius: 50%;
+  border: 2px solid #0E6BB0;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.wrp_news .more_btn i:hover {
+  background-color: #0E6BB0;
+  color: #fff;
+}
+.wrp_news .more_btn a {
+  color: #0E6BB0;
+}
+
 .wrp_case {
   padding: 8em 0;
+  text-align: center;
   background-color: #F9F9F9;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -937,22 +1108,22 @@ style info : 汎用設定
     padding: 5em 0;
   }
 }
-.wrp_case .con_case .box_case__txt .tmp_txt {
-  text-align: center;
+.wrp_case .con_case .box_case__txt .txt {
   margin-bottom: 4em;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .wrp_case .con_case .box_case__txt .tmp_txt {
+  .wrp_case .con_case .box_case__txt .txt {
     margin-bottom: 4em;
   }
 }
 @media only screen and (max-width: 767px) {
-  .wrp_case .con_case .box_case__txt .tmp_txt {
+  .wrp_case .con_case .box_case__txt .txt {
     margin-bottom: 3em;
   }
 }
 @media only screen and (max-width: 767px) {
-  .wrp_case .con_case .box_case__txt .tmp_txt {
+  .wrp_case .con_case .box_case__txt .txt {
     text-align: justify;
   }
 }
@@ -962,14 +1133,23 @@ style info : 汎用設定
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3%;
   margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
   margin-top: 4em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_case .con_case .box_case__explain {
+    gap: 2%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_case .con_case .box_case__explain {
+    gap: 10%;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_case .con_case .box_case__explain {
@@ -991,49 +1171,53 @@ style info : 汎用設定
   line-height: 1.5;
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
-  font-size: 125%;
-  padding-top: 0.5em;
+  font-size: 113%;
+  padding-top: 1em;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_case .con_case .box_case__explain .case_inner .case__name {
-    padding-top: 0.5em;
+    padding-top: 1em;
   }
 }
 @media only screen and (max-width: 767px) {
   .wrp_case .con_case .box_case__explain .case_inner .case__name {
-    padding-top: 0.5em;
+    padding-top: 1em;
   }
 }
-.wrp_case .con_case .box_case__txt {
+.wrp_case .con_case .box_case__explain .case_inner a .case__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1em;
+}
+.wrp_case .con_case .box_case__explain .case_inner a .case__txt {
   width: 54.1666666667%;
-  text-align: center;
   margin: auto;
 }
 @media only screen and (max-width: 767px) {
-  .wrp_case .con_case .box_case__txt {
+  .wrp_case .con_case .box_case__explain .case_inner a .case__txt {
     width: 100%;
   }
 }
-.wrp_case .con_case .pink_btn {
+.wrp_case .pink_btn {
   margin-top: 4.5em;
-  text-align: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .wrp_case .con_case .pink_btn {
+  .wrp_case .pink_btn {
     margin-top: 4.5em;
   }
 }
 @media only screen and (max-width: 767px) {
-  .wrp_case .con_case .pink_btn {
+  .wrp_case .pink_btn {
     margin-top: 3em;
   }
 }
 
 .wrp_contact {
   padding: 8em 0;
+  position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_contact {
@@ -1043,6 +1227,51 @@ style info : 汎用設定
 @media only screen and (max-width: 767px) {
   .wrp_contact {
     padding: 5em 0;
+  }
+}
+.wrp_contact::before {
+  content: "";
+  background-image: url(../images/common/blue_left_upper.png);
+  background-repeat: no-repeat;
+  width: 830px;
+  height: 480px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-size: 80%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_contact::before {
+    background-size: 50%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact::before {
+    background-size: 40%;
+  }
+}
+.wrp_contact::after {
+  content: "";
+  background-image: url(../images/common/pink_right_under.png);
+  background-repeat: no-repeat;
+  width: 605px;
+  height: 390px;
+  position: absolute;
+  right: 0;
+  background-position: right bottom;
+  bottom: 0;
+  background-size: 100%;
+  z-index: -3;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_contact::after {
+    background-size: 60%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact::after {
+    background-size: 50%;
   }
 }
 .wrp_contact .con_contact .box_contact__txt {

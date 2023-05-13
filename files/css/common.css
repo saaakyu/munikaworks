@@ -29,11 +29,11 @@ html {
   line-height: 2;
   letter-spacing: 0.18em;
   text-align: justify;
+  background-color: #FFFEFB;
 }
 
 body {
   color: #333333;
-  background: #fff;
   -webkit-text-size-adjust: none;
   padding: 0 !important;
   font-size: 124%;
@@ -204,8 +204,8 @@ textarea {
   width: 40vw;
   height: 100vh;
   background-color: #0E6BB0;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   font-size: 100%;
   letter-spacing: 0.08em;
 }
@@ -256,8 +256,6 @@ textarea {
   text-decoration: none;
   padding: 0.5em 0;
   display: block;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .openbtn {
@@ -596,7 +594,7 @@ textarea {
 }
 
 .wrp_title {
-  background: #F9F9F9;
+  background: #FDFBEF;
   padding: 8em 0 5em;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
