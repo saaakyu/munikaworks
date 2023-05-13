@@ -181,7 +181,7 @@
 									</div>
 								<?php endwhile; ?>
 							<?php endif; ?>
-						/div>
+						</div>
 					</div>
 					<div class="pink_btn"><a href="<?php echo LOCATION; ?>case-study/">詳しく見る</a></div>
 				</article><!-- /.wrp_case -->*/

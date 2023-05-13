@@ -182,7 +182,7 @@ body {
   width: 40vw;
   height: 100vh;
   background-color: $blue;
-  transition: all 0.4s;  //メニューが出てくる早さ
+  transition: all 0.4s; //メニューが出てくる早さ
   @include fsz-cha(16, 16, 18);
   letter-spacing: 0.08em;
   @include mq(sp) {
@@ -224,8 +224,8 @@ body {
 .openbtn {
   position: fixed;
   z-index: 9999; /*ボタンを最前面に*/
-  top: 10px!important;
-  right: 10px!important;
+  top: 10px !important;
+  right: 10px !important;
   cursor: pointer;
   width: 4rem;
   height: 4rem;
@@ -442,19 +442,19 @@ body {
 }
 
 .blue {
-  color:$blue;
+  color: $blue;
 }
 
 .sky_blue {
-  color:$sky-blue;
+  color: $sky-blue;
 }
 
 .dark_gray {
-  color:$dark-gray;
+  color: $dark-gray;
 }
 
 .bright_yellow {
-  color:$bright-yellow;
+  color: $bright-yellow;
 }
 //----------------------------------------------//
 // ピンクボタン
@@ -476,9 +476,11 @@ body {
     @include cV(padding, 0.6em 2em, 0.6em 2em, 0.6em 2em);
     transition: 0.3s;
     border: 2px $pink solid;
-    &:hover {
-      background-color: $pink;
-      color: $white;
+    @include mq(pc) {
+      &:hover {
+        background-color: $pink;
+        color: $white;
+      }
     }
   }
 }
@@ -506,9 +508,11 @@ body {
       font-size: 1.5em;
       @include cV(padding-right, 0.5em, 0.5em, 0);
     }
-    &:hover {
-      background-color: $white;
-      color: $blue;
+    @include mq(pc) {
+      &:hover {
+        background-color: $white;
+        color: $blue;
+      }
     }
   }
 }

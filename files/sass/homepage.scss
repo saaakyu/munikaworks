@@ -439,6 +439,7 @@ style info : トップページ
         text-align: center;
         @include cV(margin-top, 4em, 4em, 0);
         @include mq(sp) {
+          width: 100%;
           img {
             width: 100%;
           }

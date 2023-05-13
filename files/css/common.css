@@ -711,9 +711,17 @@ textarea {
     padding: 0.6em 2em;
   }
 }
-.pink_btn a:hover {
-  background-color: #EE8A8A;
-  color: #fff;
+@media only screen and (min-width: 1200px) {
+  .pink_btn a:hover {
+    background-color: #EE8A8A;
+    color: #fff;
+  }
+}
+@media print {
+  .pink_btn a:hover {
+    background-color: #EE8A8A;
+    color: #fff;
+  }
 }
 
 .contact_btn a {
@@ -763,9 +771,17 @@ textarea {
     padding-right: 0;
   }
 }
-.contact_btn a:hover {
-  background-color: #fff;
-  color: #0E6BB0;
+@media only screen and (min-width: 1200px) {
+  .contact_btn a:hover {
+    background-color: #fff;
+    color: #0E6BB0;
+  }
+}
+@media print {
+  .contact_btn a:hover {
+    background-color: #fff;
+    color: #0E6BB0;
+  }
 }
 
 .corner {

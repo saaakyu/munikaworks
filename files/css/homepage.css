@@ -712,6 +712,9 @@ style info : 汎用設定
   }
 }
 @media only screen and (max-width: 767px) {
+  .wrp_service .con_service .box_service__explain {
+    width: 100%;
+  }
   .wrp_service .con_service .box_service__explain img {
     width: 100%;
   }
