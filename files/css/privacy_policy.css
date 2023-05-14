@@ -24,6 +24,15 @@ style info : 汎用設定
   }
 }
 
+.wrp_intro .con_intro .box_intro .txt {
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .wrp_intro .con_intro .box_intro .txt {
+    text-align: justify;
+  }
+}
+
 .wrp_policy {
   background: #F9F9F9;
   padding: 5em 0;

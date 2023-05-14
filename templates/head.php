@@ -1,6 +1,6 @@
 <?php
 //開いているページのURL
-$varSelfPageURL = (empty($_SERVER["HTTPS"]) ? "http://" : "https://") . @$_SERVER["HTTP_HOST"] . htmlspecialchars(strip_tags(@$_SERVER["REQUEST_URI"]));
+$varSelfPageURL = (empty($_SERVER["HTTPS"]) ? "https://" : "http://") . @$_SERVER["HTTP_HOST"] . htmlspecialchars(strip_tags(@$_SERVER["REQUEST_URI"]));
 if (!empty(parse_url($varSelfPageURL)['query'])) {
 	$varSelfPageURLParam = parse_url($varSelfPageURL)['query'];
 	if ($varSelfPageURLParam) {
@@ -12,6 +12,26 @@ if (!empty(parse_url($varSelfPageURL)['query'])) {
 <html class="<?php echo $htmlClass; ?>" lang="ja">
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+	<!-- Google Tag Manager -->
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-PWJ5WP9');
+	</script>
+	<!-- End Google Tag Manager -->
+	
 	<meta charset="utf-8">
 	<title><?php echo $meta['title']; ?></title>
 	<meta name="keywords" content="<?php echo $meta['keywords']; ?>">

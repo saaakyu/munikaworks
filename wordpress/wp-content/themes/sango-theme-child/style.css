@@ -45,19 +45,16 @@ ul {
   font-size: 100% !important;
 }
 
-
 /*PCの時のヘッダーロゴサイズ*/
 @media only screen and (min-width: 481px) {
-  #header .h_logo img{
-    width: 14rem!important;
+  #header .h_logo img {
+    width: 14rem !important;
   }
 }
 
-
 #content {
-  margin-top: 0 !important;
+  margin: 6em auto 0;
   padding-bottom: 0;
-  background-color: #fffefb !important;
 }
 
 /*ブログ等タイトルの余白調整*/
@@ -94,15 +91,12 @@ img {
 
 #entry {
   background: transparent;
+  margin: 0;
 }
 
-#entry footer {
-  margin: 5em 0 0;
-}
 .post-tab {
-  border: 2px solid #eaeaea;
+  border: 1px solid #eaeaea;
 }
-
 
 /*記事タイトル*/
 .page-title {
@@ -226,8 +220,7 @@ img {
 #main {
   width: 1180px !important;
   max-width: 100% !important;
-  margin: auto;
-  padding: 0;
+  margin: 3em auto 0 !important;
 }
 
 #inner-content {
@@ -260,6 +253,90 @@ img {
     "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
 }
+
+/*コンテンツ下のタグの並びを整える*/
+.footer-meta {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-meta ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*エラーページ*/
+
+.ttl__en {
+  display: inline-block;
+  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia,
+    sans-serif;
+  font-weight: 400;
+  font-size: 157%;
+  color: #0e6bb0;
+  border-top: #0e6bb0 1px solid;
+  border-bottom: #0e6bb0 1px solid;
+  padding: 0.2em 0.5em 0.02em;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .ttl__en {
+    padding: 0.2em 0.5em 0.02em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .ttl__en {
+    padding: 0.2em 0.5em 0.02em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .ttl__en {
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .ttl__en {
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .ttl__en {
+    text-align: center;
+  }
+}
+
+.nofound_txt {
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo",
+    "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic",
+    "YuGothic", "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode",
+    "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 157%;
+  margin-top: 2em;
+}
+
+.nofound-contents {
+  padding: 0 0 5em;
+  text-align: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nofound-contents .txt {
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .nofound-contents .txt {
+    text-align: left;
+  }
+}
+
+.pink_btn {
+  margin-top: 2em;
+}
+/*エラーページここまで*/
 
 /*ここからcommon.scss*/
 #footer .footer__wrap {
