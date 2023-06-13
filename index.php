@@ -62,7 +62,7 @@
 							<span class="ttl__en">About</span>
 							<h3 class="ttl__jp"><span class="pink">創作活動のデザイン</span>、<br class="view_sp">承ります</h3>
 							<p class="tmp_txt">ムニカワークスは、創作活動を応援するデザインサービスです。<br>
-								物語の魅力をたくさんの方に分かりやすくお伝えするため、ロゴデザインや同人誌表紙デザインのご依頼を承っております。</p>
+								コンテンツの魅力をたくさんの方にお伝えするため、ロゴや同人誌の表紙をはじめとしたデザインのご依頼を承っております。</p>
 							<div class="pink_btn"><a href="<?php echo LOCATION; ?>about/">ムニカワークスについて</a></div>
 						</div>
 					</div>
@@ -84,16 +84,16 @@
 								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service2.png" alt=""></p>
 								<p class="service__name">同人誌<br>表紙デザイン</p>
 							</div>
-							<div class="service_inner">
+							<!-- <div class="service_inner">
 								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service3.png" alt=""></p>
 								<p class="service__name">バナー等の<br>告知デザイン</p>
-							</div>
+							</div> -->
 							<div class="service_inner">
-								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service3.png" alt=""></p>
+								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service4.png" alt=""></p>
 								<p class="service__name">イベント等の<br>特設サイト制作</p>
 							</div>
 						</div>
-						<div class="pink_btn"><a href="<?php echo LOCATION; ?>about/">サービス内容を見る</a></div>
+						<div class="pink_btn"><a href="<?php echo LOCATION; ?>service/">サービス内容を見る</a></div>
 					</div>
 				</div><!-- /.wrp_service -->
 
@@ -186,18 +186,7 @@
 					<div class="pink_btn"><a href="<?php echo LOCATION; ?>case-study/">詳しく見る</a></div>
 				</article><!-- /.wrp_case -->*/
 				</style>
-
-				<div class="wrp_contact">
-					<div class="con_contact">
-						<div class="box_contact__txt">
-							<span class="ttl__en">Contact</span>
-							<h3 class="ttl__jp"><span class="pink">お問い合わせ</span></h3>
-							<p class="txt center">ご依頼はフォームより承っております。<br>
-								ご相談は無料で承っておりますので、まずはお気軽にお問い合わせください。</p>
-						</div>
-						<div class="pink_btn"><a href="<?php echo LOCATION; ?>about/">お問い合わせはこちら</a></div>
-					</div>
-				</div><!-- /.wrp_contact -->
+				<?php include LOCATION_ROOT_DIR . "/templates/contact.php"; ?>
 
 			</main><!-- /#contents -->
 			<?php include LOCATION_ROOT_DIR . "/templates/footer.php"; ?>

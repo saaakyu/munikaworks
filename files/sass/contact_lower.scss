@@ -43,3 +43,11 @@ style info : コピー
     }
   }
 }
+
+/*Thanksページ*/
+.timeline {
+  @include cV(max-width, 40%, 80%, 100%);
+  padding: 10px;
+  margin: auto;
+}
+

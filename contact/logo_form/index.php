@@ -59,8 +59,8 @@ include realpath(__DIR__ . '/../../config/include.php');
 						<h3 class="txt center"><em><span class="pink">ロゴデザイン</span>のご依頼フォーム</em></h3>
 						<p class="tmp_txt center">ロゴデザインのご依頼・お見積もりはこちらから。<br><br>
 							原則、お支払い確認後の作業着手とさせていただいております。<br>
-						金銭のやり取りが不安な方はSKIMAからご依頼をお願いいたします。
-						<!-- ※3日以内にご指定のメールアドレスに返信いたします。<br class="view_pc-tab">万が一返信が無い場合は、お手数ですが再度お問い合わせいただきますようお願い申し上げます。</p> -->
+							金銭のやり取りが不安な方はSKIMAからご依頼をお願いいたします。
+							<!-- ※3日以内にご指定のメールアドレスに返信いたします。<br class="view_pc-tab">万が一返信が無い場合は、お手数ですが再度お問い合わせいただきますようお願い申し上げます。</p> -->
 					</div>
 				</div>
 			</div><!-- /.wrp_intro -->
@@ -69,7 +69,21 @@ include realpath(__DIR__ . '/../../config/include.php');
 				<div class="con_form">
 					<div class="box_form">
 
-					<iframe data-tally-src="https://tally.so/embed/wzjQK8?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="2637" frameborder="0" marginheight="0" marginwidth="0" title="ロゴ制作のご依頼"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+						<iframe data-tally-src="https://tally.so/embed/wzjQK8?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="2637" frameborder="0" marginheight="0" marginwidth="0" title="ロゴ制作のご依頼"></iframe>
+						<script>
+							var d = document,
+								w = "https://tally.so/widgets/embed.js",
+								v = function() {
+									"undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e) {
+										e.src = e.dataset.tallySrc
+									}))
+								};
+							if ("undefined" != typeof Tally) v();
+							else if (d.querySelector('script[src="' + w + '"]') == null) {
+								var s = d.createElement("script");
+								s.src = w, s.onload = v, s.onerror = v, d.body.appendChild(s);
+							}
+						</script>
 
 
 					</div><!-- .box_form -->

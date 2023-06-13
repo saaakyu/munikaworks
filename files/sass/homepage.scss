@@ -329,6 +329,7 @@ style info : トップページ
   @include cV(padding, 8em 0 12em, 5em 0, 5em 0);
   position: relative;
   z-index: 0;
+  background-color: $cream;
   &::before {
     content: "";
     background-image: url(../images/common/pink_left_upper.png);
@@ -423,21 +424,23 @@ style info : トップページ
           }
         }
       }
+
       &__explain {
         @include cV(
           grid-template-columns,
-          repeat(4, 1fr),
-          repeat(4, 1fr),
+          repeat(3, 1fr),
+          repeat(3, 1fr),
           repeat(2, 1fr)
         );
-        width: wCon(950, 1200);
+        width: wCon(800, 1200);//4列は950
         display: grid;
         flex-direction: column;
-        @include cV(gap, 0, 3%, 5%);
+        counter-reset: item; //カウントリセット
+        @include cV(gap, 0, 3%, 10% 5%);
         margin: auto;
         justify-content: center;
         text-align: center;
-        @include cV(margin-top, 4em, 4em, 0);
+        @include cV(margin-top, 5em, 5em, 0);
         @include mq(sp) {
           width: 100%;
           img {
@@ -445,12 +448,26 @@ style info : トップページ
           }
         }
         .service_inner {
+          counter-increment: item; //カウント
           .service {
+            &__img {
+              position: relative;
+              &::before {
+                position: absolute;
+                @include sans-serif("en");
+                @include fsz(34);
+                content: counter(item, decimal-leading-zero); //出力
+                color: $blue;
+                left: calc(50% - 20px);
+                @include cV(top, -10%, -10%, -10%);
+                line-height: 1;
+              }
+            }
             &__name {
               line-height: 1.5;
               @include sans-serif("title_jp");
               @include fsz(20);
-              @include cV(padding-top, 0.5em, 0.5em, 0.5em);
+              @include cV(padding-top, 1em, 1em, 1em);
               flex-grow: 1;
             }
           }
@@ -688,7 +705,7 @@ style info : トップページ
         display: grid;
         flex-direction: column;
         grid-template-columns: repeat(3, 1fr);
-        @include cV( gap, 3%, 2%, 10%);
+        @include cV(gap, 3%, 2%, 10%);
         margin: auto;
         justify-content: center;
         @include cV(margin-top, 4em, 4em, 0);
@@ -727,97 +744,5 @@ style info : トップページ
   }
   .pink_btn {
     @include cV(margin-top, 4.5em, 4.5em, 3em);
-  }
-}
-
-// -----------------------------------------------------------
-//  .wrp_contact
-// -----------------------------------------------------------
-.wrp_contact {
-  @include cV(padding, 8em 0, 5em 0, 5em 0);
-  position: relative;
-  &::before {
-    content: "";
-    background-image: url(../images/common/blue_left_upper.png);
-    background-repeat: no-repeat;
-    width: 830px;
-    height: 480px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
-    @include cV(background-size, 80%, 50%, 40%);
-  }
-  &::after {
-    content: "";
-    background-image: url(../images/common/pink_right_under.png);
-    background-repeat: no-repeat;
-    width: 605px;
-    height: 390px;
-    position: absolute;
-    right: 0;
-    background-position: right bottom;
-    bottom: 0;
-    @include cV(background-size, 100%, 60%, 50%);
-    z-index: -3;
-  }
-  .con_contact {
-    .box_contact {
-      &__txt {
-        width: wCon(650, 1200);
-        text-align: center;
-        margin: auto;
-        @include mq(sp) {
-          width: 90%;
-        }
-      }
-      &__img {
-        position: relative;
-        display: flex;
-        flex-flow: row nowrap;
-        width: 100vw;
-        overflow: hidden;
-        z-index: -1;
-        @include cV(margin-top, 4em, 4em, 3em);
-        ul + ul {
-          animation: loop2 100s linear infinite;
-        }
-        ul {
-          display: flex;
-          flex-flow: row nowrap;
-          width: 100%;
-          margin: 0;
-          padding: 0;
-          @include mq(sp) {
-            width: auto;
-          }
-          &:first-child {
-            animation: loop 100s -50s linear infinite;
-            backface-visibility: hidden;
-            will-change: transform;
-          }
-          li {
-            display: inline-block;
-            width: calc(100vw / 2);
-            min-width: 150px;
-            margin: 0 30px 0 0;
-            list-style: none;
-            text-align: center;
-            &:nth-child(2n) {
-              margin-top: 3em;
-            }
-            img {
-              display: block;
-              width: 100%;
-              height: auto;
-            }
-          }
-        }
-      }
-    }
-    .pink_btn {
-      @include cV(margin-top, 3em, 3em, 3em);
-      text-align: center;
-    }
   }
 }

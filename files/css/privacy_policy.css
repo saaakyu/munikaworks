@@ -34,7 +34,7 @@ style info : 汎用設定
 }
 
 .wrp_policy {
-  background: #F9F9F9;
+  background: #f7f7f7;
   padding: 5em 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -99,4 +99,4 @@ style info : 汎用設定
   .wrp_policy .box_policy {
     margin: 1em auto;
   }
-}/*# sourceMappingURL=privacy_policy.css.map */
+}

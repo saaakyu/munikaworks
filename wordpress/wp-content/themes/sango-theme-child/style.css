@@ -42,7 +42,7 @@ ul {
 /*ヘッダーフッターフォントサイズ調整*/
 .gnav,
 #footer {
-  font-size: 100% !important;
+  font-size: 100%!important;
 }
 
 /*PCの時のヘッダーロゴサイズ*/
@@ -53,19 +53,8 @@ ul {
 }
 
 #content {
-  margin: 6em auto 0;
+  margin: 8em auto 0;
   padding-bottom: 0;
-}
-
-/*ブログ等タイトルの余白調整*/
-.wrp_title {
-  padding: 6em 0 4em !important;
-}
-
-@media only screen and (max-width: 767px) {
-  .wrp_title {
-    padding: 6em 0 2em !important;
-  }
 }
 
 #inner-content a:hover {
@@ -111,33 +100,36 @@ img {
 @media only screen and (min-width: 481px) {
   .catpost-cards {
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 5em;
   }
 }
 
 /*カードを768px（tab）まで3列、それ以下は2列*/
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .catpost-cards {
+  .catpost-cards--column-2 {
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 5em;
   }
 }
 
 /*カードを768px（tab）まで4列、それ以下は2列*/
 @media only screen and (max-width: 767px) {
-  .catpost-cards {
+  .catpost-cards--column-2 {
     grid-template-columns: repeat(2, 1fr);
     gap: 2%;
+    margin-bottom: 10em;
   }
 }
 
 /*制作実績のみカードを768px（tab）まで2列、それ以下は1列*/
-.wrp_works .catpost-cards {
+.wrp_works .catpost-cards--column-2 {
   grid-template-columns: repeat(3, 1fr);
   gap: 2%;
 }
 
 /*制作実績のみカードを768px（tab）まで2列、それ以下は1列*/
 @media only screen and (max-width: 767px) {
-  .wrp_works .catpost-cards {
+  .wrp_works .catpost-cards--column-2 {
     grid-template-columns: repeat(1, 1fr);
     gap: 0;
   }
@@ -151,6 +143,10 @@ img {
 #archive_header h1 {
   margin: 0.5em 0;
 }
+#archive_header{
+border: #ddd 1px solid;
+}
+
 /*カテゴリーページ子カテゴリ―絞り込み*/
 .cat_list {
   margin: 1.3em 0 0 0.8em !important;
@@ -220,11 +216,15 @@ img {
 #main {
   width: 1180px !important;
   max-width: 100% !important;
-  margin: 3em auto 0 !important;
+  margin: 3em auto !important;
 }
 
 #inner-content {
   justify-content: center;
+}
+
+.entry-content{
+  padding-top: 0;
 }
 
 /*次の記事、前の記事*/
@@ -235,13 +235,13 @@ img {
     "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
   letter-spacing: 0.1em;
+  margin-bottom: 4em!important;
 }
 
 /*タブレットの際、次の記事の横幅を95%に*/
 @media only screen and (min-width: 481px) {
   .prnx_box {
     width: 95%;
-    margin: auto;
   }
 }
 
@@ -272,7 +272,7 @@ img {
   font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia,
     sans-serif;
   font-weight: 400;
-  font-size: 157%;
+  font-size: 190%;
   color: #0e6bb0;
   border-top: #0e6bb0 1px solid;
   border-bottom: #0e6bb0 1px solid;
@@ -305,19 +305,21 @@ img {
     text-align: center;
   }
 }
-
+.notfound{
+  margin: 0;
+}
 .nofound_txt {
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo",
     "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic",
     "YuGothic", "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode",
     "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
-  font-size: 157%;
-  margin-top: 2em;
+  font-size: 190%;
+  margin-top: 1em;
 }
 
 .nofound-contents {
-  padding: 0 0 5em;
+  padding: 0 0 8em;
   text-align: center;
   width: 90%;
   max-width: 1200px;
@@ -334,7 +336,7 @@ img {
 }
 
 .pink_btn {
-  margin-top: 2em;
+  margin-top: 3em;
 }
 /*エラーページここまで*/
 

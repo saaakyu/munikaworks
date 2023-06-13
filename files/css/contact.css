@@ -28,7 +28,7 @@ style info : 汎用設定
   text-align: center;
 }
 .wrp_intro .con_intro .box_intro a {
-  color: #EE8A8A;
+  color: #f37d7d;
 }
 .wrp_intro .con_intro .box_intro a:hover {
   text-decoration: underline;
@@ -41,7 +41,7 @@ style info : 汎用設定
 
 .wrp_contact {
   padding: 6em 0 8em;
-  background: #F9F9F9;
+  background: #f7f7f7;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_contact {
@@ -90,4 +90,4 @@ style info : 汎用設定
 .wrp_contact .con_contact .box_contact .request_btn .en {
   display: inline;
   border-bottom: 1px solid #333333;
-}/*# sourceMappingURL=contact.css.map */
+}

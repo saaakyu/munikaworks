@@ -1,8 +1,8 @@
 <footer id="footer">
 	<div class="footer__wrap">
 		<div class="contact">
-			<div class="f_logo"><a href="#"><span>世界観引き出すデザインを。</span><br>
-					<img src="<?php echo LOCATION_FILE; ?>/images/common/logo.svg" alt="munika works"></a></div>
+			<div class="f_logo"><a href="<?php echo LOCATION; ?>"><span>世界観引き出すデザインを。</span><br>
+					<img src="<?php echo LOCATION_FILE; ?>images/common/logo.svg" alt="munika works"></a></div>
 			<div class="mail"><a href="mailto:contact@munika-works.com">contact&#64;munika-works.com</a></div>
 			<div class="sns">
 				<ul class="sns__icon">
@@ -16,10 +16,11 @@
 				<li><a href="<?php echo LOCATION; ?>">TOP</a></li>
 				<li><a href="<?php echo LOCATION; ?>about/">ムニカワークス<br class="view_tab">について</a></li>
 				<li><a href="<?php echo LOCATION; ?>service/">サービス内容</a></li>
-				<li><a href="<?php echo LOCATION; ?>works/">制作実績</a></li>
+				<li><a href="<?php echo LOCATION; ?>price/">料金について</a></li>
 			</ul>
 			<ul class="nav">
-				<li><a href="<?php echo LOCATION; ?>case_study/">実例のご紹介</a></li>
+				<li><a href="<?php echo LOCATION; ?>works/">制作実績</a></li>
+				<!-- <li><a href="<?php echo LOCATION; ?>case_study/">実例のご紹介</a></li> -->
 				<li><a href="<?php echo LOCATION; ?>status/">現在の受付状況</a></li>
 				<li><a href="<?php echo LOCATION; ?>news/">お知らせ</a></li>
 				<li><a href="<?php echo LOCATION; ?>blog/">ブログ</a></li>

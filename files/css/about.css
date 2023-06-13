@@ -45,7 +45,7 @@ style info : 汎用設定
 .wrp_about .con_about_left::before {
   content: "";
   position: absolute;
-  background-color: #F9F9F9;
+  background-color: #f7f7f7;
   height: 100%;
   width: 40%;
   right: 0;
@@ -181,7 +181,7 @@ style info : 汎用設定
 .wrp_about .con_about_right::before {
   content: "";
   position: absolute;
-  background-color: #F9F9F9;
+  background-color: #f7f7f7;
   height: 100%;
   width: 40%;
   left: 0;
@@ -314,7 +314,7 @@ style info : 汎用設定
 .wrp_point {
   margin: 0 auto 8em;
   padding: 3em 0 5em;
-  background: #F9F9F9;
+  background: #f7f7f7;
   border-radius: 8em 2em 8em 2em;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -395,4 +395,4 @@ style info : 汎用設定
     width: 100%;
     text-align: center;
   }
-}/*# sourceMappingURL=about.css.map */
+}

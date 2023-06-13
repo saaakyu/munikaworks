@@ -72,14 +72,14 @@ include realpath(__DIR__ . '/../config/include.php');
 							<div class="box_point__img"><img src="./images/img_point01.jpg" alt=""></div>
 							<div class="box_point__txt">
 								<p class="point_txt"><span class="blue">理解する</span>こと</p>
-								<p class="tmp_txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+								<p class="tmp_txt">デザインで何を伝えたいか、一番大事な部分はどこか、など気になった部分は質問を重ねることで、自分も相手も理解を深められるやり取りを意識しています。<br><br>ご依頼時点ではご希望やデザインイメージがふわっとしている方も多いため、ヒアリングを通して作りたいものがより明確になった、と感じていただけると嬉しいです。</p>
 							</div>
 						</div>
 						<div class="box_point">
 							<div class="box_point__img"><img src="./images/img_point01.jpg" alt=""></div>
 							<div class="box_point__txt">
 								<p class="point_txt"><span class="blue">寄り添う</span>こと</p>
-								<p class="tmp_txt">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+								<p class="tmp_txt">ご依頼</p>
 							</div>
 						</div>
 						<div class="box_point">

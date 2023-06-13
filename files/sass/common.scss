@@ -16,7 +16,6 @@ html {
   line-height: 2;
   letter-spacing: 0.18em;
   text-align: justify;
-  background-color: $cream;
 }
 
 body {
@@ -449,8 +448,8 @@ body {
   color: $sky-blue;
 }
 
-.dark_gray {
-  color: $dark-gray;
+.dark_line-gray {
+  color: $line-gray;
 }
 
 .bright_yellow {
@@ -517,6 +516,79 @@ body {
   }
 }
 
+// -----------------------------------------------------------
+//  .wrp_contact
+// -----------------------------------------------------------
+.wrp_contact {
+  @include cV(padding, 8em 0, 5em 0, 5em 0);
+  background-color: $cream;
+  position: relative;
+  z-index: 0;
+  &::before {
+    content: "";
+    background-image: url(../images/common/blue_left_upper.png);
+    background-repeat: no-repeat;
+    width: 830px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    @include cV(background-size, 80%, 50%, 40%);
+  }
+  &::after {
+    content: "";
+    background-image: url(../images/common/pink_right_under.png);
+    background-repeat: no-repeat;
+    width: 605px;
+    height: 390px;
+    position: absolute;
+    right: 0;
+    background-position: right bottom;
+    bottom: 0;
+    @include cV(background-size, 100%, 60%, 50%);
+    z-index: -3;
+  }
+  .con_contact {
+    .box_contact {
+      &__txt {
+        width: wCon(650, 1200);
+        text-align: center;
+        margin: auto;
+        @include mq(sp) {
+          width: 90%;
+        }
+        // -----------------------------------------------------------
+        // TOP共通デザイン
+        // -----------------------------------------------------------
+        .ttl__en {
+          display: inline-block;
+          @include sans-serif("en");
+          @include fsz(25);
+          color: $blue;
+          border-top: $blue 1px solid;
+          border-bottom: $blue 1px solid;
+          @include cV(
+            padding,
+            0.2em 0.5em 0.02em,
+            0.2em 0.5em 0.02em,
+            0.2em 0.5em 0.02em
+          );
+          @include cV(margin-bottom, 1em, 1em, 1em);
+          line-height: 1.5;
+          @include mq(sp) {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .pink_btn {
+      @include cV(margin-top, 3em, 3em, 3em);
+      text-align: center;
+    }
+  }
+}
+
 //----------------------------------------------//
 // 画像角丸
 //----------------------------------------------//
@@ -525,7 +597,7 @@ body {
 }
 
 //----------------------------------------------//
-// 下層共通スタイル
+// ここから下層共通スタイル
 //----------------------------------------------//
 // -----------------------------------------------------------
 // .wrp_intro
@@ -542,6 +614,7 @@ body {
           width: 100%;
         }
         .tmp_txt {
+          text-align: center;
           @include mq(sp) {
             text-align: justify;
           }
@@ -555,7 +628,7 @@ body {
   // -----------------------------------------------------------
   .wrp_lay_right {
     @include cV(padding, 8em 0, 5em 0, 5em 0);
-    background: $gray;
+    background: $line-gray;
     .con_lay {
       @extend %bw;
       display: flex;
@@ -590,5 +663,147 @@ body {
 //----------------------------------------------//
 // テーブル
 //----------------------------------------------//
-table.tbl_basic {
+.tmp_tbl_base {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	> tbody {
+		> tr {
+			&:first-child {
+				th {
+					border-top: 1px solid #d9d9d9;
+				}
+				td {
+					border-top: 1px solid $line-gray;
+				}
+			}
+			> th {
+        @include fsz(16);
+        @include sans-serif("title_jp");
+				@include cV(width, 25%, 40%);
+				border-bottom: 1px solid #d9d9d9;
+			}
+			> td {
+        @include fsz(13);
+				border-bottom: 1px solid $line-gray;
+        em{
+          @include fsz(20,13);
+          @include sans-serif("title_jp");
+        }
+			}
+		}
+	}
+}
+// 基本テーブル
+table.tmp_table {
+	@extend .tmp_tbl_base;
+	&.wide {
+		> tbody {
+			> tr {
+				> th {
+					@include cV(padding, 1em, 1em .5em);
+					background-color: $line-gray;
+				}
+				> td {
+					@include cV(padding, 1em 1em 1em 2em, 1em .5em);
+
+				}
+			}
+		}
+	}
+	&.thin {
+		> tbody {
+			> tr {
+				> th {
+					@include cV(padding, 0.5em 1em, .5em);
+				}
+				> td {
+					@include cV(padding, .5em .5em .5em 2em, .5em);
+				}
+			}
+		}
+	}
+}
+// SPで可変するテーブル
+table.tmp_table_respon {
+	@extend .tmp_tbl_base;
+	> * {
+		box-sizing: border-box;
+	}
+  &.thin {
+		> tbody {
+			> tr {
+				> th {
+					@include cV(padding, 0.5em 1em, .5em 1em);
+          border-radius: 0.5em;
+				}
+				> td {
+					@include cV(padding, .5em .5em .5em 2em, 0.5em .5em 1em);
+				}
+			}
+		}
+	}
+	@include mq(sp) {
+		table {
+			display: block;
+		}
+		tbody {
+			display: block;
+		}
+		tr {
+			display: block;
+		}
+		th,
+		td {
+			box-sizing: border-box;
+			display: block;
+			width: 100%!important;
+		}
+		th {
+			background-color: $line-gray;
+			border-bottom: none!important;
+			border-top: none!important;
+		}
+		td {
+			border-top: none!important;
+		}
+	}
+}
+
+
+//-----------------------------------------------------------
+//	.tmp_acc_box アコーディオン＋テーブル
+//-----------------------------------------------------------
+.tmp_acc_box {
+  width: 100%;
+	.tmp_acc_tit {
+    border-radius: 0.8em;
+		background-color: $light-blue;
+		@include cV(padding, .75em 2em, .5em 1em);
+		display: flex;
+		align-items: baseline;
+		cursor: pointer;
+    @include fsz(18 );
+    @include sans-serif("title_jp");
+    @include ic_accordion {
+      .ic {
+        background-color: $blue;
+        margin-right: 0;
+        margin-left: auto;
+      }
+    }
+  }
+		.tmp_st_s {
+			@include cV(width, calc(100% - 3em), calc(100% - 2.5em));
+      font-weight: 500;
+	}
+	.tmp_acc_target {
+		@include cV(padding,2em 0, 1.5em 0);
+		display: none;
+		.target_inner {
+			@include cV(width, wCon(715, 800), 88%, 94%);
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
 }

@@ -29,7 +29,6 @@ html {
   line-height: 2;
   letter-spacing: 0.18em;
   text-align: justify;
-  background-color: #FFFEFB;
 }
 
 body {
@@ -191,7 +190,7 @@ textarea {
   }
 }
 #header .header__nav .nav li a:hover {
-  color: #EE8A8A;
+  color: #f37d7d;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -634,7 +633,7 @@ textarea {
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
   font-size: 188%;
-  color: #EE8A8A;
+  color: #f37d7d;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_title .con_title .ttl__jp {
@@ -657,7 +656,7 @@ textarea {
 }
 
 .pink {
-  color: #EE8A8A;
+  color: #f37d7d;
 }
 
 .green {
@@ -672,8 +671,8 @@ textarea {
   color: #7BB5DF;
 }
 
-.dark_gray {
-  color: #7c7c7c;
+.dark_line-gray {
+  color: #efefef;
 }
 
 .bright_yellow {
@@ -693,13 +692,13 @@ textarea {
   display: inline-block;
   background-color: #fff;
   border-radius: 5em;
-  color: #EE8A8A;
+  color: #f37d7d;
   font-weight: 500;
   text-align: center;
   padding: 0.6em 2em;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  border: 2px #EE8A8A solid;
+  border: 2px #f37d7d solid;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .pink_btn a {
@@ -713,13 +712,13 @@ textarea {
 }
 @media only screen and (min-width: 1200px) {
   .pink_btn a:hover {
-    background-color: #EE8A8A;
+    background-color: #f37d7d;
     color: #fff;
   }
 }
 @media print {
   .pink_btn a:hover {
-    background-color: #EE8A8A;
+    background-color: #f37d7d;
     color: #fff;
   }
 }
@@ -784,6 +783,129 @@ textarea {
   }
 }
 
+.wrp_contact {
+  padding: 8em 0;
+  background-color: #FFFEFB;
+  position: relative;
+  z-index: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_contact {
+    padding: 5em 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact {
+    padding: 5em 0;
+  }
+}
+.wrp_contact::before {
+  content: "";
+  background-image: url(../images/common/blue_left_upper.png);
+  background-repeat: no-repeat;
+  width: 830px;
+  height: 480px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-size: 80%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_contact::before {
+    background-size: 50%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact::before {
+    background-size: 40%;
+  }
+}
+.wrp_contact::after {
+  content: "";
+  background-image: url(../images/common/pink_right_under.png);
+  background-repeat: no-repeat;
+  width: 605px;
+  height: 390px;
+  position: absolute;
+  right: 0;
+  background-position: right bottom;
+  bottom: 0;
+  background-size: 100%;
+  z-index: -3;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_contact::after {
+    background-size: 60%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact::after {
+    background-size: 50%;
+  }
+}
+.wrp_contact .con_contact .box_contact__txt {
+  width: 54.1666666667%;
+  text-align: center;
+  margin: auto;
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact .con_contact .box_contact__txt {
+    width: 90%;
+  }
+}
+.wrp_contact .con_contact .box_contact__txt .ttl__en {
+  display: inline-block;
+  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, sans-serif;
+  font-weight: 400;
+  font-size: 157%;
+  color: #0E6BB0;
+  border-top: #0E6BB0 1px solid;
+  border-bottom: #0E6BB0 1px solid;
+  padding: 0.2em 0.5em 0.02em;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_contact .con_contact .box_contact__txt .ttl__en {
+    padding: 0.2em 0.5em 0.02em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact .con_contact .box_contact__txt .ttl__en {
+    padding: 0.2em 0.5em 0.02em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_contact .con_contact .box_contact__txt .ttl__en {
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact .con_contact .box_contact__txt .ttl__en {
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact .con_contact .box_contact__txt .ttl__en {
+    text-align: center;
+  }
+}
+.wrp_contact .con_contact .pink_btn {
+  margin-top: 3em;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_contact .con_contact .pink_btn {
+    margin-top: 3em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact .con_contact .pink_btn {
+    margin-top: 3em;
+  }
+}
+
 .corner {
   border-radius: 1em;
 }
@@ -808,6 +930,9 @@ textarea {
     width: 100%;
   }
 }
+.lower #contents .wrp_intro .con_intro .box_intro .tmp_txt {
+  text-align: center;
+}
 @media only screen and (max-width: 767px) {
   .lower #contents .wrp_intro .con_intro .box_intro .tmp_txt {
     text-align: justify;
@@ -815,7 +940,7 @@ textarea {
 }
 .lower #contents .wrp_lay_right {
   padding: 8em 0;
-  background: #F9F9F9;
+  background: #efefef;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .lower #contents .wrp_lay_right {
@@ -870,4 +995,238 @@ textarea {
 }
 .lower #contents .wrp_lay_right .con_lay .box_lay__txt .tmp_txt {
   text-align: justify;
-}/*# sourceMappingURL=common.css.map */
+}
+
+.tmp_tbl_base, table.tmp_table_respon, table.tmp_table {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.tmp_tbl_base > tbody > tr:first-child th, table.tmp_table_respon > tbody > tr:first-child th, table.tmp_table > tbody > tr:first-child th {
+  border-top: 1px solid #d9d9d9;
+}
+.tmp_tbl_base > tbody > tr:first-child td, table.tmp_table_respon > tbody > tr:first-child td, table.tmp_table > tbody > tr:first-child td {
+  border-top: 1px solid #efefef;
+}
+.tmp_tbl_base > tbody > tr > th, table.tmp_table_respon > tbody > tr > th, table.tmp_table > tbody > tr > th {
+  font-size: 100%;
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+  width: 25%;
+  border-bottom: 1px solid #d9d9d9;
+}
+@media only screen and (max-width: 767px) {
+  .tmp_tbl_base > tbody > tr > th, table.tmp_table_respon > tbody > tr > th, table.tmp_table > tbody > tr > th {
+    width: 40%;
+  }
+}
+.tmp_tbl_base > tbody > tr > td, table.tmp_table_respon > tbody > tr > td, table.tmp_table > tbody > tr > td {
+  font-size: 82%;
+  border-bottom: 1px solid #efefef;
+}
+.tmp_tbl_base > tbody > tr > td em, table.tmp_table_respon > tbody > tr > td em, table.tmp_table > tbody > tr > td em {
+  font-size: 154%;
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+}
+
+table.tmp_table.wide > tbody > tr > th {
+  padding: 1em;
+  background-color: #efefef;
+}
+@media only screen and (max-width: 767px) {
+  table.tmp_table.wide > tbody > tr > th {
+    padding: 1em 0.5em;
+  }
+}
+table.tmp_table.wide > tbody > tr > td {
+  padding: 1em 1em 1em 2em;
+}
+@media only screen and (max-width: 767px) {
+  table.tmp_table.wide > tbody > tr > td {
+    padding: 1em 0.5em;
+  }
+}
+table.tmp_table.thin > tbody > tr > th {
+  padding: 0.5em 1em;
+}
+@media only screen and (max-width: 767px) {
+  table.tmp_table.thin > tbody > tr > th {
+    padding: 0.5em;
+  }
+}
+table.tmp_table.thin > tbody > tr > td {
+  padding: 0.5em 0.5em 0.5em 2em;
+}
+@media only screen and (max-width: 767px) {
+  table.tmp_table.thin > tbody > tr > td {
+    padding: 0.5em;
+  }
+}
+
+table.tmp_table_respon > * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+table.tmp_table_respon.thin > tbody > tr > th {
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+@media only screen and (max-width: 767px) {
+  table.tmp_table_respon.thin > tbody > tr > th {
+    padding: 0.5em 1em;
+  }
+}
+table.tmp_table_respon.thin > tbody > tr > td {
+  padding: 0.5em 0.5em 0.5em 2em;
+}
+@media only screen and (max-width: 767px) {
+  table.tmp_table_respon.thin > tbody > tr > td {
+    padding: 0.5em 0.5em 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  table.tmp_table_respon table {
+    display: block;
+  }
+  table.tmp_table_respon tbody {
+    display: block;
+  }
+  table.tmp_table_respon tr {
+    display: block;
+  }
+  table.tmp_table_respon th,
+  table.tmp_table_respon td {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    width: 100% !important;
+  }
+  table.tmp_table_respon th {
+    background-color: #efefef;
+    border-bottom: none !important;
+    border-top: none !important;
+  }
+  table.tmp_table_respon td {
+    border-top: none !important;
+  }
+}
+
+.tmp_acc_box {
+  width: 100%;
+}
+.tmp_acc_box .tmp_acc_tit {
+  border-radius: 0.8em;
+  background-color: #D0E3F1;
+  padding: 0.75em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  cursor: pointer;
+  font-size: 113%;
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  .tmp_acc_box .tmp_acc_tit {
+    padding: 0.5em 1em;
+  }
+}
+.tmp_acc_box .tmp_acc_tit > .ic {
+  height: 2.5em;
+  width: 2.5em;
+  background-color: #0E6BB0;
+  border-radius: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media only screen and (max-width: 767px) {
+  .tmp_acc_box .tmp_acc_tit > .ic {
+    height: 1.8em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .tmp_acc_box .tmp_acc_tit > .ic {
+    width: 1.8em;
+  }
+}
+.tmp_acc_box .tmp_acc_tit > .ic::before {
+  font-family: "Font Awesome 6 Free";
+  content: "+";
+  display: inline-block;
+  position: relative;
+  right: -1px;
+  font-weight: 600;
+  -webkit-transition: 0.2s -webkit-transform ease-in-out;
+  transition: 0.2s -webkit-transform ease-in-out;
+  transition: 0.2s transform ease-in-out;
+  transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;
+  color: #fff;
+  line-height: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.tmp_acc_box .tmp_acc_tit.is-active > .ic::before {
+  content: "\f068";
+  font-weight: 600;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: 0.2s -webkit-transform ease-in-out;
+  transition: 0.2s -webkit-transform ease-in-out;
+  transition: 0.2s transform ease-in-out;
+  transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;
+  position: relative;
+  right: 1px;
+}
+.tmp_acc_box .tmp_acc_tit .ic {
+  background-color: #0E6BB0;
+  margin-right: 0;
+  margin-left: auto;
+}
+.tmp_acc_box .tmp_st_s {
+  width: calc(100% - 3em);
+  font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  .tmp_acc_box .tmp_st_s {
+    width: calc(100% - 2.5em);
+  }
+}
+.tmp_acc_box .tmp_acc_target {
+  padding: 2em 0;
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .tmp_acc_box .tmp_acc_target {
+    padding: 1.5em 0;
+  }
+}
+.tmp_acc_box .tmp_acc_target .target_inner {
+  width: 89.375%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .tmp_acc_box .tmp_acc_target .target_inner {
+    width: 88%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .tmp_acc_box .tmp_acc_target .target_inner {
+    width: 94%;
+  }
+}

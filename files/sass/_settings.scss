@@ -178,9 +178,10 @@ $baseSizeSp: 12;
 $baseColor: #333333;
 $light-baseColor: #494949;
 $white: #fff;
-$gray: #F9F9F9;
+$gray: #f7f7f7;
+$line-gray:#efefef;
 $dark-gray: #7c7c7c;
-$pink: #EE8A8A;
+$pink: #f37d7d;
 $light-pink: #FFDCDC;
 $blue: #0E6BB0;
 $sky-blue: #7BB5DF;
@@ -434,4 +435,45 @@ $green: #A5DA92;
 		-ms-text-orientation: inherit;
 		text-orientation: inherit;
 	}
+}
+
+//アコーディオンアイコン
+@mixin ic_accordion {
+	>.ic {
+		@include cV(height, 2.5em, 1.8em);
+		@include cV(width, 2.5em, 1.8em);
+		background-color: $blue;
+		border-radius: 1000px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		&::before {
+			font-family: "Font Awesome 6 Free";
+			content: "\2b";
+			display: inline-block;
+			position: relative;
+			right: -1px;
+			font-weight: 600;
+			transition: .2s transform ease-in-out;
+			color: #fff;
+			line-height: 0;
+			transform: rotate(0deg);
+
+		}
+	}
+	&.is-active {
+		>.ic {
+			&::before {
+				content: "\f068";
+				font-weight: 600;
+				transform: rotate(-180deg);
+				transition: .2s transform ease-in-out;
+				position: relative;
+				right: 1px;
+			}
+		}
+	}
+	@content;
 }

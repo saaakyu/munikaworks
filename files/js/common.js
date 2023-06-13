@@ -43,15 +43,38 @@ document.addEventListener("DOMContentLoaded", function (e) {
       }
     });
 
-  /* アコーディオン -----------------------------------------------------*/
-  $(".accordion").on("click", function () {
-    if (!$(this).is(".sp_only") || ($(this).is(".sp_only") && munika.sp)) {
-      var $next = $(this).next();
-      if (!$next.is(":animated"))
-        $next.slideToggle(300).prev().toggleClass("active");
-    }
-  });
+// アコーディオン
+	//-----------------------------------------------------//
+	$('.js-accordion').on('click', function () {
+		var has_sp_only = $(this).is('.sp_only');			//sp_onlyクラスを持つか
+		var has_tabsp_only = $(this).is('.tab_sp_only');	//tab-sp_onlyクラスを持つか
+		var $this = $(this);
+		var $next = $this.next();
+		var toggle_speed = $(this).attr('data-toggle-speed') == undefined ? 300 : $(this).attr('data-toggle-speed');
+		var target_anchor = $(this).attr('data-target-anchor') == undefined ? false : $(this).attr('data-target-anchor');
 
+		if(has_sp_only || has_tabsp_only) {
+			var sp_accordion_infoSwiperOn = has_sp_only && abi.sp;
+			var tabsp_accordion_infoSwiperOn = has_tabsp_only && !abi.pc;
+			if(sp_accordion_infoSwiperOn || tabsp_accordion_infoSwiperOn) {
+				if (!$next.is(':animated')) {
+					$next.slideToggle(toggle_speed).prev().toggleClass('is-active');
+					if(target_anchor == 'true') {
+						$('.box_menu').not(':animated').animate({ scrollTop: String($target.offset().top) }, 600, easing);
+						return false;
+					}
+				}
+			}
+		} else {
+			if (!$next.is(':animated')) {
+				$next.slideToggle(toggle_speed).prev().toggleClass('is-active');
+				if(target_anchor == 'true') {
+					$('.box_menu').not(':animated').animate({ scrollTop: String($target.offset().top) }, 600, easing);
+					return false;
+				}
+			}
+		}
+	});
   /* ハンバーガーメニュー -----------------------------------------------------*/
   $(".openbtn").click(function () {
     //ボタンがクリックされたら

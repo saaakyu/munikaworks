@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+file name  : copy.css
+author     : munika-works
+style info : コピー
+=================================================================== */
+@import "settings";
+
+//----------------------------------------------//
+// .box_link
+//----------------------------------------------//
+.box_link {
+  @extend %bw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include fsz(18);
+  @include sans-serif("title_jp");
+  @include cV(margin, 0em auto 5em, 0em auto 5em, 0em auto 3em);
+  width: 100%;
+  li {
+    justify-content: center;
+    @include mq(pc_tab) {
+      &:not(:last-of-type) {
+        margin: 0 2em 0 0;
+      }
+    }
+    @include mq(sp) {
+      width: 47%;
+      margin: 0 0 2em 0;
+      &:nth-child(2n) {
+        margin-left: 3%;
+      }
+    }
+    a {
+      display: flex;
+      color: $pink;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      text-align: center;
+      border-bottom: 1px solid $pink;
+      @include cV(padding, 0 0.5em, 0 0.5em, 0);
+      &::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f107";
+        font-weight: 900;
+        transition: all 0.3s;
+        margin-left: 0.5em;
+      }
+      &:hover::after {
+        transform: translateY(0.3em);
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------
+// .wrp_price
+// -----------------------------------------------------------
+.wrp_price {
+  @include cV(padding, 5em 0, 5em 0, 4em 0);
+  background: $gray;
+  .box_price {
+    @extend %bw;
+    &__img {
+      text-align: center;
+      img {
+        @include mq(sp) {
+          width: 100%;
+        }
+      }
+    }
+    &__txt {
+      text-align: center;
+      @include cV(padding, 1em 0 3em, 1em 0 1em, 1em 0 3em);
+      @include mq(sp) {
+        width: 100%;
+        text-align: justify;
+      }
+    }
+  }
+
+  .con_price {
+    @extend %bw;
+    display: flex;
+    justify-content: center;
+    @include mq(sp) {
+      flex-direction: column;
+    }
+    .box_card {
+      background: $white;
+      @include cV(padding, 2em, 2em, 1.5em);
+      @include cV( max-width, 27%, 100%, 100%);
+      border-radius: 1em;
+      &:not(:last-of-type) {
+        @include cV(margin, 0 1.5em 0 0, 0 1.5em 0 0, 0 0 1.5em 0);
+      }
+      &__img {
+      }
+      &__name {
+        @include fsz(22);
+        @include sans-serif("title_jp");
+        text-align: center;
+        line-height: 1;
+        @include cV(padding, 1em 0 0, 1em 0 0, 1em 0 0);
+      }
+      &__price {
+        @include fsz(28);
+        @include sans-serif("title_jp");
+        text-align: center;
+        color: $pink;
+        .small {
+          @include fsz(20, 28);
+        }
+      }
+      &__txt {
+      }
+    }
+  }
+
+  // -----------------------------------------------------------
+  //   .wrp_option
+  // -----------------------------------------------------------
+  .wrp_option {
+    display: flex;
+    justify-content: center;
+    @extend %bw;
+    @include cV(margin, 3em auto 0, 3em auto 0, 3em auto 0);
+    @include mq(sp) {
+      flex-direction: column;
+    }
+    .con_option {
+      display: flex;
+      background: $white;
+      @include cV(padding, 2em, 2em, 1.5em);
+      border-radius: 1em;
+      &:not(:last-of-type) {
+        @include cV(margin, 0 1.5em 0 0, 0 1.5em 0 0, 0 0 1.5em 0);
+      }
+      @include mq(sp) {
+        max-width: 100%;
+      }
+      .box_option {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &__name {
+          @include fsz(21);
+          @include sans-serif("title_jp");
+          text-align: center;
+          line-height: 1;
+          @include cV(padding, 0 0 0.8em, 0 0 0.8em, 0 0 0.8em);
+          .small {
+            @include fsz(18, 22);
+          }
+        }
+        &__txt {
+        }
+      }
+    }
+  }
+
+  .wrp_list {
+    max-width: 950px;
+    margin: auto;
+    width: 90%;
+    .tit_list {
+      background-color: $light-blue;
+    }
+    .con_list {
+      margin: auto;
+      .list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    .con_list_2column {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .box_info {
+    @include cV(margin, 2em auto 4em, 2em auto 4em, 2em auto 2em);
+    .info_list {
+      max-width: 650px;
+      width: 90%;
+      @include fsz(18);
+      @include sans-serif("title_jp");
+      border-collapse: separate;
+      border-radius: 1em;
+      background-color: $light-blue;
+      border-spacing: 0;
+      margin: auto;
+      th {
+        width: 35%;
+        box-sizing: border-box;
+        padding: 1.5em;
+        vertical-align: middle;
+        text-align: center;
+      }
+      td {
+        box-sizing: border-box;
+        padding: 1.5em 2em;
+        text-align: left;
+        // border-radius: 0 1em 1em 0; thが追加されたら解除
+        // background-color: $white; thが追加されたら解除
+        .small {
+          @include fsz(14, 18);
+          @include sans-serif("jp");
+        }
+      }
+      @include mq(sp) {
+        th,
+        td {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

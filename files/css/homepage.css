@@ -361,7 +361,7 @@ style info : 汎用設定
   font-size: 313%;
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
-  color: #EE8A8A;
+  color: #f37d7d;
   font-weight: 500;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -494,6 +494,7 @@ style info : 汎用設定
   padding: 8em 0 12em;
   position: relative;
   z-index: 0;
+  background-color: #FFFEFB;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_intro {
@@ -633,7 +634,7 @@ style info : 汎用設定
 
 .wrp_service {
   padding: 8em 0 12em;
-  background-color: #F9F9F9;
+  background-color: #f7f7f7;
   position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -666,24 +667,25 @@ style info : 汎用設定
   }
 }
 .wrp_service .con_service .box_service__explain {
-  grid-template-columns: repeat(4, 1fr);
-  width: 79.1666666667%;
+  grid-template-columns: repeat(3, 1fr);
+  width: 66.6666666667%;
   display: grid;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  counter-reset: item;
   gap: 0;
   margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  margin-top: 4em;
+  margin-top: 5em;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_service .con_service .box_service__explain {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media only screen and (max-width: 767px) {
@@ -698,12 +700,12 @@ style info : 汎用設定
 }
 @media only screen and (max-width: 767px) {
   .wrp_service .con_service .box_service__explain {
-    gap: 5%;
+    gap: 10% 5%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_service .con_service .box_service__explain {
-    margin-top: 4em;
+    margin-top: 5em;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -719,24 +721,51 @@ style info : 汎用設定
     width: 100%;
   }
 }
+.wrp_service .con_service .box_service__explain .service_inner {
+  counter-increment: item;
+}
+.wrp_service .con_service .box_service__explain .service_inner .service__img {
+  position: relative;
+}
+.wrp_service .con_service .box_service__explain .service_inner .service__img::before {
+  position: absolute;
+  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, sans-serif;
+  font-weight: 400;
+  font-size: 213%;
+  content: counter(item, decimal-leading-zero);
+  color: #0E6BB0;
+  left: calc(50% - 20px);
+  top: -10%;
+  line-height: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrp_service .con_service .box_service__explain .service_inner .service__img::before {
+    top: -10%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_service .con_service .box_service__explain .service_inner .service__img::before {
+    top: -10%;
+  }
+}
 .wrp_service .con_service .box_service__explain .service_inner .service__name {
   line-height: 1.5;
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
   font-size: 125%;
-  padding-top: 0.5em;
+  padding-top: 1em;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_service .con_service .box_service__explain .service_inner .service__name {
-    padding-top: 0.5em;
+    padding-top: 1em;
   }
 }
 @media only screen and (max-width: 767px) {
   .wrp_service .con_service .box_service__explain .service_inner .service__name {
-    padding-top: 0.5em;
+    padding-top: 1em;
   }
 }
 .wrp_service .con_service .box_service__txt {
@@ -1099,7 +1128,7 @@ style info : 汎用設定
 .wrp_case {
   padding: 8em 0;
   text-align: center;
-  background-color: #F9F9F9;
+  background-color: #f7f7f7;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_case {
@@ -1217,155 +1246,3 @@ style info : 汎用設定
     margin-top: 3em;
   }
 }
-
-.wrp_contact {
-  padding: 8em 0;
-  position: relative;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .wrp_contact {
-    padding: 5em 0;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .wrp_contact {
-    padding: 5em 0;
-  }
-}
-.wrp_contact::before {
-  content: "";
-  background-image: url(../images/common/blue_left_upper.png);
-  background-repeat: no-repeat;
-  width: 830px;
-  height: 480px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
-  background-size: 80%;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .wrp_contact::before {
-    background-size: 50%;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .wrp_contact::before {
-    background-size: 40%;
-  }
-}
-.wrp_contact::after {
-  content: "";
-  background-image: url(../images/common/pink_right_under.png);
-  background-repeat: no-repeat;
-  width: 605px;
-  height: 390px;
-  position: absolute;
-  right: 0;
-  background-position: right bottom;
-  bottom: 0;
-  background-size: 100%;
-  z-index: -3;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .wrp_contact::after {
-    background-size: 60%;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .wrp_contact::after {
-    background-size: 50%;
-  }
-}
-.wrp_contact .con_contact .box_contact__txt {
-  width: 54.1666666667%;
-  text-align: center;
-  margin: auto;
-}
-@media only screen and (max-width: 767px) {
-  .wrp_contact .con_contact .box_contact__txt {
-    width: 90%;
-  }
-}
-.wrp_contact .con_contact .box_contact__img {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  width: 100vw;
-  overflow: hidden;
-  z-index: -1;
-  margin-top: 4em;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .wrp_contact .con_contact .box_contact__img {
-    margin-top: 4em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .wrp_contact .con_contact .box_contact__img {
-    margin-top: 3em;
-  }
-}
-.wrp_contact .con_contact .box_contact__img ul + ul {
-  -webkit-animation: loop2 100s linear infinite;
-          animation: loop2 100s linear infinite;
-}
-.wrp_contact .con_contact .box_contact__img ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-@media only screen and (max-width: 767px) {
-  .wrp_contact .con_contact .box_contact__img ul {
-    width: auto;
-  }
-}
-.wrp_contact .con_contact .box_contact__img ul:first-child {
-  -webkit-animation: loop 100s -50s linear infinite;
-          animation: loop 100s -50s linear infinite;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  will-change: transform;
-}
-.wrp_contact .con_contact .box_contact__img ul li {
-  display: inline-block;
-  width: 50vw;
-  min-width: 150px;
-  margin: 0 30px 0 0;
-  list-style: none;
-  text-align: center;
-}
-.wrp_contact .con_contact .box_contact__img ul li:nth-child(2n) {
-  margin-top: 3em;
-}
-.wrp_contact .con_contact .box_contact__img ul li img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.wrp_contact .con_contact .pink_btn {
-  margin-top: 3em;
-  text-align: center;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .wrp_contact .con_contact .pink_btn {
-    margin-top: 3em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .wrp_contact .con_contact .pink_btn {
-    margin-top: 3em;
-  }
-}/*# sourceMappingURL=homepage.css.map */

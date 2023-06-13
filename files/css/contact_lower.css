@@ -28,7 +28,7 @@ style info : 汎用設定
   text-align: center;
 }
 .wrp_intro .con_intro .box_intro a {
-  color: #EE8A8A;
+  color: #f37d7d;
 }
 .wrp_intro .con_intro .box_intro a:hover {
   text-decoration: underline;
@@ -54,7 +54,7 @@ style info : 汎用設定
 
 .wrp_form {
   padding: 6em 0 8em;
-  background: #F9F9F9;
+  background: #f7f7f7;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wrp_form {
@@ -74,4 +74,21 @@ style info : 汎用設定
   .wrp_form .con_form .box_form {
     width: 100%;
   }
-}/*# sourceMappingURL=contact_lower.css.map */
+}
+
+/*Thanksページ*/
+.timeline {
+  max-width: 40%;
+  padding: 10px;
+  margin: auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .timeline {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .timeline {
+    max-width: 100%;
+  }
+}
