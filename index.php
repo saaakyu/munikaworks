@@ -44,7 +44,7 @@
 					<div class="fv_txt">
 						<div class="main_ttl">
 							<div class="main_ttl__jp">世界観引き出す<br>デザインを。</div>
-							<div class="main_ttl__en">Design that brings out the world building</div>
+							<div class="main_ttl__en">Give from to ideas.</div>
 						</div>
 					</div>
 					<div class="scroll">
@@ -52,15 +52,14 @@
 					</div>
 				</div>
 
-				<div class="wrp_intro">
+				<div class="wrp_intro fadeInTrigger">
 					<div class="con_intro">
 						<div class="box_intro__img">
 							<p class="img_intro1"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_intro1.jpg" alt="" class="corner"></p>
-							<p class="img_intro2"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_intro2.jpg" alt="" class="corner"></p>
 						</div>
 						<div class="box_intro__txt">
 							<span class="ttl__en">About</span>
-							<h3 class="ttl__jp"><span class="pink">創作活動のデザイン</span>、<br class="view_sp">承ります</h3>
+							<h3 class="ttl__jp"><span class="pink">創作活動のデザイン</span>、<br class="view_tab-sp">承ります</h3>
 							<p class="tmp_txt">ムニカワークスは、創作活動を応援するデザインサービスです。<br>
 								コンテンツの魅力をたくさんの方にお伝えするため、ロゴや同人誌の表紙をはじめとしたデザインのご依頼を承っております。</p>
 							<div class="pink_btn"><a href="<?php echo LOCATION; ?>about/">ムニカワークスについて</a></div>
@@ -68,7 +67,7 @@
 					</div>
 				</div><!-- /.wrp_intro -->
 
-				<div class="wrp_service">
+				<div class="wrp_service fadeInTrigger">
 					<div class="con_service">
 						<div class="box_service__txt">
 							<span class="ttl__en">Service</span>
@@ -97,7 +96,7 @@
 					</div>
 				</div><!-- /.wrp_service -->
 
-				<div class="wrp_works">
+				<div class="wrp_works fadeInTrigger">
 					<div class="con_works">
 						<div class="box_works__txt">
 							<span class="ttl__en">Works</span>
@@ -124,7 +123,7 @@
 				</div><!-- /.wrp_works -->
 
 
-				<article class="wrp_news">
+				<article class="wrp_news fadeInTrigger">
 					<div class="con_news">
 						<div class="box_news__txt">
 							<span class="ttl__en">News</span>
@@ -155,7 +154,7 @@
 
 				<style>
 					/*
-				<article class="wrp_case">
+				<article class="wrp_case fadeInTrigger">
 					<div class="con_case">
 						<div class="box_case__txt">
 							<span class="ttl__en">Case study</span>

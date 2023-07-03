@@ -58,8 +58,8 @@ include realpath(__DIR__ . '/../config/include.php');
 					<div class="box_about">
 						<div class="box_about__img"><img src="./images/img_about01.png" alt=""></div>
 						<div class="box_about__txt">
-							<h3 class="ttl__jp"><span class="pink">世界観引き出す</span><br class="view_tab">デザインを</h3>
-							<p class="tmp_txt">アニメや漫画・小説などの物語が好きだったことから創作物の世界観や魅力を伝えるお手伝いをしたいと思い活動を始めました。</p>
+							<h3 class="ttl__jp"><span class="pink">世界観引き出す</span><br class="view_tab-sp">デザインを。</h3>
+							<p class="tmp_txt">ムニカワークスでは、ライトな層にも興味を持って見てもらえるよう、伝えたい情報を要約し、端的に世界観を表現することを意識して制作を行っています。</p>
 							<p class="tmp_txt">「デザインの依頼を受けてくれる人」ではなく、「デザインで困った時の相談相手」として作品を一緒に作り上げることを意識しています。</p>
 						</div>
 					</div>
@@ -71,49 +71,49 @@ include realpath(__DIR__ . '/../config/include.php');
 						<div class="box_point">
 							<div class="box_point__img"><img src="./images/img_point01.jpg" alt=""></div>
 							<div class="box_point__txt">
-								<p class="point_txt"><span class="blue">理解する</span>こと</p>
+								<p class="point_txt">1. <span class="blue">理解する</span>こと</p>
 								<p class="tmp_txt">デザインで何を伝えたいか、一番大事な部分はどこか、など気になった部分は質問を重ねることで、自分も相手も理解を深められるやり取りを意識しています。<br><br>ご依頼時点ではご希望やデザインイメージがふわっとしている方も多いため、ヒアリングを通して作りたいものがより明確になった、と感じていただけると嬉しいです。</p>
 							</div>
 						</div>
 						<div class="box_point">
-							<div class="box_point__img"><img src="./images/img_point01.jpg" alt=""></div>
+							<div class="box_point__img"><img src="./images/img_point02.jpg" alt=""></div>
 							<div class="box_point__txt">
-								<p class="point_txt"><span class="blue">寄り添う</span>こと</p>
-								<p class="tmp_txt">ご依頼</p>
+								<p class="point_txt">2. <span class="blue">寄り添う</span>こと</p>
+								<p class="tmp_txt">ご依頼者様のやりたいこと、状況、ご予算に合わせてご提案いたします。<br>こだわりたい方はじっくり時間をかけて、ご予算が限られている方は￥10,000で～までできますか？といった内容もご対応が可能です。</p>
 							</div>
 						</div>
 						<div class="box_point">
-							<div class="box_point__img"><img src="./images/img_point01.jpg" alt=""></div>
+							<div class="box_point__img"><img src="./images/img_point03.jpg" alt=""></div>
 							<div class="box_point__txt">
-								<p class="point_txt"><span class="blue">楽しむ</span>こと</p>
-								<p class="tmp_txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+								<p class="point_txt">3. <span class="blue">楽しむ</span>こと</p>
+								<p class="tmp_txt">作業は楽しく、ヒアリングは興味を持って耳を傾けること大事にしています。<br>触れたことのないジャンル・作品のご依頼の場合は必ず一度下調べ・拝見してから制作に入りますので、キャラクターのこのモチーフを取り入れて欲しい！などのご要望もお気軽にご相談ください。</p>
 							</div>
 						</div>
 					</div>
 				</div><!-- /.wrp_point -->
 
+
 				<div class="con_about_right">
 					<div class="box_about">
 						<div class="box_about__txt">
-							<h3 class="ttl__jp"><span class="pink">なまえ</span>について</h3>
-							<p class="tmp_txt">みなさんの作品を、デザインの力で「この世に二つとないものにしたい」という想いを込め”無二化（ムニカ）”と名付けました。<br>
-								作者の想いが詰まった作品をいろんな人に見てもらえるよう、「らしさ」を最大限に引き出し、伝えるデザインサービスをめざします。</p>
+							<h3 class="ttl__jp"><span class="pink">中の人</span>について</h3>
+							<p class="tmp_txt">制作会社勤務のwebデザイナー。言葉を整頓してカタチにするのが好き。<br>
+								現職では、Webサイトのデザイン・構築・更新作業などWeb制作業務に幅広く携わっています。<br class="view_sp">シンプル・かわいい・きれいめなデザインが得意です。<br>
+								基本NL、BL、GLなんでもOKですが、過度な特殊性癖や過激なエロ描写を一部苦手としております。</p>
+							<!-- <p class="tmp_txt">4年ほどweb制作会社で働いた後、フリーのデザイナーとして活動中。<br>
+								前職では、Webサイトのデザイン・構築・更新作業などWeb制作業務に幅広く携わっておりました。</p> -->
 						</div>
-						<div class="box_about__img"><img src="./images/img_logo_idea.png" alt=""></div>
+						<div class="box_about__img"><img src="./images/img_profile.png" alt=""></div>
 					</div>
 				</div><!-- /.con_about -->
 
 				<div class="con_about_left">
 					<div class="box_about">
-						<div class="box_about__img"><img src="./images/img_profile.png" alt=""></div>
+					<div class="box_about__img"><img src="./images/img_logo_idea.png" alt=""></div>
 						<div class="box_about__txt">
-							<h3 class="ttl__jp"><span class="pink">中の人</span>について</h3>
-							<p class="tmp_txt">制作会社勤務のwebデザイナーです。<br>
-								Webサイトのデザイン・構築・更新作業などWeb制作業務に幅広く携わっています。シンプル・かわいい・きれいめなデザインが得意。<br>
-								基本NL、BL、GLなんでもOKですが、過度な特殊性癖や過激なエロ描写を一部苦手としております。</p>
-							<!-- <p class="tmp_txt">4年ほどweb制作会社で働いた後、フリーのデザイナーとして活動中。<br>
-								前職では、Webサイトのデザイン・構築・更新作業などWeb制作業務に幅広く携わっておりました。シンプル・かわいい・きれいめなデザインが得意です。<br>
-								基本NL、BL、GLなんでもOKですが、過度な特殊性癖や過激なエロ描写を一部苦手としております。</p> -->
+							<h3 class="ttl__jp"><span class="pink">なまえ</span>について</h3>
+							<p class="tmp_txt">みなさんの作品を、デザインの力で「この世に二つとないものにしたい」という想いを込め”無二化（ムニカ）”と名付けました。<br>
+								作者の想いが詰まった作品をいろんな人に見てもらえるよう、「らしさ」を最大限に引き出し、伝えるデザインサービスをめざします。</p>
 						</div>
 					</div>
 				</div><!-- /.con_about -->

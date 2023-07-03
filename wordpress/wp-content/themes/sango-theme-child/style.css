@@ -227,6 +227,10 @@ border: #ddd 1px solid;
   padding-top: 0;
 }
 
+.entry-content p{
+  font-size: 90%;
+}
+
 /*次の記事、前の記事*/
 .prnx_box {
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo",

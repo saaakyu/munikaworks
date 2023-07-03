@@ -12,7 +12,9 @@ $experimental-support-for-svg: true;
 //----------------------------------------------//
 //  Media Queries								//
 //----------------------------------------------//
-$bp_tab: 1199px; //tab
+
+$bp_small_pc: 1440px; //狭いPC
+$bp_tab: 1024px; //tab
 $bp_sp: 767px; //sp
 
 @mixin mq($device, $val: null, $val2: null) {
@@ -27,27 +29,24 @@ $bp_sp: 767px; //sp
 			@content;
 		}
 	}
-
-	@else if $device ==pc_s {
-
-		//pc_s
-		@media only screen and (min-width: ($bp_tab + 1)) and (max-width: calc((($bp_tab + 1) + (1920 - ($bp_tab + 1))) / 2)) {
-			@content;
-		}
-	}
-
-	@else if $device ==pc_l {
-
+	@else if $device == pc_l {
 		//pc_l
-		@media only screen and (min-width: calc((($bp_tab + 1) + (1920 - ($bp_tab + 1))) / 2 + 1)) {
-			@content;
-		}
-
-		@media print {
+		@media only screen and (min-width: ($bp_small_pc + 1px)) {
 			@content;
 		}
 	}
-
+	@else if $device == pc_ls {
+		//pc_ls
+		@media only screen and (min-width: ($bp_small_pc + 1px)) and (max-width: $bp_pcls) {
+			@content;
+		}
+	}
+	@else if $device == pc_s {
+		//pc_s
+		@media only screen and (min-width: ($bp_tab + 1px)) and (max-width: $bp_small_pc) {
+			@content;
+		}
+	}
 	@else if $device ==tab {
 
 		//tab
@@ -198,7 +197,7 @@ $green: #A5DA92;
 //----------------------------------------------//
 // %計算
 @function wCon($width, $parentWidth: $columnWidth) {
-	@return calc($width / $parentWidth) * 100%;
+	@return calc(#{$width} / #{$parentWidth} * 100%);
 }
 
 //----------------------------------------------//

@@ -18,7 +18,7 @@ style info : 汎用設定
   max-width: 1200px;
   margin: auto;
 }
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1024px) {
   .wrp_status .con_status {
     width: 91.6666666667%;
   }
@@ -28,7 +28,7 @@ style info : 汎用設定
   padding: 6em 0 8em;
   background: #f7f7f7;
 }
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .wrp_status {
     padding: 6em 0 8em;
   }
@@ -42,10 +42,10 @@ style info : 汎用設定
   padding-bottom: 0.5em;
   text-align: right;
   margin: auto;
-  width: 79.1666666667%;
+  width: calc(950 / 1200 * 100%);
   margin: auto;
 }
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .wrp_status .con_status .update {
     padding-bottom: 0.5em;
   }
@@ -59,7 +59,7 @@ style info : 汎用設定
   margin-top: 2em;
   text-align: center;
 }
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .wrp_status .con_status .txt {
     margin-top: 2em;
   }
@@ -86,7 +86,7 @@ style info : 汎用設定
 .wrp_status .con_status .box_status {
   overflow-x: auto;
   white-space: nowrap;
-  width: 79.1666666667%;
+  width: calc(950 / 1200 * 100%);
   margin: auto;
 }
 .wrp_status .con_status .box_status table {

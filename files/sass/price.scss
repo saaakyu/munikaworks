@@ -63,6 +63,10 @@ style info : コピー
 .wrp_price {
   @include cV(padding, 5em 0, 5em 0, 4em 0);
   background: $gray;
+  .pink_btn{
+    @include cV(margin-top, 2em, 2em, 2em);
+    text-align: center;
+  }
   .box_price {
     @extend %bw;
     &__img {

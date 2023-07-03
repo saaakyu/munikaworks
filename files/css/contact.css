@@ -18,7 +18,7 @@ style info : 汎用設定
   max-width: 1200px;
   margin: auto;
 }
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1024px) {
   .wrp_contact .con_contact .box_contact {
     width: 91.6666666667%;
   }
@@ -43,7 +43,7 @@ style info : 汎用設定
   padding: 6em 0 8em;
   background: #f7f7f7;
 }
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .wrp_contact {
     padding: 6em 0 8em;
   }
@@ -74,7 +74,7 @@ style info : 汎用設定
   display: block;
   padding: 1.5em 2em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .wrp_contact .con_contact .box_contact .request_btn a {
     padding: 1.5em 2em;
   }

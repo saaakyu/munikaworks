@@ -56,7 +56,7 @@ include realpath(__DIR__ . '/../config/include.php');
 			<div class="wrp_intro">
 				<div class="con_intro">
 					<div class="box_intro">
-						<p class="tmp_txt">料金は個人の方（同人）向けの価格です。<br>
+						<p class="tmp_txt">料金は個人の方向けの価格です。<br>
 							企業様の場合は異なりますので、まずはお問い合わせください。</p>
 					</div>
 					<ul class="box_link">
@@ -76,21 +76,20 @@ include realpath(__DIR__ . '/../config/include.php');
 				<ul class="con_price">
 
 					<li class="box_card">
-						<div class="box_card__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_works04.jpg" alt="" class="corner"></div>
+						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo01.jpg" alt="使い切りのロゴ" class="corner"></div>
 						<div class="box_card__name">使い切りのロゴ</div>
 						<div class="box_card__price"><span class="small">1点￥</span>7,700</div>
 						<div class="box_card__txt">同人誌やTRPGのタイトルロゴ、イベントロゴなど期間限定や一度使い切りを想定したロゴ。</div>
 					</li><!--/.box_card-->
 
 					<li class="box_card">
-						<div class="box_card__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_works04.jpg" alt="" class="corner"></div>
+						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo02.jpg" alt="継続使用・商用ロゴ" class="corner"></div>
 						<div class="box_card__name">継続使用・商用ロゴ</div>
-						<div class="box_card__price"><span class="small">1点￥</span>11,000</div>
+						<div class="box_card__price"><span class="small">1点￥</span>9,900</div>
 						<div class="box_card__txt">名前など、継続して使用するロゴや商用（営利）利用を目的としたロゴ。</div>
 					</li><!--/.box_card-->
-
 				</ul><!-- /.con_price -->
-
+				<!-- <div class="pink_btn"><a href="<?php echo LOCATION; ?>contact/logo_form/">ロゴデザインのご依頼はこちら</a></div> -->
 				<div class="wrp_option">
 					<div class="tmp_acc_box">
 						<div class="tmp_acc_tit js-accordion is-active">
@@ -141,24 +140,26 @@ include realpath(__DIR__ . '/../config/include.php');
 
 
 			<div class="wrp_price" id="link02">
-				<h3 class="ttl__jp blue center">表紙デザイン他</h3>
+				<h3 class="ttl__jp blue center">同人誌デザイン他</h3>
 				<div class="box_price">
 					<p class="box_price__txt">タイトルロゴ、イベントロゴ、TRPGロゴなど各種ロゴ制作を承っております。<br>シンボルマークを含んだデザインもご対応可能です。</p>
 				</div>
 				<ul class="con_price">
 
 					<li class="box_card">
-						<div class="box_card__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_works04.jpg" alt="" class="corner"></div>
+						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_cover01.jpg" alt="表紙イラストあり" class="corner"></div>
 						<div class="box_card__name">表紙イラストあり</div>
-						<div class="box_card__price"><span class="small">1点￥</span>12,200</div>
+						<div class="box_card__price"><span class="small">1点￥</span>11,000</div>
 					</li><!--/.box_card-->
 
 					<li class="box_card">
-						<div class="box_card__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_works04.jpg" alt="" class="corner"></div>
+						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_cover02.jpg" alt="表紙イラストなし" class="corner"></div>
 						<div class="box_card__name">表紙イラストなし</div>
-						<div class="box_card__price"><span class="small">1点￥</span>15,500</div>
+						<div class="box_card__price"><span class="small">1点￥</span>12,200</div>
 					</li><!--/.box_card-->
 				</ul><!-- /.con_price -->
+
+				<!-- <div class="pink_btn"><a href="<?php echo LOCATION; ?>contact/cover_form/">同人誌デザインのご依頼はこちら</a></div> -->
 				<div class="wrp_option">
 					<div class="tmp_acc_box">
 						<div class="tmp_acc_tit js-accordion is-active">
@@ -177,15 +178,15 @@ include realpath(__DIR__ . '/../config/include.php');
 										</tr>
 										<tr>
 											<th>デザイン流用ポスター</th>
-											<td><em>￥2,200～</em><br>表紙のデザインを流用してポスターを作成します。<br>ポスターのみの制作の場合は、別途ご相談ください。</td>
+											<td><em>￥3,300～</em><br>表紙のデザインを流用してポスターを作成します。<br>ポスターのみの制作の場合は、別途ご相談ください。</td>
 										</tr>
 										<tr>
 											<th>特殊加工データ制作</th>
 											<td><em>￥1,100～</em><br>箔押し他、特殊加工用のデータを制作します。</td>
 										</tr>
 										<tr>
-											<th>ロゴのみ追加納品</th>
-											<td><em>￥3,300</em><br>ロゴ単体のデータを納品します。表紙以外にもロゴを使用したい場合に。</td>
+											<th>ロゴのみ納品</th>
+											<td><em>￥2,200</em><br>ロゴ単体のデータを納品します。表紙以外にもロゴを使用したい場合に。</td>
 										</tr>
 									</tbody>
 								</table>
@@ -218,7 +219,7 @@ include realpath(__DIR__ . '/../config/include.php');
 					</li><!--/.box_card-->
 				</ul><!-- /.con_price -->
 			</div><!-- /.wrp_price -->
-			/*</style>
+			*/</style>
 
 			<div class="wrp_price" id="link04">
 				<h3 class="ttl__jp blue center">お支払い方法</h3>
@@ -230,6 +231,10 @@ include realpath(__DIR__ . '/../config/include.php');
 								<td>銀行振り込みのみ<br>
 									<span class="small">※内容が確定次第、メールにて振込先をお送りいたします。（原則先払い）</span>
 								</td>
+
+								<!-- <td>クレジットカード/銀行振り込み<br>
+								【対応カード】Visa/Mastercard/American Express<br>
+								<span class="small">※原則先払いとなります。内容が確定次第、メールにてご請求書・お振込先をお送りいたします。</span></td> -->
 
 							</tr>
 

@@ -390,11 +390,34 @@ body {
 }
 
 //----------------------------------------------//
+// その場で出現
+//----------------------------------------------//
+.fadeIn{
+  animation-name:fadeInAnime;
+  animation-duration:2s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeInAnime{
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+//----------------------------------------------//
 // 見出し
 //----------------------------------------------//
 
 .wrp_title {
   background: $light-yellow;
+  background-image: url(../images/common/bg_glitter.png);
+  background-repeat: repeat;
   @include cV(padding, 8em 0 5em, 8em 0 5em, 7em 0 3em);
   .con_title {
     text-align: center;

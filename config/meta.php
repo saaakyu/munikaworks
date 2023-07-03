@@ -18,8 +18,8 @@
 
 //共通文言
 define('TITLE', 'ムニカワークス | 創作活動を応援するデザインサービス');
-define('KEYWORDS', 'デザイン,世界観,タイトルロゴ,同人誌,装丁,表紙,ムニカワークス');
-define('DESCRIPTION', 'ムニカワークスは創作活動を応援するデザインサービスです。「世界観引き出すデザインを。」をコンセプトにロゴデザインや同人誌表紙デザイン等を承っております。');
+define('KEYWORDS', 'デザイン,世界観,ロゴ,同人誌,装丁,表紙');
+define('DESCRIPTION', 'ムニカワークスは創作活動を応援するデザインサービスです。「世界観引き出すデザインを。」をコンセプトにロゴデザインや同人誌デザインを承っております。');
 define('H1', '創作活動に関するデザインはムニカワークス');
 
 
@@ -39,6 +39,62 @@ $meta = array(
 if ($page == 'homepage') {
 	$meta['title'] = TITLE;
 	$meta['keywords'] = KEYWORDS;
+	$meta['description'] = DESCRIPTION;
+	$meta['h1'] = H1;
+}
+
+#ムニカワークスについて
+if ($page == 'about') {
+	$meta['title'] = 'ムニカワークスについて | ' . TITLE;
+	$meta['keywords'] = KEYWORDS . ',ムニカワークスのこと';
+	$meta['description'] = DESCRIPTION;
+	$meta['h1'] = H1;
+}
+
+#サービス内容
+if ($page == 'service') {
+	$meta['title'] = 'サービス内容 | ' . TITLE;
+	$meta['keywords'] = KEYWORDS . ',サービス内容';
+	$meta['description'] = DESCRIPTION;
+	$meta['h1'] = H1;
+}
+
+#料金について
+if ($page == 'price') {
+	$meta['title'] = '料金について | ' . TITLE;
+	$meta['keywords'] = KEYWORDS . ',料金';
+	$meta['description'] = DESCRIPTION;
+	$meta['h1'] = H1;
+}
+
+#現在の受付状況
+if ($page == 'status') {
+	$meta['title'] = '現在の受付状況 | ' . TITLE;
+	$meta['keywords'] = KEYWORDS . ',受付状況';
+	$meta['description'] = DESCRIPTION;
+	$meta['h1'] = H1;
+}
+
+#よくあるご質問
+if ($page == 'faq') {
+	$meta['title'] = 'よくあるご質問 | ' . TITLE;
+	$meta['keywords'] = KEYWORDS . ',よくあるご質問';
+	$meta['description'] = DESCRIPTION;
+	$meta['h1'] = H1;
+}
+
+#各種お問い合わせ
+if ($page == 'contact') {
+	$meta['title'] = '各種お問い合わせ | ' . TITLE;
+	$meta['keywords'] = KEYWORDS . ',各種お問い合わせ';
+	$meta['description'] = DESCRIPTION;
+	$meta['h1'] = H1;
+}
+
+#すべてのお問い合わせフォーム
+if ($page == 'contact_lower') {
+	$meta['title'] = 'お問い合わせフォーム | ' . TITLE;
+	$meta['keywords'] = KEYWORDS . ',お問い合わせフォーム';
 	$meta['description'] = DESCRIPTION;
 	$meta['h1'] = H1;
 }
