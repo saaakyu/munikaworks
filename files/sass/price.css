@@ -95,7 +95,7 @@ style info : 汎用設定
   }
 }
 .box_link li a::after {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   content: "\f107";
   font-weight: 900;
   -webkit-transition: all 0.3s;

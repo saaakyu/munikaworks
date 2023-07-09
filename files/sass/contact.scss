@@ -12,19 +12,6 @@ style info : コピー
   text-align: center;
   .con_intro {
     .box_intro {
-      a {
-        color: $pink;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-      .txt {
-        em {
-          @include fsz(22);
-          @include sans-serif("title_jp");
-        }
-      }
-    }
   }
 }
 

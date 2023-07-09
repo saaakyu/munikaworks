@@ -93,7 +93,7 @@ style info : 汎用設定
   display: grid;
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
-  grid-template-columns: 0.6fr 0.5fr 0.5fr 1.5fr;
+  grid-template-columns: 0.6fr 0.5fr 1.5fr;
   gap: 2px;
   margin: auto;
   border-spacing: 0;

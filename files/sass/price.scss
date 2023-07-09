@@ -8,54 +8,6 @@ style info : コピー
 =================================================================== */
 @import "settings";
 
-//----------------------------------------------//
-// .box_link
-//----------------------------------------------//
-.box_link {
-  @extend %bw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  @include fsz(18);
-  @include sans-serif("title_jp");
-  @include cV(margin, 0em auto 5em, 0em auto 5em, 0em auto 3em);
-  width: 100%;
-  li {
-    justify-content: center;
-    @include mq(pc_tab) {
-      &:not(:last-of-type) {
-        margin: 0 2em 0 0;
-      }
-    }
-    @include mq(sp) {
-      width: 47%;
-      margin: 0 0 2em 0;
-      &:nth-child(2n) {
-        margin-left: 3%;
-      }
-    }
-    a {
-      display: flex;
-      color: $pink;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      text-align: center;
-      border-bottom: 1px solid $pink;
-      @include cV(padding, 0 0.5em, 0 0.5em, 0);
-      &::after {
-        font-family: "Font Awesome 5 Free";
-        content: "\f107";
-        font-weight: 900;
-        transition: all 0.3s;
-        margin-left: 0.5em;
-      }
-      &:hover::after {
-        transform: translateY(0.3em);
-      }
-    }
-  }
-}
 
 // -----------------------------------------------------------
 // .wrp_price
@@ -66,6 +18,9 @@ style info : コピー
   .pink_btn{
     @include cV(margin-top, 2em, 2em, 2em);
     text-align: center;
+  }
+  .ttl__jp{
+    @include cV(margin-bottom, 1em, 1em, 1em);
   }
   .box_price {
     @extend %bw;
@@ -79,7 +34,7 @@ style info : コピー
     }
     &__txt {
       text-align: center;
-      @include cV(padding, 1em 0 3em, 1em 0 1em, 1em 0 3em);
+      @include cV(margin-bottom, 3em, 3em, 2em);
       @include mq(sp) {
         width: 100%;
         text-align: justify;

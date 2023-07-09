@@ -57,7 +57,7 @@ include realpath(__DIR__ . '/../config/include.php');
 				<div class="con_intro">
 					<div class="box_intro">
 						<div class="txt center"><em>ご希望の内容をお選びください。</em></div>
-						<p class="txt center">現在の受付状況については<a href="<?php echo LOCATION; ?>status/">こちら</a>。</p>
+						<p class="txt center">現在の受付状況については<a href="<?php echo LOCATION; ?>status/">こちら</a>。<br><br>複数ご依頼の際は、メインとなるご依頼のフォームからお入りいただき、<br class="view_pc-tab">追加のご依頼内容を「その他やりたいこと」の欄にご記載ください。</p>
 					</div>
 				</div>
 			</div><!-- /.wrp_intro -->
@@ -75,7 +75,7 @@ include realpath(__DIR__ . '/../config/include.php');
 
 						<div class="request_btn">
 							<a href="<?php echo LOCATION; ?>contact/cover_form/">
-								<p class="category"><span class="sky_blue">同人誌表紙デザイン</span>の<br class="view_sp">ご依頼</p>
+								<p class="category"><span class="sky_blue">同人誌デザイン</span>の<br class="view_sp">ご依頼</p>
 								<p class="en">More</p>
 							</a>
 						</div>

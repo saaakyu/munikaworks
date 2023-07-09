@@ -135,6 +135,30 @@ img {
   }
 }
 
+/*制作実績のボタンを整える*/
+.btn.normal, .btn-normal a{
+  font-size: 120%;
+}
+
+.wp-block-sgb-btn-group{
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo",
+  "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic",
+  "YuGothic", "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode",
+  "Lucida Grande", Verdana, Arial, sans-serif !important;
+}
+
+/*制作実績のみカードを768px（tab）まで2列、それ以下は1列*/
+@media only screen and (max-width: 767px) {
+  .wp-block-sgb-btn-group{
+    flex-direction: column;
+    gap: 0;
+  }
+  .wp-block-sgb-btn-group p{
+    margin:0;
+  }
+}
+
+
 /*カテゴリーページ横幅100%*/
 .inner-content {
   width: 100%;

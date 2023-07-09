@@ -81,8 +81,7 @@ include realpath(__DIR__ . '/../config/include.php');
 							<thead>
 								<tr>
 									<th scope="col" class="type"></th>
-									<th scope="col" class="type">新規の方</th>
-									<th scope="col" class="type">リピーター</th>
+									<th scope="col" class="type">受付状況</th>
 									<th scope="col" class="type">コメント</th>
 								</tr>
 							</thead>
@@ -90,18 +89,15 @@ include realpath(__DIR__ . '/../config/include.php');
 								<tr>
 									<th>ロゴ制作<span class="small_txt">制作期間:約2週間<span></th>
 									<td class="ic_status pink">○</td>
-									<td class="ic_status pink">○</td>
 									<td>随時受付中です</td>
 								</tr>
 								<tr>
-									<th>同人誌表紙<span class="small_txt">制作期間:1か月</span></th>
-									<td class="ic_status pink">○</td>
+									<th>同人誌デザイン<span class="small_txt">制作期間:1か月</span></th>
 									<td class="ic_status pink">○</td>
 									<td>随時受付中です</td>
 								</tr>
 								<tr>
 									<th>その他<span class="small_txt">制作期間:2週間～</span></th>
-									<td class="ic_status dark_gray">ー</td>
 									<td class="ic_status dark_gray">ー</td>
 									<td><a class="pink" href="<?php echo LOCATION; ?>contact/">お問い合わせ</a>よりご相談ください</td>
 								</tr>

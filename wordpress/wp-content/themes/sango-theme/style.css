@@ -2493,7 +2493,7 @@ input.searchform__input:focus + .searchform__submit i {
 }
 .fa5 .follow_btn .Feedly:before,
 .fa5 .follow_btn .Website:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
 }
 
@@ -3377,7 +3377,7 @@ body .totop i {
 .fa5 .widget ul li ul li a:before,
 .fa5 #reply-title:before,
 .fa5 .footer .widget ul:not(.my-widget):not(.profile-sns) li a:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
 }
 .fa5 .fab {
@@ -3446,7 +3446,7 @@ body .drawer .wp-block-categories {
   font-variant: normal;
   text-rendering: auto;
   font-weight: bold;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
 }
 .footer .wp-block-search .wp-block-search__label,
 .sidebar .wp-block-search .wp-block-search__label,

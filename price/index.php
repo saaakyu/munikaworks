@@ -57,11 +57,12 @@ include realpath(__DIR__ . '/../config/include.php');
 				<div class="con_intro">
 					<div class="box_intro">
 						<p class="tmp_txt">料金は個人の方向けの価格です。<br>
-							企業様の場合は異なりますので、まずはお問い合わせください。</p>
+							企業様の場合は異なりますので、まずはお問い合わせください。<br>
+						※価格はすべて税込です。</p>
 					</div>
 					<ul class="box_link">
 						<li><a href="#link01">ロゴデザイン</a></li>
-						<li><a href="#link02">表紙デザイン他</a></li>
+						<li><a href="#link02">同人誌デザイン</a></li>
 						<!-- <li><a href="#link03">サイト制作</a></li> -->
 						<li><a href="#link04">お支払い方法</a></li>
 					</ul>
@@ -70,23 +71,23 @@ include realpath(__DIR__ . '/../config/include.php');
 
 			<div class="wrp_price" id="link01">
 				<h3 class="ttl__jp blue center">ロゴデザイン</h3>
-				<div class="box_price">
-					<p class="box_price__txt">タイトルロゴ、イベントロゴ、TRPGロゴなど各種ロゴ制作を承っております。<br>シンボルマークを含んだデザインもご対応可能です。</p>
-				</div>
+				<!-- <div class="box_price">
+					<p class="box_price__txt">タイトルロゴ、イベントロゴ、TRPGロゴなど各種ロゴ制作を承っております。</p>
+				</div> -->
 				<ul class="con_price">
 
 					<li class="box_card">
 						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo01.jpg" alt="使い切りのロゴ" class="corner"></div>
 						<div class="box_card__name">使い切りのロゴ</div>
 						<div class="box_card__price"><span class="small">1点￥</span>7,700</div>
-						<div class="box_card__txt">同人誌やTRPGのタイトルロゴ、イベントロゴなど期間限定や一度使い切りを想定したロゴ。</div>
+						<div class="box_card__txt">同人誌やTRPGのタイトルロゴ、イベントロゴなど期間限定や一度使い切りを想定したロゴです。</div>
 					</li><!--/.box_card-->
 
 					<li class="box_card">
 						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo02.jpg" alt="継続使用・商用ロゴ" class="corner"></div>
 						<div class="box_card__name">継続使用・商用ロゴ</div>
 						<div class="box_card__price"><span class="small">1点￥</span>9,900</div>
-						<div class="box_card__txt">名前など、継続して使用するロゴや商用（営利）利用を目的としたロゴ。</div>
+						<div class="box_card__txt">名前など、継続して使用するロゴや商用（営利）利用を目的としたロゴです。</div>
 					</li><!--/.box_card-->
 				</ul><!-- /.con_price -->
 				<!-- <div class="pink_btn"><a href="<?php echo LOCATION; ?>contact/logo_form/">ロゴデザインのご依頼はこちら</a></div> -->
@@ -141,21 +142,24 @@ include realpath(__DIR__ . '/../config/include.php');
 
 			<div class="wrp_price" id="link02">
 				<h3 class="ttl__jp blue center">同人誌デザイン他</h3>
-				<div class="box_price">
-					<p class="box_price__txt">タイトルロゴ、イベントロゴ、TRPGロゴなど各種ロゴ制作を承っております。<br>シンボルマークを含んだデザインもご対応可能です。</p>
-				</div>
+				<!-- <div class="box_price">
+					<p class="box_price__txt">漫画や小説など、同人誌の表紙デザインを承っております。</p>
+				</div> -->
 				<ul class="con_price">
 
 					<li class="box_card">
 						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_cover01.jpg" alt="表紙イラストあり" class="corner"></div>
 						<div class="box_card__name">表紙イラストあり</div>
 						<div class="box_card__price"><span class="small">1点￥</span>11,000</div>
+						<div class="box_card__txt">表紙用イラストのご用意がある場合の価格となります。ご提供いただいたイラストに文字やあしらいを入れ、全体のレイアウトをご提案いたします。</div>
 					</li><!--/.box_card-->
 
 					<li class="box_card">
 						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_cover02.jpg" alt="表紙イラストなし" class="corner"></div>
 						<div class="box_card__name">表紙イラストなし</div>
-						<div class="box_card__price"><span class="small">1点￥</span>12,200</div>
+						<div class="box_card__price"><span class="small">1点￥</span>13,300</div>
+						<div class="box_card__txt">表紙用イラストのご用意がない場合の価格となります。こちらで素材からご用意し、全体のレイアウトをご提案いたします。</div>
+						
 					</li><!--/.box_card-->
 				</ul><!-- /.con_price -->
 

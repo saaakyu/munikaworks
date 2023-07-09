@@ -37,7 +37,6 @@
 							<div class="item5"></div>
 							<div class="item6"></div>
 							<div class="item7"></div>
-
 						</div>
 					</div>
 
@@ -60,7 +59,7 @@
 						<div class="box_intro__txt">
 							<span class="ttl__en">About</span>
 							<h3 class="ttl__jp"><span class="pink">創作活動のデザイン</span>、<br class="view_tab-sp">承ります</h3>
-							<p class="tmp_txt">ムニカワークスは、創作活動を応援するデザインサービスです。<br>
+							<p class="tmp_txt">ムニカワークスは、創作・クリエイター活動を応援するデザインサービスです。<br>
 								コンテンツの魅力をたくさんの方にお伝えするため、ロゴや同人誌の表紙をはじめとしたデザインのご依頼を承っております。</p>
 							<div class="pink_btn"><a href="<?php echo LOCATION; ?>about/">ムニカワークスについて</a></div>
 						</div>
@@ -72,7 +71,7 @@
 						<div class="box_service__txt">
 							<span class="ttl__en">Service</span>
 							<h3 class="ttl__jp"><span class="pink">お手伝い</span>できること</h3>
-							<p class="tmp_txt">ロゴデザイン、同人誌表紙デザイン、<br class="view_pc-tab">その他創作活動に必要なデザイン周りのご相談を受け付けております。</p>
+							<p class="tmp_txt">ロゴデザイン、同人誌デザイン、<br class="view_pc-tab">その他創作活動に必要なデザイン周りのご相談を受け付けております。</p>
 						</div>
 						<div class="box_service__explain">
 							<div class="service_inner">
@@ -81,7 +80,7 @@
 							</div>
 							<div class="service_inner">
 								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service2.png" alt=""></p>
-								<p class="service__name">同人誌<br>表紙デザイン</p>
+								<p class="service__name">同人誌<br>デザイン</p>
 							</div>
 							<!-- <div class="service_inner">
 								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service3.png" alt=""></p>

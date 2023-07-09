@@ -23,6 +23,7 @@ body {
   -webkit-text-size-adjust: none;
   padding: 0 !important;
   @include fsz($baseSize, 13);
+
   @include mq(sp) {
     @include fsz($baseSizeSp, 13);
   }
@@ -75,6 +76,7 @@ select {
 //----------------------------------------------//
 body {
   @include mq(pc) {
+
     .view_tab-sp,
     .view_tab {
       display: none !important;
@@ -94,6 +96,7 @@ body {
   }
 
   @include mq(sp) {
+
     .view_pc-tab,
     .view_tab {
       display: none !important;
@@ -104,8 +107,7 @@ body {
 //----------------------------------------------//
 // .mouseOver
 //----------------------------------------------//
-.over {
-}
+.over {}
 
 //----------------------------------------------//
 // #munika_page
@@ -140,7 +142,9 @@ body {
 //----------------------------------------------//
 #header {
   position: fixed;
-  top: 0 /*ワードプレス用*/;
+  top: 0
+    /*ワードプレス用*/
+  ;
   z-index: 999;
   display: flex;
   justify-content: space-between;
@@ -149,22 +153,28 @@ body {
   @include sans-serif("title_jp");
   @include cV(padding, 0.8em 2em 0 2.5em, 1.5em 2em 0, 1em 1.5em 0);
   width: 100%;
+
   .h_logo {
     img {
       @include cV(width, 17rem, 17rem, 60%);
-      border-radius: unset /*ワードプレス用*/;
+      border-radius: unset
+        /*ワードプレス用*/
+      ;
       height: auto;
     }
   }
 
   .header__nav {
     display: flex;
+
     .nav {
       display: flex;
       align-items: center;
+
       li {
         @include cV(padding-right, 1.3em, 0, 0);
         letter-spacing: 0.05em;
+
         a {
           @include hover-color("pink");
         }
@@ -184,11 +194,14 @@ body {
   transition: all 0.4s; //メニューが出てくる早さ
   @include fsz-cha(16, 16, 18);
   letter-spacing: 0.08em;
+
   @include mq(sp) {
     width: 85vw;
   }
+
   &.panelactive {
     right: 0;
+
     .gnav_list {
       /*ナビの数が増えた場合縦スクロール*/
       position: fixed;
@@ -196,6 +209,7 @@ body {
       z-index: 999;
       height: 100vh;
       overflow: auto;
+
       @include mq(sp) {
         width: 85vw;
       }
@@ -207,11 +221,15 @@ body {
     z-index: 999;
     top: 50%;
     left: calc(50% - 20%);
-    transform: translate(-20%, -50%) !important/*ワードプレス用important*/;
+    transform: translate(-20%, -50%) !important
+      /*ワードプレス用important*/
+    ;
   }
+
   li {
     text-align: left;
   }
+
   a {
     color: #fff;
     text-decoration: none;
@@ -222,7 +240,8 @@ body {
 
 .openbtn {
   position: fixed;
-  z-index: 9999; /*ボタンを最前面に*/
+  z-index: 9999;
+  /*ボタンを最前面に*/
   top: 10px !important;
   right: 10px !important;
   cursor: pointer;
@@ -231,6 +250,7 @@ body {
   border-radius: 200px !important;
   background: $white !important;
   border: 2px solid $blue;
+
   .gnav_solid {
     /*×に変化*/
     display: inline-block;
@@ -242,27 +262,34 @@ body {
     width: 50% !important;
     background: $blue !important;
     height: 2px;
+
     &:nth-of-type(1) {
       top: 15px;
     }
+
     &:nth-of-type(2) {
       top: 25px;
     }
+
     &:nth-of-type(3) {
       top: 35px;
     }
   }
+
   &.btn_active {
     div {
       width: 40% !important;
+
       &:nth-of-type(1) {
         top: 19px;
         left: 30%;
         transform: translateY(6px) rotate(-45deg) !important;
       }
+
       &:nth-of-type(2) {
         opacity: 0;
       }
+
       &:nth-of-type(3) {
         top: 31px;
         left: 30%;
@@ -275,8 +302,7 @@ body {
 //----------------------------------------------//
 // #contents
 //----------------------------------------------//
-#contents {
-}
+#contents {}
 
 //----------------------------------------------//
 // #footer
@@ -287,17 +313,21 @@ body {
   background-color: $light-blue;
   @include sans-serif("title_jp");
   @include fsz-cha(16, 16, 18);
+
   .footer {
     display: flex;
+
     &__wrap {
       @extend %bw;
       display: flex;
       justify-content: space-between;
       @include cV(padding, 3em 0, 3em 0, 2em 0);
+
       @include mq(sp) {
         width: 85%;
         flex-direction: column;
       }
+
       .contact {
         @include cV(padding-bottom, 1em, 1em, 1em);
         display: flex;
@@ -305,15 +335,19 @@ body {
 
         .f_logo {
           @include cV(padding-bottom, 1em, 1em, 0.8em);
+
           span {
             color: $blue;
             line-height: 2.5;
             @include fsz(16, 18);
           }
+
           img {
             @include cV(width, 14em, 12em, 14em);
             height: auto;
-            border-radius: unset /*ワードプレス用*/;
+            border-radius: unset
+              /*ワードプレス用*/
+            ;
           }
         }
 
@@ -321,14 +355,19 @@ body {
           display: flex;
           flex-direction: column;
           @include cV(padding-top, 2em, 2em, 1em);
+
           &__icon {
             display: flex;
+
             li:not(:last-of-type) {
               @include cV(padding-right, 0.8em, 0.8em, 0.8em);
             }
           }
+
           i {
-            font-size: 1.5em !important/*ワードプレス用important*/;
+            font-size: 1.5em !important
+              /*ワードプレス用important*/
+            ;
             color: $blue;
             @include cV(padding-top, 0.5em, 0.5em, 0);
           }
@@ -338,12 +377,15 @@ body {
 
     &__nav {
       display: flex;
+
       @include mq(tab_sp) {
         justify-content: center;
       }
+
       @include mq(sp) {
         flex-direction: column;
       }
+
       .nav:not(:last-of-type) {
         @include cV(padding-right, 3em, 1em, 0);
       }
@@ -366,6 +408,7 @@ body {
             @include hover-color("blue");
           }
         }
+
         .contact_btn {
           @include cV(margin-top, 0.8em, 0.8em, 0.8em);
         }
@@ -392,23 +435,23 @@ body {
 //----------------------------------------------//
 // その場で出現
 //----------------------------------------------//
-.fadeIn{
-  animation-name:fadeInAnime;
-  animation-duration:2s;
-  animation-fill-mode:forwards;
-  opacity:0;
+.fadeIn {
+  animation-name: fadeInAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
   }
-  
-  @keyframes fadeInAnime{
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
+
+  to {
+    opacity: 1;
   }
-  
+}
+
 
 //----------------------------------------------//
 // 見出し
@@ -419,21 +462,22 @@ body {
   background-image: url(../images/common/bg_glitter.png);
   background-repeat: repeat;
   @include cV(padding, 8em 0 5em, 8em 0 5em, 7em 0 3em);
+
   .con_title {
     text-align: center;
+
     .ttl__en {
       display: inline-block;
       line-height: 1.5;
       @include sans-serif("en");
       @include fsz(25);
       color: $blue;
-      @include cV(
-        padding,
+      @include cV(padding,
         0.2em 0.5em 0.02em,
         0.2em 0.5em 0.02em,
-        0.2em 0.5em 0.02em
-      );
+        0.2em 0.5em 0.02em);
     }
+
     .ttl__jp {
       line-height: 1.5;
       @include sans-serif("title_jp");
@@ -478,6 +522,7 @@ body {
 .bright_yellow {
   color: $bright-yellow;
 }
+
 //----------------------------------------------//
 // ピンクボタン
 //----------------------------------------------//
@@ -485,6 +530,7 @@ body {
   @include mq(sp) {
     text-align: center;
   }
+
   a {
     @include sans-serif("title_jp");
     @include fsz(18);
@@ -498,6 +544,7 @@ body {
     @include cV(padding, 0.6em 2em, 0.6em 2em, 0.6em 2em);
     transition: 0.3s;
     border: 2px $pink solid;
+
     @include mq(pc) {
       &:hover {
         background-color: $pink;
@@ -523,6 +570,7 @@ body {
     @include cV(padding, 0.4em 1.5em, 0.4em 1.5em, 0);
     transition: 0.3s;
     border: 2px $blue solid;
+
     &::before {
       font-family: "Font Awesome 6 Free";
       content: "\f0e0";
@@ -530,6 +578,7 @@ body {
       font-size: 1.5em;
       @include cV(padding-right, 0.5em, 0.5em, 0);
     }
+
     @include mq(pc) {
       &:hover {
         background-color: $white;
@@ -547,6 +596,7 @@ body {
   background-color: $cream;
   position: relative;
   z-index: 0;
+
   &::before {
     content: "";
     background-image: url(../images/common/blue_left_upper.png);
@@ -559,6 +609,7 @@ body {
     z-index: -2;
     @include cV(background-size, 80%, 50%, 40%);
   }
+
   &::after {
     content: "";
     background-image: url(../images/common/pink_right_under.png);
@@ -572,15 +623,18 @@ body {
     @include cV(background-size, 100%, 60%, 50%);
     z-index: -3;
   }
+
   .con_contact {
     .box_contact {
       &__txt {
         width: wCon(650, 1200);
         text-align: center;
         margin: auto;
+
         @include mq(sp) {
           width: 90%;
         }
+
         // -----------------------------------------------------------
         // TOP共通デザイン
         // -----------------------------------------------------------
@@ -591,20 +645,20 @@ body {
           color: $blue;
           border-top: $blue 1px solid;
           border-bottom: $blue 1px solid;
-          @include cV(
-            padding,
+          @include cV(padding,
             0.2em 0.5em 0.02em,
             0.2em 0.5em 0.02em,
-            0.2em 0.5em 0.02em
-          );
+            0.2em 0.5em 0.02em);
           @include cV(margin-bottom, 1em, 1em, 1em);
           line-height: 1.5;
+
           @include mq(sp) {
             text-align: center;
           }
         }
       }
     }
+
     .pink_btn {
       @include cV(margin-top, 3em, 3em, 3em);
       text-align: center;
@@ -628,22 +682,98 @@ body {
 .lower #contents {
   .wrp_intro {
     @extend %bw;
+
     .con_intro {
       .box_intro {
         @include cV(padding, 5em 0, 5em 0, 3em 0);
         margin: auto;
         width: wCon(950, 1200);
+
         @include mq(sp) {
           width: 100%;
         }
+
+        a {
+          color: $pink;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .txt {
+          em {
+            @include fsz(22);
+            @include sans-serif("title_jp");
+          }
+        }
+
         .tmp_txt {
           text-align: center;
+
           @include mq(sp) {
             text-align: justify;
           }
         }
       }
+
+      //----------------------------------------------//
+      // .box_link
+      //----------------------------------------------//
+      .box_link {
+        @extend %bw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include fsz(18);
+        @include sans-serif("title_jp");
+        @include cV(margin, 0em auto 5em, 0em auto 5em, 0em auto 3em);
+        width: 100%;
+
+        li {
+          justify-content: center;
+
+          @include mq(pc_tab) {
+            &:not(:last-of-type) {
+              margin: 0 2em 0 0;
+            }
+          }
+
+          @include mq(sp) {
+            width: 47%;
+            margin: 0 0 2em 0;
+
+            &:nth-child(2n) {
+              margin-left: 3%;
+            }
+          }
+
+          a {
+            display: flex;
+            color: $pink;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            text-align: center;
+            border-bottom: 1px solid $pink;
+            @include cV(padding, 0 0.5em, 0 0.5em, 0);
+
+            &::after {
+              font-family: "Font Awesome 6 Free";
+              content: "\f107";
+              font-weight: 900;
+              transition: all 0.3s;
+              margin-left: 0.5em;
+            }
+
+            &:hover::after {
+              transform: translateY(0.3em);
+            }
+          }
+        }
+      }
     }
+
   }
 
   // -----------------------------------------------------------
@@ -652,13 +782,16 @@ body {
   .wrp_lay_right {
     @include cV(padding, 8em 0, 5em 0, 5em 0);
     background: $line-gray;
+
     .con_lay {
       @extend %bw;
       display: flex;
       align-items: center;
+
       @include mq(sp) {
         flex-direction: column;
       }
+
       .box_lay {
         &__img {
           img {
@@ -667,13 +800,16 @@ body {
             }
           }
         }
+
         &__txt {
           width: wCon(600, 1200);
           @include cV(margin, 0 0 0 10em, 0 0 0 8em, 3em 0 0 0);
+
           @include mq(sp) {
             width: 100%;
             text-align: center;
           }
+
           .tmp_txt {
             text-align: justify;
           }
@@ -687,110 +823,130 @@ body {
 // テーブル
 //----------------------------------------------//
 .tmp_tbl_base {
-	width: 100%;
-	position: relative;
-	z-index: 1;
-	> tbody {
-		> tr {
-			&:first-child {
-				th {
-					border-top: 1px solid #d9d9d9;
-				}
-				td {
-					border-top: 1px solid $line-gray;
-				}
-			}
-			> th {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+  >tbody {
+    >tr {
+      &:first-child {
+        th {
+          border-top: 1px solid #d9d9d9;
+        }
+
+        td {
+          border-top: 1px solid $line-gray;
+        }
+      }
+
+      >th {
         @include fsz(16);
         @include sans-serif("title_jp");
-				@include cV(width, 25%, 40%);
-				border-bottom: 1px solid #d9d9d9;
-			}
-			> td {
+        @include cV(width, 25%, 40%);
+        border-bottom: 1px solid #d9d9d9;
+      }
+
+      >td {
         @include fsz(13);
-				border-bottom: 1px solid $line-gray;
-        em{
-          @include fsz(20,13);
+        border-bottom: 1px solid $line-gray;
+
+        em {
+          @include fsz(20, 13);
           @include sans-serif("title_jp");
         }
-			}
-		}
-	}
+      }
+    }
+  }
 }
+
 // 基本テーブル
 table.tmp_table {
-	@extend .tmp_tbl_base;
-	&.wide {
-		> tbody {
-			> tr {
-				> th {
-					@include cV(padding, 1em, 1em .5em);
-					background-color: $line-gray;
-				}
-				> td {
-					@include cV(padding, 1em 1em 1em 2em, 1em .5em);
+  @extend .tmp_tbl_base;
 
-				}
-			}
-		}
-	}
-	&.thin {
-		> tbody {
-			> tr {
-				> th {
-					@include cV(padding, 0.5em 1em, .5em);
-				}
-				> td {
-					@include cV(padding, .5em .5em .5em 2em, .5em);
-				}
-			}
-		}
-	}
+  &.wide {
+    >tbody {
+      >tr {
+        >th {
+          @include cV(padding, 1em, 1em .5em);
+          background-color: $line-gray;
+        }
+
+        >td {
+          @include cV(padding, 1em 1em 1em 2em, 1em .5em);
+
+        }
+      }
+    }
+  }
+
+  &.thin {
+    >tbody {
+      >tr {
+        >th {
+          @include cV(padding, 0.5em 1em, .5em);
+        }
+
+        >td {
+          @include cV(padding, .5em .5em .5em 2em, .5em);
+        }
+      }
+    }
+  }
 }
+
 // SPで可変するテーブル
 table.tmp_table_respon {
-	@extend .tmp_tbl_base;
-	> * {
-		box-sizing: border-box;
-	}
+  @extend .tmp_tbl_base;
+
+  >* {
+    box-sizing: border-box;
+  }
+
   &.thin {
-		> tbody {
-			> tr {
-				> th {
-					@include cV(padding, 0.5em 1em, .5em 1em);
+    >tbody {
+      >tr {
+        >th {
+          @include cV(padding, 0.5em 1em, .5em 1em);
           border-radius: 0.5em;
-				}
-				> td {
-					@include cV(padding, .5em .5em .5em 2em, 0.5em .5em 1em);
-				}
-			}
-		}
-	}
-	@include mq(sp) {
-		table {
-			display: block;
-		}
-		tbody {
-			display: block;
-		}
-		tr {
-			display: block;
-		}
-		th,
-		td {
-			box-sizing: border-box;
-			display: block;
-			width: 100%!important;
-		}
-		th {
-			background-color: $line-gray;
-			border-bottom: none!important;
-			border-top: none!important;
-		}
-		td {
-			border-top: none!important;
-		}
-	}
+        }
+
+        >td {
+          @include cV(padding, .5em .5em .5em 2em, 0.5em .5em 1em);
+        }
+      }
+    }
+  }
+
+  @include mq(sp) {
+    table {
+      display: block;
+    }
+
+    tbody {
+      display: block;
+    }
+
+    tr {
+      display: block;
+    }
+
+    th,
+    td {
+      box-sizing: border-box;
+      display: block;
+      width: 100% !important;
+    }
+
+    th {
+      background-color: $line-gray;
+      border-bottom: none !important;
+      border-top: none !important;
+    }
+
+    td {
+      border-top: none !important;
+    }
+  }
 }
 
 
@@ -799,34 +955,46 @@ table.tmp_table_respon {
 //-----------------------------------------------------------
 .tmp_acc_box {
   width: 100%;
-	.tmp_acc_tit {
-    border-radius: 0.8em;
-		background-color: $light-blue;
-		@include cV(padding, .75em 2em, .5em 1em);
-		display: flex;
-		align-items: baseline;
-		cursor: pointer;
-    @include fsz(18 );
-    @include sans-serif("title_jp");
-    @include ic_accordion {
-      .ic {
-        background-color: $blue;
-        margin-right: 0;
-        margin-left: auto;
+}
+
+.tmp_acc_tit {
+  border-radius: 0.8em;
+  background-color: $light-blue;
+  @include cV(padding, .75em 2em, .5em 1em);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  @include fsz-cha(18, 18, 16);
+  @include sans-serif("title_jp");
+
+  @include ic_accordion {
+    .ic {
+      background-color: $blue;
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+}
+
+.tmp_st_s {
+  @include cV(width, calc(100% - 3em), calc(100% - 3.8em));
+  font-weight: 500;
+}
+
+.tmp_acc_target {
+  @include cV(padding, 2em 0, 1.5em 0);
+  display: none;
+
+  .target_inner {
+    @include cV(width, wCon(715, 800), 88%, 94%);
+    margin-right: auto;
+    margin-left: auto;
+    a {
+      color: $pink;
+  
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
-		.tmp_st_s {
-			@include cV(width, calc(100% - 3em), calc(100% - 2.5em));
-      font-weight: 500;
-	}
-	.tmp_acc_target {
-		@include cV(padding,2em 0, 1.5em 0);
-		display: none;
-		.target_inner {
-			@include cV(width, wCon(715, 800), 88%, 94%);
-			margin-right: auto;
-			margin-left: auto;
-		}
-	}
 }

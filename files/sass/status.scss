@@ -47,7 +47,7 @@ style info : コピー
       table {
         display: grid;
         @include sans-serif("title_jp");
-        grid-template-columns: 0.6fr 0.5fr 0.5fr 1.5fr;
+        grid-template-columns: 0.6fr 0.5fr 1.5fr;
         gap: 2px;
         margin: auto;
         border-spacing: 0;

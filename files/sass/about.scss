@@ -24,7 +24,6 @@ style info : コピー
       @include cV(height, 100%, 100%, 50%);
       @include cV(width, 40%, 30%, 80%);
       right: 0;
-      bottom: -7%;
       z-index: -1;
       border-radius: 2em 0 0 2em;
     }
@@ -41,15 +40,16 @@ style info : コピー
         &::before {
           content: "";
           position: absolute;
-          background-image: url(../../about/images/img_shape_dot01.png);
+          background-image: url(../../about/images/img_shape_dot02.png);
           background-repeat: no-repeat;
-          background-position: bottom left;
+          background-position: bottom right;
+          width: 199px;
+          height: 172px;
+          @include cV(right,  -8%,  -8%, 0%);
+          @include cV(bottom, -10%, -10%, -5%);
           @include cV(background-size,  100%,  80%, 70%);
-          width: 181px;
-          height: 191px;
-          @include cV(left,  -15%,  -10%, 0%);
-          @include cV(bottom, -10%, -10%, -13%);
         }
+
         img {
           @include mq(sp) {
             width: 100%;
@@ -98,14 +98,14 @@ style info : コピー
         &::before {
           content: "";
           position: absolute;
-          background-image: url(../../about/images/img_shape_dot02.png);
+          background-image: url(../../about/images/img_shape_dot01.png);
           background-repeat: no-repeat;
-          background-position: bottom right;
-          width: 199px;
-          height: 172px;
-          @include cV(right,  -8%,  -8%, 0%);
-          @include cV(bottom, -10%, -10%, -5%);
+          background-position: bottom left;
           @include cV(background-size,  100%,  80%, 70%);
+          width: 181px;
+          height: 191px;
+          @include cV(left,  -15%,  -10%, 0%);
+          @include cV(bottom, -10%, -10%, -13%);
         }
         img {
           @include mq(sp) {
@@ -167,7 +167,7 @@ style info : コピー
       }
       &__txt {
         .point_txt{
-          @include cV(margin, 0.5em auto 0, 0.5em auto 0, 0.5em auto 0);
+          @include cV(margin, 0.5em auto, 0.5em auto, 0.5em auto);
             text-align: center;
             @include fsz-cha(24,24,28);
             @include sans-serif("title_jp");

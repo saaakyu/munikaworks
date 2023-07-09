@@ -8,55 +8,6 @@ style info : コピー
 =================================================================== */
 @import "settings";
 
-//----------------------------------------------//
-// .box_link
-//----------------------------------------------//
-.box_link {
-  @extend %bw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  @include fsz(18);
-  @include sans-serif("title_jp");
-  @include cV(margin, 0em auto 5em, 0em auto 5em, 0em auto 3em);
-  width: 100%;
-  li {
-    justify-content: center;
-    @include mq(pc_tab) {
-      &:not(:last-of-type) {
-        margin: 0 2em 0 0;
-      }
-    }
-    @include mq(sp) {
-      width: 47%;
-      margin: 0 0 2em 0;
-      &:nth-child(2n) {
-        margin-left: 3%;
-      }
-    }
-    a {
-      display: flex;
-      color: $pink;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      text-align: center;
-      border-bottom: 1px solid $pink;
-      @include cV(padding, 0 0.5em, 0 0.5em, 0);
-      &::after {
-        font-family: "Font Awesome 5 Free";
-        content: "\f107";
-        font-weight: 900;
-        transition: all 0.3s;
-        margin-left: 0.5em;
-      }
-      &:hover::after {
-        transform: translateY(0.3em);
-      }
-    }
-  }
-}
-
 // -----------------------------------------------------------
 // .wrp_info
 // -----------------------------------------------------------
@@ -245,9 +196,14 @@ style info : コピー
       }
     }
     .con_list_col2 {
+      @include cV(margin-bottom, 2em, 2em, 2em);
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       @include cV(gap, 1em, 1em, 2em);
+      .small {
+        @include fsz-cha(13, 13, 13);
+        line-height: 1.3;
+      }
       @include mq(sp) {
         grid-template-columns: repeat(1, 1fr);
       }

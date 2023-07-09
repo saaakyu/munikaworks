@@ -49,7 +49,6 @@ style info : 汎用設定
   height: 100%;
   width: 40%;
   right: 0;
-  bottom: -7%;
   z-index: -1;
   border-radius: 2em 0 0 2em;
 }
@@ -106,33 +105,23 @@ style info : 汎用設定
 .wrp_about .con_about_left .box_about__img::before {
   content: "";
   position: absolute;
-  background-image: url(../../about/images/img_shape_dot01.png);
+  background-image: url(../../about/images/img_shape_dot02.png);
   background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: 100%;
-  width: 181px;
-  height: 191px;
-  left: -15%;
+  background-position: bottom right;
+  width: 199px;
+  height: 172px;
+  right: -8%;
   bottom: -10%;
+  background-size: 100%;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .wrp_about .con_about_left .box_about__img::before {
-    background-size: 80%;
+    right: -8%;
   }
 }
 @media only screen and (max-width: 767px) {
   .wrp_about .con_about_left .box_about__img::before {
-    background-size: 70%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .wrp_about .con_about_left .box_about__img::before {
-    left: -10%;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .wrp_about .con_about_left .box_about__img::before {
-    left: 0%;
+    right: 0%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -142,7 +131,17 @@ style info : 汎用設定
 }
 @media only screen and (max-width: 767px) {
   .wrp_about .con_about_left .box_about__img::before {
-    bottom: -13%;
+    bottom: -5%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrp_about .con_about_left .box_about__img::before {
+    background-size: 80%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_about .con_about_left .box_about__img::before {
+    background-size: 70%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -242,34 +241,14 @@ style info : 汎用設定
 .wrp_about .con_about_right .box_about__img::before {
   content: "";
   position: absolute;
-  background-image: url(../../about/images/img_shape_dot02.png);
+  background-image: url(../../about/images/img_shape_dot01.png);
   background-repeat: no-repeat;
-  background-position: bottom right;
-  width: 199px;
-  height: 172px;
-  right: -8%;
-  bottom: -10%;
+  background-position: bottom left;
   background-size: 100%;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .wrp_about .con_about_right .box_about__img::before {
-    right: -8%;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .wrp_about .con_about_right .box_about__img::before {
-    right: 0%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .wrp_about .con_about_right .box_about__img::before {
-    bottom: -10%;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .wrp_about .con_about_right .box_about__img::before {
-    bottom: -5%;
-  }
+  width: 181px;
+  height: 191px;
+  left: -15%;
+  bottom: -10%;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .wrp_about .con_about_right .box_about__img::before {
@@ -279,6 +258,26 @@ style info : 汎用設定
 @media only screen and (max-width: 767px) {
   .wrp_about .con_about_right .box_about__img::before {
     background-size: 70%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrp_about .con_about_right .box_about__img::before {
+    left: -10%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_about .con_about_right .box_about__img::before {
+    left: 0%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrp_about .con_about_right .box_about__img::before {
+    bottom: -10%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_about .con_about_right .box_about__img::before {
+    bottom: -13%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -389,7 +388,7 @@ style info : 汎用設定
   border-radius: 7em;
 }
 .wrp_point .con_point .box_point__txt .point_txt {
-  margin: 0.5em auto 0;
+  margin: 0.5em auto;
   text-align: center;
   font-size: 150%;
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
@@ -397,12 +396,12 @@ style info : 汎用設定
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .wrp_point .con_point .box_point__txt .point_txt {
-    margin: 0.5em auto 0;
+    margin: 0.5em auto;
   }
 }
 @media only screen and (max-width: 767px) {
   .wrp_point .con_point .box_point__txt .point_txt {
-    margin: 0.5em auto 0;
+    margin: 0.5em auto;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {

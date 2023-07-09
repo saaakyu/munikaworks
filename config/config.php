@@ -4,9 +4,9 @@
 --------------------------------------------------------------*/
 //ローカル&テスト
 if (empty($_SERVER['HTTPS'])) {
-	define('LOCATION', 'http://' . $_SERVER['SERVER_NAME'] . str_replace($_SERVER['DOCUMENT_ROOT'], '', str_replace(DIRECTORY_SEPARATOR, '/', realpath(dirname(__FILE__) . "/.."))) . '/');
-} else {
 	define('LOCATION', 'https://' . $_SERVER['SERVER_NAME'] . str_replace($_SERVER['DOCUMENT_ROOT'], '', str_replace(DIRECTORY_SEPARATOR, '/', realpath(dirname(__FILE__) . "/.."))) . '/');
+} else {
+	define('LOCATION', 'http://' . $_SERVER['SERVER_NAME'] . str_replace($_SERVER['DOCUMENT_ROOT'], '', str_replace(DIRECTORY_SEPARATOR, '/', realpath(dirname(__FILE__) . "/.."))) . '/');
 }
 
 // 公開の際は絶対パスへ
@@ -54,4 +54,6 @@ define('PLACEHOLDER_IMAGE', 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEAL
 /* 外部リンク */
 define('LOCATION_TWITTER', 'https://twitter.com/munika_works/');
 define('LOCATION_INSTAGRAM', 'https://www.instagram.com/munika_works/');
+define('LOCATION_SKIMA', 'https://skima.jp/item/detail?item_id=');
+
 ?>

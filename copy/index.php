@@ -58,6 +58,11 @@ include realpath(__DIR__ . '/../config/include.php');
 					<div class="box_intro">
 						<p class="txt center">イントロテキストイントロテキストイントロテキストイントロテキストイントロテキストイントロテキストイントロテキストイントロテキスト。</p>
 					</div>
+					<ul class="box_link">
+						<li><a href="#link01">ご依頼の流れ</a></li>
+						<li><a href="#link02">ロゴデザイン</a></li>
+						<li><a href="#link03">同人誌デザイン</a></li>
+					</ul>
 				</div>
 			</div><!-- /.wrp_intro -->
 
@@ -86,6 +91,23 @@ include realpath(__DIR__ . '/../config/include.php');
 				</div>
 			</div>
 
+			<div class="wrp_compo">
+				<div class="con_compo">
+					<div class="tmp_acc_box">
+						<div class="tmp_acc_tit js-accordion is-active">
+							<h4 class="tmp_st_s">
+								<span class="jp">Q.あいうえお</span>
+							</h4>
+							<span class="ic" aria-hidden="true"></span>
+						</div>
+						<div class="tmp_acc_target">
+							<div class="target_inner">
+									<p>A.あいうえお</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 
 		</main><!-- /#contents -->

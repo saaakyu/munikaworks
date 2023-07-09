@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+file name  : copy.css
+author     : munika-works
+style info : コピー
+=================================================================== */
+@import "settings";
+
+.wrp_faq {
+    .con_faq {
+        @extend %bw;
+        @include cV(margin-bottom, 2em, 2em, 1em);
+
+        .ttl__jp {
+            @include fsz-cha(24, 24, 22);
+            color: $blue;
+        }
+
+        .box_list {
+            @include cV(margin, 2em auto, 2em auto, 1em auto);
+        }
+
+        .tmp_acc_box {
+            @include cV(margin-top, 2em , 2em , 1em );
+            .tmp_st_s {
+                position: relative;
+                @include cV(margin-left, 3em, 2em, 1.8em);
+                @include mq(sp) {
+                line-height: 1.5;
+                }
+                &::before {
+                    content: 'Q.';
+                    line-height: 1;
+                    top: 0.1em;
+                    left: -1.4em;
+                    position: absolute;
+                    letter-spacing: .1em;
+                    color: $blue;
+                    @include fsz-cha(24, 24, 20);
+                }
+            }
+
+            .target_inner {
+                position: relative;
+                @include cV(width, wCon(670, 800), 80%, 78%);
+                &::before {
+                    content: 'A.';
+                    line-height: 1;
+                    top: 0.1em;
+                    left: -1.5em;
+                    position: absolute;
+                    letter-spacing: .2em;
+                    color: $pink;
+                    @include fsz-cha(24, 24, 20);
+                }
+            }
+        }
+    }
+}

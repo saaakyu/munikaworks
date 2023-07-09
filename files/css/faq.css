@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* ===================================================================
+CSS information
+
+file name  : copy.css
+author     : munika-works
+style info : コピー
+=================================================================== */
+/* ===================================================================
+CSS information
+
+file name  : _settings.scss
+author     : munika-works
+style info : 汎用設定
+=================================================================== */
+.wrp_faq .con_faq {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .wrp_faq .con_faq {
+    width: 91.6666666667%;
+  }
+}
+
+.wrp_faq .con_faq {
+  margin-bottom: 2em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrp_faq .con_faq {
+    margin-bottom: 2em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_faq .con_faq {
+    margin-bottom: 1em;
+  }
+}
+.wrp_faq .con_faq .ttl__jp {
+  font-size: 150%;
+  color: #0E6BB0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrp_faq .con_faq .ttl__jp {
+    font-size: 150%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_faq .con_faq .ttl__jp {
+    font-size: 138%;
+  }
+}
+.wrp_faq .con_faq .box_list {
+  margin: 2em auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrp_faq .con_faq .box_list {
+    margin: 2em auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_faq .con_faq .box_list {
+    margin: 1em auto;
+  }
+}
+.wrp_faq .con_faq .tmp_acc_box {
+  margin-top: 2em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrp_faq .con_faq .tmp_acc_box {
+    margin-top: 2em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_faq .con_faq .tmp_acc_box {
+    margin-top: 1em;
+  }
+}
+.wrp_faq .con_faq .tmp_acc_box .tmp_st_s {
+  position: relative;
+  margin-left: 3em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrp_faq .con_faq .tmp_acc_box .tmp_st_s {
+    margin-left: 2em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_faq .con_faq .tmp_acc_box .tmp_st_s {
+    margin-left: 1.8em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_faq .con_faq .tmp_acc_box .tmp_st_s {
+    line-height: 1.5;
+  }
+}
+.wrp_faq .con_faq .tmp_acc_box .tmp_st_s::before {
+  content: "Q.";
+  line-height: 1;
+  top: 0.1em;
+  left: -1.4em;
+  position: absolute;
+  letter-spacing: 0.1em;
+  color: #0E6BB0;
+  font-size: 150%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrp_faq .con_faq .tmp_acc_box .tmp_st_s::before {
+    font-size: 150%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_faq .con_faq .tmp_acc_box .tmp_st_s::before {
+    font-size: 125%;
+  }
+}
+.wrp_faq .con_faq .tmp_acc_box .target_inner {
+  position: relative;
+  width: calc(670 / 800 * 100%);
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrp_faq .con_faq .tmp_acc_box .target_inner {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_faq .con_faq .tmp_acc_box .target_inner {
+    width: 78%;
+  }
+}
+.wrp_faq .con_faq .tmp_acc_box .target_inner::before {
+  content: "A.";
+  line-height: 1;
+  top: 0.1em;
+  left: -1.5em;
+  position: absolute;
+  letter-spacing: 0.2em;
+  color: #f37d7d;
+  font-size: 150%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrp_faq .con_faq .tmp_acc_box .target_inner::before {
+    font-size: 150%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_faq .con_faq .tmp_acc_box .target_inner::before {
+    font-size: 125%;
+  }
+}
