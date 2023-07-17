@@ -18,7 +18,7 @@ style info : 汎用設定
   max-width: 1200px;
   margin: auto;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1180px) {
   .wrp_point, .wrp_about .con_about_right .box_about, .wrp_about .con_about_left .box_about {
     width: 91.6666666667%;
   }
@@ -28,7 +28,7 @@ style info : 汎用設定
   padding: 8em 0;
   background: #fff;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about {
     padding: 5em 0;
   }
@@ -52,7 +52,7 @@ style info : 汎用設定
   z-index: -1;
   border-radius: 2em 0 0 2em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about .con_about_left::before {
     height: 100%;
   }
@@ -62,7 +62,7 @@ style info : 汎用設定
     height: 50%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about .con_about_left::before {
     width: 30%;
   }
@@ -81,7 +81,7 @@ style info : 汎用設定
           align-items: center;
   margin: 0 auto 8em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about .con_about_left .box_about {
     margin: 0 auto 5em;
   }
@@ -114,7 +114,7 @@ style info : 汎用設定
   bottom: -10%;
   background-size: 100%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about .con_about_left .box_about__img::before {
     right: -8%;
   }
@@ -124,7 +124,7 @@ style info : 汎用設定
     right: 0%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about .con_about_left .box_about__img::before {
     bottom: -10%;
   }
@@ -134,7 +134,7 @@ style info : 汎用設定
     bottom: -5%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about .con_about_left .box_about__img::before {
     background-size: 80%;
   }
@@ -156,7 +156,7 @@ style info : 汎用設定
 .wrp_about .con_about_left .box_about__txt .ttl__jp {
   text-align: left;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about .con_about_left .box_about__txt {
     margin: 0 0 0 2em;
   }
@@ -188,7 +188,7 @@ style info : 汎用設定
   z-index: -1;
   border-radius: 0 2em 2em 0;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about .con_about_right::before {
     height: 100%;
   }
@@ -198,7 +198,7 @@ style info : 汎用設定
     height: 50%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about .con_about_right::before {
     width: 30%;
   }
@@ -217,7 +217,7 @@ style info : 汎用設定
           align-items: center;
   margin: 0 auto 8em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about .con_about_right .box_about {
     margin: 0 auto 5em;
   }
@@ -250,7 +250,7 @@ style info : 汎用設定
   left: -15%;
   bottom: -10%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about .con_about_right .box_about__img::before {
     background-size: 80%;
   }
@@ -260,7 +260,7 @@ style info : 汎用設定
     background-size: 70%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about .con_about_right .box_about__img::before {
     left: -10%;
   }
@@ -270,7 +270,7 @@ style info : 汎用設定
     left: 0%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about .con_about_right .box_about__img::before {
     bottom: -10%;
   }
@@ -292,7 +292,7 @@ style info : 汎用設定
 .wrp_about .con_about_right .box_about__txt .ttl__jp {
   text-align: left;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_about .con_about_right .box_about__txt {
     margin: 0 2em 0 0;
   }
@@ -315,7 +315,7 @@ style info : 汎用設定
   background: #f7f7f7;
   border-radius: 8em 2em 8em 2em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_point {
     margin: 0 auto 5em;
   }
@@ -325,7 +325,7 @@ style info : 汎用設定
     margin: 0 auto 5em;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_point {
     padding: 3em 0 5em;
   }
@@ -346,7 +346,7 @@ style info : 汎用設定
   color: #494949;
   margin-bottom: 1.5em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_point .ttl__jp {
     margin-bottom: 1.5em;
   }
@@ -366,7 +366,7 @@ style info : 汎用設定
   width: calc(1100 / 1200 * 100%);
   margin: auto;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_point .con_point {
     gap: 2em;
   }
@@ -394,7 +394,7 @@ style info : 汎用設定
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_point .con_point .box_point__txt .point_txt {
     margin: 0.5em auto;
   }
@@ -404,7 +404,7 @@ style info : 汎用設定
     margin: 0.5em auto;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_point .con_point .box_point__txt .point_txt {
     font-size: 150%;
   }

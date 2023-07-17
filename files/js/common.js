@@ -150,21 +150,5 @@ document.addEventListener("DOMContentLoaded", function (e) {
       }
     }
   }
-
-
-  // ふわっと表示させるアニメーション
-function fadeAnime(){
-
-  //ふわっと動くきっかけのクラス名と動きのクラス名の設定
-  $('.fadeInTrigger').each(function(){ //fadeInTriggerというクラス名が
-  var elemPos = $(this).offset().top-0; //要素より、50px上の
-  var scroll = $(window).scrollTop();
-  var windowHeight = $(window).height();
-  if (scroll >= elemPos - windowHeight){
-  $(this).addClass('fadeIn');
-  // 画面内に入ったらfadeInというクラス名を追記
-  }
-  });
-}
 });
 

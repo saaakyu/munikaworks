@@ -87,7 +87,7 @@ include realpath(__DIR__ . '/../config/include.php');
 							</thead>
 							<tbody>
 								<tr>
-									<th>ロゴ制作<span class="small_txt">制作期間:約2週間<span></th>
+									<th>ロゴ制作<span class="small_txt">制作期間:約2週間</span></th>
 									<td class="ic_status pink">○</td>
 									<td>随時受付中です</td>
 								</tr>

@@ -18,7 +18,7 @@ style info : 汎用設定
   max-width: 1200px;
   margin: auto;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1180px) {
   .wrp_faq .con_faq {
     width: 91.6666666667%;
   }
@@ -27,7 +27,7 @@ style info : 汎用設定
 .wrp_faq .con_faq {
   margin-bottom: 2em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_faq .con_faq {
     margin-bottom: 2em;
   }
@@ -41,7 +41,7 @@ style info : 汎用設定
   font-size: 150%;
   color: #0E6BB0;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_faq .con_faq .ttl__jp {
     font-size: 150%;
   }
@@ -54,7 +54,7 @@ style info : 汎用設定
 .wrp_faq .con_faq .box_list {
   margin: 2em auto;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_faq .con_faq .box_list {
     margin: 2em auto;
   }
@@ -67,7 +67,7 @@ style info : 汎用設定
 .wrp_faq .con_faq .tmp_acc_box {
   margin-top: 2em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_faq .con_faq .tmp_acc_box {
     margin-top: 2em;
   }
@@ -81,7 +81,7 @@ style info : 汎用設定
   position: relative;
   margin-left: 3em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_faq .con_faq .tmp_acc_box .tmp_st_s {
     margin-left: 2em;
   }
@@ -106,7 +106,7 @@ style info : 汎用設定
   color: #0E6BB0;
   font-size: 150%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_faq .con_faq .tmp_acc_box .tmp_st_s::before {
     font-size: 150%;
   }
@@ -120,7 +120,7 @@ style info : 汎用設定
   position: relative;
   width: calc(670 / 800 * 100%);
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_faq .con_faq .tmp_acc_box .target_inner {
     width: 80%;
   }
@@ -140,7 +140,7 @@ style info : 汎用設定
   color: #f37d7d;
   font-size: 150%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_faq .con_faq .tmp_acc_box .target_inner::before {
     font-size: 150%;
   }

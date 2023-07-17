@@ -44,7 +44,7 @@ add_action('wp_enqueue_scripts', 'register_googlefonts');
 //headにタグを追加
 add_action('wp_head', 'add_meta_to_head');
 function add_meta_to_head(){
-  echo '<link href="https://test.munika-works.com/files/css/common.css" rel="stylesheet" media="all">';
+  echo '<link href="../../../../files/css/common.css" rel="stylesheet" media="all">';
 }
 
 //body閉じタグ前にscriptタグを追加
@@ -52,7 +52,7 @@ function add_meta_to_head(){
 // function add_requirejs()
 // {
 //   echo '
-//   <script src="https://test.munika-works.com/files/js/common.min.js"></script>';
+//   <script src="../../../../files/js/common.min.js"></script>';
 // }
 
 /************************

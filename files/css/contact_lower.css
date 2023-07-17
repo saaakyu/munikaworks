@@ -18,7 +18,7 @@ style info : 汎用設定
   max-width: 1200px;
   margin: auto;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1180px) {
   .wrp_form .con_form {
     width: 91.6666666667%;
   }
@@ -36,7 +36,7 @@ style info : 汎用設定
 .wrp_intro .con_intro .box_intro .txt {
   margin-bottom: 2em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_intro .con_intro .box_intro .txt {
     margin-bottom: 2em;
   }
@@ -56,7 +56,7 @@ style info : 汎用設定
   padding: 6em 0 8em;
   background: #f7f7f7;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_form {
     padding: 6em 0 8em;
   }
@@ -82,7 +82,7 @@ style info : 汎用設定
   padding: 10px;
   margin: auto;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .timeline {
     max-width: 80%;
   }

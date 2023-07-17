@@ -18,7 +18,7 @@ style info : 汎用設定
   max-width: 1200px;
   margin: auto;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1180px) {
   .wrp_case .con_case, .wrp_news .con_news, .wrp_service .con_service, .wrp_intro .con_intro {
     width: 91.6666666667%;
   }
@@ -36,7 +36,7 @@ style info : 汎用設定
   margin-bottom: 1em;
   line-height: 1.5;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .ttl__en {
     padding: 0.2em 0.5em 0.02em;
   }
@@ -46,7 +46,7 @@ style info : 汎用設定
     padding: 0.2em 0.5em 0.02em;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .ttl__en {
     margin-bottom: 1em;
   }
@@ -81,14 +81,14 @@ style info : 汎用設定
   background-size: contain;
   background-position: top right;
 }
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+@media only screen and (min-width: 1181px) and (max-width: 1440px) {
   .wrp_fv .con_fv {
     background-repeat: no-repeat;
     background-image: url("../images/home/img_kv_back-tab.svg");
     width: 90%;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1180px) {
   .wrp_fv .con_fv {
     background-repeat: no-repeat;
     background-image: url("../images/home/img_kv_back-tab.svg");
@@ -101,13 +101,13 @@ style info : 汎用設定
   /* 回転するアニメーション */
   /* 無限に繰り返す */
 }
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+@media only screen and (min-width: 1181px) and (max-width: 1440px) {
   .wrp_fv .con_fv .box_fv {
     width: 85%;
     margin: 0 0 0 auto;
   }
 }
-@media only screen and (min-width: 896.5px) and (max-width: 1024px) {
+@media only screen and (min-width: 974.5px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv {
     width: 95%;
     margin: 0 0 0 auto;
@@ -129,7 +129,7 @@ style info : 汎用設定
   width: calc(800 / 1920 * 100%);
   height: 383px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv .item1 {
     width: calc(400 / 1024 * 100%);
   }
@@ -139,7 +139,7 @@ style info : 汎用設定
     width: calc(400 / 767 * 100%);
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv .item1 {
     top: 0%;
   }
@@ -159,7 +159,7 @@ style info : 汎用設定
   width: calc(600 / 1920 * 100%);
   height: 361px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv .item2 {
     width: calc(300 / 1024 * 100%);
   }
@@ -169,7 +169,7 @@ style info : 汎用設定
     width: calc(350 / 767 * 100%);
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv .item2 {
     left: 25%;
   }
@@ -190,7 +190,7 @@ style info : 汎用設定
   width: calc(600 / 1920 * 100%);
   height: 361px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv .item3 {
     width: calc(300 / 1024 * 100%);
   }
@@ -200,7 +200,7 @@ style info : 汎用設定
     width: calc(300 / 767 * 100%);
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv .item3 {
     top: 28%;
     right: 20%;
@@ -222,7 +222,7 @@ style info : 汎用設定
   width: calc(500 / 1920 * 100%);
   height: 361px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv .item4 {
     width: calc(350 / 1024 * 100%);
   }
@@ -232,7 +232,7 @@ style info : 汎用設定
     width: calc(300 / 767 * 100%);
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv .item4 {
     top: 65%;
     right: 5%;
@@ -254,7 +254,7 @@ style info : 汎用設定
   width: calc(600 / 1920 * 100%);
   height: 361px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv .item5 {
     width: calc(350 / 1024 * 100%);
   }
@@ -264,7 +264,7 @@ style info : 汎用設定
     width: calc(350 / 767 * 100%);
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv .item5 {
     top: 47%;
     left: 20%;
@@ -286,7 +286,7 @@ style info : 汎用設定
   width: calc(300 / 1920 * 100%);
   height: 166px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv .item6 {
     width: calc(150 / 1024 * 100%);
   }
@@ -296,7 +296,7 @@ style info : 汎用設定
     width: calc(150 / 767 * 100%);
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv .item6 {
     top: 69%;
     left: 40%;
@@ -318,7 +318,7 @@ style info : 汎用設定
   width: calc(300 / 1920 * 100%);
   height: 119px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv .item7 {
     width: calc(400 / 1920 * 100%);
   }
@@ -328,7 +328,7 @@ style info : 汎用設定
     width: calc(400 / 1920 * 100%);
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .con_fv .box_fv .item7 {
     top: 50%;
     right: 2%;
@@ -441,7 +441,7 @@ style info : 汎用設定
   font-weight: 500;
   letter-spacing: 0.15em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .fv_txt .main_ttl__jp {
     font-size: 313%;
   }
@@ -459,7 +459,7 @@ style info : 汎用設定
   letter-spacing: 0;
   padding-top: 0.5em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .fv_txt .main_ttl__en {
     font-size: 157%;
   }
@@ -469,7 +469,7 @@ style info : 汎用設定
     font-size: 125%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .fv_txt .main_ttl__en {
     padding-top: 0em;
   }
@@ -490,7 +490,7 @@ style info : 汎用設定
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_fv .scroll {
     font-size: 125%;
   }
@@ -573,7 +573,7 @@ style info : 汎用設定
   z-index: 0;
   background-color: #FFFEFB;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_intro {
     padding: 5em 0;
   }
@@ -595,7 +595,7 @@ style info : 汎用設定
   z-index: -2;
   background-size: 80%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_intro::before {
     background-size: 50%;
   }
@@ -618,7 +618,7 @@ style info : 汎用設定
   background-size: 100%;
   z-index: -3;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_intro::after {
     background-size: 60%;
   }
@@ -651,7 +651,7 @@ style info : 汎用設定
   z-index: -1;
   width: calc(600 / 1200 * 100%);
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_intro .con_intro .box_intro__img {
     width: calc(600 / 1200 * 100%);
   }
@@ -673,7 +673,7 @@ style info : 汎用設定
   width: calc(600 / 1200 * 100%);
   margin: 0 0 0 6em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_intro .con_intro .box_intro__txt {
     margin: 0 0 0 6em;
   }
@@ -695,7 +695,7 @@ style info : 汎用設定
 .wrp_intro .con_intro .box_intro__txt .pink_btn {
   margin-top: 2em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_intro .con_intro .box_intro__txt .pink_btn {
     margin-top: 2em;
   }
@@ -711,7 +711,7 @@ style info : 汎用設定
   background-color: #f7f7f7;
   position: relative;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service {
     padding: 5em 0 10em;
   }
@@ -725,7 +725,7 @@ style info : 汎用設定
   text-align: center;
   margin-bottom: 4em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .con_service .box_service__txt .tmp_txt {
     margin-bottom: 4em;
   }
@@ -757,7 +757,7 @@ style info : 汎用設定
   text-align: center;
   margin-top: 5em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .con_service .box_service__explain {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -767,7 +767,7 @@ style info : 汎用設定
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .con_service .box_service__explain {
     gap: 3%;
   }
@@ -777,7 +777,7 @@ style info : 汎用設定
     gap: 10% 5%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .con_service .box_service__explain {
     margin-top: 5em;
   }
@@ -812,7 +812,7 @@ style info : 汎用設定
   top: -10%;
   line-height: 1;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .con_service .box_service__explain .service_inner .service__img::before {
     top: -10%;
   }
@@ -832,7 +832,7 @@ style info : 汎用設定
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .con_service .box_service__explain .service_inner .service__name {
     padding-top: 1em;
   }
@@ -856,7 +856,7 @@ style info : 汎用設定
   margin-top: 4.5em;
   text-align: center;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .con_service .pink_btn {
     margin-top: 4.5em;
   }
@@ -872,7 +872,7 @@ style info : 汎用設定
   position: relative;
   background-color: #fff;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_works {
     padding: 1em 0 5em;
   }
@@ -929,7 +929,7 @@ style info : 汎用設定
   z-index: -1;
   margin-top: 5em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_works .con_works .box_works__img {
     margin-top: 5em;
   }
@@ -975,7 +975,7 @@ style info : 汎用設定
   list-style: none;
   text-align: center;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_works .con_works .box_works__img ul li {
     margin-right: 1em;
   }
@@ -1037,7 +1037,7 @@ style info : 汎用設定
   margin-top: 4.5em;
   text-align: center;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_works .con_works .pink_btn {
     margin-top: 4.5em;
   }
@@ -1052,7 +1052,7 @@ style info : 汎用設定
   padding: 8em 0;
   background-color: #FDFBEF;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_news {
     padding: 5em 0;
   }
@@ -1104,7 +1104,7 @@ style info : 汎用設定
   display: -ms-flexbox;
   display: flex;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_news .con_news .box_news li {
     padding: 1em 0;
   }
@@ -1134,7 +1134,7 @@ style info : 汎用設定
       -ms-flex-align: center;
           align-items: center;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_news .con_news .box_news li .date {
     padding: 0 2em 0 1em;
   }
@@ -1154,7 +1154,7 @@ style info : 汎用設定
 .wrp_news .con_news .box_news__txt {
   margin-right: 6em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_news .con_news .box_news__txt {
     margin-right: 3em;
   }
@@ -1170,7 +1170,7 @@ style info : 汎用設定
   font-size: 113%;
   margin: 2em 0 0;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_news .more_btn {
     margin: 2em 0 0;
   }
@@ -1204,7 +1204,7 @@ style info : 汎用設定
   text-align: center;
   background-color: #f7f7f7;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_case {
     padding: 5em 0;
   }
@@ -1218,7 +1218,7 @@ style info : 汎用設定
   margin-bottom: 4em;
   text-align: center;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_case .con_case .box_case__txt .txt {
     margin-bottom: 4em;
   }
@@ -1247,7 +1247,7 @@ style info : 汎用設定
           justify-content: center;
   margin-top: 4em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_case .con_case .box_case__explain {
     gap: 2%;
   }
@@ -1257,7 +1257,7 @@ style info : 汎用設定
     gap: 10%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_case .con_case .box_case__explain {
     margin-top: 4em;
   }
@@ -1283,7 +1283,7 @@ style info : 汎用設定
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_case .con_case .box_case__explain .case_inner .case__name {
     padding-top: 1em;
   }
@@ -1310,7 +1310,7 @@ style info : 汎用設定
 .wrp_case .pink_btn {
   margin-top: 4.5em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_case .pink_btn {
     margin-top: 4.5em;
   }

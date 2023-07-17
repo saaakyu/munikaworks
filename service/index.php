@@ -58,6 +58,7 @@ include realpath(__DIR__ . '/../config/include.php');
 					<div class="box_intro">
 						<p class="tmp_txt">創作活動に関するロゴ制作・同人誌デザインなどを承っております。<br>
 							その他、バナーやノベルティデザインなどもご対応可能ですので、お気軽にお問い合わせくださいませ。</p>
+							<div class="pink_btn"><a href="<?php echo LOCATION; ?>status/">現在の受付状況について</a></div>
 					</div>
 					<ul class="box_link">
 						<li><a href="#link01">ご依頼の流れ</a></li>

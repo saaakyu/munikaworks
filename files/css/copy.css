@@ -18,7 +18,7 @@ style info : 汎用設定
   max-width: 1200px;
   margin: auto;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1180px) {
   .wrp_compo .con_compo {
     width: 91.6666666667%;
   }
@@ -27,7 +27,7 @@ style info : 汎用設定
 .wrp_compo .con_compo {
   margin-bottom: 2em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_compo .con_compo {
     margin-bottom: 2em;
   }
@@ -41,7 +41,7 @@ style info : 汎用設定
   font-size: 150%;
   color: #0E6BB0;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_compo .con_compo .ttl__jp {
     font-size: 150%;
   }
@@ -54,7 +54,7 @@ style info : 汎用設定
 .wrp_compo .con_compo .box_list {
   margin: 2em auto;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_compo .con_compo .box_list {
     margin: 2em auto;
   }

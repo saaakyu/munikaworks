@@ -58,8 +58,7 @@ include realpath(__DIR__ . '/../../config/include.php');
 					<div class="box_intro">
 						<h3 class="txt center"><em><span class="bright_yellow">その他</span>の<br class="view_sp">ご依頼・お問い合わせフォーム</em></h3>
 						<p class="tmp_txt center">その他のご依頼・お見積もりは本フォームから。<br>
-							サービス内容に掲載がないご依頼もお気軽にご相談ください。
-							<!-- ※3日以内にご指定のメールアドレスに返信いたします。<br class="view_pc-tab">万が一返信が無い場合は、お手数ですが再度お問い合わせいただきますようお願い申し上げます。</p> -->
+							サービス内容に掲載がないご依頼もお気軽にご相談ください。</p>
 					</div>
 				</div>
 			</div><!-- /.wrp_intro -->

@@ -18,7 +18,7 @@ style info : 汎用設定
   max-width: 1200px;
   margin: auto;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1180px) {
   .wrp_service .con_step, .wrp_service .wrp_step .con_ttl, .wrp_service .con_service, .wrp_info .wrp_flow {
     width: 91.6666666667%;
   }
@@ -30,7 +30,7 @@ style info : 汎用設定
   background-color: #FFFEFB;
   z-index: -4;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_info {
     padding: 6em 0 7em;
   }
@@ -52,7 +52,7 @@ style info : 汎用設定
   z-index: -2;
   background-size: 80%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_info::before {
     background-size: 50%;
   }
@@ -75,7 +75,7 @@ style info : 汎用設定
   background-size: 100%;
   z-index: -3;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_info::after {
     background-size: 60%;
   }
@@ -89,7 +89,7 @@ style info : 汎用設定
   margin-bottom: 4.5em;
   text-align: center;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_info .ttl {
     margin-bottom: 4.5em;
   }
@@ -111,7 +111,7 @@ style info : 汎用設定
   margin-bottom: 1em;
   line-height: 1.5;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_info .ttl__en {
     padding: 0.2em 0.5em 0.02em;
   }
@@ -121,7 +121,7 @@ style info : 汎用設定
     padding: 0.2em 0.5em 0.02em;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_info .ttl__en {
     margin-bottom: 1em;
   }
@@ -163,7 +163,7 @@ style info : 汎用設定
           flex-grow: 1;
   padding-left: 3.5em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_info .wrp_flow .box_flow__desc {
     padding-left: 3.5em;
   }
@@ -182,7 +182,7 @@ style info : 汎用設定
   line-height: 1;
   margin-bottom: 0.5em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_info .wrp_flow .box_flow__ttl {
     font-size: 163%;
   }
@@ -192,7 +192,7 @@ style info : 汎用設定
     font-size: 163%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_info .wrp_flow .box_flow__ttl {
     margin-bottom: 0.5em;
   }
@@ -212,7 +212,7 @@ style info : 汎用設定
   font-size: 82%;
   line-height: 1.3;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_info .wrp_flow .box_flow__copy .small {
     font-size: 82%;
   }
@@ -271,7 +271,7 @@ style info : 汎用設定
   padding: 5em 0;
   background: #f7f7f7;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service {
     padding: 5em 0;
   }
@@ -284,7 +284,7 @@ style info : 汎用設定
 .wrp_service .ttl__jp {
   margin-bottom: 1em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .ttl__jp {
     margin-bottom: 1em;
   }
@@ -310,7 +310,7 @@ style info : 汎用設定
   margin-bottom: 2em;
   text-align: center;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .con_service .box_service {
     margin-bottom: 2em;
   }
@@ -324,7 +324,7 @@ style info : 汎用設定
   display: inline-block;
   margin-bottom: 2em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .con_service .box_service__img {
     margin-bottom: 2em;
   }
@@ -355,7 +355,7 @@ style info : 汎用設定
   padding: 0.3em 1em;
   margin-bottom: 0.75em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .wrp_list .tit_list {
     padding: 0.3em 1em;
   }
@@ -365,7 +365,7 @@ style info : 汎用設定
     padding: 0.3em 1em;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .wrp_list .tit_list {
     margin-bottom: 0.75em;
   }
@@ -385,7 +385,7 @@ style info : 汎用設定
   margin-bottom: 2em;
   counter-reset: item;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .wrp_list .con_list .box_list {
     margin-bottom: 2em;
   }
@@ -409,7 +409,7 @@ style info : 汎用設定
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .wrp_list .con_list_col2 {
     margin-bottom: 2em;
   }
@@ -419,7 +419,7 @@ style info : 汎用設定
     margin-bottom: 2em;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .wrp_list .con_list_col2 {
     gap: 1em;
   }
@@ -433,7 +433,7 @@ style info : 汎用設定
   font-size: 82%;
   line-height: 1.3;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .wrp_list .con_list_col2 .small {
     font-size: 82%;
   }
@@ -454,7 +454,7 @@ style info : 汎用設定
 .wrp_service .wrp_list .list.col1 {
   width: 96%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .wrp_list .list.col1 {
     width: 96%;
   }
@@ -467,7 +467,7 @@ style info : 汎用設定
 .wrp_service .wrp_list .list.col2 {
   width: 50%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .wrp_list .list.col2 {
     width: 50%;
   }
@@ -477,7 +477,7 @@ style info : 汎用設定
     width: 90%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .wrp_list .list {
     margin-left: 2.5em;
   }
@@ -494,7 +494,7 @@ style info : 汎用設定
   font-size: 82%;
   line-height: 1.3;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .wrp_list .list li .small {
     font-size: 82%;
   }
@@ -519,7 +519,7 @@ style info : 汎用設定
 .wrp_service .wrp_step {
   margin: 6em 0 0;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .wrp_step {
     margin: 5em 0 0;
   }
@@ -552,7 +552,7 @@ style info : 汎用設定
 .wrp_service .wrp_step .con_ttl .time .small {
   font-size: 82%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .wrp_step .con_ttl .time .small {
     font-size: 82%;
   }
@@ -572,7 +572,7 @@ style info : 汎用設定
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .con_step {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -604,7 +604,7 @@ style info : 汎用設定
   margin-right: 3%;
   margin-bottom: 3em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .con_step > li {
     margin-right: 3%;
   }
@@ -645,7 +645,7 @@ style info : 汎用設定
   top: calc(50% - 10px);
   left: 104%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .con_step > li:not(:last-child) dl::before {
     left: 104%;
   }

@@ -157,9 +157,8 @@ body {
   .h_logo {
     img {
       @include cV(width, 17rem, 17rem, 60%);
-      border-radius: unset
+      border-radius: unset ;
         /*ワードプレス用*/
-      ;
       height: auto;
     }
   }
@@ -170,7 +169,7 @@ body {
     .nav {
       display: flex;
       align-items: center;
-
+      @include fsz(15);
       li {
         @include cV(padding-right, 1.3em, 0, 0);
         letter-spacing: 0.05em;
@@ -221,9 +220,9 @@ body {
     z-index: 999;
     top: 50%;
     left: calc(50% - 20%);
-    transform: translate(-20%, -50%) !important
+    transform: translate(-20%, -50%) !important;
       /*ワードプレス用important*/
-    ;
+    
   }
 
   li {
@@ -322,8 +321,12 @@ body {
       display: flex;
       justify-content: space-between;
       @include cV(padding, 3em 0, 3em 0, 2em 0);
-
-      @include mq(sp) {
+      
+      @include mq(pc_s) {
+        width: 85%;
+        flex-direction: column;
+      }
+      @include mq(tab_sp) {
         width: 85%;
         flex-direction: column;
       }
@@ -354,7 +357,7 @@ body {
         .sns {
           display: flex;
           flex-direction: column;
-          @include cV(padding-top, 2em, 2em, 1em);
+          @include cV(padding-top, 0, 0, 0);
 
           &__icon {
             display: flex;
@@ -365,9 +368,8 @@ body {
           }
 
           i {
-            font-size: 1.5em !important
+            font-size: 1.5em !important;
               /*ワードプレス用important*/
-            ;
             color: $blue;
             @include cV(padding-top, 0.5em, 0.5em, 0);
           }
@@ -377,10 +379,7 @@ body {
 
     &__nav {
       display: flex;
-
-      @include mq(tab_sp) {
-        justify-content: center;
-      }
+      @include cV( justify-content, flex-start, flex-start, center);
 
       @include mq(sp) {
         flex-direction: column;
@@ -693,14 +692,17 @@ body {
           width: 100%;
         }
 
-        a {
+        p a {
           color: $pink;
 
           &:hover {
             text-decoration: underline;
           }
         }
-
+        .pink_btn{
+          text-align: center;
+          margin-top: 2em;
+        }
         .txt {
           em {
             @include fsz(22);

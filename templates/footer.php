@@ -2,8 +2,7 @@
 	<div class="footer__wrap">
 		<div class="contact">
 			<div class="f_logo"><a href="<?php echo LOCATION; ?>"><span>世界観引き出すデザインを。</span><br>
-					<img src="<?php echo LOCATION_FILE; ?>images/common/logo.svg" alt="munika works"></a></div>
-			<div class="mail"><a href="mailto:contact@munika-works.com">contact&#64;munika-works.com</a></div>
+					<img src="<?php echo LOCATION_FILE; ?>images/common/logo.svg" alt="munikaworks"></a></div>
 			<div class="sns">
 				<ul class="sns__icon">
 					<li><a href="<?php echo LOCATION_TWITTER; ?>" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a></li>
@@ -28,6 +27,7 @@
 			</ul>
 			<ul class="nav">
 				<!-- <li><a href="<?php echo LOCATION; ?>faq/">よくあるご質問</a></li> -->
+				<li><a href="<?php echo LOCATION; ?>trade_law/">特定商取引法に基づく表記</a></li>
 				<div class="contact_btn"><a href="<?php echo LOCATION_CONTACT; ?>">お問い合わせ</a></div>
 			</ul>
 		</div><!--footer__nav-->

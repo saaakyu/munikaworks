@@ -14,8 +14,8 @@
         </ul>
         <div class="contact_btn"><a href="<?php echo LOCATION_CONTACT; ?>">お問い合わせ</a></div>
     </nav>
-    <div class="openbtn view_tab-sp"><div class="gnav_solid"></div><div class="gnav_solid"></div><div class="gnav_solid"></div></div>
-    <nav class="gnav view_tab-sp">
+    <div class="openbtn view_tab-sp view_pc_s"><div class="gnav_solid"></div><div class="gnav_solid"></div><div class="gnav_solid"></div></div>
+    <nav class="gnav view_tab-sp view_pc_s">
         <div class="gnav_list">
             <ul>
                 <li><a href="<?php echo LOCATION; ?>about/">ムニカワークスについて</a></li>

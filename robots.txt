@@ -1,5 +1,4 @@
-User-agent : *
-Disallow : /zzz_test_munikality/
-Disallow : /test_munikality/
-Disallow : /zzz_test_munikalive/
-Disallow : /test_munikalive/
+User-agent: *
+Disallow :
+
+Sitemap: https://munika-works.com/sitemap.xml

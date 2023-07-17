@@ -59,8 +59,7 @@ include realpath(__DIR__ . '/../../config/include.php');
 						<h3 class="txt center"><em><span class="pink">ロゴデザイン</span>のご依頼フォーム</em></h3>
 						<p class="tmp_txt center">ロゴデザインのご依頼・お見積もりは本フォームから。<br><br>
 							事情がある場合を除き、基本前払いとさせていただいております。<br>
-							金銭のやり取りが不安な方は<a href="<?php echo LOCATION_SKIMA; ?>51359" target="_blank">SKIMA</a>からご依頼をお願いいたします。
-							<!-- ※3日以内にご指定のメールアドレスに返信いたします。<br class="view_pc-tab">万が一返信が無い場合は、お手数ですが再度お問い合わせいただきますようお願い申し上げます。</p> -->
+							金銭のやり取りが不安な方は<a href="<?php echo LOCATION_SKIMA; ?>51359" target="_blank">SKIMA</a>からご依頼をお願いいたします。</p>
 					</div>
 				</div>
 			</div><!-- /.wrp_intro -->

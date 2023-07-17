@@ -13,13 +13,13 @@ file name  : _settings.scss
 author     : munika-works
 style info : 汎用設定
 =================================================================== */
-.wrp_policy .con_policy {
+.wrp_law .con_law {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
 @media only screen and (max-width: 1180px) {
-  .wrp_policy .con_policy {
+  .wrp_law .con_law {
     width: 91.6666666667%;
   }
 }
@@ -33,70 +33,70 @@ style info : 汎用設定
   }
 }
 
-.wrp_policy {
+.wrp_law {
   background: #f7f7f7;
   padding: 5em 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
-  .wrp_policy {
+  .wrp_law {
     padding: 5em 0;
   }
 }
 @media only screen and (max-width: 767px) {
-  .wrp_policy {
+  .wrp_law {
     padding: 3.5em 0;
   }
 }
-.wrp_policy .con_policy {
+.wrp_law .con_law {
   padding-bottom: 5em;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
-  .wrp_policy .con_policy {
+  .wrp_law .con_law {
     padding-bottom: 5em;
   }
 }
 @media only screen and (max-width: 767px) {
-  .wrp_policy .con_policy {
+  .wrp_law .con_law {
     padding-bottom: 3em;
   }
 }
-.wrp_policy .con_policy .ttl__jp {
+.wrp_law .con_law .ttl__jp {
   font-size: 150%;
   color: #0E6BB0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
-  .wrp_policy .con_policy .ttl__jp {
+  .wrp_law .con_law .ttl__jp {
     font-size: 150%;
   }
 }
 @media only screen and (max-width: 767px) {
-  .wrp_policy .con_policy .ttl__jp {
+  .wrp_law .con_law .ttl__jp {
     font-size: 138%;
   }
 }
-.wrp_policy .con_policy .box_list {
+.wrp_law .con_law .box_list {
   margin: 2em auto;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
-  .wrp_policy .con_policy .box_list {
+  .wrp_law .con_law .box_list {
     margin: 2em auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  .wrp_policy .con_policy .box_list {
+  .wrp_law .con_law .box_list {
     margin: 1em auto;
   }
 }
-.wrp_policy .box_policy {
+.wrp_law .box_law {
   margin: 2em auto;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
-  .wrp_policy .box_policy {
+  .wrp_law .box_law {
     margin: 2em auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  .wrp_policy .box_policy {
+  .wrp_law .box_law {
     margin: 1em auto;
   }
 }
