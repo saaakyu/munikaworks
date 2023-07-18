@@ -20,7 +20,7 @@
 define('TITLE', 'ムニカワークス | 創作・クリエイター活動を応援するデザインサービス');
 define('KEYWORDS', '創作,同人,デザイン,ロゴ,同人誌,装丁,同人誌表紙,世界観');
 define('DESCRIPTION', 'ムニカワークスは創作・クリエイター活動を応援するデザインサービスです。「世界観引き出すデザインを。」をコンセプトにロゴデザインや同人誌デザインを承っております。');
-define('H1', '創作活動のデザインはムニカワークス');
+define('H1', '創作・クリエイター活動のデザインはムニカワークス');
 
 
 //初期文言
@@ -45,7 +45,7 @@ if ($page == 'homepage') {
 
 #ムニカワークスについて
 if ($page == 'about') {
-	$meta['title'] = 'ムニカワークスについて | ' . TITLE;
+	$meta['title'] = 'ムニカワークスについて | 創作・クリエイター活動を応援するデザインサービス';
 	$meta['keywords'] = KEYWORDS . ',ムニカワークスのこと';
 	$meta['description'] = 'ムニカワークスはデザインで物語をカタチにするお手伝いをしています。同人誌デザインやTRPGロゴ、オンリーイベントロゴなど創作活動のデザインはご相談ください。';
 	$meta['h1'] = H1;
@@ -55,7 +55,7 @@ if ($page == 'about') {
 if ($page == 'service') {
 	$meta['title'] = 'サービス内容 | ' . TITLE;
 	$meta['keywords'] = KEYWORDS . ',サービス内容';
-	$meta['description'] = 'ムニカワークスは創作・クリエイター活動に関するロゴ制作、同人誌デザインなどを承っております。その他、バナーやノベルティデザインなどもご対応が可能ですのでお気軽にお問い合わせください。';
+	$meta['description'] = '創作・クリエイター活動に関するロゴ制作、同人誌デザインなどを承っております。その他、バナーやノベルティデザインなどもご対応が可能ですのでお気軽にお問い合わせください。';
 	$meta['h1'] = H1;
 }
 
@@ -63,7 +63,7 @@ if ($page == 'service') {
 if ($page == 'price') {
 	$meta['title'] = '料金について | ' . TITLE;
 	$meta['keywords'] = KEYWORDS . ',料金';
-	$meta['description'] = DESCRIPTION;
+	$meta['description'] = 'サービスの料金についてご紹介しています。ロゴ制作、同人誌デザインの料金やお支払い方法などを分かりやすくご案内しています。';
 	$meta['h1'] = H1;
 }
 
@@ -71,7 +71,7 @@ if ($page == 'price') {
 if ($page == 'status') {
 	$meta['title'] = '現在の受付状況 | ' . TITLE;
 	$meta['keywords'] = KEYWORDS . ',受付状況';
-	$meta['description'] = DESCRIPTION;
+	$meta['description'] = 'ムニカワークスの「現在の受付状況」ページです。ご依頼の受付状況をリアルタイムで発信しています。';
 	$meta['h1'] = H1;
 }
 
@@ -79,7 +79,7 @@ if ($page == 'status') {
 if ($page == 'faq') {
 	$meta['title'] = 'よくあるご質問 | ' . TITLE;
 	$meta['keywords'] = KEYWORDS . ',よくあるご質問';
-	$meta['description'] = DESCRIPTION;
+	$meta['description'] = 'ムニカワークスの「よくあるご質問」ページです。サービスややり取りに関するお客様からよくあるお問い合わせと回答についてご紹介しています。';
 	$meta['h1'] = H1;
 }
 
@@ -87,7 +87,7 @@ if ($page == 'faq') {
 if ($page == 'contact') {
 	$meta['title'] = '各種お問い合わせ | ' . TITLE;
 	$meta['keywords'] = KEYWORDS . ',各種お問い合わせ';
-	$meta['description'] = DESCRIPTION;
+	$meta['description'] = 'ムニカワークスの「お問い合わせ」ページです。デザインのご相談をフォームにて受け付けています。';
 	$meta['h1'] = H1;
 }
 
@@ -95,7 +95,15 @@ if ($page == 'contact') {
 if ($page == 'contact_lower') {
 	$meta['title'] = 'お問い合わせフォーム | ' . TITLE;
 	$meta['keywords'] = KEYWORDS . ',お問い合わせフォーム';
-	$meta['description'] = DESCRIPTION;
+	$meta['description'] = 'ムニカワークスの「お問い合わせ」ページです。デザインのご相談をフォームにて受け付けています。';
+	$meta['h1'] = H1;
+}
+
+#特定商取引法に基づく表記
+if ($page == 'contact_lower') {
+	$meta['title'] = '特定商取引法に基づく表記 | ' . TITLE;
+	$meta['keywords'] = KEYWORDS . ',特定商取引法に基づく表記';
+	$meta['description'] = 'ムニカワークスの「特定商取引に基づく表記」ページです。';
 	$meta['h1'] = H1;
 }
 

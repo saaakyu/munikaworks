@@ -117,7 +117,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						</div>
 					</div>
 
-					<style>
+					<script>
 						/*
 					<div class="con_option">
 						<div class="box_option">
@@ -133,7 +133,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						</div>
 					</div><!--/.con_option-->
 					*/
-					</style>
+					</script>
 				</div><!--/.wrp_option-->
 
 
@@ -200,7 +200,7 @@ include realpath(__DIR__ . '/../config/include.php');
 				</div>
 			</div><!-- /.wrp_price -->
 
-			<style>/*
+			<script>/*
 			<div class="wrp_price" id="link03">
 				<h3 class="ttl__jp blue center">サイト制作</h3>
 				<div class="box_price">
@@ -223,7 +223,7 @@ include realpath(__DIR__ . '/../config/include.php');
 					</li><!--/.box_card-->
 				</ul><!-- /.con_price -->
 			</div><!-- /.wrp_price -->
-			*/</style>
+			*/</script>
 
 			<div class="wrp_price" id="link04">
 				<h3 class="ttl__jp blue center">お支払い方法</h3>

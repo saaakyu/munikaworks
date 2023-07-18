@@ -110,4 +110,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once ABSPATH . 'wp-settings.php';
 
 /** 設定＞一般設定ワードプレスアドレスのURLをグレーアウト */
-define( 'WP_SITEURL', 'https://munika-works.com/wordpress' );
+define( 'WP_SITEURL', 'https://test.munika-works.com/wordpress' );

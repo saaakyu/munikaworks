@@ -12,23 +12,23 @@
 		</div>
 		<div class="footer__nav">
 			<ul class="nav">
-				<li><a href="<?php echo LOCATION; ?>">TOP</a></li>
-				<li><a href="<?php echo LOCATION; ?>about/">ムニカワークス<br class="view_tab">について</a></li>
-				<li><a href="<?php echo LOCATION; ?>service/">サービス内容</a></li>
-				<li><a href="<?php echo LOCATION; ?>price/">料金について</a></li>
+				<li class="solid"><a href="<?php echo LOCATION; ?>">TOP</a></li>
+				<li class="solid"><a href="<?php echo LOCATION; ?>about/">ムニカワークスに<br class="view_tab">ついて</a></li>
+				<li class="solid"><a href="<?php echo LOCATION; ?>service/">サービス内容</a></li>
+				<li class="solid"><a href="<?php echo LOCATION; ?>price/">料金について</a></li>
+				<li class="solid"><a href="<?php echo LOCATION; ?>works/">制作実績</a></li>
 			</ul>
 			<ul class="nav">
-				<li><a href="<?php echo LOCATION; ?>works/">制作実績</a></li>
-				<!-- <li><a href="<?php echo LOCATION; ?>case_study/">実例のご紹介</a></li> -->
-				<li><a href="<?php echo LOCATION; ?>status/">現在の受付状況</a></li>
-				<li><a href="<?php echo LOCATION; ?>news/">お知らせ</a></li>
-				<!-- <li><a href="<?php echo LOCATION; ?>blog/">ブログ</a></li> -->
-				<li><a href="<?php echo LOCATION; ?>privacy_policy/">プライバシーポリシー</a></li>
+				<!-- <li class="solid"><a href="<?php echo LOCATION; ?>case_study/">実例のご紹介</a></li> -->
+				<li class="solid"><a href="<?php echo LOCATION; ?>status/">現在の受付状況</a></li>
+				<li class="solid"><a href="<?php echo LOCATION; ?>news/">お知らせ</a></li>
+				<!-- <li class="solid"><a href="<?php echo LOCATION; ?>blog/">ブログ</a></li> -->
+				<li class="solid"><a href="<?php echo LOCATION; ?>privacy_policy/">プライバシーポリシー</a></li>
+				<li class="solid"><a href="<?php echo LOCATION; ?>trade_law/">特定商取引法に基づく表記</a></li>
 			</ul>
 			<ul class="nav">
-				<!-- <li><a href="<?php echo LOCATION; ?>faq/">よくあるご質問</a></li> -->
-				<li><a href="<?php echo LOCATION; ?>trade_law/">特定商取引法に基づく表記</a></li>
-				<div class="contact_btn"><a href="<?php echo LOCATION_CONTACT; ?>">お問い合わせ</a></div>
+				<!-- <li class="solid"><a href="<?php echo LOCATION; ?>faq/">よくあるご質問</a></li> -->
+				<li class="contact_btn"><a href="<?php echo LOCATION_CONTACT; ?>">お問い合わせ</a></li>
 			</ul>
 		</div><!--footer__nav-->
 	</div>

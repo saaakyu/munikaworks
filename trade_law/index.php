@@ -60,6 +60,10 @@ include realpath(__DIR__ . '/../config/include.php');
 								<td>当サイト内の料金ページをご覧ください。</td>
 							</tr>
 							<tr>
+								<th>メールアドレス</th>
+								<td>contact@munika-works.com</td>
+							</tr>
+							<tr>
 								<th>販売価格以外に必要な費用</th>
 								<td>振込手数料はお客様負担となります。</td>
 							</tr>

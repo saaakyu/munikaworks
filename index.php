@@ -22,7 +22,7 @@
 	<link href="<?php echo echo_version(LOCATION_FILE . 'css/homepage.css', LOCATION_FILE_DIR); ?>" rel="stylesheet" media="all">
 	</head>
 
-	<body id="<?php echo $page; ?>" ontouchstart="">
+	<body id="<?php echo $page; ?>">
 		<?php include LOCATION_ROOT_DIR . "/templates/gtm.php"; ?>
 		<div id="munika_page">
 			<?php include LOCATION_ROOT_DIR . "/templates/header.php"; ?>
@@ -151,7 +151,7 @@
 				</article><!-- /.wrp_news -->
 
 
-				<style>
+				<script>
 					/*
 				<article class="wrp_case fadeInTrigger">
 					<div class="con_case">
@@ -183,7 +183,7 @@
 					</div>
 					<div class="pink_btn"><a href="<?php echo LOCATION; ?>case-study/">詳しく見る</a></div>
 				</article><!-- /.wrp_case -->*/
-				</style>
+				</script>
 				<?php include LOCATION_ROOT_DIR . "/templates/contact.php"; ?>
 
 			</main><!-- /#contents -->

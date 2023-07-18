@@ -363,7 +363,7 @@ textarea {
 }
 @media only screen and (min-width: 1181px) and (max-width: 1440px) {
   #footer .footer__wrap {
-    width: 85%;
+    width: 65%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -529,7 +529,7 @@ textarea {
     padding-right: 0;
   }
 }
-#footer .footer__nav .nav li {
+#footer .footer__nav .nav .solid {
   padding-bottom: 1em;
   position: relative;
   display: -webkit-box;
@@ -540,22 +540,22 @@ textarea {
           align-items: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
-  #footer .footer__nav .nav li {
+  #footer .footer__nav .nav .solid {
     padding-bottom: 1em;
   }
 }
 @media only screen and (max-width: 767px) {
-  #footer .footer__nav .nav li {
+  #footer .footer__nav .nav .solid {
     padding-bottom: 0.5em;
   }
 }
-#footer .footer__nav .nav li::before {
+#footer .footer__nav .nav .solid::before {
   content: "";
   border-top: 2px solid #fff;
   width: 1em;
   margin-right: 0.5em;
 }
-#footer .footer__nav .nav li a:hover {
+#footer .footer__nav .nav .solid a:hover {
   color: #0E6BB0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1327,7 +1327,7 @@ table.tmp_table_respon.thin > tbody > tr > td {
 }
 .tmp_acc_tit > .ic::before {
   font-family: "Font Awesome 6 Free";
-  content: "+";
+  content: "\f068";
   display: inline-block;
   position: relative;
   right: -1px;
@@ -1342,7 +1342,7 @@ table.tmp_table_respon.thin > tbody > tr > td {
           transform: rotate(0deg);
 }
 .tmp_acc_tit.is-active > .ic::before {
-  content: "\f068";
+  content: "+";
   font-weight: 600;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);

@@ -445,6 +445,13 @@ body img {
   opacity: 1;
 }
 
+/*スマホ時、「次の記事」に背景をつける*/
+@media only screen and (max-width: 767px) {
+  .prnx_tb{
+    background-color: #f8f8f8;
+  }
+}
+
 /*ロゴ位置を下に*/
 @media only screen and (max-width: 767px) {
   #header {
@@ -457,8 +464,6 @@ body img {
   margin: 0;
 }
 
-.tmp_txt {
-}
 
 .pink {
   color: #ee8a8a;

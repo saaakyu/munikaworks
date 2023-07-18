@@ -38,13 +38,10 @@ function register_googlefonts() { wp_deregister_style('sng-googlefonts');//初�
 add_action('wp_enqueue_scripts', 'register_googlefonts');
 //END Google Fontsを変更
 
-
-
-
 //headにタグを追加
 add_action('wp_head', 'add_meta_to_head');
 function add_meta_to_head(){
-  echo '<link href="../../../../files/css/common.css" rel="stylesheet" media="all">';
+  echo '<link href="/files/css/common.css" rel="stylesheet" media="all">';
 }
 
 //body閉じタグ前にscriptタグを追加
@@ -52,9 +49,18 @@ function add_meta_to_head(){
 // function add_requirejs()
 // {
 //   echo '
-//   <script src="../../../../files/js/common.min.js"></script>';
+//   <script src="/files/js/common.min.js"></script>';
 // }
+
+add_filter( 'wp_resource_hints', 'remove_dns_prefetch', 10, 2 );
+function remove_dns_prefetch( $hints, $relation_type ) {
+	if ( 'dns-prefetch' === $relation_type ) {
+		return array_diff( wp_dependencies_unique_hosts(), $hints );
+	}
+	return $hints;
+}
 
 /************************
  *functions.phpへの追記はこの上に
  *************************/
+

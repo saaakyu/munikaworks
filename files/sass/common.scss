@@ -323,7 +323,7 @@ body {
       @include cV(padding, 3em 0, 3em 0, 2em 0);
       
       @include mq(pc_s) {
-        width: 85%;
+        width: 65%;
         flex-direction: column;
       }
       @include mq(tab_sp) {
@@ -390,7 +390,7 @@ body {
       }
 
       .nav {
-        li {
+        .solid {
           @include cV(padding-bottom, 1em, 1em, 0.5em);
           position: relative;
           display: flex;

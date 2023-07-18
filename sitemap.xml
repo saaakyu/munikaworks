@@ -35,7 +35,75 @@
   <priority>0.8</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/privacy_policy/</loc>
+  <loc>https://munika-works.com/news/news_open/</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/case-study/</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_chiyoko/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_jupiter/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/other_hachi/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_crtw/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/cover_kemo/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/cover_orange/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_jupiter-2/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_ai/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_tobofuri/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_cafe/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_ktr/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_error/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_koi/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_itsumi/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_wine/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/contact/logo_form/</loc>
   <priority>0.7</priority>
 </url>
 <url>
@@ -66,4 +134,5 @@
   <loc>https://munika-works.com/category/works/logo/page/2/</loc>
   <priority>0.5</priority>
 </url>
+
 </urlset>
