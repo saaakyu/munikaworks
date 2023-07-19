@@ -52,13 +52,6 @@ function add_meta_to_head(){
 //   <script src="/files/js/common.min.js"></script>';
 // }
 
-add_filter( 'wp_resource_hints', 'remove_dns_prefetch', 10, 2 );
-function remove_dns_prefetch( $hints, $relation_type ) {
-	if ( 'dns-prefetch' === $relation_type ) {
-		return array_diff( wp_dependencies_unique_hosts(), $hints );
-	}
-	return $hints;
-}
 
 /************************
  *functions.phpへの追記はこの上に

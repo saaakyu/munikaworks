@@ -61,7 +61,7 @@ include realpath(__DIR__ . '/../config/include.php');
 							</tr>
 							<tr>
 								<th>メールアドレス</th>
-								<td>contact@munika-works.com</td>
+								<td>contact<span class="at">munika-works.com</span></td>
 							</tr>
 							<tr>
 								<th>販売価格以外に必要な費用</th>

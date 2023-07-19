@@ -21,10 +21,10 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', '04ycf_munika' );
+define( 'DB_NAME', '04ycf_munika_admin' );
 
 /** Database username */
-define( 'DB_USER', '04ycf_munika' );
+define( 'DB_USER', '04ycf_munika_admin' );
 
 /** Database password */
 define( 'DB_PASSWORD', 'yuri_0869' );
@@ -98,7 +98,7 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 }
 
 define( 'CW_DASHBOARD_PLUGIN_SID', '1QdrhNKcDQVlfxx32XkYfcTp_W7PciTsNS3K0FRajbU-_0Q4v4Mvrhzskc8c0Ms6FVedVsqGKTJB-4J7ShrNy-VpIsQmz8cOURH5PViBDg4.' );
-define( 'CW_DASHBOARD_PLUGIN_DID', 'WXejIyytc3qmWqGToRMDnBcXSypdwiz7Lopu9mEhrIqgXAiSFqOm7ycjjjKvXXYifRWbZwa3_VKpQq6IlrM3mqLzjxfHEIXPR-tnXTArL-Y.' );
+define( 'CW_DASHBOARD_PLUGIN_DID', 'Bjdy5XfxRLAsdc7Gp0_LBZq3rEEM_p6GZFaGrvKkI5CkD3FbOEkzqLbvSZSfPJxLdPvsTj0jznzvNFS4-RXS6s1dB3YujLlf6TAFJ-r-t3A.' );
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
@@ -110,4 +110,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once ABSPATH . 'wp-settings.php';
 
 /** 設定＞一般設定ワードプレスアドレスのURLをグレーアウト */
-define( 'WP_SITEURL', 'https://test.munika-works.com/wordpress' );
+define( 'WP_SITEURL', 'https://munika-works.com/wordpress' );

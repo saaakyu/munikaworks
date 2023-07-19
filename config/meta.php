@@ -71,7 +71,7 @@ if ($page == 'price') {
 if ($page == 'status') {
 	$meta['title'] = '現在の受付状況 | ' . TITLE;
 	$meta['keywords'] = KEYWORDS . ',受付状況';
-	$meta['description'] = 'ムニカワークスの「現在の受付状況」ページです。ご依頼の受付状況をリアルタイムで発信しています。';
+	$meta['description'] = '受付状況をリアルタイムで発信しています。ご依頼の際は本ページをご確認の上お問い合わせください。';
 	$meta['h1'] = H1;
 }
 
@@ -79,7 +79,7 @@ if ($page == 'status') {
 if ($page == 'faq') {
 	$meta['title'] = 'よくあるご質問 | ' . TITLE;
 	$meta['keywords'] = KEYWORDS . ',よくあるご質問';
-	$meta['description'] = 'ムニカワークスの「よくあるご質問」ページです。サービスややり取りに関するお客様からよくあるお問い合わせと回答についてご紹介しています。';
+	$meta['description'] = 'サービスややり取りに関する、お客様からよくあるお問い合わせと回答についてご紹介しています。';
 	$meta['h1'] = H1;
 }
 
@@ -87,7 +87,7 @@ if ($page == 'faq') {
 if ($page == 'contact') {
 	$meta['title'] = '各種お問い合わせ | ' . TITLE;
 	$meta['keywords'] = KEYWORDS . ',各種お問い合わせ';
-	$meta['description'] = 'ムニカワークスの「お問い合わせ」ページです。デザインのご相談をフォームにて受け付けています。';
+	$meta['description'] = 'デザインのご相談をフォームにて受け付けています。お気軽にご相談ください。';
 	$meta['h1'] = H1;
 }
 
@@ -95,7 +95,7 @@ if ($page == 'contact') {
 if ($page == 'contact_lower') {
 	$meta['title'] = 'お問い合わせフォーム | ' . TITLE;
 	$meta['keywords'] = KEYWORDS . ',お問い合わせフォーム';
-	$meta['description'] = 'ムニカワークスの「お問い合わせ」ページです。デザインのご相談をフォームにて受け付けています。';
+	$meta['description'] = 'デザインのご相談をフォームにて受け付けています。お気軽にご相談ください。';
 	$meta['h1'] = H1;
 }
 
@@ -103,7 +103,7 @@ if ($page == 'contact_lower') {
 if ($page == 'contact_lower') {
 	$meta['title'] = '特定商取引法に基づく表記 | ' . TITLE;
 	$meta['keywords'] = KEYWORDS . ',特定商取引法に基づく表記';
-	$meta['description'] = 'ムニカワークスの「特定商取引に基づく表記」ページです。';
+	$meta['description'] = 'ムニカワークスの特定商取引に基づく表記ページです。';
 	$meta['h1'] = H1;
 }
 

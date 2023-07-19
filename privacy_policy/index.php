@@ -145,7 +145,7 @@ include realpath(__DIR__ . '/../config/include.php');
 					<h4 class="ttl__jp">&mdash; 個人情報の開示・訂正・削除</h4>
 					<p class="tmp_txt">個人情報をお知らせいただきましたお客様は、いつでも当サービスに対して当サービスが有している個人情報をご本人のみに開示、または削除をするように求めることができます。<br>
 					開示の結果、個人情報に誤りがある場合は当サービスに対して個人情報の訂正、または削除を要求することができます。<br><br>個人情報の取り扱いに関するお問い合わせは、下記までご連絡ください。<br>
-					Mail：<a class="pink" href="mailto:contact@munika-works.com">contact&#64;munika-works.com</a><br><br>
+					Mail：<span class="pink">contact<span class="at">munika-works.com</span></span><br><br>
 					以上</p>
 				</div><!-- .con_policy -->
 			</div><!-- .wrp_policy -->

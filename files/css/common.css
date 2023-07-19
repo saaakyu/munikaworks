@@ -732,6 +732,10 @@ textarea {
   color: #F0B967;
 }
 
+.at::before {
+  content: "@";
+}
+
 @media only screen and (max-width: 767px) {
   .pink_btn {
     text-align: center;
