@@ -227,21 +227,21 @@ include realpath(__DIR__ . '/../config/include.php');
 
 			<div class="wrp_price" id="link04">
 				<h3 class="ttl__jp blue center">お支払い方法</h3>
+				<div class="box_price">
+					<p class="box_price__txt">お支払いは先払いとなります。<br>内容が確定次第、メールにてご請求書をお送りいたします。</p>
+				</div>
 				<div class="box_info">
 					<table class="info_list">
 						<tbody>
-							<tr>
-								<!-- <th>お支払い方法</th> -->
-								<td>銀行振り込みのみ<br>
-									<span class="small">※内容が確定次第、メールにて振込先をお送りいたします。（原則先払い）</span>
-								</td>
-
-								<!-- <td>クレジットカード/銀行振り込み<br>
-								【対応カード】Visa/Mastercard/American Express<br>
-								<span class="small">※原則先払いとなります。内容が確定次第、メールにてご請求書・お振込先をお送りいたします。</span></td> -->
-
-							</tr>
-
+						<tr>
+							<td>キャッシュレス決済</td>
+							<td><p class="small">【クレジットカード】<br>Visa/JCB/Mastercard/AmericanExpress/<br class="view_sp">Diners/DISCOVER</p>
+							<p class="small">【電子マネー】<br>Google Pay/Apple Pay</p></td>
+						</tr>
+						<tr>
+							<td>銀行振込</td>
+							<td><p class="small">ご請求書発行後、5日以内にお支払いをお願いいたします。<br>※振込手数料はお客様のご負担となります。</p></td>
+						</tr>
 						</tbody>
 					</table>
 				</div><!-- /.box_info -->

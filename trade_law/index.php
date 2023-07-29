@@ -69,11 +69,11 @@ include realpath(__DIR__ . '/../config/include.php');
 							</tr>
 							<tr>
 								<th>代金の支払い方法</th>
-								<td>銀行振込<!--、クレジットカード決済--></td>
+								<td>キャッシュレス決済、銀行振込</td>
 							</tr>
 							<tr>
 								<th>代金の支払い時期</th>
-								<td>請求書お送り時点から支払い可能です。<br class="view_sp">1週間以内にお支払いください。</td>
+								<td>請求書お送り時点から支払い可能です。<br class="view_sp">5日以内にお支払いください。</td>
 							</tr>
 							<tr>
 								<th>注文方法</th>
