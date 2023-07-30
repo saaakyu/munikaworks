@@ -330,6 +330,9 @@ style info : 汎用設定
     padding: 2em 1.5em 1.5em;
   }
 }
+.wrp_price .box_info .info_list img {
+  margin: 1em 0;
+}
 .wrp_price .box_info .info_list th {
   width: 35%;
   -webkit-box-sizing: border-box;

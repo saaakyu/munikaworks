@@ -155,7 +155,9 @@ style info : コピー
       border-radius: 1em;
       background-color: $light-blue;
       border-spacing: 0;
-
+      img{
+        margin: 1em 0;
+      }
       th {
         width: 35%;
         box-sizing: border-box;

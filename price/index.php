@@ -234,14 +234,11 @@ include realpath(__DIR__ . '/../config/include.php');
 					<table class="info_list">
 						<tbody>
 						<tr>
-							<td>キャッシュレス決済</td>
-							<td><p class="small">【クレジットカード】<br>Visa/JCB/Mastercard/AmericanExpress/<br class="view_sp">Diners/DISCOVER</p>
-							<p class="small">【電子マネー】<br>Google Pay/Apple Pay</p></td>
+							<td>キャッシュレス決済/銀行振込<br>
+							<p><img src="<?php echo LOCATION; ?>price/images/img_payment01.png" alt="Visa、Mastercard、アメリカンエキスプレス、JCB、ダイナースクラブ、Discover、Google Pay、Apple Pay"></p>
+							<p class="small">ご請求書発行後、5日以内にお支払いをお願いいたします。<br>※振込手数料はお客様のご負担となります。</p></td>
 						</tr>
-						<tr>
-							<td>銀行振込</td>
-							<td><p class="small">ご請求書発行後、5日以内にお支払いをお願いいたします。<br>※振込手数料はお客様のご負担となります。</p></td>
-						</tr>
+
 						</tbody>
 					</table>
 				</div><!-- /.box_info -->
