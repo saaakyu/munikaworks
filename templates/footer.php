@@ -5,7 +5,7 @@
 					<img src="<?php echo LOCATION_FILE; ?>images/common/logo.svg" alt="munikaworks"></a></div>
 			<div class="sns">
 				<ul class="sns__icon">
-					<li><a href="<?php echo LOCATION_TWITTER; ?>" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a></li>
+					<li><a href="<?php echo LOCATION_TWITTER; ?>" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a></li>
 					<!-- <li><a href="<?php echo LOCATION_INSTAGRAM; ?>" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li> -->
 				</ul>
 			</div>

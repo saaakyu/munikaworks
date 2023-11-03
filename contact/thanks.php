@@ -61,12 +61,12 @@ include realpath(__DIR__ . '/../config/include.php');
 						<div class="txt center"><em class="blue">お問い合わせの送信が<br class="view_sp">完了しました。</em></div>
 						<p class="txt center">この度はムニカワークスにお問い合わせ頂き、誠にありがとうございます。<br>ご登録いただきましたメールアドレスに自動返信メールを送信いたしました。</p>
 						<p class="txt center">内容を確認し、3営業日以内にメールにてご連絡させていただきます。<br class="view_pc-tab">しばらく経ってもメールが届かない場合は迷惑メールフォルダをご確認の上、<br class="view_pc-tab">直接contact@munika-works.comまでご連絡ください。</p>
-						<!-- <p class="txt center">Twitterも随時更新しておりますので、この機会にぜひフォローをお願いいたします！</p>
+						<p class="txt center">X（旧：Twitter）も随時更新しておりますので、この機会にぜひフォローをお願いいたします！</p>
 
 						<div class="timeline">
 							<a class="twitter-timeline" href="https://twitter.com/munika_works?ref_src=twsrc%5Etfw" data-height = "500"></a>
 								<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-						</div> -->
+						</div>
 					</div>
 				</div>
 			</div><!-- /.wrp_intro -->
