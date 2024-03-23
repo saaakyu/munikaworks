@@ -244,7 +244,7 @@ include realpath(__DIR__ . '/../config/include.php');
 				<div class="con_service">
 					<div class="box_service">
 						<div class="box_service__img"><img src="<?php echo LOCATION; ?>service/images/img_cover.png" alt=""></div>
-						<p class="box_service__txt">漫画や小説など、同人誌の表紙デザインを承っております。<br>本の内容を知らない人にも気に留めていただけるようなデザインを心掛けています。</p>
+						<p class="box_service__txt">漫画や小説など、同人誌の表紙デザインを承っております。<br>作品を手に取っていただけるきっかけになるようなデザインを心掛けています。</p>
 					</div>
 				</div><!-- /.con_service -->
 
@@ -287,7 +287,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						<div class="box_list">
 							<div class="tit_list"><i class="fa-solid fa-clipboard-check"></i> ご提案数</div>
 
-							<p class="tmp_txt">1案～2案<span class="small">（明確にやりたいことが見えた場合は1案、悩んだり迷ったりした際は2案ご提案いたします。案数のご指定はできません。）</span></p>
+							<p class="tmp_txt">1案～2案<span class="small">（ヒアリングを通して適切だと感じた案数でご提案いたします）</span></p>
 						</div>
 
 					</div><!-- /.con_list_col2 -->

@@ -19,17 +19,17 @@ function enqueue_my_child_gutenberg_styles()
 /************************
  *functions.phpへの追記は以下に
  *************************/
-//元々記載があった
-function delete_domain_from_attachment_url($url)
-{
+//wordpress内のパスを全て相対パスに変更する。Twitter等SNSのOGP画像が表示されなくなる。
+// function delete_domain_from_attachment_url($url)
+// {
 
-  if (preg_match('/^http(s)?:\/\/[^\/\s]+(.*)$/', $url, $match)) {
-    $url = $match[2];
-  }
-  return $url;
-}
+//   if (preg_match('/^http(s)?:\/\/[^\/\s]+(.*)$/', $url, $match)) {
+//     $url = $match[2];
+//   }
+//   return $url;
+// }
 
-add_filter('wp_get_attachment_url', 'delete_domain_from_attachment_url');
+// add_filter('wp_get_attachment_url', 'delete_domain_from_attachment_url');
 
 //Google fontsを変更
 function register_googlefonts() { wp_deregister_style('sng-googlefonts');//初期設定を解除
