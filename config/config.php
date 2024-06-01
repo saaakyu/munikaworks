@@ -52,8 +52,8 @@ define('LOCATION_TEL', 'tel:00000000000');
 define('PLACEHOLDER_IMAGE', 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==');
 
 /* 外部リンク */
-define('LOCATION_TWITTER', 'https://twitter.com/munika_works/');
-define('LOCATION_INSTAGRAM', 'https://www.instagram.com/munika_works/');
+define('LOCATION_TWITTER', 'https://twitter.com/munikaworks/');
+define('LOCATION_INSTAGRAM', 'https://www.instagram.com/munikaworks/');
 define('LOCATION_SKIMA', 'https://skima.jp/item/detail?item_id=');
 
 ?>
