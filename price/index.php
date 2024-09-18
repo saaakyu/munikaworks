@@ -228,20 +228,21 @@ include realpath(__DIR__ . '/../config/include.php');
 			<div class="wrp_price" id="link04">
 				<h3 class="ttl__jp blue center">お支払い方法</h3>
 				<div class="box_price">
-					<p class="box_price__txt">お支払いは先払いとなります。<br>内容が確定次第、メールにてご請求書をお送りいたします。</p>
+					<p class="box_price__txt">お支払い方法は銀行振込となります。<br>
+					※振込手数料はお客様のご負担となります。</p>
 				</div>
-				<div class="box_info">
+				<!-- <div class="box_info">
 					<table class="info_list">
 						<tbody>
 						<tr>
 							<td>キャッシュレス決済/銀行振込<br>
 							<p><img src="<?php echo LOCATION; ?>price/images/img_payment01.png" alt="Visa、Mastercard、アメリカンエキスプレス、JCB、ダイナースクラブ、Discover、Google Pay、Apple Pay"></p>
-							<p class="small">ご請求書発行後、5日以内にお支払いをお願いいたします。<br>※振込手数料はお客様のご負担となります。</p></td>
+							<p class="small">※振込手数料はお客様のご負担となります。</p></td> 
 						</tr>
 
 						</tbody>
 					</table>
-				</div><!-- /.box_info -->
+				</div>--><!-- /.box_info -->
 			</div><!-- /.wrp_price -->
 
 			<?php include LOCATION_ROOT_DIR . "/templates/contact.php"; ?>
