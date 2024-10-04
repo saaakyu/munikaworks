@@ -33,7 +33,7 @@ function enqueue_my_child_gutenberg_styles()
 
 //Google fontsを変更
 function register_googlefonts() { wp_deregister_style('sng-googlefonts');//初期設定を解除
-  wp_register_style( 'sng-googlefonts', '///fonts.googleapis.com/css?family=Josefin+Sans:400,600|Zen+Maru+Gothic:400,500,700&display=swap', array(), '', 'all' ); wp_enqueue_script('sng-googlefonts');
+  wp_register_style( 'sng-googlefonts', '//fonts.googleapis.com/css?family=Josefin+Sans:400,600|Zen+Maru+Gothic:400,500,700&family=Noto+Sans+JP:wght@400,500,700&display=swap', array(), '', 'all' ); wp_enqueue_script('sng-googlefonts');
 }
 add_action('wp_enqueue_scripts', 'register_googlefonts');
 //END Google Fontsを変更
