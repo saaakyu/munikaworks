@@ -43,11 +43,39 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://munika-works.com/works/hoshimegurido/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_mfrn/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_littleoasis/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/cover_kusosuna/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_nennemu/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/cover_fiction/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/header_thrones/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
   <loc>https://munika-works.com/works/logo_chiyoko/</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/works/logo_jupiter/</loc>
+  <loc>https://munika-works.com/works/logo_mebu/</loc>
   <priority>0.7</priority>
 </url>
 <url>
@@ -67,7 +95,7 @@
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/works/logo_jupiter-2/</loc>
+  <loc>https://munika-works.com/works/logo_jupiter/</loc>
   <priority>0.7</priority>
 </url>
 <url>
@@ -128,6 +156,10 @@
 </url>
 <url>
   <loc>https://munika-works.com/category/works/page/2/</loc>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/category/works/page/3/</loc>
   <priority>0.5</priority>
 </url>
 <url>
