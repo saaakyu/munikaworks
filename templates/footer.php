@@ -22,7 +22,7 @@
 				<!-- <li class="solid"><a href="<?php echo LOCATION; ?>case_study/">実例のご紹介</a></li> -->
 				<li class="solid"><a href="<?php echo LOCATION; ?>status/">現在の受付状況</a></li>
 				<li class="solid"><a href="<?php echo LOCATION; ?>news/">お知らせ</a></li>
-				<!-- <li class="solid"><a href="<?php echo LOCATION; ?>blog/">ブログ</a></li> -->
+				<li class="solid"><a href="<?php echo LOCATION; ?>blog/">ブログ</a></li>
 				<li class="solid"><a href="<?php echo LOCATION; ?>privacy_policy/">プライバシーポリシー</a></li>
 				<li class="solid"><a href="<?php echo LOCATION; ?>trade_law/">特定商取引法に基づく表記</a></li>
 			</ul>
@@ -32,8 +32,7 @@
 			</ul>
 		</div><!--footer__nav-->
 	</div>
-	<p id="copyright">&copy; <?php //echo get_copyright_date(2022);>
-								?>munika-works</p>
+	<p id="copyright">&copy; <?php //echo get_copyright_date(2022);>?>munika-works</p>
 </footer>
 <?php
 // コピーライトの年を返す
