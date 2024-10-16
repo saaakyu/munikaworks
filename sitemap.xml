@@ -43,7 +43,15 @@
   <priority>0.8</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/works/hoshimegurido/</loc>
+  <loc>https://munika-works.com/privacy_policy/</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/trade_law/</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_hoshimegurido/</loc>
   <priority>0.7</priority>
 </url>
 <url>
@@ -135,6 +143,14 @@
   <priority>0.7</priority>
 </url>
 <url>
+  <loc>https://munika-works.com/contact/cover_form/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/contact/others_form/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
   <loc>https://munika-works.com/category/news/</loc>
   <priority>0.7</priority>
 </url>
@@ -152,6 +168,14 @@
 </url>
 <url>
   <loc>https://munika-works.com/category/works/cover/</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/blog/</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/blog/dozenrosefes2023/</loc>
   <priority>0.6</priority>
 </url>
 <url>
