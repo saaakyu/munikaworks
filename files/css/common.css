@@ -13,13 +13,13 @@ file name  : _settings.scss
 author     : munika-works
 style info : 汎用設定
 =================================================================== */
-.lower #contents .wrp_lay_right .con_lay, .lower #contents .wrp_intro .con_intro .box_link, .lower #contents .wrp_intro, #footer .footer__wrap {
+.lower #contents .wrp_lay_right .con_lay, .lower #contents .wrp_intro .con_intro .box_link, .lower #contents .wrp_intro, .wrp_contact .con_contact, #footer .footer__wrap {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
 @media only screen and (max-width: 1180px) {
-  .lower #contents .wrp_lay_right .con_lay, .lower #contents .wrp_intro .con_intro .box_link, .lower #contents .wrp_intro, #footer .footer__wrap {
+  .lower #contents .wrp_lay_right .con_lay, .lower #contents .wrp_intro .con_intro .box_link, .lower #contents .wrp_intro, .wrp_contact .con_contact, #footer .footer__wrap {
     width: 91.6666666667%;
   }
 }
@@ -780,6 +780,20 @@ textarea {
   }
 }
 
+.contact_btn {
+  max-width: 350px;
+  margin: auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .contact_btn {
+    max-width: 350px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact_btn {
+    max-width: 100%;
+  }
+}
 .contact_btn a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -795,19 +809,19 @@ textarea {
   color: #fff;
   font-weight: 500;
   text-align: center;
-  padding: 0.4em 1.5em;
+  padding: 0.6em 2em;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border: 2px #0E6BB0 solid;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .contact_btn a {
-    padding: 0.4em 1.5em;
+    padding: 0.6em 2em;
   }
 }
 @media only screen and (max-width: 767px) {
   .contact_btn a {
-    padding: 0;
+    padding: 0.6em 2em;
   }
 }
 .contact_btn a::before {
@@ -901,15 +915,21 @@ textarea {
     background-size: 50%;
   }
 }
-.wrp_contact .con_contact .box_contact__txt {
-  width: calc(650 / 1200 * 100%);
-  text-align: center;
-  margin: auto;
+.wrp_contact .con_contact .box_contact .txt {
+  margin-bottom: 2em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .wrp_contact .con_contact .box_contact .txt {
+    margin-bottom: 2em;
+  }
 }
 @media only screen and (max-width: 767px) {
-  .wrp_contact .con_contact .box_contact__txt {
-    width: 90%;
+  .wrp_contact .con_contact .box_contact .txt {
+    margin-bottom: 2em;
   }
+}
+.wrp_contact .con_contact .box_contact__txt {
+  width: calc(650 / 1200 * 100%);
 }
 .wrp_contact .con_contact .box_contact__txt .ttl__en {
   display: inline-block;
@@ -1221,6 +1241,10 @@ table.tmp_table.thin > tbody > tr > td {
 table.tmp_table_respon > * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+table.tmp_table_respon.thin > tbody > tr .bg_pink {
+  background: #f37d7d;
+  color: #fff;
 }
 table.tmp_table_respon.thin > tbody > tr > th {
   padding: 0.5em 1em;

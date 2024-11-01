@@ -564,6 +564,8 @@ body {
 // お問い合わせボタン
 //----------------------------------------------//
 .contact_btn {
+  @include cV(max-width, 350px,350px,100%);
+  margin: auto;
   a {
     display: flex;
     align-items: center;
@@ -573,7 +575,7 @@ body {
     color: $white;
     font-weight: 500;
     text-align: center;
-    @include cV(padding, 0.4em 1.5em, 0.4em 1.5em, 0);
+    @include cV(padding, 0.6em 2em, 0.6em 2em, 0.6em 2em);
     transition: 0.3s;
     border: 2px $blue solid;
 
@@ -631,15 +633,13 @@ body {
   }
 
   .con_contact {
+    @extend %bw;
     .box_contact {
+      .txt{
+        @include cV(margin-bottom, 2em, 2em, 2em);
+      }
       &__txt {
         width: wCon(650, 1200);
-        text-align: center;
-        margin: auto;
-
-        @include mq(sp) {
-          width: 90%;
-        }
 
         // -----------------------------------------------------------
         // TOP共通デザイン
@@ -914,6 +914,10 @@ table.tmp_table_respon {
   &.thin {
     >tbody {
       >tr {
+        .bg_pink{
+          background: $pink;
+          color: $white;
+        }     
         >th {
           @include cV(padding, 0.5em 1em, .5em 1em);
           border-radius: 0.5em;

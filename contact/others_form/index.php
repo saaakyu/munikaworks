@@ -1,5 +1,6 @@
 <?php
 $page = 'contact_lower';
+$title = 'others_form';
 include realpath(__DIR__ . '/../../config/include.php');
 ?>
 <!-- *** stylesheet *** -->

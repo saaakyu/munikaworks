@@ -112,8 +112,19 @@ style info : 汎用設定
 .wrp_price .con_price .box_card {
   background: #fff;
   padding: 2em;
-  max-width: 27%;
+  max-width: 100%;
   border-radius: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 1.5em 0 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card {
@@ -135,6 +146,46 @@ style info : 汎用設定
     max-width: 100%;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .wrp_price .con_price .box_card {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_price .con_price .box_card {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .wrp_price .con_price .box_card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_price .con_price .box_card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .wrp_price .con_price .box_card {
+    margin: 0 1.5em 0 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_price .con_price .box_card {
+    margin: 0 0 1.5em 0;
+  }
+}
 .wrp_price .con_price .box_card:not(:last-of-type) {
   margin: 0 1.5em 0 0;
 }
@@ -148,17 +199,54 @@ style info : 汎用設定
     margin: 0 0 1.5em 0;
   }
 }
+.wrp_price .con_price .box_card.pink {
+  color: #f37d7d;
+}
+.wrp_price .con_price .box_card__img {
+  margin: 0 2em 0 0;
+  max-width: calc(400 / 1200 * 100%);
+}
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .wrp_price .con_price .box_card__img {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_price .con_price .box_card__img {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .wrp_price .con_price .box_card__img {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_price .con_price .box_card__img {
+    max-width: 100%;
+  }
+}
 .wrp_price .con_price .box_card__name {
   font-size: 138%;
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
   line-height: 1;
-  padding: 1em 0 0;
+  padding: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card__name {
-    padding: 1em 0 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_price .con_price .box_card__name {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .wrp_price .con_price .box_card__name {
+    padding: 2em 0 0;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -167,14 +255,62 @@ style info : 汎用設定
   }
 }
 .wrp_price .con_price .box_card__price {
-  font-size: 175%;
+  font-size: 250%;
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
-  text-align: center;
-  color: #f37d7d;
+  text-align: left;
+  line-height: 1.3;
+  margin: 0 0 0.5em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .wrp_price .con_price .box_card__price {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_price .con_price .box_card__price {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .wrp_price .con_price .box_card__price {
+    margin: 0 0 0.5em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_price .con_price .box_card__price {
+    margin: 0 0 0.5em;
+  }
 }
 .wrp_price .con_price .box_card__price .small {
-  font-size: 72%;
+  font-size: 50%;
+}
+.wrp_price .con_price .box_card__price .sale {
+  text-decoration: line-through;
+}
+.wrp_price .con_price .box_card__price .bg_accent {
+  font-size: 40%;
+  padding: 0em 0.1em 0.1em 0.3em;
+  margin-bottom: 0.5em;
+  background: #f37d7d;
+  color: #fff;
+}
+.wrp_price .con_price .box_card__txt {
+  margin: 0 0 0.5em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .wrp_price .con_price .box_card__txt {
+    margin: 0 0 0.5em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_price .con_price .box_card__txt {
+    margin: 0 0 0.5em;
+  }
+}
+.wrp_price .con_price .box_card__txt .small {
+  font-size: 75%;
+  line-height: 0.5;
 }
 .wrp_price .wrp_option {
   display: -webkit-box;
@@ -291,7 +427,9 @@ style info : 汎用設定
       flex-wrap: wrap;
 }
 .wrp_price .wrp_list .con_list_2column {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
 }
 .wrp_price .box_info {

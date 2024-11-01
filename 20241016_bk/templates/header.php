@@ -8,12 +8,12 @@
             <li><a href="<?php echo LOCATION; ?>service/">サービス内容</a></li>
             <li><a href="<?php echo LOCATION; ?>price/">料金について</a></li>
             <li><a href="<?php echo LOCATION; ?>works/">制作実績</a></li>
+            <li><a href="<?php echo LOCATION; ?>blog/">ブログ</a></li>
             <!-- <li><a href="<?php echo LOCATION; ?>case_study/">実例のご紹介</a></li> -->
             <li><a href="<?php echo LOCATION; ?>status/">現在の受付状況</a></li>
-            <li><a href="<?php echo LOCATION; ?>blog/">ブログ</a></li>
             <!-- <li><a href="<?php echo LOCATION; ?>faq/">よくあるご質問</a></li> -->
         </ul>
-        <div class="contact_btn"><a href="<?php echo LOCATION_CONTACT; ?>">ご依頼はこちら</a></div>
+        <div class="contact_btn"><a href="<?php echo LOCATION_CONTACT; ?>">お問い合わせ</a></div>
     </nav>
     <div class="openbtn view_tab-sp view_pc_s"><div class="gnav_solid"></div><div class="gnav_solid"></div><div class="gnav_solid"></div></div>
     <nav class="gnav view_tab-sp view_pc_s">
@@ -23,11 +23,11 @@
                 <li><a href="<?php echo LOCATION; ?>service/">サービス内容</a></li>
                 <li><a href="<?php echo LOCATION; ?>price/">料金について</a></li>
                 <li><a href="<?php echo LOCATION; ?>works/">制作実績</a></li>
+                <li><a href="<?php echo LOCATION; ?>blog/">ブログ</a></li>
                 <!-- <li><a href="<?php echo LOCATION; ?>case_study/">実例のご紹介</a></li> -->
                 <li><a href="<?php echo LOCATION; ?>status/">現在の受付状況</a></li>
-                <li><a href="<?php echo LOCATION; ?>blog/">ブログ</a></li>
                 <!-- <li><a href="<?php echo LOCATION; ?>faq/">よくあるご質問</a></li> -->
-                <li><a href="<?php echo LOCATION_CONTACT; ?>">ご依頼はこちら</a></li>
+                <li><a href="<?php echo LOCATION_CONTACT; ?>">お問い合わせ</a></li>
             </ul>
         </div>
     </nav>

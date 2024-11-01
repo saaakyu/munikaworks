@@ -28,7 +28,7 @@
 			</ul>
 			<ul class="nav">
 				<!-- <li class="solid"><a href="<?php echo LOCATION; ?>faq/">よくあるご質問</a></li> -->
-				<li class="contact_btn"><a href="<?php echo LOCATION_CONTACT; ?>">ご依頼はこちら</a></li>
+				<li class="contact_btn"><a href="<?php echo LOCATION_CONTACT; ?>">お問い合わせ</a></li>
 			</ul>
 		</div><!--footer__nav-->
 	</div>

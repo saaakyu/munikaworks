@@ -99,14 +99,6 @@ if ($page == 'contact_lower') {
 	$meta['h1'] = H1;
 }
 
-#特定商取引法に基づく表記
-if ($page == 'contact_lower') {
-	$meta['title'] = '特定商取引法に基づく表記 | ' . TITLE;
-	$meta['keywords'] = KEYWORDS . ',特定商取引法に基づく表記';
-	$meta['description'] = 'ムニカワークスの特定商取引に基づく表記ページです。';
-	$meta['h1'] = H1;
-}
-
 #コピー
 if ($page == 'copy') {
 	$meta['title'] = 'コピー | ' . TITLE;

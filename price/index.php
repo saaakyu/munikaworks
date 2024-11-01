@@ -75,68 +75,62 @@ include realpath(__DIR__ . '/../config/include.php');
 					<p class="box_price__txt">タイトルロゴ、イベントロゴ、TRPGロゴなど各種ロゴ制作を承っております。</p>
 				</div> -->
 				<ul class="con_price">
-
 					<li class="box_card">
-						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo01.jpg" alt="使い切りのロゴ" class="corner"></div>
-						<div class="box_card__name">使い切りのロゴ</div>
-						<div class="box_card__price"><span class="small">1点￥</span>7,700</div>
-						<div class="box_card__txt">同人誌やTRPGのタイトルロゴ、イベントロゴなど期間限定や一度使い切りを想定したロゴです。</div>
+						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo01.jpg" alt="オリジナルロゴ制作" class="corner"></div>
+						<div class="box_txt">
+						<div class="box_name">
+						<div class="box_card__name">オリジナルロゴ制作</div>
+						<div class="box_card__price"><span class="small">1点 ￥</span>12,000</div>
+						</div>
+						<div class="box_card__txt">同人誌、サークルロゴ、Webオンリー、TRPG等にご使用いただけるロゴを制作いたします。<br>
+						<span class="small pink">※商用利用の場合は追加料金が発生いたします。</span></div>
+						<div class="box_card__txt">【納品物】 カラーデータ / 黒ベタ / 白ベタ / フチ付きデータ（入れ替え可）</div>
+						</div>
 					</li><!--/.box_card-->
 
-					<li class="box_card">
+					<!-- <li class="box_card">
 						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo02.jpg" alt="継続使用・商用ロゴ" class="corner"></div>
 						<div class="box_card__name">継続使用・商用ロゴ</div>
 						<div class="box_card__price"><span class="small">1点￥</span>9,900</div>
 						<div class="box_card__txt">名前など、継続して使用するロゴや商用（営利）利用を目的としたロゴです。</div>
-					</li><!--/.box_card-->
+					</li> --><!--/.box_card -->
 				</ul><!-- /.con_price -->
-				<!-- <div class="pink_btn"><a href="<?php echo LOCATION; ?>contact/logo_form/">ロゴデザインのご依頼はこちら</a></div> -->
 				<div class="wrp_option">
 					<div class="tmp_acc_box">
-						<div class="tmp_acc_tit js-accordion is-active">
+						<div class="tmp_acc_tit js-accordion">
 							<h4 class="tmp_st_s">
 								<span class="jp">オプションのご案内</span>
 							</h4>
 							<span class="ic" aria-hidden="true"></span>
 						</div>
-						<div class="tmp_acc_target">
+						<div class="tmp_acc_target" style="display: block;">
 							<div class="target_inner">
 								<table class="tmp_table_respon thin">
 									<tbody>
-										<tr>
+										<!-- <tr>
 											<th>差分納品</th>
 											<td><em>￥2,200</em><br>グレースケール、白/黒ベタ、フチ/影差分などデザインが大幅に変わらない差分データを追加納品します。<br class="view_pc">合計3点まで。</td>
+										</tr> -->
+										<!-- <tr>
+											<th class="bg_pink">期間限定キャンペーン（11/31まで）</th>
+											<td>フォロー+作品紹介で￥<em>1,000割引</em><br>詳しくはこちら</td>
+										</tr> -->
+										<tr>
+											<th>商用利用</th>
+											<td><em>+￥4,000</em></td>
 										</tr>
 										<tr>
 											<th>文字組み変更</th>
-											<td><em>￥3,300</em><br>アイコンやヘッダーなど縦横比が制限される場合に、用途に合わせて文字の組み方を変更したデータを追加納品します。<br class="view_sp">※ロゴの形によっては難しい場合もございます。ご了承ください。</td>
+											<td><em>+￥2,000</em><br>アイコンやヘッダーなど縦横比が制限される場合に、用途に合わせて文字の組み方を変更したデータを追加納品します。軽微な差分の場合は料金内で対応可能な場合もございますので一度ご相談くださいませ。<br>※ロゴの形によっては難しい場合がございます。</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
 						</div>
 					</div>
-
-					<script>
-						/*
-					<div class="con_option">
-						<div class="box_option">
-							<div class="box_option__name">特殊装丁など...<em class="pink"><span class="small">￥</span>1,000～</em></div>
-							<div class="box_option__txt">箔押しなどのデータを制作します。</div>
-						</div>
-					</div> <!--/.con_option-->
-
-					<div class="con_option">
-						<div class="box_option">
-							<div class="box_option__name">特殊装丁など...<em class="pink"><span class="small">￥</span>1,000～</em></div>
-							<div class="box_option__txt">箔押しなどのデータを制作します。</div>
-						</div>
-					</div><!--/.con_option-->
-					*/
-					</script>
 				</div><!--/.wrp_option-->
 
-
+				<div class="pink_btn"><a href="<?php echo LOCATION; ?>contact/logo_form/">ロゴデザインのご依頼はこちら</a></div>
 			</div><!-- /.wrp_price -->
 
 
@@ -149,48 +143,57 @@ include realpath(__DIR__ . '/../config/include.php');
 
 					<li class="box_card">
 						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_cover01.jpg" alt="表紙イラストあり" class="corner"></div>
+						<div class="box_txt">
 						<div class="box_card__name">表紙イラストあり</div>
-						<div class="box_card__price"><span class="small">1点￥</span>11,000</div>
-						<div class="box_card__txt">表紙用イラストのご用意がある場合の価格となります。ご提供いただいたイラストに文字やあしらいを入れ、全体のレイアウトをご提案いたします。</div>
+						<div class="box_card__price"><span class="small">1点 <span class="sale">￥12,000</span></span> <br><em class="bg_accent">期間限定</em><span class="pink"><span class="small"> ￥</span>10,000</span></div>
+						<div class="box_card__txt">ご提供いただいたイラストに文字やあしらいを入れ、全体のレイアウトをご提案いたします。</div>
+						<div class="box_card__txt">【納品物】 入稿用データ/告知用画像</div>
+						</div>
 					</li><!--/.box_card-->
 
 					<li class="box_card">
 						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_cover02.jpg" alt="表紙イラストなし" class="corner"></div>
+						<div class="box_txt">
 						<div class="box_card__name">表紙イラストなし</div>
-						<div class="box_card__price"><span class="small">1点￥</span>13,300</div>
-						<div class="box_card__txt">表紙用イラストのご用意がない場合の価格となります。こちらで素材からご用意し、全体のレイアウトをご提案いたします。</div>
+						<div class="box_card__price"><span class="small">1点 <span class="sale">￥14,000</span></span> <br><em class="bg_accent">期間限定</em><span class="pink"><span class="small"> ￥</span>12,000</span></div>
+						<div class="box_card__txt">表紙用イラストのご用意がない場合は、素材から全体のレイアウトをご提案いたします。</div>
+						<div class="box_card__txt">【納品物】 入稿用データ/告知用画像</div>
+						</div>
 						
 					</li><!--/.box_card-->
 				</ul><!-- /.con_price -->
 
-				<!-- <div class="pink_btn"><a href="<?php echo LOCATION; ?>contact/cover_form/">同人誌デザインのご依頼はこちら</a></div> -->
 				<div class="wrp_option">
 					<div class="tmp_acc_box">
-						<div class="tmp_acc_tit js-accordion is-active">
+						<div class="tmp_acc_tit js-accordion">
 							<h4 class="tmp_st_s">
 								<span class="jp">オプションのご案内</span>
 							</h4>
 							<span class="ic" aria-hidden="true"></span>
 						</div>
-						<div class="tmp_acc_target">
+						<div class="tmp_acc_target" style="display: block;">
 							<div class="target_inner">
 								<table class="tmp_table_respon thin">
 									<tbody>
 										<tr>
 											<th>お品書き</th>
-											<td><em>￥3,300～</em><br>スペースナンバーや新刊情報など、サークルの情報がひと目で分かるお品書きを作成します。</td>
+											<td><em>+￥3,000～</em><br>スペースナンバー・新刊/既刊など、頒布情報がひと目で分かるお品書きを作成します。</td>
 										</tr>
 										<tr>
 											<th>デザイン流用ポスター</th>
-											<td><em>￥3,300～</em><br>表紙のデザインを流用してポスターを作成します。<br>ポスターのみの制作の場合は、別途ご相談ください。</td>
+											<td><em>+￥3,000～</em><br>表紙のデザインを流用してポスターを作成します。<br>※ポスターのみの制作の場合は、別途ご相談ください。</td>
+										</tr>
+										<tr>
+											<th>素材イラスト</th>
+											<td><em>+￥5,000～</em><br>小物などのイラストでしたらご対応が可能な場合がございます。一度ご相談ください。</td>
 										</tr>
 										<tr>
 											<th>特殊加工データ制作</th>
-											<td><em>￥1,100～</em><br>箔押し他、特殊加工用のデータを制作します。</td>
+											<td><em>+￥1,000～</em><br>箔押し他、特殊加工用のデータを制作します。</td>
 										</tr>
 										<tr>
 											<th>ロゴのみ納品</th>
-											<td><em>￥2,200</em><br>ロゴ単体のデータを納品します。表紙以外にもロゴを使用したい場合に。</td>
+											<td><em>+￥3,000</em><br>ロゴ単体のデータを納品します。表紙以外にもロゴを使用したい場合に。</td>
 										</tr>
 									</tbody>
 								</table>
@@ -198,6 +201,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						</div>
 					</div>
 				</div>
+				<div class="pink_btn"><a href="<?php echo LOCATION; ?>contact/cover_form/">同人誌デザインのご依頼はこちら</a></div>
 			</div><!-- /.wrp_price -->
 
 			<script>/*
