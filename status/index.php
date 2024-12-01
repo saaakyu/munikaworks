@@ -64,8 +64,6 @@ include realpath(__DIR__ . '/../config/include.php');
 			</div><!-- /.wrp_intro -->
 
 
-
-
 			<div class="wrp_status">
 				<div class="con_status">
 					<div class="update">
@@ -89,23 +87,23 @@ include realpath(__DIR__ . '/../config/include.php');
 								<tr>
 									<th>ロゴ制作<span class="small_txt">制作期間:約2週間</span></th>
 									<td class="ic_status pink">○</td>
-									<td>随時受付中です</td>
+									<td>随時受付中です！</td>
 								</tr>
 								<tr>
-									<th>同人誌デザイン<span class="small_txt">制作期間:1か月</span></th>
+									<th>同人誌デザイン<span class="small_txt">制作期間:約3週間</span></th>
 									<td class="ic_status pink">○</td>
-									<td>随時受付中です</td>
+									<td>随時受付中です！</td>
 								</tr>
 								<tr>
 									<th>その他<span class="small_txt">制作期間:2週間～</span></th>
 									<td class="ic_status dark_gray">ー</td>
-									<td><a class="pink" href="<?php echo LOCATION; ?>contact/">お問い合わせ</a>よりご相談ください</td>
+									<td><a class="pink" href="<?php echo LOCATION; ?>contact/">お問い合わせ</a>よりご相談ください！</td>
 								</tr>
 
 							</tbody>
 						</table>
 					</div><!-- /.box_status -->
-					<div class="center txt"><em>長期のお休みについては、<a href="<?php echo LOCATION; ?>news/">お知らせ</a>もしくは<a href="<?php echo LOCATION_TWITTER; ?>" target="_blank" rel="noopener">Twitter</a>をご確認ください。</em></div>
+					<div class="center txt"><em>長期のお休みについては、<a href="<?php echo LOCATION; ?>news/">お知らせ</a>もしくは<a href="<?php echo LOCATION_TWITTER; ?>" target="_blank" rel="noopener">X</a>をご確認ください。</em></div>
 
 				</div><!-- /.con_status -->
 

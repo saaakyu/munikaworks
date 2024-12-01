@@ -71,20 +71,20 @@ include realpath(__DIR__ . '/../config/include.php');
 
 			<div class="wrp_price" id="link01">
 				<h3 class="ttl__jp blue center">ロゴデザイン</h3>
-				<!-- <div class="box_price">
+				<div class="box_price">
 					<p class="box_price__txt">タイトルロゴ、イベントロゴ、TRPGロゴなど各種ロゴ制作を承っております。</p>
-				</div> -->
+				</div>
 				<ul class="con_price">
 					<li class="box_card">
 						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo01.jpg" alt="オリジナルロゴ制作" class="corner"></div>
 						<div class="box_txt">
 						<div class="box_name">
 						<div class="box_card__name">オリジナルロゴ制作</div>
-						<div class="box_card__price"><span class="small">1点 ￥</span>12,000</div>
+						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small">￥</span>12,000</span></div>
 						</div> 
 						<div class="box_card__txt">同人誌、サークルロゴ、Webオンリー、TRPG等にご使用いただけるロゴを制作いたします。<br>
 						<span class="small pink">※商用利用の場合は追加料金が発生いたします。</span></div>
-						<div class="box_card__txt">【納品物】 カラーデータ / 黒ベタ / 白ベタ / フチ付きデータ（相談可）</div>
+						<div class="box_card__txt">【納品物】 カラーデータ + 差分データ3点まで</div>
 						</div>
 					</li><!--/.box_card-->
 
@@ -117,11 +117,11 @@ include realpath(__DIR__ . '/../config/include.php');
 										</tr> -->
 										<tr>
 											<th>モノクロ納品</th>
-											<td><em>－￥1,000</em><br>黒/白ベタ、フチ付きデータのみの納品となります。</td>
+											<td><em>－￥3,000</em><br>黒/白ベタ、フチ付きデータのみの納品となります。</td>
 										</tr>
 										<tr>
 											<th>商用利用</th>
-											<td><em>+￥4,000</em></td>
+											<td><em>+￥4,000</em><br>収益化されているチャンネルでの使用や、グッズ化をご希望の場合のオプションとなります。</td>
 										</tr>
 										<tr>
 											<th>文字組み変更</th>
@@ -145,11 +145,25 @@ include realpath(__DIR__ . '/../config/include.php');
 				</div> -->
 				<ul class="con_price">
 
+				<?php if (false):
+					//false・・・非表示//true・・・表示
+				?>
 					<li class="box_card">
 						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_cover01.jpg" alt="表紙イラストあり" class="corner"></div>
 						<div class="box_txt">
 						<div class="box_card__name">表紙イラストあり</div>
-						<div class="box_card__price"><span class="small">1点 <span class="sale">￥12,000</span></span> <br><em class="bg_accent">期間限定（11/30まで）</em><span class="pink"><span class="small"> ￥</span>10,000</span></div>
+						<div class="box_card__price"><span class="small">1点 <span class="sale">￥ 10,000</span></span><em class="bg_accent">11/30まで</em><span class="pink"><span class="small"> ￥</span>8,000</span></div>
+						<div class="box_card__txt">ご提供いただいたイラストに文字やあしらいを入れ、全体のレイアウトをご提案いたします。</div>
+						<div class="box_card__txt">【納品物】 入稿用データ/告知用画像</div>
+						</div>
+					</li><!--/.box_card-->
+				<?php endif ?>
+
+					<li class="box_card">
+						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_cover01.jpg" alt="表紙イラストあり" class="corner"></div>
+						<div class="box_txt">
+						<div class="box_card__name">表紙イラストあり</div>
+						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small"> ￥</span>10,000</span></div>
 						<div class="box_card__txt">ご提供いただいたイラストに文字やあしらいを入れ、全体のレイアウトをご提案いたします。</div>
 						<div class="box_card__txt">【納品物】 入稿用データ/告知用画像</div>
 						</div>
@@ -159,8 +173,8 @@ include realpath(__DIR__ . '/../config/include.php');
 						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_cover02.jpg" alt="表紙イラストなし" class="corner"></div>
 						<div class="box_txt">
 						<div class="box_card__name">表紙イラストなし</div>
-						<div class="box_card__price"><span class="small">1点 <span class="sale">￥14,000</span></span> <br><em class="bg_accent">期間限定</em><span class="pink"><span class="small"> ￥</span>12,000</span></div>
-						<div class="box_card__txt">表紙用イラストのご用意がない場合は、素材から全体のレイアウトをご提案いたします。</div>
+						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small"> ￥</span>12,000</span></div>
+						<div class="box_card__txt">表紙用イラストのご用意がない場合は、全体のレイアウトをご提案いたします。</div>
 						<div class="box_card__txt">【納品物】 入稿用データ/告知用画像</div>
 						</div>
 						
@@ -181,15 +195,15 @@ include realpath(__DIR__ . '/../config/include.php');
 									<tbody>
 										<tr>
 											<th>お品書き</th>
-											<td><em>+￥5,000～</em><br>スペースナンバー・新刊/既刊など、頒布情報がひと目で分かるお品書きを作成します。</td>
+											<td><em>+￥3,000～</em><br>スペースナンバー・新刊/既刊など、頒布情報がひと目で分かるお品書きを作成します。<br>※情報量により金額が変動いたします。</td>
 										</tr>
 										<tr>
 											<th>デザイン流用ポスター</th>
-											<td><em>+￥3,000～</em><br>表紙のデザインを流用してポスターを作成します。<br>※ポスターのみの制作の場合は、別途ご相談ください。</td>
+											<td><em>+￥2,000～</em><br>表紙のデザインを流用してポスターを作成します。<br>※ポスターのみの制作の場合は、別途ご相談ください。</td>
 										</tr>
 										<tr>
 											<th>素材イラスト</th>
-											<td><em>+￥5,000～</em><br>小物などのイラストでしたらご対応が可能な場合がございます。一度ご相談ください。</td>
+											<td><em>+￥3,000～</em><br>小物などのイラストでしたらご対応が可能な場合がございます。一度ご相談ください。</td>
 										</tr>
 										<tr>
 											<th>特殊加工データ制作</th>

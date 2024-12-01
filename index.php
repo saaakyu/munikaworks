@@ -66,6 +66,14 @@
 					</div>
 				</div><!-- /.wrp_intro -->
 
+				<div class="wrp_pickup fadeInTrigger">
+					<div class="box_service__txt">
+						<span class="ttl__en">Pickup</span>
+						<h3 class="ttl__jp"><span class="pink">ピックアップ情報</span></h3>
+						<p class="tmp_txt">毎日作字発信中！、リピーター割引はじめました</p>
+					</div>
+				</div><!-- /.wrp_pickup -->
+
 				<div class="wrp_service fadeInTrigger">
 					<div class="con_service">
 						<div class="box_service__txt">

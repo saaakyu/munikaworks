@@ -53,6 +53,7 @@ define('PLACEHOLDER_IMAGE', 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEAL
 
 /* 外部リンク */
 define('LOCATION_TWITTER', 'https://twitter.com/munikaworks/');
+define('LOCATION_BLUESKY', 'https://bsky.app/profile/munika-works.com');
 define('LOCATION_INSTAGRAM', 'https://www.instagram.com/munikaworks/');
 define('LOCATION_SKIMA', 'https://skima.jp/item/detail?item_id=');
 

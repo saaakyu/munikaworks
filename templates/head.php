@@ -110,7 +110,7 @@ if (!empty(parse_url($varSelfPageURL)['query'])) {
 	<?php include LOCATION_ROOT_DIR . "/templates/common_css.php"; ?>
 
 	<!-- *** Font Awesomeのcss *** -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 	<!-- *** Google Fonts *** -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
