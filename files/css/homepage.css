@@ -741,8 +741,10 @@ style info : 汎用設定
   }
 }
 .wrp_service .con_service .box_service__explain {
+  -ms-grid-columns: 1fr 0 1fr 0 1fr;
   grid-template-columns: repeat(3, 1fr);
   width: calc(800 / 1200 * 100%);
+  display: -ms-grid;
   display: grid;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -759,11 +761,13 @@ style info : 汎用設定
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_service .con_service .box_service__explain {
+    -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media only screen and (max-width: 767px) {
   .wrp_service .con_service .box_service__explain {
+    -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -1234,11 +1238,13 @@ style info : 汎用設定
   }
 }
 .wrp_case .con_case .box_case__explain {
+  display: -ms-grid;
   display: grid;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-grid-columns: 1fr 3% 1fr 3% 1fr;
   grid-template-columns: repeat(3, 1fr);
   gap: 3%;
   margin: auto;
@@ -1269,6 +1275,7 @@ style info : 汎用設定
 }
 @media only screen and (max-width: 767px) {
   .wrp_case .con_case .box_case__explain {
+    -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
   }

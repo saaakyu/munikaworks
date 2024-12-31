@@ -111,7 +111,8 @@ style info : 汎用設定
 }
 .wrp_price .con_price .box_card {
   background: #fff;
-  padding: 2em;
+  padding: 3.5em;
+  width: 50%;
   max-width: 100%;
   border-radius: 1em;
   display: -webkit-box;
@@ -120,10 +121,10 @@ style info : 汎用設定
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 1.5em 0 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
@@ -203,8 +204,8 @@ style info : 汎用設定
   color: #f37d7d;
 }
 .wrp_price .con_price .box_card__img {
-  margin: 0 2em 0 0;
-  max-width: calc(400 / 1200 * 100%);
+  margin: 0 0 2.5em 0;
+  max-width: 100%;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card__img {
@@ -218,7 +219,7 @@ style info : 汎用設定
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card__img {
-    max-width: 80%;
+    max-width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -231,7 +232,7 @@ style info : 汎用設定
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
   text-align: left;
-  line-height: 1;
+  line-height: 1.4;
   padding: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
@@ -253,6 +254,9 @@ style info : 汎用設定
   .wrp_price .con_price .box_card__name {
     padding: 1em 0 0;
   }
+}
+.wrp_price .con_price .box_card__name .small {
+  font-size: 75%;
 }
 .wrp_price .con_price .box_card__price {
   font-size: 250%;

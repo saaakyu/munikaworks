@@ -870,6 +870,43 @@ textarea {
     padding: 5em 0;
   }
 }
+.wrp_contact .ttl__en {
+  display: inline-block;
+  font-family: "Josefin Sans", "Times New Roman", Times, Garamond, Georgia, sans-serif;
+  font-weight: 400;
+  font-size: 157%;
+  color: #0E6BB0;
+  border-top: #0E6BB0 1px solid;
+  border-bottom: #0E6BB0 1px solid;
+  padding: 0.2em 0.5em 0.02em;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .wrp_contact .ttl__en {
+    padding: 0.2em 0.5em 0.02em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact .ttl__en {
+    padding: 0.2em 0.5em 0.02em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .wrp_contact .ttl__en {
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact .ttl__en {
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrp_contact .ttl__en {
+    text-align: center;
+  }
+}
 .wrp_contact::before {
   content: "";
   background-image: url(../images/common/blue_left_upper.png);

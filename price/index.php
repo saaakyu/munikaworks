@@ -76,13 +76,28 @@ include realpath(__DIR__ . '/../config/include.php');
 				</div>
 				<ul class="con_price">
 					<li class="box_card">
-						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo01.jpg" alt="オリジナルロゴ制作" class="corner"></div>
+						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo02.jpg" alt="単色ロゴプラン" class="corner"></div>
 						<div class="box_txt">
 						<div class="box_name">
-						<div class="box_card__name">オリジナルロゴ制作</div>
+						<div class="box_card__name"><span class="small">【完全おまかせ！リテイクなし！】</span><br>単色ロゴプラン<br></div>
+						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small">￥</span>5,000</span></div>
+						</div> 
+						<div class="box_card__txt">リテイクなし、初回ヒアリングのみで気軽にご注文いただける単色ロゴプランとなります。<br><br>
+						サークルロゴ、TRPGに使用するロゴ、オリジナルのウォーターマーク、同人誌等のタイトルロゴ、youtube等の動画などにご使用いただけます！<br>
+						<span class="small pink">※商用利用の場合は追加料金が発生いたします。</span></div>
+						<div class="box_card__txt">【納品物】 黒1色 + 単色差分1種</div>
+						</div>
+					</li><!--/.box_card-->
+
+					<li class="box_card">
+						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo01.jpg" alt="オリジナルロゴプラン" class="corner"></div>
+						<div class="box_txt">
+						<div class="box_name">
+						<div class="box_card__name">オリジナルロゴプラン</div>
 						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small">￥</span>12,000</span></div>
 						</div> 
-						<div class="box_card__txt">同人誌、サークルロゴ、Webオンリー、TRPG等にご使用いただけるロゴを制作いたします。<br>
+						<div class="box_card__txt">リテイク無制限、1からじっくりご相談いただけるロゴプランとなります。<br><br>
+						同人誌等のタイトルロゴ、Webオンリー、TRPGに使用するロゴ、Vtuber様のネームロゴなどにご使用いただけます！<br>
 						<span class="small pink">※商用利用の場合は追加料金が発生いたします。</span></div>
 						<div class="box_card__txt">【納品物】 カラーデータ + 差分データ3点まで</div>
 						</div>
@@ -108,17 +123,17 @@ include realpath(__DIR__ . '/../config/include.php');
 								<table class="tmp_table_respon thin">
 									<tbody>
 										<!-- <tr>
-											<th>差分納品</th>
-											<td><em>￥2,200</em><br>グレースケール、白/黒ベタ、フチ/影差分などデザインが大幅に変わらない差分データを追加納品します。<br class="view_pc">合計3点まで。</td>
-										</tr> -->
-										<!-- <tr>
 											<th class="bg_pink">期間限定キャンペーン（11/31まで）</th>
 											<td>フォロー+作品紹介で￥<em>1,000割引</em><br>詳しくはこちら</td>
 										</tr> -->
-										<tr>
+										<!-- <tr>
 											<th>モノクロ納品</th>
 											<td><em>－￥3,000</em><br>黒/白ベタ、フチ付きデータのみの納品となります。</td>
-										</tr>
+										</tr> -->
+										<tr>
+											<th>デザイン+1案（+3日）</th>
+											<td><em>￥3,000</em><br>デザインを+1案してご提案させていただきます。</td>
+										</tr> 
 										<tr>
 											<th>商用利用</th>
 											<td><em>+￥4,000</em><br>収益化されているチャンネルでの使用や、グッズ化をご希望の場合のオプションとなります。</td>
@@ -133,6 +148,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						</div>
 					</div>
 				</div><!--/.wrp_option-->
+
 
 				<div class="pink_btn"><a href="<?php echo LOCATION; ?>contact/logo_form/">ロゴデザインのご依頼はこちら</a></div>
 			</div><!-- /.wrp_price -->
