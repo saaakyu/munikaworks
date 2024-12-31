@@ -52,13 +52,17 @@ style info : コピー
     .box_card {
       background: $white;
       @include cV(padding, 3.5em, 2em, 1.5em);
-      width: 50%;
-      @include cV(max-width, 100%, 100%, 100%);
       border-radius: 1em;
       display: flex;
       @include cV(align-items, center, center, center);
       @include cV(flex-direction, column, column, column);
       @include cV(margin, 0 1.5em 0 0, 0 1.5em 0 0, 0 0 1.5em 0);
+      @include mq(pc_tab) {
+        width:50%;
+      }
+      @include mq(sp) {
+        max-width:100%;
+      }
       &:not(:last-of-type) {
         @include cV(margin, 0 1.5em 0 0, 0 1.5em 0 0, 0 0 1.5em 0);
       }
@@ -72,7 +76,7 @@ style info : コピー
       &__name {
         @include fsz(22);
         @include sans-serif("title_jp");
-        @include cV(text-align, left, center, center);
+        @include cV(text-align, center, center, center);
         line-height: 1.4;
         @include cV(padding, 0, 2em 0 0, 1em 0 0);
 
@@ -83,7 +87,7 @@ style info : コピー
       &__price {
         @include fsz(40);
         @include sans-serif("title_jp");
-        @include cV(text-align, left, center, center);
+        @include cV(text-align, center, center, center);
         line-height: 1.3;
         @include cV(margin, 0 0 0.5em, 0 0 0.5em, 0 0 0.5em);
 

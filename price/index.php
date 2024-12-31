@@ -132,7 +132,7 @@ include realpath(__DIR__ . '/../config/include.php');
 										</tr> -->
 										<tr>
 											<th>デザイン+1案（+3日）</th>
-											<td><em>￥3,000</em><br>デザインを+1案してご提案させていただきます。</td>
+											<td><em>+￥3,000</em><br>デザインを+1案してご提案させていただきます。</td>
 										</tr> 
 										<tr>
 											<th>商用利用</th>

@@ -429,9 +429,7 @@ style info : 汎用設定
       flex-wrap: wrap;
 }
 .wrp_price .wrp_list .con_list_2column {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
 }
 .wrp_price .box_info {
