@@ -82,7 +82,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						<div class="box_card__name"><span class="small">【完全おまかせ！リテイクなし！】</span><br>単色ロゴプラン<br></div>
 						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small">￥</span>5,000</span></div>
 						</div> 
-						<div class="box_card__txt">リテイクなし、初回ヒアリングのみで気軽にご注文いただける単色ロゴプランとなります。（修正が必要な場合は1回￥1,000にてご対応いたします。）<br><br>
+						<div class="box_card__txt">リテイクなし、初回ヒアリングのみで気軽にご注文いただける単色ロゴプランとなります。<br><br>
 						サークルロゴ、TRPGに使用するロゴ、オリジナルのウォーターマーク、同人誌等のタイトルロゴ、youtube等の動画などにご使用いただけます！<br>
 						<span class="small pink">※商用利用の場合は追加料金が発生いたします。</span></div>
 						<div class="box_card__txt">【納品物】 黒1色 + 単色差分1種</div>
