@@ -243,16 +243,17 @@ border: #ddd 1px solid;
 /*お知らせ一覧用調整ここまで*/
 
 /*各記事の横幅を%に*/
-#main {
+.one-column #main {
   width: 1180px !important;
   max-width: 100% !important;
-  margin: 3em auto 10em;
+  margin: 3em auto 5em;
 }
 @media only screen and (max-width: 767px) {
-  #main {
+.one-column #main {
     margin: 3em auto 0;
   }
 }
+
 
 #inner-content {
   justify-content: center;
