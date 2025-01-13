@@ -458,6 +458,7 @@ body img {
 #header a:hover,
 #footer a:hover {
   opacity: 1;
+  text-decoration: none;
 }
 
 /*スマホ時、「次の記事」に背景をつける*/
