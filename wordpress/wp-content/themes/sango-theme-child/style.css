@@ -80,7 +80,7 @@ img {
 
 #entry {
   background: transparent;
-  margin: 0;
+  overflow: unset;
 }
 
 .post-tab {
@@ -212,6 +212,12 @@ border: #ddd 1px solid;
   letter-spacing: 0.05em;
 }
 
+@media only screen and (max-width: 767px) {
+  .c_linkto_wrap{
+    margin-bottom: 2em;
+  }
+}
+
 /*お知らせ一覧用調整　※記載必須*/
 .c_linkto_long {
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo",
@@ -240,7 +246,12 @@ border: #ddd 1px solid;
 #main {
   width: 1180px !important;
   max-width: 100% !important;
-  margin: 3em auto !important;
+  margin: 3em auto 10em;
+}
+@media only screen and (max-width: 767px) {
+  #main {
+    margin: 3em auto 0;
+  }
 }
 
 #inner-content {
@@ -367,6 +378,11 @@ border: #ddd 1px solid;
   margin-top: 3em;
 }
 /*エラーページここまで*/
+
+/*記事内の写真にマージンをつける*/
+.wp-block-image{
+ margin-bottom: 1.5em;
+}
 
 /*ここからcommon.scss*/
 #footer .footer__wrap {
