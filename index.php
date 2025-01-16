@@ -58,9 +58,9 @@
 						</div>
 						<div class="box_intro__txt">
 							<span class="ttl__en">About</span>
-							<h3 class="ttl__jp"><span class="pink">創作活動のデザイン</span>、<br class="view_tab-sp">承ります</h3>
-							<p class="tmp_txt">ムニカワークスは、創作・クリエイター活動を応援するデザインサービスです。<br>
-								コンテンツの魅力をたくさんの方にお伝えするため、ロゴや同人誌の表紙をはじめとしたデザインのご依頼を承っております。</p>
+							<h3 class="ttl__jp">一緒に<span class="pink">わくわく</span>を<br class="view_tab-sp">作りませんか？</h3>
+							<p class="tmp_txt">ムニカワークスは、創作・クリエイター活動、Vtuber活動を応援するデザインサービスです。<br>
+								コンテンツの魅力をたくさんの方にお伝えするため、ロゴデザインや表紙デザイン、Vtuber様のデザイン周りのご依頼を承っております。</p>
 							<div class="pink_btn"><a href="<?php echo LOCATION; ?>about/">ムニカワークスについて</a></div>
 						</div>
 					</div>
@@ -70,7 +70,7 @@
 					<div class="box_service__txt">
 						<span class="ttl__en">Pickup</span>
 						<h3 class="ttl__jp"><span class="pink">ピックアップ情報</span></h3>
-						<p class="tmp_txt">毎日作字発信中！、リピーター割引はじめました</p>
+						<p class="tmp_txt">作字発信中！、リピーター割引はじめました</p>
 					</div>
 				</div><!-- /.wrp_pickup -->
 
@@ -79,7 +79,7 @@
 						<div class="box_service__txt">
 							<span class="ttl__en">Service</span>
 							<h3 class="ttl__jp"><span class="pink">お手伝い</span>できること</h3>
-							<p class="tmp_txt">ロゴデザイン、同人誌デザイン、<br class="view_pc-tab">その他創作活動に必要なデザイン周りのご相談を受け付けております。</p>
+							<p class="tmp_txt">ロゴ・同人誌デザインやStudioを使用したWeb制作をはじめ、<br class="view_pc-tab">デザイン周りのご相談を受け付けております。</p>
 						</div>
 						<div class="box_service__explain">
 							<div class="service_inner">
@@ -96,7 +96,7 @@
 							</div> -->
 							<div class="service_inner">
 								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service4.png" alt=""></p>
-								<p class="service__name">イベント等の<br>特設サイト制作</p>
+								<p class="service__name">個人/特設サイト等の<br class="view_pc-tab">Web制作</p>
 							</div>
 						</div>
 						<div class="pink_btn"><a href="<?php echo LOCATION; ?>service/">サービス内容を見る</a></div>

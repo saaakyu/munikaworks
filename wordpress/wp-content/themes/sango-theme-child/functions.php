@@ -19,18 +19,6 @@ function enqueue_my_child_gutenberg_styles()
 /************************
  *functions.phpへの追記は以下に
  *************************/
-//wordpress内のパスを全て相対パスに変更する。Twitter等SNSのOGP画像が表示されなくなる。
-// function delete_domain_from_attachment_url($url)
-// {
-
-//   if (preg_match('/^http(s)?:\/\/[^\/\s]+(.*)$/', $url, $match)) {
-//     $url = $match[2];
-//   }
-//   return $url;
-// }
-
-// add_filter('wp_get_attachment_url', 'delete_domain_from_attachment_url');
-
 //Google fontsを変更
 function register_googlefonts() { wp_deregister_style('sng-googlefonts');//初期設定を解除
   wp_register_style( 'sng-googlefonts', '//fonts.googleapis.com/css?family=Josefin+Sans:400,600|Zen+Maru+Gothic:400,500,700&family=Noto+Sans+JP:wght@400,500,700&display=swap', array(), '', 'all' ); wp_enqueue_script('sng-googlefonts');

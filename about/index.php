@@ -33,7 +33,7 @@ include realpath(__DIR__ . '/../config/include.php');
 		<main id="contents">
 
 			<!-- パンくず -->
-			<!-- <ul class="topicpath" vocab="https://schema.org/" typeof="BreadcrumbList">
+			<ul class="topicpath" vocab="https://schema.org/" typeof="BreadcrumbList">
 		<li property="itemListElement" typeof="ListItem">
 			<a property="item" href="<?php echo LOCATION; ?>" typeof="WebPage">
 				<span property="name">Home</span>
@@ -41,10 +41,10 @@ include realpath(__DIR__ . '/../config/include.php');
 			<meta property="position" content="1">
 		</li>
 		<li property="itemListElement" typeof="ListItem">
-			<span property="name">コピー</span>
+			<span property="name">ムニカワークスについて</span>
 			<meta property="position" content="2">
 		</li>
-	</ul> -->
+	</ul>
 
 			<div class="wrp_title">
 				<div class="con_title">
@@ -60,7 +60,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						<div class="box_about__txt">
 							<h3 class="ttl__jp">物語を見つけ、引き出し、<br><span class="pink">カタチ</span>にする。</h3>
 							<p class="tmp_txt">デザインの役割は情報を伝えること。<br>さまざまな過程を経て生まれた"コンテンツ"はたくさんの物語を持っています。でも、もったいないことに上手く伝えられず埋もれてしまうこともしばしば。<br>
-							ムニカワークスではそんな物語たちを見つけ出しカタチにすることで、「創作」という好きが詰まった活動をいろんな人に見てもらうお手伝いをしています。</p>
+							ムニカワークスではそんな物語たちを見つけ出しカタチにすることで、わくわくが詰まった活動をいろんな人に見てもらうお手伝いをしています。</p>
 						</div>
 					</div>
 				</div><!-- /.con_about -->
@@ -97,7 +97,7 @@ include realpath(__DIR__ . '/../config/include.php');
 					<div class="box_about">
 						<div class="box_about__txt">
 							<h3 class="ttl__jp"><span class="pink">中の人</span>について</h3>
-							<p class="tmp_txt">制作会社勤務のwebデザイナー。言葉を整頓してカタチにするのが好き。<br>現職では、Webサイトのデザイン・構築・更新作業などWeb制作業務に幅広く携わっています。<br class="view_sp">シンプル・かわいい・きれいめなデザインが得意です。<br>もちろんオタクなのでNL・BL・GLなんでもOKですが、過度な特殊性癖や過激なエロ描写を一部苦手としております。</p>
+							<p class="tmp_txt">制作会社勤務のwebデザイナー。言葉を整頓してカタチにするのが好き。<br>現職では、Webサイトのデザイン・構築・更新作業などWeb制作業務に幅広く携わっています。<br class="view_sp">シンプル・かわいい・きれいめなデザインが得意です。</p>
 							<!-- <p class="tmp_txt">4年ほどweb制作会社で働いた後、フリーのデザイナーとして活動中。<br>
 								前職では、Webサイトのデザイン・構築・更新作業などWeb制作業務に幅広く携わっておりました。</p> -->
 						</div>
