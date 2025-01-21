@@ -82,6 +82,10 @@ if (!empty(parse_url($varSelfPageURL)['query'])) {
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="<?php echo $varSelfPageURL; ?>">
 	<meta property="og:description" content="<?php echo $meta['description']; ?>">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="<?php echo $meta['title']; ?>">
+	<meta name="twitter:description" content="<?php echo $meta['description']; ?>">
+
 	<?php if (file_exists(LOCATION_ROOT_DIR . '/ogp.jpg')) : ?>
 		<?php
 		/**
@@ -95,15 +99,9 @@ if (!empty(parse_url($varSelfPageURL)['query'])) {
 		?>
 		<meta property="og:image" content="<?php echo LOCATION . 'ogp.jpg'; ?>">
 	<?php endif; ?>
-	<?php
-	/**
-	 * twitter:cardについて以下のサイズがあります
-	 * “summary”、“summary_large_image”、“app”、“player”
-	 * 詳しい説明は以下を確認してください
-	 * https://developer.twitter.com/ja/docs/tweets/optimize-with-cards/guides/getting-started
-	 */
-	?>
-	<meta name="twitter:card" content="summary_large_image">
+
+<!-- Open graph tags -->
+
 	<script src="<?php echo LOCATION_FILE; ?>js/analytics.js"></script>
 
 	<!-- *** stylesheet *** -->
