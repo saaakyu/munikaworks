@@ -58,8 +58,8 @@
 						</div>
 						<div class="box_intro__txt">
 							<span class="ttl__en">About</span>
-							<h3 class="ttl__jp">一緒に<span class="pink">わくわく</span>を<br class="view_tab-sp">作りませんか？</h3>
-							<p class="tmp_txt">ムニカワークスは、創作・クリエイター活動、Vtuber活動を応援するデザインサービスです。<br>
+							<h3 class="ttl__jp">一緒に<span class="pink">わくわく</span>するもの、<br>作りませんか？</h3>
+							<p class="tmp_txt">ムニカワークスは、同人・エンターテイメントを応援するデザインサービスです。<br>
 								コンテンツの魅力をたくさんの方にお伝えするため、ロゴデザインや表紙デザイン、Vtuber様のデザイン周りのご依頼を承っております。</p>
 							<div class="pink_btn"><a href="<?php echo LOCATION; ?>about/">ムニカワークスについて</a></div>
 						</div>

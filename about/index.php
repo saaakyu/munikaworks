@@ -33,7 +33,7 @@ include realpath(__DIR__ . '/../config/include.php');
 		<main id="contents">
 
 			<!-- パンくず -->
-			<ul class="topicpath" vocab="https://schema.org/" typeof="BreadcrumbList">
+			<!-- <ul class="topicpath" vocab="https://schema.org/" typeof="BreadcrumbList">
 		<li property="itemListElement" typeof="ListItem">
 			<a property="item" href="<?php echo LOCATION; ?>" typeof="WebPage">
 				<span property="name">Home</span>
@@ -44,7 +44,7 @@ include realpath(__DIR__ . '/../config/include.php');
 			<span property="name">ムニカワークスについて</span>
 			<meta property="position" content="2">
 		</li>
-	</ul>
+	</ul> -->
 
 			<div class="wrp_title">
 				<div class="con_title">
@@ -111,7 +111,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						<div class="box_about__txt">
 							<h3 class="ttl__jp"><span class="pink">なまえ</span>について</h3>
 							<p class="tmp_txt">みなさんの作品を、デザインの力で「この世に二つとないものにしたい」という想いを込め”無二化（ムニカ）”と名付けました。<br>
-								想いが詰まった作品・コンテンツをいろんな人に見てもらえるよう、「らしさ」を最大限に引き出し、伝えるデザインサービスをめざします。</p>
+								想いが詰まった作品・コンテンツをいろんな人に見てもらえるよう、「らしさ」を最大限に引き出し、伝えるデザインをめざします。</p>
 						</div>
 					</div>
 				</div><!-- /.con_about -->

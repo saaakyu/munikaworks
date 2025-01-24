@@ -27,11 +27,19 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://munika-works.com/blog/</loc>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://munika-works.com/contact/</loc>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://munika-works.com/news/</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/news/repeater/</loc>
   <priority>0.8</priority>
 </url>
 <url>
@@ -43,12 +51,36 @@
   <priority>0.8</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/privacy_policy/</loc>
-  <priority>0.8</priority>
+  <loc>https://munika-works.com/contact/logo_form/</loc>
+  <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/trade_law/</loc>
-  <priority>0.8</priority>
+  <loc>https://munika-works.com/works/logo_syuusei02/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_syuusei01/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_gogohachijinohougaku/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/cover_kumotoriyama/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_collection/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_zatsudan/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/ligo_watermark/</loc>
+  <priority>0.7</priority>
 </url>
 <url>
   <loc>https://munika-works.com/works/logo_hoshimegurido/</loc>
@@ -131,23 +163,11 @@
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/works/logo_itsumi/</loc>
+  <loc>https://munika-works.com/blog/affinity-designer2_mask/</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/works/logo_wine/</loc>
-  <priority>0.7</priority>
-</url>
-<url>
-  <loc>https://munika-works.com/contact/logo_form/</loc>
-  <priority>0.7</priority>
-</url>
-<url>
-  <loc>https://munika-works.com/contact/cover_form/</loc>
-  <priority>0.7</priority>
-</url>
-<url>
-  <loc>https://munika-works.com/contact/others_form/</loc>
+  <loc>https://munika-works.com/blog/dozenrosefes2023/</loc>
   <priority>0.7</priority>
 </url>
 <url>
@@ -163,19 +183,31 @@
   <priority>0.6</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/category/works/others/</loc>
-  <priority>0.6</priority>
-</url>
-<url>
   <loc>https://munika-works.com/category/works/cover/</loc>
   <priority>0.6</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/blog/</loc>
+  <loc>https://munika-works.com/category/works/others/</loc>
   <priority>0.6</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/blog/dozenrosefes2023/</loc>
+  <loc>https://munika-works.com/works/logo_itsumi/</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/category/blog/</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/category/blog/useful/</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/category/blog/about_design/</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/category/blog/about_ramblings/</loc>
   <priority>0.6</priority>
 </url>
 <url>
@@ -188,6 +220,14 @@
 </url>
 <url>
   <loc>https://munika-works.com/category/works/logo/page/2/</loc>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/category/works/logo/page/3/</loc>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_wine/</loc>
   <priority>0.5</priority>
 </url>
 

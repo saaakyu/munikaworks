@@ -85,6 +85,7 @@ if (!empty(parse_url($varSelfPageURL)['query'])) {
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="<?php echo $meta['title']; ?>">
 	<meta name="twitter:description" content="<?php echo $meta['description']; ?>">
+	<meta name="twitter:image" content="<?php echo LOCATION.'ogp.jpg'; ?>">
 
 	<?php if (file_exists(LOCATION_ROOT_DIR . '/ogp.jpg')) : ?>
 		<?php
