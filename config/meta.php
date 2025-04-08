@@ -37,7 +37,7 @@ $meta = array(
 
 #トップページ
 if ($page == 'homepage') {
-	$meta['title'] = 'ムニカワークスについて | 世界観引き出すデザインサービス';
+	$meta['title'] = 'ムニカワークス | 世界観引き出すデザイン';
 	$meta['keywords'] = KEYWORDS;
 	$meta['description'] = DESCRIPTION;
 	$meta['h1'] = H1;
@@ -45,7 +45,7 @@ if ($page == 'homepage') {
 
 #ムニカワークスについて
 if ($page == 'about') {
-	$meta['title'] = 'ムニカワークスについて | ' . TITLE;
+	$meta['title'] = 'ムニカワークスについて | 世界観引き出すデザイン';
 	$meta['keywords'] = KEYWORDS . ',ムニカワークスのこと';
 	$meta['description'] = 'ロゴデザインを中心に同人誌デザイン、Vtuber様のデザインなど、創作・エンターテインメント分野を中心としたデザイン制作をしています。お手伝いできることがございましたらぜひご相談ください。';
 	$meta['h1'] = H1;
