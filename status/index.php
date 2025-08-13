@@ -68,10 +68,8 @@ include realpath(__DIR__ . '/../config/include.php');
 				<div class="con_status">
 					<div class="update">
 						<?php
-						date_default_timezone_set('Asia/Tokyo');
-						$last_modified = filemtime("index.php");
-						echo date("Y.m.d H:i", $last_modified);
-						echo " 更新";
+						echo date("Y.m.d"); 
+						echo " 現在";
 						?>
 					</div>
 					<div class="box_status js-scrollable">
