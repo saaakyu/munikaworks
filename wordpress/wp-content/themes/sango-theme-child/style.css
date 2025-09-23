@@ -87,6 +87,10 @@ img {
   border: 1px solid #eaeaea;
 }
 
+.post-tab__content{
+  padding: 20px 0 200px;
+}
+
 /*記事タイトル*/
 .page-title {
   margin: 0;
