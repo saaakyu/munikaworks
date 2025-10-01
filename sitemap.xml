@@ -51,7 +51,87 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://munika-works.com/privacy_policy/</loc>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://munika-works.com/contact/logo_form/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_tamachan/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_watermark/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_mamekasu/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_worldmaker/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/web_moyuru/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/web_kaiteiscopes/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_sounosaku/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/other_teamcard/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_catwalk/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_uchiai/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/web_satou/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_hanafurashi/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/cover_souteibarie/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_astrotrick/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_ashiato/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_nenmatsu/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo/study_teijitaisya/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_hananikaze/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_yukiyama/</loc>
   <priority>0.7</priority>
 </url>
 <url>
@@ -92,6 +172,10 @@
 </url>
 <url>
   <loc>https://munika-works.com/works/logo_littleoasis/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/other_kusosuna/</loc>
   <priority>0.7</priority>
 </url>
 <url>
@@ -163,6 +247,18 @@
   <priority>0.7</priority>
 </url>
 <url>
+  <loc>https://munika-works.com/works/logo_itsumi/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/works/logo_wine/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/blog/works_anthology/</loc>
+  <priority>0.7</priority>
+</url>
+<url>
   <loc>https://munika-works.com/blog/affinity-designer2_mask/</loc>
   <priority>0.7</priority>
 </url>
@@ -183,7 +279,7 @@
   <priority>0.6</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/category/works/cover/</loc>
+  <loc>https://munika-works.com/category/works/web/</loc>
   <priority>0.6</priority>
 </url>
 <url>
@@ -191,7 +287,7 @@
   <priority>0.6</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/works/logo_itsumi/</loc>
+  <loc>https://munika-works.com/category/works/cover/</loc>
   <priority>0.6</priority>
 </url>
 <url>
@@ -199,11 +295,11 @@
   <priority>0.6</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/category/blog/useful/</loc>
+  <loc>https://munika-works.com/category/blog/about_design/</loc>
   <priority>0.6</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/category/blog/about_design/</loc>
+  <loc>https://munika-works.com/category/blog/useful/</loc>
   <priority>0.6</priority>
 </url>
 <url>
@@ -215,7 +311,7 @@
   <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/category/works/page/3/</loc>
+  <loc>https://munika-works.com/category/works/page/5/</loc>
   <priority>0.5</priority>
 </url>
 <url>
@@ -223,11 +319,19 @@
   <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/category/works/logo/page/3/</loc>
+  <loc>https://munika-works.com/category/works/logo/page/4/</loc>
   <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://munika-works.com/works/logo_wine/</loc>
+  <loc>https://munika-works.com/category/works/page/3/</loc>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/category/works/page/4/</loc>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://munika-works.com/category/works/logo/page/3/</loc>
   <priority>0.5</priority>
 </url>
 

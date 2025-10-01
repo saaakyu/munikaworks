@@ -88,7 +88,7 @@ img {
 }
 
 .post-tab__content{
-  padding: 20px 0 200px;
+  
 }
 
 /*記事タイトル*/
@@ -100,28 +100,18 @@ img {
   text-transform: capitalize;
 }
 
-/*カードを4列に*/
+/*カードを3列に*/
 @media only screen and (min-width: 481px) {
   .catpost-cards {
-    grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 5em;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 /*カードを768px（tab）まで3列、それ以下は2列*/
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .catpost-cards--column-2 {
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 5em;
-  }
-}
-
-/*カードを768px（tab）まで4列、それ以下は2列*/
 @media only screen and (max-width: 767px) {
   .catpost-cards--column-2 {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5% 2%;
-    margin-bottom: 10em;
   }
 }
 
@@ -247,14 +237,13 @@ border: #ddd 1px solid;
 /*お知らせ一覧用調整ここまで*/
 
 /*各記事の横幅を%に*/
-.one-column #main {
-  width: 1180px !important;
-  max-width: 100% !important;
-  margin: 3em auto 5em;
+.one-column #main{
+  max-width: 950px;
+  margin: 3em auto;
 }
 @media only screen and (max-width: 767px) {
-.one-column #main {
-    margin: 3em auto 0;
+.one-column #main{
+    margin: 3em auto;
   }
 }
 
