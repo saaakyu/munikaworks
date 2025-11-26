@@ -111,14 +111,12 @@ img {
 @media only screen and (max-width: 767px) {
   .catpost-cards--column-2 {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5% 2%;
   }
 }
 
 /*制作実績のみカードを768px（tab）まで2列、それ以下は1列*/
 .wrp_works .catpost-cards--column-2 {
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5% 2%;
 }
 
 /*制作実績のみカードを768px（tab）まで2列、それ以下は1列*/
