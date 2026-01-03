@@ -166,7 +166,10 @@ include realpath(__DIR__ . '/../config/include.php');
 
 						<div class="box_list">
 							<div class="tit_list"><i class="fa-solid fa-clipboard-check"></i> ご提案数</div>
-							<p class="tmp_txt">1案</p>
+							<ul>
+								<li>・オリジナルロゴプラン：2案</li>
+								<li>・単色ロゴプラン：1案</li>
+							</ul>
 						</div>
 						
 					</div><!-- /.con_list_col2 -->
@@ -174,7 +177,7 @@ include realpath(__DIR__ . '/../config/include.php');
 					<div class="con_list_col2">
 					<div class="box_list">
 							<div class="tit_list"><i class="fa-regular fa-pen-to-square"></i>修正について</div>
-							<p class="tmp_txt">修正回数に制限は設けていませんが、カラー案提出後に「やっぱり形を変えて欲しい」など<span class="pink">前の作業工程に戻るような修正</span>があった場合は追加料金をいただいております。</p>
+							<p class="tmp_txt">修正回数に制限は設けていませんが、カラー案提出後にご依頼者様都合で「やっぱり形を変えて欲しい」など<span class="pink">前の作業工程に戻るような修正</span>があった場合は追加料金をいただいております。</p>
 						</div>
 
 						<div class="box_list">
@@ -182,7 +185,7 @@ include realpath(__DIR__ . '/../config/include.php');
 							<ul>
 								<li>・著作権の譲渡はしておりません。</li>
 								<li>・二次配布は禁止としております。</li>
-								<li>・意図しない見た目になることを避けるため、納品データを<span class="pink">自ら加工してご使用すること</span>はお控えください。</li>
+								<li>・意図しない見た目になることを避けるため、<span class="pink">納品後の改変（縦横比の変更等）</span>はお控えください。</li>
 							</ul>
 						</div>
 					</div><!-- /.con_list_col2 -->
@@ -205,7 +208,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						<li>
 							<dl>
 								<dt>2.ラフ案提出</dt>
-								<dd>形や方向性が問題ないかご確認いただきます。この段階は<span class="pink">白黒でのご提出</span>となります。</dd>
+								<dd>形や方向性が問題ないかご確認いただきます。この段階は<span class="pink">ラフでのご提出</span>となります。</dd>
 							</dl>
 						</li>
 
@@ -218,14 +221,14 @@ include realpath(__DIR__ . '/../config/include.php');
 
 						<li>
 							<dl>
-								<dt>4.カラー案提出</dt>
-								<dd>方向性のすり合わせが完了次第、カラー案を提出します。</dd>
+								<dt>4.清書案提出</dt>
+								<dd>方向性のすり合わせが完了次第、清書案を提出します。</dd>
 							</dl>
 						</li>
 						<li>
 							<dl>
 								<dt>5.チェック・修正</dt>
-								<dd>カラー案を受け、修正があれば調整します。</dd>
+								<dd>清書案を受け、修正があれば調整します。</dd>
 							</dl>
 						</li>
 
@@ -287,7 +290,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						<div class="box_list">
 							<div class="tit_list"><i class="fa-solid fa-clipboard-check"></i> ご提案数</div>
 
-							<p class="tmp_txt">1案～2案<span class="small">（ヒアリングを通して適切だと感じた案数でご提案いたします）</span></p>
+							<p class="tmp_txt">1案～2案<span class="small"></span></p>
 						</div>
 
 					</div><!-- /.con_list_col2 -->
@@ -295,7 +298,7 @@ include realpath(__DIR__ . '/../config/include.php');
 					<div class="con_list_col2">
 						<div class="box_list">
 							<div class="tit_list"><i class="fa-regular fa-pen-to-square"></i> 修正について</div>
-							<p class="tmp_txt">修正回数に制限は設けていませんが、1案に絞った後に「やっぱり違うデザインにしたい」など<span class="pink">前の作業工程に戻るような修正</span>があった場合は追加料金をいただいております。</p>
+							<p class="tmp_txt">修正回数に制限は設けていませんが、1案に絞った後にご依頼者様都合で「やっぱり違うデザインにしたい」など<span class="pink">前の作業工程に戻るような修正</span>があった場合は追加料金をいただいております。</p>
 						</div>
 						<div class="box_list">
 							<div class="tit_list"><i class="fa-solid fa-circle-exclamation"></i> 注意事項</div>

@@ -61,7 +61,7 @@ include realpath(__DIR__ . '/../config/include.php');
 							</tr>
 							<tr>
 								<th>メールアドレス</th>
-								<td>contact<span class="at">munika-works.com</span></td>
+								<td>munikaworks<span class="at">gmail.com</span></td>
 							</tr>
 							<tr>
 								<th>販売価格以外に必要な費用</th>
@@ -85,7 +85,7 @@ include realpath(__DIR__ . '/../config/include.php');
 							</tr>
 							<tr>
 								<th>申込有効期限</th>
-								<td>納品希望日の1週間以上前にお申し込みください。</td>
+								<td>納品希望日の3日以上前にお申し込みください。</td>
 							</tr>
 							<tr>
 								<th>サービスの納品時期</th>
