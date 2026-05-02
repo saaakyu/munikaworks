@@ -177,7 +177,7 @@ include realpath(__DIR__ . '/../config/include.php');
 					<div class="con_list_col2">
 					<div class="box_list">
 							<div class="tit_list"><i class="fa-regular fa-pen-to-square"></i>修正について</div>
-							<p class="tmp_txt">修正回数に制限は設けていませんが、カラー案提出後にご依頼者様都合で「やっぱり形を変えて欲しい」など<span class="pink">前の作業工程に戻るような修正</span>があった場合は追加料金をいただいております。</p>
+							<p class="tmp_txt">デザイン全体の作り直しとなるフルリテイクは<span class="pink">2回</span>まで、色味・サイズ・配置などの軽微な修正につきましては<span class="pink">回数無制限</span>にて承ります。</p>
 						</div>
 
 						<div class="box_list">
