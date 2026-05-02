@@ -167,8 +167,8 @@ include realpath(__DIR__ . '/../config/include.php');
 						<div class="box_list">
 							<div class="tit_list"><i class="fa-solid fa-clipboard-check"></i> ご提案数</div>
 							<ul>
-								<li>・オリジナルロゴプラン：2案</li>
 								<li>・単色ロゴプラン：1案</li>
+								<li>・オリジナルロゴプラン：2案</li>
 							</ul>
 						</div>
 						

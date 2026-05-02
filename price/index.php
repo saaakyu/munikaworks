@@ -79,13 +79,17 @@ include realpath(__DIR__ . '/../config/include.php');
 						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo02.jpg" alt="単色ロゴプラン" class="corner"></div>
 						<div class="box_txt">
 						<div class="box_name">
-						<div class="box_card__name"><span class="small">【完全おまかせ！リテイクなし！】</span><br>単色ロゴプラン<br></div>
-						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small">￥</span>5,000</span></div>
+						<div class="box_card__name"><span class="small"></span>単色ロゴプラン<br></div>
+						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small">￥</span>8,000</span></div>
 						</div> 
-						<div class="box_card__txt">リテイクなし、初回ヒアリングのみで気軽にご注文いただける単色ロゴプランとなります。（修正が必要な場合は1回￥500～ご対応いたします。）<br><br>
-						サークルロゴ、TRPGに使用するロゴ、オリジナルのウォーターマーク、同人誌等のタイトルロゴ、youtube等の動画などにご使用いただけます！<br>
+						<div class="box_card__txt">シンプルな単色デザインで、用途を問わず使いやすいロゴを制作するプランです。<br>
+						サークルロゴ、TRPG、オリジナルのウォーターマーク等にご使用いただけます。初めてのロゴ制作やシンプルなデザインをお求めの方におすすめです。<br>
 						<span class="small pink">※商用利用の場合は追加料金が発生いたします。</span></div>
-						<div class="box_card__txt">【納品物】 黒1色 + 単色差分1種</div>
+						<div class="box_card__txt">
+							●提案数：1案<br>
+							●納品物：黒1色＋単色差分1種<br>
+							●フルリテイクは2回まで／軽微な修正は無制限
+						</div>
 						</div>
 					</li><!--/.box_card-->
 
@@ -96,10 +100,15 @@ include realpath(__DIR__ . '/../config/include.php');
 						<div class="box_card__name">オリジナルロゴプラン</div>
 						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small">￥</span>12,000</span></div>
 						</div> 
-						<div class="box_card__txt">リテイク無制限、1からじっくりご相談いただけるロゴプランとなります。<br><br>
-						同人誌等のタイトルロゴ、Webオンリー、TRPGに使用するロゴ、Vtuber様のネームロゴなどにご使用いただけます！<br>
+						<div class="box_card__txt">ご希望を丁寧にヒアリングし、世界観やコンセプトに合わせたロゴを制作するプランです。<br>
+						タイトルロゴ、Webオンリー、TRPG、Vtuber様のネームロゴなど幅広い用途に対応可能。<br>
+						方向性のすり合わせを行いながら進めるため、こだわりのある方やイメージをしっかり形にしたい方におすすめです。
 						<span class="small pink">※商用利用の場合は追加料金が発生いたします。</span></div>
-						<div class="box_card__txt">【納品物】 カラーデータ + 差分データ3点まで</div>
+						<div class="box_card__txt">
+							●提案数：2案<br>
+							●納品物：カラーデータ＋差分データ（最大3点まで）<br>
+							●フルリテイクは2回まで／軽微な修正は無制限
+						</div>
 						</div>
 					</li><!--/.box_card-->
 
