@@ -99,7 +99,7 @@ header('Content-Type: text/html; charset=UTF-8');
 
           <div>
             <h2 id="intro-heading" class="intro-title">
-              <span aria-hidden="true">📦</span> このツールについて
+              <span aria-hidden="true">⚙️</span> このツールについて
             </h2>
             <p class="intro-body">
               CCResizer（ココリサイザー）は、TRPGオンラインセッションツール<strong>CCFOLIA</strong>用の素材画像をゲーム内グリッド（24px&nbsp;=&nbsp;1マス）に合わせたサイズへブラウザ上で自動変換するツールです。<br>
@@ -120,7 +120,7 @@ header('Content-Type: text/html; charset=UTF-8');
       <!-- ③ 設定セクション -->
       <section class="settings-section" aria-labelledby="settings-heading">
         <h2 id="settings-heading" class="section-title">
-          <span aria-hidden="true">⚙️</span> 変換設定
+          <span aria-hidden="true">🔧</span> 変換設定
         </h2>
         <div class="wrap-mode-selector">
 
@@ -225,7 +225,7 @@ header('Content-Type: text/html; charset=UTF-8');
               <p class="guide-card-title">比率モードの選び方</p>
               <p class="guide-card-body">
                 <strong>⬛ 1:1（正方形）</strong> 長辺に合わせて正方形にします。<br>
-                <strong>📏 汎用比率</strong> 画像に合わせて 1:1 / 2:1 / 1:2 / 3:2 / 2:3 / 4:3 / 3:4 / 16:9 / 9:16 / 3:1 / 1:3 / 4:1 / 1:4 のいずれかの比率に自動スナップします。24pxのグリッドに合わせているため、CCFOLIA上での操作時も縦横比がずれません。
+                <strong>📏 汎用比率</strong> 画像に合わせて 1:1 / 2:1 / 1:2 / 3:2 / 2:3 / 4:3 / 3:4 / 16:9 / 9:16 / 3:1 / 1:3 / 4:1 / 1:4 のいずれかの比率に自動スナップします。24pxのグリッドに合わせているので、CCFOLIAでの操作時も縦横比がずれません。
               </p>
             </div>
           </div>

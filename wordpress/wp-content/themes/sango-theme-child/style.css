@@ -565,3 +565,8 @@ body img {
 .corner {
   border-radius: 0.5em;
 } /*# sourceMappingURL=common.css.map */
+
+.error404 .insidesp{
+ max-width: 640px;
+ margin: 0 auto 10em;
+}

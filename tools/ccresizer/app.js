@@ -23,7 +23,7 @@ let currentMode   = '1:1';
 /* ── モード補足文 ── */
 const MODE_DESCRIPTIONS = {
   '1:1':  '長辺を基準に正方形へ変換します。<strong>短辺には透明余白を追加</strong>します。',
-  'free': '<strong>1:1 / 2:1 / 3:2 / 4:3 / 16:9</strong> などの汎用比率の中から余白が最小になるものを自動選択します。',
+  'free': '<strong>1:1 / 2:1 / 3:2 / 4:3 / 16:9</strong> などの汎用比率になるように<strong>透明余白を自動追加</strong>します。',
 };
 let isProcessing  = false;
 let resultItems   = [];   // { filename, origW, origH, scaledW, scaledH, outW, outH, wasScaled, ratioLabel, blob, blobUrl } | { filename, error }
