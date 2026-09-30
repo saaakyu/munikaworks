@@ -25,9 +25,9 @@
                 <li><a href="<?php echo LOCATION; ?>works/">制作実績</a></li>
                 <!-- <li><a href="<?php echo LOCATION; ?>case_study/">実例のご紹介</a></li> -->
                 <li><a href="<?php echo LOCATION; ?>status/">現在の受付状況</a></li>
-                <li><a href="<?php echo LOCATION; ?>blog/">ブログ</a></li>
+                <li><a href="<?php echo LOCATION; ?>blog/">ブログ</a></li><br>
                 <!-- <li><a href="<?php echo LOCATION; ?>faq/">よくあるご質問</a></li> -->
-                <li><a href="<?php echo LOCATION_CONTACT; ?>">ご依頼はこちら</a></li>
+                <li class="contact_btn"><a href="<?php echo LOCATION_CONTACT; ?>">ご依頼はこちら</a></li>
             </ul>
         </div>
     </nav>

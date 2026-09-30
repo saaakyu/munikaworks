@@ -62,8 +62,8 @@ include realpath(__DIR__ . '/../config/include.php');
 					</div>
 					<ul class="box_link">
 						<li><a href="#link01">ロゴデザイン</a></li>
-						<li><a href="#link02">同人誌デザイン</a></li>
-						<!-- <li><a href="#link03">サイト制作</a></li> -->
+						<li><a href="#link02">配信画面<br class="view_sp">デザイン</a></li>
+						<li><a href="#link03">同人誌デザイン</a></li>
 						<li><a href="#link04">お支払い方法</a></li>
 					</ul>
 				</div>
@@ -72,42 +72,56 @@ include realpath(__DIR__ . '/../config/include.php');
 			<div class="wrp_price" id="link01">
 				<h3 class="ttl__jp blue center">ロゴデザイン</h3>
 				<div class="box_price">
-					<p class="box_price__txt">タイトルロゴ、イベントロゴ、TRPGロゴなど各種ロゴ制作を承っております。</p>
+					<p class="box_price__txt">配信用ネームロゴ、タイトルロゴ、イベントロゴ、TRPGロゴなど各種ロゴ制作を承っております。</p>
 				</div>
 				<ul class="con_price">
-					<li class="box_card">
-						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo02.jpg" alt="単色ロゴプラン" class="corner"></div>
+
+						<li class="box_card">
+						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo01.jpg" alt="ネームロゴプラン" class="corner"></div>
 						<div class="box_txt">
 						<div class="box_name">
-						<div class="box_card__name"><span class="small"></span>単色ロゴプラン<br></div>
-						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small">￥</span>8,000</span></div>
+						<div class="box_card__name">ネームロゴプラン</div>
+						<div class="box_card__price"><em class="bg_accent">期間限定</em><span class="pink"><span class="small">￥</span>6,000</span></div>
+
 						</div> 
-						<div class="box_card__txt">シンプルな単色デザインで、用途を問わず使いやすいロゴを制作するプランです。<br>
-						サークルロゴ、TRPG、オリジナルのウォーターマーク等にご使用いただけます。初めてのロゴ制作やシンプルなデザインをお求めの方におすすめです。<br>
-						<span class="small pink">※商用利用の場合は追加料金が発生いたします。</span></div>
 						<div class="box_card__txt">
 							●提案数：1案<br>
-							●納品物：黒1色＋単色差分1種<br>
-							●フルリテイクは2回まで／軽微な修正は無制限
+							●納品物：カラー＋差分データ3点<br>
+							●フルリテイク2回まで<br>
+							<span class="pink">※商用利用費は別途費用</span>
+							<!--<br><span class="small pink">※商用利用費を含みます。</span> -->
 						</div>
 						</div>
 					</li><!--/.box_card-->
 
 					<li class="box_card">
-						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo01.jpg" alt="オリジナルロゴプラン" class="corner"></div>
+						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo02.jpg" alt="単色ロゴプラン" class="corner"></div>
+						<div class="box_txt">
+						<div class="box_name">
+						<div class="box_card__name"><span class="small"></span>単色ロゴプラン<br></div>
+						<div class="box_card__price"><span class="small">1点</span><span class="pink"><span class="small">￥</span>8,000</span></div>
+						</div> 
+						<div class="box_card__txt">
+							●提案数：1案<br>
+							●納品物：黒1色＋単色差分1種<br>
+							●フルリテイク2回まで<br>
+							<span class="pink">※商用利用費は別途費用</span>
+						</div>
+						</div>
+					</li><!--/.box_card-->
+
+					<li class="box_card">
+						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo03.jpg" alt="オリジナルロゴプラン" class="corner"></div>
 						<div class="box_txt">
 						<div class="box_name">
 						<div class="box_card__name">オリジナルロゴプラン</div>
-						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small">￥</span>12,000</span></div>
+						<div class="box_card__price"><span class="small">1点</span><span class="pink"><span class="small">￥</span>12,000</span></div>
 						</div> 
-						<div class="box_card__txt">ご希望を丁寧にヒアリングし、世界観やコンセプトに合わせたロゴを制作するプランです。<br>
-						タイトルロゴ、Webオンリー、TRPG、Vtuber様のネームロゴなど幅広い用途に対応可能。<br>
-						方向性のすり合わせを行いながら進めるため、こだわりのある方やイメージをしっかり形にしたい方におすすめです。
-						<span class="small pink">※商用利用の場合は追加料金が発生いたします。</span></div>
 						<div class="box_card__txt">
 							●提案数：2案<br>
-							●納品物：カラーデータ＋差分データ（最大3点まで）<br>
-							●フルリテイクは2回まで／軽微な修正は無制限
+							●納品物：カラー＋差分データ3点<br>
+							●フルリテイク2回まで<br>
+							<span class="pink">※商用利用費は別途費用</span>
 						</div>
 						</div>
 					</li><!--/.box_card-->
@@ -155,12 +169,94 @@ include realpath(__DIR__ . '/../config/include.php');
 				</div><!--/.wrp_option-->
 
 
-				<div class="pink_btn"><a href="<?php echo LOCATION; ?>contact/logo_form/">ロゴデザインのご依頼はこちら</a></div>
+				<div class="blue_btn"><a href="<?php echo LOCATION; ?>contact/logo_form/">ロゴデザインのご依頼はこちら</a></div>
+			</div><!-- /.wrp_price -->
+
+			<div class="wrp_price" id="link02">
+				<h3 class="ttl__jp blue center">配信画面デザイン</h3>
+				<div class="box_price">
+					<p class="box_price__txt">Vtuber様や活動者様向けのデザイン関連のご依頼を承っております。</p>
+				</div>
+				<ul class="con_price">
+
+				<?php if (false):
+					//false・・・非表示//true・・・表示
+				?>
+					<li class="box_card">
+						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_cover01.jpg" alt="表紙イラストあり" class="corner"></div>
+						<div class="box_txt">
+						<div class="box_card__name">表紙イラストあり</div>
+						<div class="box_card__price"><span class="small">1点 <span class="sale">￥ 10,000</span></span><em class="bg_accent">11/30まで</em><span class="pink"><span class="small"> ￥</span>8,000</span></div>
+						<div class="box_card__txt">ご提供いただいたイラストに文字やあしらいを入れ、全体のレイアウトをご提案いたします。</div>
+						<div class="box_card__txt">【納品物】 入稿用データ/告知用画像</div>
+						</div>
+					</li><!--/.box_card-->
+				<?php endif ?>
+
+					<li class="box_card">
+						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_screen01.jpg" alt="表紙イラストあり" class="corner"></div>
+						<div class="box_txt">
+						<div class="box_card__name">配信／待機画面<br>（静止画）</div>
+						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small"> ￥</span>4,000</span></div>
+						
+						</div>
+					</li><!--/.box_card-->
+
+					<li class="box_card">
+						<div class="box_card__img"><video src="<?php echo LOCATION; ?>price/images/img_screen_loop.mp4"　controls autoplay muted playsinline preload loop poster="<?php echo LOCATION; ?>price/images/img_screen02.jpg" style="border-radius: 15px;"></video></div>
+						<div class="box_txt">
+						<div class="box_card__name">配信／待機画面<br>（ループアニメーション）</div>
+						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small"> ￥</span>8,000</span></div>
+						
+						</div>
+						
+					</li><!--/.box_card-->
+				</ul><!-- /.con_price -->
+
+				<div class="wrp_option">
+					<div class="tmp_acc_box">
+						<div class="tmp_acc_tit js-accordion">
+							<h4 class="tmp_st_s">
+								<span class="jp">オプションのご案内</span>
+							</h4>
+							<span class="ic" aria-hidden="true"></span>
+						</div>
+						<div class="tmp_acc_target" style="display: block;">
+							<div class="target_inner">
+								<table class="tmp_table_respon thin">
+									<tbody>
+										<tr>
+											<th>サムネイル</th>
+											<td><em>￥3,000</em><br>配信や動画の内容・雰囲気に合わせたサムネイルを制作いたします。</td>
+										</tr>
+										<tr>
+											<th>スケジュール表</th>
+											<td><em>￥4,000</em><br>配信予定などを見やすくまとめたスケジュール表を制作いたします。</td>
+										</tr>
+										<tr>
+											<th>宣伝画像</th>
+											<td><em>￥4,000</em><br>配信画面や世界観にあわせてお姿をまとめた宣伝画像を制作いたします。</td>
+										</tr>
+										<tr>
+											<th>Xヘッダー</th>
+											<td><em>￥4,000</em><br>活動の雰囲気や世界観に合わせたヘッダーを制作いたします。</td>
+										</tr>
+										<tr>
+											<th>パーツ分けPNGデータ納品</th>
+											<td><em>+￥1,000</em><br>背景・装飾などをパーツごとに分けたPNGデータもあわせて納品いたします。</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blue_btn"><a href="<?php echo LOCATION; ?>contact/screen_form/">配信画面デザインのご依頼はこちら</a></div>
 			</div><!-- /.wrp_price -->
 
 
-			<div class="wrp_price" id="link02">
-				<h3 class="ttl__jp blue center">同人誌デザイン他</h3>
+			<div class="wrp_price" id="link03">
+				<h3 class="ttl__jp blue center">同人誌デザイン</h3>
 				<!-- <div class="box_price">
 					<p class="box_price__txt">漫画や小説など、同人誌の表紙デザインを承っております。</p>
 				</div> -->
@@ -240,7 +336,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						</div>
 					</div>
 				</div>
-				<div class="pink_btn"><a href="<?php echo LOCATION; ?>contact/cover_form/">同人誌デザインのご依頼はこちら</a></div>
+				<div class="blue_btn"><a href="<?php echo LOCATION; ?>contact/cover_form/">同人誌デザインのご依頼はこちら</a></div>
 			</div><!-- /.wrp_price -->
 
 			<script>/*

@@ -66,20 +66,12 @@
 					</div>
 				</div><!-- /.wrp_intro -->
 
-				<div class="wrp_pickup fadeInTrigger">
-					<div class="box_service__txt">
-						<span class="ttl__en">Pickup</span>
-						<h3 class="ttl__jp"><span class="pink">ピックアップ情報</span></h3>
-						<p class="tmp_txt">作字発信中！、リピーター割引はじめました</p>
-					</div>
-				</div><!-- /.wrp_pickup -->
-
 				<div class="wrp_service fadeInTrigger">
 					<div class="con_service">
 						<div class="box_service__txt">
 							<span class="ttl__en">Service</span>
 							<h3 class="ttl__jp"><span class="pink">お手伝い</span>できること</h3>
-							<p class="tmp_txt">ロゴ・同人誌デザインやStudioを使用したWeb制作をはじめ、<br class="view_pc-tab">デザイン周りのご相談を受け付けております。</p>
+							<p class="tmp_txt">ロゴ・同人関連のデザインや配信画面等のグラフィックをはじめ、<br class="view_pc-tab">デザイン周りのご相談を受け付けております。</p>
 						</div>
 						<div class="box_service__explain">
 							<div class="service_inner">
@@ -90,14 +82,14 @@
 								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service2.png" alt=""></p>
 								<p class="service__name">同人誌<br>デザイン</p>
 							</div>
-							<!-- <div class="service_inner">
-								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service3.png" alt=""></p>
-								<p class="service__name">バナー等の<br>告知デザイン</p>
-							</div> -->
 							<div class="service_inner">
+								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service3.png" alt=""></p>
+								<p class="service__name">Vtuber様向け<br>配信画面デザイン</p>
+							</div>
+							<!-- <div class="service_inner">
 								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service4.png" alt=""></p>
 								<p class="service__name">個人/特設サイト等の<br class="view_pc-tab">Web制作</p>
-							</div>
+							</div> -->
 						</div>
 						<div class="pink_btn"><a href="<?php echo LOCATION; ?>service/">サービス内容を見る</a></div>
 					</div>
@@ -108,7 +100,7 @@
 						<div class="box_works__txt">
 							<span class="ttl__en">Works</span>
 							<h3 class="ttl__jp"><span class="pink">制作実績</span></h3>
-							<p class="txt center">掲載許可を頂いたデザインを公開しています。<br><span class="small">※一部成人指定を含む作品がございます。</span></p>
+							<p class="txt center">掲載許可を頂いたデザインを公開しています。</p>
 						</div>
 
 						<div class="box_works__img">

@@ -44,33 +44,32 @@ style info : コピー
 
   .con_price {
     @extend %bw;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     @include mq(sp) {
       flex-direction: column;
+      grid-template-columns: repeat(1, 1fr);
     }
     .box_card {
       background: $white;
-      @include cV(padding, 3.5em, 2em, 1.5em);
+      @include cV(padding, 2em, 2em, 1.5em);
       border-radius: 1em;
       display: flex;
       @include cV(align-items, center, center, center);
       @include cV(flex-direction, column, column, column);
       @include cV(margin, 0 1.5em 0 0, 0 1.5em 0 0, 0 0 1.5em 0);
-      @include mq(pc_tab) {
-        width:50%;
-      }
       @include mq(sp) {
         max-width:100%;
       }
       &:not(:last-of-type) {
-        @include cV(margin, 0 1.5em 0 0, 0 1.5em 0 0, 0 0 1.5em 0);
+        @include cV(margin, 0 1em 0 0, 0 1em 0 0, 0 0 1em 0);
       }
       &.pink{
         color:$pink;
       }
       &__img {
-        @include cV(margin ,0 0 2.5em 0, 0, 0);
+        @include cV(margin ,0 0 2em 0, 0, 0);
         @include cV(max-width, 100%, 100%, 100%);
       }
       &__name {

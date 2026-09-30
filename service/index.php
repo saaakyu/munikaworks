@@ -56,15 +56,15 @@ include realpath(__DIR__ . '/../config/include.php');
 			<div class="wrp_intro">
 				<div class="con_intro">
 					<div class="box_intro">
-						<p class="tmp_txt">創作・エンターテイメント分野に関連するロゴ制作・同人誌デザインなどを承っております。<br>
-							その他、バナーやノベルティデザインなどもご対応可能ですので、お気軽にお問い合わせくださいませ。</p>
+						<p class="tmp_txt">創作・エンターテイメント分野に関連するロゴ制作・同人同人関連のデザインなどを承っております。<br>
+							その他、バナーやグッズデザインなどもご対応可能ですので、お気軽にお問い合わせくださいませ。</p>
 							<div class="pink_btn"><a href="<?php echo LOCATION; ?>status/">現在の受付状況について</a></div>
 					</div>
 					<ul class="box_link">
 						<li><a href="#link01">ご依頼の流れ</a></li>
 						<li><a href="#link02">ロゴデザイン</a></li>
-						<li><a href="#link03">同人誌デザイン</a></li>
-						<!-- <li><a href="#link04">サイト制作</a></li> -->
+						<li><a href="#link03">配信画面デザイン</a></li>
+						<li><a href="#link04">同人誌デザイン</a></li>
 					</ul>
 				</div>
 			</div><!-- /.wrp_intro -->
@@ -161,14 +161,13 @@ include realpath(__DIR__ . '/../config/include.php');
 					<div class="con_list_col2">
 						<div class="box_list">
 							<div class="tit_list"><i class="fa-regular fa-file-zipper"></i> 納品データ</div>
-							<p class="tmp_txt">透過PNG、もしくはPSD</p>
+							<p class="tmp_txt">PNG、もしくはPSD</p>
 						</div>
 
 						<div class="box_list">
 							<div class="tit_list"><i class="fa-solid fa-clipboard-check"></i> ご提案数</div>
 							<ul>
-								<li>・単色ロゴプラン：1案</li>
-								<li>・オリジナルロゴプラン：2案</li>
+								<li>1案</li>
 							</ul>
 						</div>
 						
@@ -177,13 +176,13 @@ include realpath(__DIR__ . '/../config/include.php');
 					<div class="con_list_col2">
 					<div class="box_list">
 							<div class="tit_list"><i class="fa-regular fa-pen-to-square"></i>修正について</div>
-							<p class="tmp_txt">デザイン全体の作り直しとなるフルリテイクは<span class="pink">2回</span>まで、色味・サイズ・配置などの軽微な修正につきましては<span class="pink">回数無制限</span>にて承ります。</p>
+							<p class="tmp_txt">デザイン全体の作り直しとなるフルリテイクは<span class="pink">2回</span>まで、軽微な修正につきましては<span class="pink">回数無制限</span>にて承ります。</p>
 						</div>
 
 						<div class="box_list">
 							<div class="tit_list"><i class="fa-solid fa-circle-exclamation"></i> 注意事項</div>
 							<ul>
-								<li>・著作権の譲渡はしておりません。</li>
+								<li>・著作権は放棄しておりません。</li>
 								<li>・二次配布は禁止としております。</li>
 								<li>・意図しない見た目になることを避けるため、<span class="pink">納品後の改変（縦横比の変更等）</span>はお控えください。</li>
 							</ul>
@@ -214,7 +213,7 @@ include realpath(__DIR__ . '/../config/include.php');
 
 						<li>
 							<dl>
-								<dt>3.チェック・修正</dt>
+								<dt>3.修正・ブラッシュアップ</dt>
 								<dd>ラフ案を受け、イメージと齟齬がある場合はデザインの修正を行います。</dd>
 							</dl>
 						</li>
@@ -227,7 +226,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						</li>
 						<li>
 							<dl>
-								<dt>5.チェック・修正</dt>
+								<dt>5.修正・ブラッシュアップ</dt>
 								<dd>清書案を受け、修正があれば調整します。</dd>
 							</dl>
 						</li>
@@ -242,7 +241,125 @@ include realpath(__DIR__ . '/../config/include.php');
 				</div><!-- /.wrp_step -->
 			</div><!-- /.wrp_service -->
 
-			<div class="wrp_service" id="link03">
+						<div class="wrp_service" id="link03">
+				<h3 class="ttl__jp blue center">配信画面デザイン</h3>
+				<div class="con_service">
+					<div class="box_service">
+						<div class="box_service__img"><img src="<?php echo LOCATION; ?>service/images/img_screen.png" alt="配信画面デザイン"></div>
+						<p class="box_service__txt">「活動の雰囲気や世界観に合ったデザインがほしい」「イメージはあるけれど、うまく形にできない」<br>そんな方に、丁寧にヒアリングを行いながら活動やキャラクターの世界観に合わせたデザインをご提案いたします。</p>
+					</div>
+				</div><!-- /.con_service -->
+
+				<div class="wrp_list">
+					<div class="con_list">
+						<div class="tit_list"><i class="fa-solid fa-lightbulb"></i> 事前に準備があるとおすすめ</div>
+						<div class="box_list">
+							<p class="tmp_txt">ご依頼の前に、立ち絵や三面図などの資料、キャラクター設定、参考資料、ロゴなどのご準備をお願いいたします。</p>
+						</div><!-- /.box_list -->
+					</div>
+					<div class="con_list">
+						<div class="tit_list"><i class="fa-regular fa-circle-check"></i> 主な確認事項</div>
+						<div class="box_list">
+							<ul class="list col1">
+								<li>ご希望の制作物</li>
+								<li>商用利用の有無</li>
+								<li>アニメーションの有無</li>
+								<li>納品形式</li>
+								<li>ご希望の納品日</li>
+								<li>ご希望のイメージ・世界観</li>
+								<li>画面内に必要な情報</li>
+								<li>立ち絵や三面図などのキャラクター資料</li>
+								<li>その他、やりたいことや伝えたい事項</li>
+							</ul>
+						</div><!-- /.box_list -->
+					</div><!-- /.con_list -->
+
+					<div class="con_list_col2">
+						<div class="box_list">
+							<div class="tit_list"><i class="fa-regular fa-file-zipper"></i> 納品データ</div>
+							<p class="tmp_txt">PNG、またはMP4・APNG</p>
+						</div>
+
+						<div class="box_list">
+							<div class="tit_list"><i class="fa-solid fa-clipboard-check"></i> ご提案数</div>
+							<ul>
+								<li>1案</li>
+							</ul>
+						</div>
+						
+					</div><!-- /.con_list_col2 -->
+
+					<div class="con_list_col2">
+					<div class="box_list">
+							<div class="tit_list"><i class="fa-regular fa-pen-to-square"></i>修正について</div>
+							<p class="tmp_txt">デザイン全体の作り直しとなるフルリテイクは<span class="pink">2回</span>まで、軽微な修正につきましては<span class="pink">回数無制限</span>にて承ります。</p>
+						</div>
+
+						<div class="box_list">
+							<div class="tit_list"><i class="fa-solid fa-circle-exclamation"></i> 注意事項</div>
+							<ul>
+								<li>・著作権は放棄しておりません。</li>
+								<li>・二次配布は禁止としております。</li>
+								<li>・納品データを<span class="pink">他の媒体へ流用すること</span>はお控えください。
+							</li>
+							</ul>
+						</div>
+					</div><!-- /.con_list_col2 -->
+
+				</div><!-- /.wrp_list -->
+
+				<div class="wrp_step">
+					<div class="con_ttl">
+						<h3 class="ttl__jp center"><i class="fa-solid fa-wrench blue"></i> 作業工程の例</h3>
+						<div class="time"><span class="small">制作期間：</span>約3週間</div>
+					</div>
+					<ul class="con_step">
+						<li>
+							<dl>
+								<dt>1.ご要望の確認</dt>
+								<dd>ヒアリングテンプレートを元に、活動内容やデザインの方向性などを詳しくヒアリングします。</dd>
+							</dl>
+						</li>
+
+						<li>
+							<dl>
+								<dt>2.ラフ案提出</dt>
+								<dd>形や方向性が問題ないかご確認いただきます。この段階は<span class="pink">ラフでのご提出</span>となります。</dd>
+							</dl>
+						</li>
+
+						<li>
+							<dl>
+								<dt>3.修正・ブラッシュアップ</dt>
+								<dd>ラフ案を受け、イメージと齟齬がある場合はデザインの修正を行います。</dd>
+							</dl>
+						</li>
+
+						<li>
+							<dl>
+								<dt>4.清書案提出</dt>
+								<dd>方向性のすり合わせが完了次第、清書案を提出します。</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>5.修正・ブラッシュアップ</dt>
+								<dd>清書案を受け、修正があれば調整します。</dd>
+							</dl>
+						</li>
+
+						<li>
+							<dl>
+								<dt>6.納品</dt>
+								<dd>修正案にご納得いただけたらデータを納品し、お取引完了となります。</dd>
+							</dl>
+						</li>
+					</ul>
+				</div><!-- /.wrp_step -->
+			</div><!-- /.wrp_service -->
+
+			
+			<div class="wrp_service" id="link04">
 				<h3 class="ttl__jp blue center">同人誌デザイン</h3>
 				<div class="con_service">
 					<div class="box_service">
@@ -303,7 +420,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						<div class="box_list">
 							<div class="tit_list"><i class="fa-solid fa-circle-exclamation"></i> 注意事項</div>
 							<ul>
-								<li>・著作権の譲渡はしておりません。</li>
+								<li>・著作権は放棄しておりません。</li>
 								<li>・二次配布は禁止としております。</li>
 								<li>・納品データを<span class="pink">他の媒体へ流用すること</span>はお控えください。<br><span class="small">※ポスターやノベルティにしたい場合は一度ご相談ください</span></li>
 							</ul>
@@ -315,7 +432,7 @@ include realpath(__DIR__ . '/../config/include.php');
 				<div class="wrp_step">
 					<div class="con_ttl">
 						<h3 class="ttl__jp center"><i class="fa-solid fa-wrench blue"></i> 作業工程の例</h3>
-						<div class="time"><span class="small">制作期間：</span>約1か月</div>
+						<div class="time"><span class="small">制作期間：</span>約3週間</div>
 					</div>
 					<ul class="con_step">
 						<li>
@@ -347,7 +464,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						</li>
 						<li>
 							<dl>
-								<dt>5.チェック・修正</dt>
+								<dt>5.修正・ブラッシュアップ</dt>
 								<dd>再校を受け、修正があれば最終調整します。</dd>
 							</dl>
 						</li>

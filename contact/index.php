@@ -74,18 +74,18 @@ include realpath(__DIR__ . '/../config/include.php');
 						</div>
 
 						<div class="request_btn">
+							<a href="<?php echo LOCATION; ?>contact/screen_form/">
+								<p class="category"><span class="green">配信画面デザイン</span>のご依頼</p>
+								<p class="en">More</p>
+							</a>
+						</div>
+
+						<div class="request_btn">
 							<a href="<?php echo LOCATION; ?>contact/cover_form/">
 								<p class="category"><span class="sky_blue">同人誌デザイン</span>の<br class="view_sp">ご依頼</p>
 								<p class="en">More</p>
 							</a>
 						</div>
-
-						<!-- <div class="request_btn">
-							<a href="#">
-								<p class="category"><span class="green">サイト制作</span>のご依頼</p>
-								<p class="en">More</p>
-							</a>
-						</div> -->
 
 						<div class="request_btn">
 							<a href="<?php echo LOCATION; ?>contact/others_form/">

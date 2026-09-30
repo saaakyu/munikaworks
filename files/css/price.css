@@ -26,7 +26,6 @@ style info : 汎用設定
 
 .wrp_price {
   padding: 5em 0;
-  background: #f7f7f7;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price {
@@ -38,9 +37,11 @@ style info : 汎用設定
     padding: 4em 0;
   }
 }
+.wrp_price {
+  background: #f7f7f7;
+}
 .wrp_price .pink_btn {
   margin-top: 2em;
-  text-align: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .pink_btn {
@@ -51,6 +52,9 @@ style info : 汎用設定
   .wrp_price .pink_btn {
     margin-top: 2em;
   }
+}
+.wrp_price .pink_btn {
+  text-align: center;
 }
 .wrp_price .ttl__jp {
   margin-bottom: 1em;
@@ -94,9 +98,8 @@ style info : 汎用設定
   }
 }
 .wrp_price .con_price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -107,23 +110,12 @@ style info : 汎用設定
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .wrp_price .con_price .box_card {
   background: #fff;
-  padding: 3.5em;
-  border-radius: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 1.5em 0 0;
+  padding: 2em;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card {
@@ -135,6 +127,15 @@ style info : 汎用設定
     padding: 1.5em;
   }
 }
+.wrp_price .con_price .box_card {
+  border-radius: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card {
     -webkit-box-align: center;
@@ -148,6 +149,12 @@ style info : 汎用設定
         -ms-flex-align: center;
             align-items: center;
   }
+}
+.wrp_price .con_price .box_card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card {
@@ -164,6 +171,9 @@ style info : 汎用設定
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+.wrp_price .con_price .box_card {
+  margin: 0 1.5em 0 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card {
@@ -173,11 +183,6 @@ style info : 汎用設定
 @media only screen and (max-width: 767px) {
   .wrp_price .con_price .box_card {
     margin: 0 0 1.5em 0;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .wrp_price .con_price .box_card {
-    width: 50%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -186,24 +191,23 @@ style info : 汎用設定
   }
 }
 .wrp_price .con_price .box_card:not(:last-of-type) {
-  margin: 0 1.5em 0 0;
+  margin: 0 1em 0 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card:not(:last-of-type) {
-    margin: 0 1.5em 0 0;
+    margin: 0 1em 0 0;
   }
 }
 @media only screen and (max-width: 767px) {
   .wrp_price .con_price .box_card:not(:last-of-type) {
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1em 0;
   }
 }
 .wrp_price .con_price .box_card.pink {
   color: #f37d7d;
 }
 .wrp_price .con_price .box_card__img {
-  margin: 0 0 2.5em 0;
-  max-width: 100%;
+  margin: 0 0 2em 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card__img {
@@ -214,6 +218,9 @@ style info : 汎用設定
   .wrp_price .con_price .box_card__img {
     margin: 0;
   }
+}
+.wrp_price .con_price .box_card__img {
+  max-width: 100%;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card__img {
@@ -230,8 +237,6 @@ style info : 汎用設定
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
   text-align: center;
-  line-height: 1.4;
-  padding: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card__name {
@@ -242,6 +247,10 @@ style info : 汎用設定
   .wrp_price .con_price .box_card__name {
     text-align: center;
   }
+}
+.wrp_price .con_price .box_card__name {
+  line-height: 1.4;
+  padding: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card__name {
@@ -261,8 +270,6 @@ style info : 汎用設定
   font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
   font-weight: 500;
   text-align: center;
-  line-height: 1.3;
-  margin: 0 0 0.5em;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card__price {
@@ -273,6 +280,10 @@ style info : 汎用設定
   .wrp_price .con_price .box_card__price {
     text-align: center;
   }
+}
+.wrp_price .con_price .box_card__price {
+  line-height: 1.3;
+  margin: 0 0 0.5em;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .con_price .box_card__price {
@@ -347,7 +358,6 @@ style info : 汎用設定
   display: flex;
   background: #fff;
   padding: 2em;
-  border-radius: 1em;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .wrp_option .con_option {
@@ -358,6 +368,9 @@ style info : 汎用設定
   .wrp_price .wrp_option .con_option {
     padding: 1.5em;
   }
+}
+.wrp_price .wrp_option .con_option {
+  border-radius: 1em;
 }
 .wrp_price .wrp_option .con_option:not(:last-of-type) {
   margin: 0 1.5em 0 0;
@@ -429,9 +442,7 @@ style info : 汎用設定
       flex-wrap: wrap;
 }
 .wrp_price .wrp_list .con_list_2column {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
 }
 .wrp_price .box_info {
@@ -452,13 +463,6 @@ style info : 汎用設定
   width: 90%;
   margin: auto;
   padding: 2em 1.5em 1.5em;
-  font-size: 113%;
-  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
-  font-weight: 500;
-  border-collapse: separate;
-  border-radius: 1em;
-  background-color: #D0E3F1;
-  border-spacing: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .box_info .info_list {
@@ -470,6 +474,15 @@ style info : 汎用設定
     padding: 2em 1.5em 1.5em;
   }
 }
+.wrp_price .box_info .info_list {
+  font-size: 113%;
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "MS Ｐゴシック", "MS PGothic", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-weight: 500;
+  border-collapse: separate;
+  border-radius: 1em;
+  background-color: #D0E3F1;
+  border-spacing: 0;
+}
 .wrp_price .box_info .info_list img {
   margin: 1em 0;
 }
@@ -478,9 +491,6 @@ style info : 汎用設定
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 1em 0.8em;
-  padding: 0 1em 0.8em;
-  vertical-align: middle;
-  text-align: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .box_info .info_list th {
@@ -492,11 +502,15 @@ style info : 汎用設定
     padding: 0;
   }
 }
+.wrp_price .box_info .info_list th {
+  padding: 0 1em 0.8em;
+  vertical-align: middle;
+  text-align: center;
+}
 .wrp_price .box_info .info_list td {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 1em 0.8em;
-  text-align: left;
 }
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
   .wrp_price .box_info .info_list td {
@@ -507,6 +521,9 @@ style info : 汎用設定
   .wrp_price .box_info .info_list td {
     padding: 0 0 0.8em;
   }
+}
+.wrp_price .box_info .info_list td {
+  text-align: left;
 }
 .wrp_price .box_info .info_list td:not(:last-of-type) {
   padding-bottom: 0;

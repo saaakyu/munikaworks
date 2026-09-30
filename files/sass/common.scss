@@ -189,7 +189,7 @@ body {
   right: -100%;
   width: 40vw;
   height: 100vh;
-  background-color: $blue;
+  background-color:  $line-gray;
   transition: all 0.4s; //メニューが出てくる早さ
   @include fsz-cha(16, 16, 18);
   letter-spacing: 0.08em;
@@ -230,7 +230,6 @@ body {
   }
 
   a {
-    color: #fff;
     text-decoration: none;
     padding: 0.5em 0;
     display: block;
@@ -560,6 +559,37 @@ body {
 }
 
 //----------------------------------------------//
+// ブルーボタン
+//----------------------------------------------//
+.blue_btn {
+    margin-top: 2em;
+    text-align: center;
+
+  a {
+    @include sans-serif("title_jp");
+    @include fsz(18);
+    letter-spacing: 0;
+    display: inline-block;
+    background-color: $blue;
+    border-radius: 5em;
+    color: $white;
+    font-weight: 500;
+    text-align: center;
+    @include cV(padding, 0.6em 2em, 0.6em 2em, 0.6em 2em);
+    transition: 0.3s;
+    border: 2px $blue solid;
+
+    @include mq(pc) {
+      &:hover {
+        background-color: $white;
+        color: $blue;
+      }
+    }
+  }
+}
+
+
+//----------------------------------------------//
 // お問い合わせボタン
 //----------------------------------------------//
 .contact_btn {
@@ -583,7 +613,7 @@ body {
       content: "\f0e0";
       font-weight: 400;
       font-size: 1.5em;
-      @include cV(padding-right, 0.5em, 0.5em, 0);
+      @include cV(padding-right, 0.5em, 0.5em, 0.3em);
     }
 
     @include mq(pc) {
