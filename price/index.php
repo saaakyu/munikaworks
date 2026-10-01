@@ -200,6 +200,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						<div class="box_card__price"><em class="bg_accent">期間限定</em><span class="pink"><span class="pink"><span class="small"> ￥</span>4,000</span></div>
 						<div class="box_card__txt">
 							●提案数：1案<br>
+							●納品物：配信オーバーレイ1点<br>
 							●フルリテイク2回まで
 						</div>
 						</div>
@@ -211,7 +212,9 @@ include realpath(__DIR__ . '/../config/include.php');
 						<div class="box_card__name">配信画面<br>（ループアニメーション）</div>
 						<div class="box_card__price"><em class="bg_accent">期間限定</em><span class="pink"><span class="pink"><span class="small"> ￥</span>8,000</span></div>
 						<div class="box_card__txt">
-							●提案数：1案
+							●提案数：1案<br>
+							●納品物：配信オーバーレイ1点<br>
+							●フルリテイク2回まで
 						</div>
 						</div>
 						
