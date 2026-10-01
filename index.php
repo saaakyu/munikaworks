@@ -84,7 +84,7 @@
 							</div>
 							<div class="service_inner">
 								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service3.png" alt=""></p>
-								<p class="service__name">Vtuber様向け<br>配信画面デザイン</p>
+								<p class="service__name">Vtuber様向け<br>デザイン</p>
 							</div>
 							<!-- <div class="service_inner">
 								<p class="service__img"><img src="<?php echo LOCATION_FILE; ?>/images/home/img_service4.png" alt=""></p>

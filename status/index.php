@@ -92,7 +92,7 @@ include realpath(__DIR__ . '/../config/include.php');
 									<td>随時受付中です！</td>
 								</tr>
 								<tr>
-									<th>配信画面デザイン<span class="small_txt">制作期間:約3週間</span></th>
+									<th>Vtuber様向けデザイン<span class="small_txt">制作期間:約3週間</span></th>
 									<td class="ic_status pink">○</td>
 									<td>随時受付中です！</td>
 								</tr>

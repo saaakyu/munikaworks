@@ -63,7 +63,7 @@ include realpath(__DIR__ . '/../config/include.php');
 					<ul class="box_link">
 						<li><a href="#link01">ご依頼の流れ</a></li>
 						<li><a href="#link02">ロゴデザイン</a></li>
-						<li><a href="#link03">配信画面デザイン</a></li>
+						<li><a href="#link03">Vtuber様向けデザイン</a></li>
 						<li><a href="#link04">同人誌デザイン</a></li>
 					</ul>
 				</div>
@@ -242,10 +242,10 @@ include realpath(__DIR__ . '/../config/include.php');
 			</div><!-- /.wrp_service -->
 
 						<div class="wrp_service" id="link03">
-				<h3 class="ttl__jp blue center">配信画面デザイン</h3>
+				<h3 class="ttl__jp blue center">Vtuber様向けデザイン</h3>
 				<div class="con_service">
 					<div class="box_service">
-						<div class="box_service__img"><img src="<?php echo LOCATION; ?>service/images/img_screen.png" alt="配信画面デザイン"></div>
+						<div class="box_service__img"><img src="<?php echo LOCATION; ?>service/images/img_screen.png" alt="Vtuber様向けデザイン"></div>
 						<p class="box_service__txt">「活動の雰囲気や世界観に合ったデザインがほしい」「イメージはあるけれど、うまく形にできない」<br>そんな方に、丁寧にヒアリングを行いながら活動やキャラクターの世界観に合わせたデザインをご提案いたします。</p>
 					</div>
 				</div><!-- /.con_service -->

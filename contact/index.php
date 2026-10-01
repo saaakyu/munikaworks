@@ -75,7 +75,7 @@ include realpath(__DIR__ . '/../config/include.php');
 
 						<div class="request_btn">
 							<a href="<?php echo LOCATION; ?>contact/screen_form/">
-								<p class="category"><span class="green">配信画面デザイン</span>のご依頼</p>
+								<p class="category"><span class="green">Vtuber様向けデザイン</span>のご依頼</p>
 								<p class="en">More</p>
 							</a>
 						</div>

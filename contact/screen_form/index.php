@@ -57,8 +57,8 @@ include realpath(__DIR__ . '/../../config/include.php');
 			<div class="wrp_intro">
 				<div class="con_intro">
 					<div class="box_intro">
-						<h3 class="txt center"><em><span class="green">配信画面デザイン</span>のご依頼フォーム</em></h3>
-						<p class="tmp_txt center">配信画面デザインのご依頼・お見積もりは本フォームから。<br><br>
+						<h3 class="txt center"><em><span class="green">Vtuber様向けデザイン</span>のご依頼フォーム</em></h3>
+						<p class="tmp_txt center">Vtuber様向けデザインのご依頼・お見積もりは本フォームから。<br><br>
 							事情がある場合を除き、基本前払いとさせていただいております。<br>
 							金銭のやり取りが不安な方はSKIMA、ココナラ、つなぐからご依頼をお願いいたします。</p>
 					</div>
@@ -69,7 +69,7 @@ include realpath(__DIR__ . '/../../config/include.php');
 				<div class="con_form">
 					<div class="box_form">
 
-						<iframe data-tally-src="https://tally.so/embed/J95l1r?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="2147" frameborder="0" marginheight="0" marginwidth="0" title="配信画面デザインのご依頼"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+						<iframe data-tally-src="https://tally.so/embed/J95l1r?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="2147" frameborder="0" marginheight="0" marginwidth="0" title="Vtuber様向けデザインのご依頼"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
 
 					</div><!-- .box_form -->
 				</div><!-- .con_form -->

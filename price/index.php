@@ -62,7 +62,7 @@ include realpath(__DIR__ . '/../config/include.php');
 					</div>
 					<ul class="box_link">
 						<li><a href="#link01">ロゴデザイン</a></li>
-						<li><a href="#link02">配信画面<br class="view_sp">デザイン</a></li>
+						<li><a href="#link02">Vtuber様向け<br class="view_sp">デザイン</a></li>
 						<li><a href="#link03">同人誌デザイン</a></li>
 						<li><a href="#link04">お支払い方法</a></li>
 					</ul>
@@ -72,27 +72,9 @@ include realpath(__DIR__ . '/../config/include.php');
 			<div class="wrp_price" id="link01">
 				<h3 class="ttl__jp blue center">ロゴデザイン</h3>
 				<div class="box_price">
-					<p class="box_price__txt">配信用ネームロゴ、タイトルロゴ、イベントロゴ、TRPGロゴなど各種ロゴ制作を承っております。</p>
+					<p class="box_price__txt">タイトルロゴ、イベントロゴ、TRPGロゴ、サークルロゴなど各種ロゴ制作を承っております。</p>
 				</div>
 				<ul class="con_price">
-
-						<li class="box_card">
-						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo01.jpg" alt="ネームロゴプラン" class="corner"></div>
-						<div class="box_txt">
-						<div class="box_name">
-						<div class="box_card__name">ネームロゴプラン</div>
-						<div class="box_card__price"><em class="bg_accent">期間限定</em><span class="pink"><span class="small">￥</span>6,000</span></div>
-
-						</div> 
-						<div class="box_card__txt">
-							●提案数：1案<br>
-							●納品物：カラー＋差分データ3点<br>
-							●フルリテイク2回まで<br>
-							<span class="pink">※商用利用費は別途費用</span>
-							<!--<br><span class="small pink">※商用利用費を含みます。</span> -->
-						</div>
-						</div>
-					</li><!--/.box_card-->
 
 					<li class="box_card">
 						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo02.jpg" alt="単色ロゴプラン" class="corner"></div>
@@ -173,7 +155,7 @@ include realpath(__DIR__ . '/../config/include.php');
 			</div><!-- /.wrp_price -->
 
 			<div class="wrp_price" id="link02">
-				<h3 class="ttl__jp blue center">配信画面デザイン</h3>
+				<h3 class="ttl__jp blue center">Vtuber様向けデザイン</h3>
 				<div class="box_price">
 					<p class="box_price__txt">Vtuber様や活動者様向けのデザイン関連のご依頼を承っております。</p>
 				</div>
@@ -194,20 +176,44 @@ include realpath(__DIR__ . '/../config/include.php');
 				<?php endif ?>
 
 					<li class="box_card">
+						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_logo01.jpg" alt="ネームロゴ" class="corner"></div>
+						<div class="box_txt">
+						<div class="box_name">
+						<div class="box_card__name">ネームロゴ</div>
+						<div class="box_card__price"><em class="bg_accent">期間限定</em><span class="pink"><span class="small"> ￥</span>6,000</span></div>
+
+						</div> 
+						<div class="box_card__txt">
+							●提案数：1案<br>
+							●納品物：カラー＋差分データ3点<br>
+							●フルリテイク2回まで<br>
+							<span class="pink">※商用利用費を含みます。</span>
+							<!--<br><span class="small pink">※商用利用費を含みます。</span> -->
+						</div>
+						</div>
+					</li><!--/.box_card-->
+
+					<li class="box_card">
 						<div class="box_card__img"><img src="<?php echo LOCATION; ?>price/images/img_screen01.jpg" alt="表紙イラストあり" class="corner"></div>
 						<div class="box_txt">
-						<div class="box_card__name">配信／待機画面<br>（静止画）</div>
-						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small"> ￥</span>4,000</span></div>
-						
+						<div class="box_card__name">配信画面<br>（静止画）</div>
+						<div class="box_card__price"><em class="bg_accent">期間限定</em><span class="pink"><span class="pink"><span class="small"> ￥</span>4,000</span></div>
+						<div class="box_card__txt">
+							●提案数：1案<br>
+							●納品物：黒1色＋単色差分1種<br>
+						</div>
 						</div>
 					</li><!--/.box_card-->
 
 					<li class="box_card">
 						<div class="box_card__img"><video src="<?php echo LOCATION; ?>price/images/img_screen_loop.mp4"　controls autoplay muted playsinline preload loop poster="<?php echo LOCATION; ?>price/images/img_screen02.jpg" style="border-radius: 15px;"></video></div>
 						<div class="box_txt">
-						<div class="box_card__name">配信／待機画面<br>（ループアニメーション）</div>
-						<div class="box_card__price"><span class="small">1点 </span><span class="pink"><span class="small"> ￥</span>8,000</span></div>
-						
+						<div class="box_card__name">配信画面<br>（ループアニメーション）</div>
+						<div class="box_card__price"><em class="bg_accent">期間限定</em><span class="pink"><span class="pink"><span class="small"> ￥</span>8,000</span></div>
+						<div class="box_card__txt">
+							●提案数：1案<br>
+							●納品物：黒1色＋単色差分1種<br>
+						</div>
 						</div>
 						
 					</li><!--/.box_card-->
@@ -238,12 +244,12 @@ include realpath(__DIR__ . '/../config/include.php');
 											<td><em>￥4,000</em><br>配信画面や世界観にあわせてお姿をまとめた宣伝画像を制作いたします。</td>
 										</tr>
 										<tr>
-											<th>Xヘッダー</th>
+											<th>SNSヘッダー</th>
 											<td><em>￥4,000</em><br>活動の雰囲気や世界観に合わせたヘッダーを制作いたします。</td>
 										</tr>
 										<tr>
-											<th>パーツ分けPNGデータ納品</th>
-											<td><em>+￥1,000</em><br>背景・装飾などをパーツごとに分けたPNGデータもあわせて納品いたします。</td>
+											<th>差分制作</th>
+											<td><em>+￥1,000～</em><br>制作したデザインをベースに、配信内容に合わせて文字や一部の装飾を変更した差分を制作いたします。</td>
 										</tr>
 									</tbody>
 								</table>
@@ -251,7 +257,7 @@ include realpath(__DIR__ . '/../config/include.php');
 						</div>
 					</div>
 				</div>
-				<div class="blue_btn"><a href="<?php echo LOCATION; ?>contact/screen_form/">配信画面デザインのご依頼はこちら</a></div>
+				<div class="blue_btn"><a href="<?php echo LOCATION; ?>contact/screen_form/">Vtuber様向けデザインのご依頼はこちら</a></div>
 			</div><!-- /.wrp_price -->
 
 
