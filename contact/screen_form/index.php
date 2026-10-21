@@ -1,6 +1,6 @@
 <?php
 $page = 'contact_lower';
-$title = 'logo_form';
+$title = 'screen_form';
 include realpath(__DIR__ . '/../../config/include.php');
 ?>
 <!-- *** stylesheet *** -->
