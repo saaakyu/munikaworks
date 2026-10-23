@@ -236,7 +236,7 @@ border: #ddd 1px solid;
 
 /*各記事の横幅を%に*/
 .one-column #main{
-  max-width: 950px;
+  max-width: 1240px;
   margin: 3em auto;
 }
 @media only screen and (max-width: 767px) {
